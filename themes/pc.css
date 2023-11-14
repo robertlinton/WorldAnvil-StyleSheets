@@ -320,14 +320,14 @@
   font-family: Encounters;
   font-style: normal;
   font-weight: 600;
-  src: url(https://rawcdn.githack.com/robertlinton/wa-fonts/007bfa105fd969aa22affaa717374153cda4bccc/Alien-Encounters-Solid-Regular.ttf);
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/main/fonts/Alien%20Encounters.ttf);
 }
 
 @font-face {
   font-family: Glitch Inside;
   font-style: normal;
   font-weight: 600;
-  src: url(https://rawcdn.githack.com/robertlinton/wa-fonts/ac93fabf8a510a9348b12f41fd1805149bbbaeb5/GlitchInside-0Wjro.otf);
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/main/fonts/Glitch%20Inside.otf);
 }
 
 /*--------------------------*/
