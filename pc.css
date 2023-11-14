@@ -1451,6 +1451,24 @@
 }
 
 /*--------------------------*/
+/* ---- Social   ---- */
+/* -------------------------*/
+.user-css .world-social-discord {
+  font-family: var(--HeaderFont), sans-serif;
+  color: var(--ColorTert-6);
+  background-color: var(--ColorSec-2);
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 4px solid var(--ColorTert-1);
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  animation: pulseGlow 5s infinite ease-in-out;
+  font-size: 17px;
+}
+
+/*--------------------------*/
 /* ---- Map blocks   ---- */
 /* -------------------------*/
 .user-css .map-box .img-responsive {
@@ -3050,19 +3068,4 @@
 
 .user-css .blurredbox-spoiler .spoiler-button[aria-expanded$=true] p {
   opacity: 0%;
-}
-
-.user-css .world-social-discord {
-  font-family: var(--HeaderFont), sans-serif;
-  color: var(--ColorTert-6);
-  background-color: var(--ColorSec-2);
-  padding: 20px;
-  margin: 20px 0;
-  border-left: 4px solid var(--ColorTert-1);
-  position: relative;
-  border-radius: 25px;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  animation: pulseGlow 5s infinite ease-in-out;
-  font-size: 17px;
 }
