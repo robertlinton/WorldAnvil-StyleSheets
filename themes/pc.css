@@ -1,6 +1,3 @@
-/*--------------------------*/
-/* ---- Variables   ---- */
-/* -------------------------*/
 .user-css,
 .user-css-extended,
 .user-css-presentation,
@@ -16,17 +13,17 @@
   --font-body: Rajdhani;
 
   /* Colors */
-  --ColorPrime: #101316;
-  --ColorSec-1: #1c2834;
-  --ColorSec-2: #253341;
-  --ColorTert-1: #31a2ac;
-  --ColorTert-2: #68d1cf;
-  --ColorTert-3: #333f50;
-  --ColorTert-4: #4d626e;
-  --ColorTert-5: #809bb1;
-  --ColorTert-6: #00ffc6;
-  --BodyColor: #ccd1d9;
-  --MuteColor: #f6e7ff;
+  --primarydark: #101316;
+  --secondarydark-1: #1c2834;
+  --secondarydark-2: #253341;
+  --accentlightblue: #31a2ac;
+  --accentcyan: #68d1cf;
+  --tertiarydark-1: #333f50;
+  --tertiarydark-2: #4d626e;
+  --tertiarylightblue: #809bb1;
+  --highlightcyan: #00ffc6;
+  --mainbodycolor: #ccd1d9;
+  --mutedlightpurple: #f6e7ff;
 }
 
 /*--------------------------*/
@@ -93,16 +90,16 @@
 /* -------------------------*/
 @keyframes glow {
   0% {
-    text-shadow: 0 0 8px var(--ColorTert-1);
+    text-shadow: 0 0 8px var(--accentlightblue);
   }
 
   50% {
-    text-shadow: 0 0 18px var(--ColorTert-2), 0 0 30px var(--ColorTert-2),
-      0 0 40px var(--ColorTert-3);
+    text-shadow: 0 0 18px var(--accentcyan), 0 0 30px var(--accentcyan),
+      0 0 40px var(--tertiarydark-1);
   }
 
   100% {
-    text-shadow: 0 0 8px var(--ColorTert-1);
+    text-shadow: 0 0 8px var(--accentlightblue);
   }
 }
 
@@ -129,10 +126,10 @@
   54%,
   56%,
   100% {
-    text-shadow: -0.2rem -0.2rem 1rem var(--ColorTert-1),
-      0.2rem 0.2rem 1rem var(--ColorTert-2), 0 0 2rem var(--ColorTert-6),
-      0 0 4rem var(--ColorTert-6), 0 0 6rem var(--ColorTert-6),
-      0 0 8rem var(--ColorTert-6), 0 0 10rem var(--ColorTert-6);
+    text-shadow: -0.2rem -0.2rem 1rem var(--accentlightblue),
+      0.2rem 0.2rem 1rem var(--accentcyan), 0 0 2rem var(--highlightcyan),
+      0 0 4rem var(--highlightcyan), 0 0 6rem var(--highlightcyan),
+      0 0 8rem var(--highlightcyan), 0 0 10rem var(--highlightcyan);
     opacity: 1;
   }
 
@@ -169,45 +166,45 @@
 @keyframes glowBreath {
   0%,
   100% {
-    box-shadow: 0 0 10px var(--ColorTert-6);
+    box-shadow: 0 0 10px var(--highlightcyan);
   }
 
   50% {
-    box-shadow: 0 0 20px var(--ColorTert-6);
+    box-shadow: 0 0 20px var(--highlightcyan);
   }
 }
 
 @keyframes shimmer {
   0% {
-    color: var(--ColorTert-1);
+    color: var(--accentlightblue);
     text-shadow: none;
   }
 
   50% {
-    color: var(--ColorTert-2);
-    text-shadow: 0 0 8px var(--ColorTert-2), 0 0 16px var(--ColorTert-1),
-      0 0 24px var(--ColorTert-2), 0 0 32px var(--ColorTert-1),
-      0 0 40px var(--ColorTert-2), 0 0 48px var(--ColorTert-1),
-      0 0 56px var(--ColorTert-2);
+    color: var(--accentcyan);
+    text-shadow: 0 0 8px var(--accentcyan), 0 0 16px var(--accentlightblue),
+      0 0 24px var(--accentcyan), 0 0 32px var(--accentlightblue),
+      0 0 40px var(--accentcyan), 0 0 48px var(--accentlightblue),
+      0 0 56px var(--accentcyan);
   }
 
   100% {
-    color: var(--ColorTert-1);
+    color: var(--accentlightblue);
     text-shadow: none;
   }
 }
 
 @keyframes sciFiGlow {
   0% {
-    filter: drop-shadow(0 0 5px var(--ColorTert-1))
-      drop-shadow(0 0 10px var(--ColorTert-1))
-      drop-shadow(0 0 15px var(--ColorTert-6));
+    filter: drop-shadow(0 0 5px var(--accentlightblue))
+      drop-shadow(0 0 10px var(--accentlightblue))
+      drop-shadow(0 0 15px var(--highlightcyan));
   }
 
   100% {
-    filter: drop-shadow(0 0 10px var(--ColorTert-2))
-      drop-shadow(0 0 20px var(--ColorTert-2))
-      drop-shadow(0 0 30px var(--ColorTert-6));
+    filter: drop-shadow(0 0 10px var(--accentcyan))
+      drop-shadow(0 0 20px var(--accentcyan))
+      drop-shadow(0 0 30px var(--highlightcyan));
   }
 }
 
@@ -243,15 +240,16 @@
 
 @keyframes pulseGlow {
   0% {
-    box-shadow: 0 0 5px var(--ColorTert-1), inset 0 0 5px var(--ColorTert-2);
+    box-shadow: 0 0 5px var(--accentlightblue), inset 0 0 5px var(--accentcyan);
   }
 
   50% {
-    box-shadow: 0 0 15px var(--ColorTert-1), inset 0 0 15px var(--ColorTert-2);
+    box-shadow: 0 0 15px var(--accentlightblue),
+      inset 0 0 15px var(--accentcyan);
   }
 
   100% {
-    box-shadow: 0 0 5px var(--ColorTert-1), inset 0 0 5px var(--ColorTert-2);
+    box-shadow: 0 0 5px var(--accentlightblue), inset 0 0 5px var(--accentcyan);
   }
 }
 
@@ -286,16 +284,11 @@
 .user-css.page,
 .user-css-extended .page,
 .user-css-presentation .tooltipster-content {
-  background: var(--ColorPrime);
-  border: 7px double var(--ColorTert-1);
+  background: var(--primarydark);
+  border: 7px double var(--accentlightblue);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: none;
-}
-
-.user-css.page,
-.user-css-extended .page {
-  max-width: 1400px;
 }
 
 /*--------------------------*/
@@ -322,7 +315,7 @@
 .user-css-extended .metadata-value {
   font-size: 17px;
   font-family: var(--font-body);
-  color: var(--BodyColor);
+  color: var(--mainbodycolor);
 }
 
 /*--------------------------*/
@@ -337,12 +330,12 @@
 
 .user-css .text-muted,
 .user-css-extended .text-muted {
-  color: var(--MuteColor) !important;
+  color: var(--mutedlightpurple) !important;
 }
 
 .user-css .text-danger,
 .user-css-extended .text-danger {
-  color: var(--ColorTert-2) !important;
+  color: var(--accentcyan) !important;
 }
 
 .user-css .dropcap {
@@ -351,7 +344,7 @@
 
 .user-css .highlight {
   animation: glow 2s ease-in-out infinite;
-  color: var(--ColorTert-6);
+  color: var(--highlightcyan);
   font-weight: bold;
 }
 
@@ -363,7 +356,7 @@
 .user-css-presentation .tooltipster-content h1,
 .user-css .statblock h1,
 .user-css-extended .orphan-era h1 {
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
   font-family: var(--font-header-primary);
   font-size: 2.9rem;
   text-align: center;
@@ -375,9 +368,9 @@
 .user-css-map-sidebar h2,
 .user-css-presentation .tooltipster-content h2 {
   font-family: var(--font-header-secondary);
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
   padding-top: 15px;
-  border-bottom: 3px solid var(--ColorTert-1);
+  border-bottom: 3px solid var(--accentlightblue);
   font-size: 2.2rem;
   margin-bottom: 7px;
 }
@@ -387,7 +380,7 @@
 .user-css-map-sidebar h3,
 .user-css-presentation .tooltipster-content h3 {
   font-family: var(--font-header-primary);
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
   padding-top: 15px;
   font-size: 1.9rem;
 }
@@ -401,7 +394,7 @@
 .user-css-extended .timeline li .milestone-panel h4,
 .user-css-presentation .tooltipster-content h4 {
   font-family: var(--font-header-primary);
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
   padding-top: 15px;
   font-size: 1.7rem;
 }
@@ -415,7 +408,7 @@
 .user-css-extended .timeline li .milestone-panel h5,
 .user-css-presentation .tooltipster-content h5,
 .user-css-presentation #world-navigation-sidebar .world-menu h5 {
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
   font-family: var(--font-header-primary);
   padding-top: 10px;
   margin-top: 0px;
@@ -439,7 +432,7 @@
 .user-css-extended .timeline li .milestone-panel a,
 .user-css-presentation .tooltipster-content a,
 .user-css .usercard a {
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
   transition: all 0.5;
   text-shadow: none;
 }
@@ -448,7 +441,7 @@
 .user-css-extended a:hover,
 .user-css-presentation .tooltipster-content a:hover,
 .user-css .usercard a:hover {
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
   text-shadow: none;
   font-style: italic;
 }
@@ -458,7 +451,7 @@
 /* -------------------------*/
 .user-css .text-abbreviation {
   cursor: default !important;
-  border-bottom: 1px dotted var(--BodyColor);
+  border-bottom: 1px dotted var(--mainbodycolor);
 }
 
 .user-css .tooltip .tooltip-inner,
@@ -471,8 +464,8 @@
   font-style: italic;
   text-align: center;
   font-size: 16px;
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-1);
+  background: var(--secondarydark-2);
+  border: 3px solid var(--accentlightblue);
   padding: 5px;
   box-shadow: 2px 2px 5px #00000020;
 }
@@ -482,7 +475,7 @@
 .user-css .tooltip.top .tooltip-arrow,
 .user-css-extended .tooltip.top .tooltip-arrow,
 .user-css-worldmenu .tooltip.top .tooltip-arrow {
-  border-top-color: var(--ColorTert-4) !important;
+  border-top-color: var(--tertiarydark-2) !important;
 }
 
 /*--------------------------*/
@@ -497,12 +490,12 @@
 }
 
 .user-css-presentation .tooltip-arrow::before {
-  border-top-color: var(--ColorTert-4);
+  border-top-color: var(--tertiarydark-2);
 }
 
 .user-css-presentation .tooltip .tooltip-inner {
   max-width: 300px;
-  background: var(--ColorPrime);
+  background: var(--primarydark);
 }
 
 /*--------------------------*/
@@ -517,8 +510,8 @@
   font-family: var(--font-body);
   font-size: 1em;
   font-weight: bold;
-  color: var(--ColorSec-1) !important;
-  background: var(--ColorTert-2);
+  color: var(--secondarydark-1) !important;
+  background: var(--accentcyan);
   border: none;
   border-radius: 15px;
   transition: all 0.3s;
@@ -532,7 +525,7 @@
 .user-css .discussion-board-section [class*=rep] .btn:hover {
   text-shadow: none;
   text-decoration: none;
-  background: var(--ColorTert-1);
+  background: var(--accentlightblue);
   transform: scale(1.05);
 }
 
@@ -545,16 +538,16 @@
 
 .user-css .btn-success,
 .user-css-extended .btn .btn-success {
-  background: var(--ColorTert-1) !important;
+  background: var(--accentlightblue) !important;
   border: none !important;
-  border-left: 5px solid var(--ColorTert-4) !important;
+  border-left: 5px solid var(--tertiarydark-2) !important;
 }
 
 .user-css .btn-success:hover,
 .user-css-extended .btn .btn-success:hover {
-  background: var(--ColorTert-2) !important;
+  background: var(--accentcyan) !important;
   border: none !important;
-  border-left: 5px solid var(--ColorTert-4) important;
+  border-left: 5px solid var(--tertiarydark-2) important;
 }
 
 /*--------------------------*/
@@ -571,8 +564,8 @@
 .user-css blockquote,
 .user-css-extended blockquote,
 .user-css-presentation .tooltipster-content blockquote {
-  background: var(--ColorSec-2);
-  border: 2px solid var(--ColorTert-1);
+  background: var(--secondarydark-2);
+  border: 2px solid var(--accentlightblue);
   border-radius: 10px;
   box-shadow: none;
 }
@@ -580,7 +573,7 @@
 .user-css blockquote .author,
 .user-css-extended blockquote .author,
 .user-css-presentation .tooltipster-content blockquote .author {
-  color: var(--MuteColor);
+  color: var(--mutedlightpurple);
   font-family: var(--font-header-primary);
   font-size: 1em;
 }
@@ -600,9 +593,9 @@
 /* ----Infobox   ---- */
 /* -------------------------*/
 .pc-profilebox {
-  background: var(--ColorPrime);
-  color: var(--BodyColor);
-  border: 3px solid var(--ColorTert-2);
+  background: var(--primarydark);
+  color: var(--mainbodycolor);
+  border: 3px solid var(--accentcyan);
   border-radius: 10px;
   padding: 0;
   margin-bottom: 1em;
@@ -615,37 +608,37 @@
 .pc-profilebox-header {
   background: linear-gradient(
     135deg,
-    var(--ColorSec-2) 0%,
-    var(--ColorTert-2) 100%
+    var(--secondarydark-2) 0%,
+    var(--accentcyan) 100%
   );
-  color: var(--ColorTert-6);
+  color: var(--highlightcyan);
   padding: 0.5em;
   text-align: center;
   font-size: 1.25em;
   font-weight: bold;
   font-family: var(--font-header-tertiary);
-  border-bottom: 2px solid var(--ColorTert-2);
+  border-bottom: 2px solid var(--accentcyan);
   background-size: 200% 200%;
   animation: slidebg 10s linear infinite;
 }
 
 .pc-profilebox-content b {
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
   font-family: var(--font-header-secondary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  text-shadow: 0 0 5px var(--ColorTert-1), 0 0 10px var(--ColorTert-1);
+  text-shadow: 0 0 5px var(--accentlightblue), 0 0 10px var(--accentlightblue);
 }
 
 .pc-profilebox-entry {
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
   padding: 0.2em 0.5em;
   margin: 0.2em 0;
 }
 
 .pc-profilebox-nickname {
   display: block;
-  color: var(--MuteColor);
+  color: var(--mutedlightpurple);
   font-family: var(--font-header-tertiary);
   text-align: center;
   font-size: 1em;
@@ -656,9 +649,9 @@
 }
 
 .pc-profilebox-nickname:hover {
-  color: var(--ColorTert-1);
-  text-shadow: 0 0 5px var(--ColorTert-1), 0 0 10px var(--ColorTert-1),
-    0 0 15px var(--ColorTert-6);
+  color: var(--accentlightblue);
+  text-shadow: 0 0 5px var(--accentlightblue), 0 0 10px var(--accentlightblue),
+    0 0 15px var(--highlightcyan);
 }
 
 .pc-profilebox-image {
@@ -673,21 +666,21 @@
 }
 
 .pc-profilebox-subheader {
-  background: var(--ColorTert-1);
-  color: var(--BodyColor);
+  background: var(--accentlightblue);
+  color: var(--mainbodycolor);
   padding: 0.3em;
   font-weight: bold;
   text-align: center;
   font-family: var(--font-header-tertiary);
-  border-bottom: 1px solid var(--ColorSec-1);
+  border-bottom: 1px solid var(--secondarydark-1);
   letter-spacing: 1px;
 }
 
 .pc-profilebox-content {
   padding: 0.5em;
-  background: var(--ColorSec-1);
-  color: var(--BodyColor);
-  border-bottom: 1px solid var(--ColorTert-3);
+  background: var(--secondarydark-1);
+  color: var(--mainbodycolor);
+  border-bottom: 1px solid var(--tertiarydark-1);
 }
 
 .pc-profilebox-content:last-of-type {
@@ -702,31 +695,31 @@
   right: 0;
   bottom: 0;
   left: 0;
-  border: 1px solid var(--ColorTert-2);
+  border: 1px solid var(--accentcyan);
   border-radius: 10px;
   pointer-events: none;
 }
 
 .pc-profilebox-button:hover,
 .pc-profilebox-link:focus {
-  background: var(--ColorTert-5);
-  color: var(--ColorPrime);
+  background: var(--tertiarylightblue);
+  color: var(--primarydark);
   transition: background-color 0.3s, transform 0.3s;
   transform: scale(1.05);
 }
 
 .pc-character-image img {
-  border: 2px solid var(--ColorSec-2);
+  border: 2px solid var(--secondarydark-2);
   border-radius: 15px;
   height: auto;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
-  box-shadow: 0px 0px 15px var(--ColorTert-1);
+  box-shadow: 0px 0px 15px var(--accentlightblue);
   overflow: hidden;
 }
 
 .pc-character-image img:hover {
   transform: scale(1.03);
-  box-shadow: 0px 0px 20px var(--ColorTert-2);
+  box-shadow: 0px 0px 20px var(--accentcyan);
 }
 
 .pc-character-image::before {
@@ -772,12 +765,12 @@
 }
 
 .user-css .pc-profilebox-entry .spoiler-button {
-  background-color: var(--ColorSec-2);
+  background-color: var(--secondarydark-2);
   display: inline-block;
   font-family: var(--font-body), sans-serif;
-  color: var(--BodyColor);
-  background-color: var(--ColorSec-2);
-  border: 4px solid var(--ColorTert-1) !important;
+  color: var(--mainbodycolor);
+  background-color: var(--secondarydark-2);
+  border: 4px solid var(--accentlightblue) !important;
   border-radius: 25px;
   font-size: 0.9em;
   transition: all 0.3s ease-in-out;
@@ -786,11 +779,11 @@
 
 .user-css .pc-profilebox-entry .spoiler-content {
   font-family: var(--font-body), sans-serif;
-  color: var(--BodyColor);
-  background-color: var(--ColorSec-2);
+  color: var(--mainbodycolor);
+  background-color: var(--secondarydark-2);
   padding: 20px;
   margin: 20px 0;
-  border: 4px solid var(--ColorTert-1) !important;
+  border: 4px solid var(--accentlightblue) !important;
   position: relative;
   border-radius: 25px;
   overflow: hidden;
@@ -799,7 +792,7 @@
 }
 
 .user-css .pc-profilebox-entry .btn {
-  color: var(--ColorTert-6) !important;
+  color: var(--highlightcyan) !important;
 }
 
 /*--------------------------*/
@@ -809,7 +802,7 @@
 .user-css-extended hr,
 .user-css-map-sidebar hr,
 .user-css .tooltipster-content hr {
-  border-top: 3px solid var(--ColorTert-2);
+  border-top: 3px solid var(--accentcyan);
   opacity: 1;
 }
 
@@ -817,18 +810,50 @@
 /* ---- Images   ---- */
 /* -------------------------*/
 .user-css .artist-credits {
-  background: var(--ColorSec-1);
-  color: var(--ColorTert-1);
+  background: var(--secondarydark-1);
+  color: var(--accentlightblue);
 }
+
+.user-css .charimages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+  gap: 15px; /* Space between images */
+  padding: 10px;
+  background: #0f172a; /* Dark background for sci-fi effect */
+  border: 2px solid var(--accentlightblue);
+  border-radius: 15px; /* Rounded corners for the container */
+  box-shadow: 0 0 10px #4ade80; /* Glowing effect */
+  animation: pulseBorder 2s infinite; /* Animated glowing border */
+}
+
+.user-css .charimages img {
+  width: 100%; /* Images fill their cells */
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 0 8px #22d3ee; /* Soft glow around images */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect on hover */
+}
+
+.user-css .charimages img:hover {
+  transform: scale(1.05); /* Slightly enlarge images on hover */
+  box-shadow: 0 0 12px #22d3ee; /* Increase glow on hover */
+}
+
+/* Animation for the glowing border */
+@keyframes pulseBorder {
+  0% { border-color: #4aa8de; box-shadow: 0 0 10px #4aa8de; }
+  50% { border-color: #22d3ee; box-shadow: 0 0 20px #22d3ee; }
+  100% { border-color: #4aa8de; box-shadow: 0 0 10px #4aa8de; }
+}
+
 
 /*--------------------------*/
 /* ---- Imageblocks   ---- */
 /* -------------------------*/
 .user-css .image-panel {
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--secondarydark-2);
+  border: 3px solid var(--tertiarydark-2);
   border-radius: 10px;
-  box-shadow: 0 0 15px var(--ColorTert-6);
+  box-shadow: 0 0 15px var(--highlightcyan);
   text-align: center;
   padding: 15px;
   overflow: hidden;
@@ -839,7 +864,7 @@
 
 .user-css .image-panel:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 25px var(--ColorTert-6);
+  box-shadow: 0 0 25px var(--highlightcyan);
 }
 
 .user-css .image-panel img {
@@ -856,25 +881,25 @@
 
 .user-css .image-panel h5 {
   font-size: 2em;
-  color: var(--ColorTert-6);
-  text-shadow: 0 0 15px var(--ColorTert-6);
+  color: var(--highlightcyan);
+  text-shadow: 0 0 15px var(--highlightcyan);
   margin: 0 0 10px;
 }
 
 .user-css .image-panel:hover h5 {
-  text-shadow: 0 0 25px var(--ColorTert-6), 0 0 35px var(--ColorTert-6);
+  text-shadow: 0 0 25px var(--highlightcyan), 0 0 35px var(--highlightcyan);
 }
 
 .user-css .image-panel .artist-credits {
   font-size: 1em;
-  color: var(--BodyColor);
+  color: var(--mainbodycolor);
   transition: color 0.3s ease;
-  text-shadow: 0 0 8px var(--ColorSec-1);
+  text-shadow: 0 0 8px var(--secondarydark-1);
 }
 
 .user-css .image-panel .artist-credits:hover {
-  color: var(--ColorTert-6);
-  text-shadow: 0 0 10px var(--ColorTert-6), 0 0 20px var(--ColorTert-6);
+  color: var(--highlightcyan);
+  text-shadow: 0 0 10px var(--highlightcyan), 0 0 20px var(--highlightcyan);
 }
 
 .user-css .image-panel::after {
@@ -912,7 +937,7 @@
 /* -------------------------*/
 .user-css .spoiler-button,
 .user-css-extended .spoiler-button {
-  border: 5px solid var(--ColorTert-3);
+  border: 5px solid var(--tertiarydark-1);
   border-left: none;
 }
 
@@ -926,9 +951,9 @@
 
 .user-css .spoiler-content,
 .user-css-extended .spoiler-content {
-  border: 5px solid var(--ColorTert-3);
-  color: var(--BodyColor);
-  background: var(--ColorSec-2);
+  border: 5px solid var(--tertiarydark-1);
+  color: var(--mainbodycolor);
+  background: var(--secondarydark-2);
   border-radius: 0px;
 }
 
@@ -944,9 +969,9 @@
 /* -------------------------*/
 .user-css .aloud,
 .user-css-presentation .tooltipster-content .aloud {
-  background: var(--ColorSec-1);
-  color: var(--ColorTert-1);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--secondarydark-1);
+  color: var(--accentlightblue);
+  border: 3px solid var(--tertiarydark-2);
   border-radius: 0px;
 }
 
@@ -956,8 +981,8 @@
 .user-css .article-panel,
 .user-css-extended .article-panel,
 .user-css .map-box {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-2);
+  background: var(--secondarydark-1);
+  border: 3px solid var(--accentcyan);
   border-radius: 0px;
   box-shadow: none;
   transition: all 0.3s;
@@ -969,7 +994,7 @@
 .user-css .article-panel:hover,
 .user-css-extended .article-panel:hover,
 .user-css .map-box:hover {
-  border-color: var(--ColorTert-4);
+  border-color: var(--tertiarydark-2);
 }
 
 .user-css .article-panel .article-link:hover {
@@ -978,13 +1003,13 @@
 }
 
 .user-css .article-panel .heading {
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
   font-size: 1.3em;
 }
 
 .user-css .article-panel .subheading,
 .user-css .article-panel .date {
-  color: var(--MuteColor);
+  color: var(--mutedlightpurple);
   display: none;
 }
 
@@ -1003,13 +1028,13 @@
 }
 
 .user-css #cover img {
-  border-bottom: 5px double var(--ColorTert-1);
+  border-bottom: 5px double var(--accentlightblue);
 }
 
 .user-css.page-world-homepage .followers-counter,
 .widget-community .panel-default {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-1);
+  background: var(--secondarydark-1);
+  border: 3px solid var(--accentlightblue);
   border-radius: 15px;
 }
 
@@ -1032,11 +1057,11 @@
 
 .pc-hpbox {
   font-family: var(--font-header-primary);
-  color: var(--ColorTert-6);
-  background-color: var(--ColorSec-2);
+  color: var(--highlightcyan);
+  background-color: var(--secondarydark-2);
   padding: 20px;
   margin: 20px 0;
-  border-left: 4px solid var(--ColorTert-1);
+  border-left: 4px solid var(--accentlightblue);
   position: relative;
   border-radius: 25px;
   overflow: hidden;
@@ -1050,11 +1075,11 @@
 /* -------------------------*/
 .user-css .world-social-discord {
   font-family: var(--font-header-primary);
-  color: var(--ColorTert-6);
-  background-color: var(--ColorSec-2);
+  color: var(--highlightcyan);
+  background-color: var(--secondarydark-2);
   padding: 20px;
   margin: 20px 0;
-  border-left: 4px solid var(--ColorTert-1);
+  border-left: 4px solid var(--accentlightblue);
   position: relative;
   border-radius: 25px;
   overflow: hidden;
@@ -1068,8 +1093,8 @@
 /* -------------------------*/
 .user-css.page-world-homepage #world-menu,
 .user-css-presentation #world-navigation-sidebar .world-menu {
-  background: var(--ColorSec-1);
-  border: 4px double var(--ColorTert-4);
+  background: var(--secondarydark-1);
+  border: 4px double var(--tertiarydark-2);
   border-radius: 50px;
   padding: 15px;
   margin-bottom: 15px;
@@ -1081,8 +1106,8 @@
 
 .user-css.page-world-homepage #world-menu,
 .user-css-presentation #world-navigation-sidebar .world-menu {
-  background: var(--ColorSec-1);
-  border: 4px double var(--ColorTert-4);
+  background: var(--secondarydark-1);
+  border: 4px double var(--tertiarydark-2);
   border-radius: 50px;
   padding: 15px;
   padding-left: 0px;
@@ -1106,21 +1131,21 @@
 }
 
 .user-css .toc-article-link {
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
 }
 
 .user-css .article-title-icon {
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
   margin-right: 5px;
   font-size: 0.8em;
 }
 
 .user-css .world-category-link {
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
 }
 
 .user-css .category-title-icon {
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
   margin-right: 5px;
 }
 
@@ -1132,8 +1157,8 @@
 /* ---- Book covers   ---- */
 /* -------------------------*/
 .user-css .bookcover {
-  border: 3px solid var(--ColorTert-4);
-  background: var(--ColorSec-2);
+  border: 3px solid var(--tertiarydark-2);
+  background: var(--secondarydark-2);
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.3s;
@@ -1142,12 +1167,12 @@
 }
 
 .user-css .bookcover:hover {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-2);
+  background: var(--secondarydark-1);
+  border: 3px solid var(--accentcyan);
 }
 
 .user-css .bookcover a:hover .excerpt {
-  color: var(--BodyColor);
+  color: var(--mainbodycolor);
   transition: all 0.3s;
 }
 
@@ -1170,17 +1195,17 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--ColorSec-1);
-  border-top: 3px solid var(--ColorTert-4);
+  background: var(--secondarydark-1);
+  border-top: 3px solid var(--tertiarydark-2);
   text-align: center;
   transition: all 0.3s;
 }
 
 .user-css .world-bookcase .bookcover a:hover .booktitle,
 .user-css .bookcover a:hover .booktitle {
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-2);
-  border-top: 3px solid var(--ColorTert-2);
+  color: var(--secondarydark-1);
+  background: var(--accentcyan);
+  border-top: 3px solid var(--accentcyan);
 }
 
 /*--------------------------*/
@@ -1243,18 +1268,18 @@
 }
 
 .user-css .follower-box {
-  background: var(--ColorSec-2);
+  background: var(--secondarydark-2);
   border-radius: 0px;
 }
 
 .user-css .follower-box img {
-  border: 3px solid var(--ColorTert-4);
+  border: 3px solid var(--tertiarydark-2);
   max-height: 50px;
   max-width: 50px;
 }
 
 .user-css .follower-box small {
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
 }
 
 /*--------------------------*/
@@ -1295,9 +1320,9 @@
 
 .user-css-presentation .backtotop-button {
   top: 10px;
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-2);
-  border: 3px solid var(--ColorTert-4);
+  color: var(--secondarydark-1);
+  background: var(--accentcyan);
+  border: 3px solid var(--tertiarydark-2);
   border-radius: 10px;
   padding: 10px 15px;
   transition: all 0.3s;
@@ -1305,8 +1330,8 @@
 }
 
 .user-css-presentation .backtotop-button:hover {
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-1);
+  color: var(--secondarydark-1);
+  background: var(--accentlightblue);
   padding-right: 25px;
 }
 
@@ -1324,9 +1349,9 @@
 .user-css .form-control,
 .user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
 .map-context-user-css .search-form .typeahead-input {
-  color: var(--BodyColor) !important;
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-1);
+  color: var(--mainbodycolor) !important;
+  background: var(--secondarydark-1);
+  border: 3px solid var(--accentlightblue);
   border-radius: 20px;
   width: 200px;
   box-shadow: none;
@@ -1337,19 +1362,19 @@
 .user-css .form-control::placeholder,
 .user-css .rhea-family-tree input::placeholder,
 .map-context-user-css .search-form .typeahead-input::placeholder {
-  color: var(--MuteColor);
+  color: var(--mutedlightpurple);
 }
 
 .user-css .typeahead.dropdown-menu,
 .map-context-user-css .typeahead.dropdown-menu {
-  background: var(--ColorSec-1);
+  background: var(--secondarydark-1);
 }
 
 .user-css .form-group .dropdown-menu,
 .map-context-user-css .form-group .dropdown-menu {
   border: none;
-  border-left: 3px solid var(--ColorTert-3);
-  border-right: 3px solid var(--ColorTert-3);
+  border-left: 3px solid var(--tertiarydark-1);
+  border-right: 3px solid var(--tertiarydark-1);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1357,18 +1382,18 @@
 .user-css .typeahead.dropdown-menu li,
 .map-context-user-css .typeahead.dropdown-menu li {
   padding: 0;
-  background: var(--ColorSec-1);
+  background: var(--secondarydark-1);
 }
 
 .user-css .typeahead.dropdown-menu li.active .dropdown-item,
 .map-context-user-css .typeahead.dropdown-menu li.active .dropdown-item {
-  background: var(--ColorPrime);
+  background: var(--primarydark);
   font-weight: normal;
 }
 
 .user-css .typeahead.dropdown-menu li a,
 .map-context-user-css .typeahead.dropdown-menu li a {
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
 }
 
 /*--------------------------*/
@@ -1388,16 +1413,16 @@
 
 .user-css .breadcrumb .fas,
 .user-css-extended .breadcrumb .fas {
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
 }
 
 .user-css .breadbox .breadcrumb-card {
   font-family: var(--font-body), sans-serif;
-  color: var(--BodyColor);
-  background-color: var(--ColorSec-2);
+  color: var(--mainbodycolor);
+  background-color: var(--secondarydark-2);
   padding: 20px;
   margin: 20px 0;
-  border-left: 4px solid var(--ColorTert-1);
+  border-left: 4px solid var(--accentlightblue);
   position: relative;
   border-radius: 25px;
   overflow: hidden;
@@ -1409,11 +1434,11 @@
 /* ---- Bottom   ---- */
 /* -------------------------*/
 .user-css .copyright-attribution {
-  color: var(--ColorTert-6);
-  background-color: var(--ColorSec-2);
+  color: var(--highlightcyan);
+  background-color: var(--secondarydark-2);
   padding: 20px;
   margin: 20px 0;
-  border-left: 4px solid var(--ColorTert-1);
+  border-left: 4px solid var(--accentlightblue);
   position: relative;
   border-radius: 25px;
   overflow: hidden;
@@ -1435,7 +1460,7 @@
 }
 
 .user-css-extended .nav-tabs {
-  background: var(--ColorSec-2);
+  background: var(--secondarydark-2);
   margin-right: -25px;
   margin-left: -25px;
   left: 0;
@@ -1447,9 +1472,9 @@
 }
 
 .user-css-extended .nav-tabs li.nav-item a.nav-link {
-  font-family: var(--BodyColor);
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-2);
+  font-family: var(--mainbodycolor);
+  color: var(--secondarydark-1);
+  background: var(--accentcyan);
   border-right: none;
   margin-bottom: 0px;
   padding: 0px 15px;
@@ -1459,7 +1484,7 @@
 .user-css-extended .nav-tabs .active,
 .user-css-extended .nav-tabs .active:hover,
 .user-css-extended .nav-tabs li a:hover {
-  background: var(--ColorTert-1) !important;
+  background: var(--accentlightblue) !important;
   font-style: normal;
 }
 
@@ -1490,9 +1515,9 @@
 .user-css .label-default,
 .user-css-extended .label-default,
 .user-css .timeline li .label-default {
-  color: var(--ColorSec-1) !important;
+  color: var(--secondarydark-1) !important;
   font-weight: bold;
-  background: var(--ColorTert-1);
+  background: var(--accentlightblue);
   border: none;
   border-radius: 0px;
   transition: all 0.3s;
@@ -1502,30 +1527,30 @@
 .user-css .label-default:hover,
 .user-css-extended .label-default:hover,
 .user-css .timeline li .label-default:hover {
-  background: var(--ColorTert-2);
+  background: var(--accentcyan);
 }
 
 /*--------------------------*/
 /* ---- Comments Form   ---- */
 /* -------------------------*/
 .user-css-extended .comment-form textarea {
-  color: var(--BodyColor);
+  color: var(--mainbodycolor);
   font-family: var(--font-body);
   font-size: 1em;
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--secondarydark-2);
+  border: 3px solid var(--tertiarydark-2);
   border-radius: 25px;
   transition: all 0.3s;
   margin-top: 10px;
 }
 
 .user-css-extended .form-control:focus {
-  border: 3px solid var(--ColorTert-2);
+  border: 3px solid var(--accentcyan);
   box-shadow: none;
 }
 
 .user-css-extended .comment-form .btn:hover {
-  border-left: 5px solid var(--ColorTert-3);
+  border-left: 5px solid var(--tertiarydark-1);
 }
 
 .user-css-extended .comment-form .pull-right {
@@ -1536,8 +1561,8 @@
 /* ---- Comments Box   ---- */
 /* -------------------------*/
 .user-css-extended .comment-box {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--secondarydark-1);
+  border: 3px solid var(--tertiarydark-2);
   border-radius: 0px;
 }
 
@@ -1546,7 +1571,7 @@
 }
 
 .user-css-extended .comment-box .comment-box-reply {
-  border-top: 3px solid var(--ColorTert-4);
+  border-top: 3px solid var(--tertiarydark-2);
 }
 
 /*--------------------------*/
@@ -1561,16 +1586,16 @@
 
 .user-css-extended .comment-box-author small {
   opacity: 1;
-  color: var(--MuteColor);
+  color: var(--mutedlightpurple);
 }
 
 .user-css-extended .text-gold {
-  color: var(--ColorTert-1) !important;
+  color: var(--accentlightblue) !important;
   font-size: 0.85em;
 }
 
 .user-css-extended .comment-box-avatar .img-avatar {
-  border: 3px solid var(--ColorTert-4);
+  border: 3px solid var(--tertiarydark-2);
   max-width: 60px;
   max-height: 60px;
   box-shadow: none;
@@ -1578,13 +1603,13 @@
 
 .user-css-extended .comment-box-date {
   font-family: var(--font-body);
-  color: var(--MuteColor);
+  color: var(--mutedlightpurple);
   font-size: 1em;
   opacity: 1;
 }
 
 .user-css-extended .comment-box-signature {
-  border-top: 3px solid var(--ColorTert-2);
+  border-top: 3px solid var(--accentcyan);
 }
 
 .user-css-extended .comment-box-date,
@@ -1596,12 +1621,12 @@
 /* ---- Maps Fullscreen   ---- */
 /* -------------------------*/
 .map-context-user-css {
-  background: var(--ColorSec-1);
+  background: var(--secondarydark-1);
 }
 
 .user-css-map-sidebar {
-  background: var(--ColorPrime);
-  border-right: 5px solid var(--ColorTert-4);
+  background: var(--primarydark);
+  border-right: 5px solid var(--tertiarydark-2);
 }
 
 .user-css-map-sidebar #sidebar-extras .card {
@@ -1611,9 +1636,9 @@
 }
 
 .map-context-user-css #sidebarCollapse {
-  color: var(--ColorSec-2);
-  background: var(--ColorTert-2);
-  border-right: 5px solid var(--ColorTert-3);
+  color: var(--secondarydark-2);
+  background: var(--accentcyan);
+  border-right: 5px solid var(--tertiarydark-1);
   border-radius: 0px;
   border-left-width: 0px;
   border-top-left-radius: 0px;
@@ -1627,8 +1652,8 @@
 }
 
 .map-context-user-css .nav-strip {
-  color: var(--BodyColor);
-  background: var(--ColorTert-2);
+  color: var(--mainbodycolor);
+  background: var(--accentcyan);
   border: none;
   border-radius: 0px;
   font-family: var(--font-header-primary);
@@ -1637,16 +1662,16 @@
 }
 
 .map-context-user-css .nav-strip:hover {
-  color: var(--BodyColor);
-  background: var(--ColorTert-1);
+  color: var(--mainbodycolor);
+  background: var(--accentlightblue);
 }
 
 .map-context-user-css .nav-strip .text-white {
-  color: var(--BodyColor) !important;
+  color: var(--mainbodycolor) !important;
 }
 
 .map-context-user-css .nav-strip:hover .text-white {
-  color: var(--BodyColor) !important;
+  color: var(--mainbodycolor) !important;
 }
 
 /*--------------------------*/
@@ -1659,9 +1684,9 @@
 }
 
 .presentation-interface-map #logo:before {
-  background: var(--ColorTert-1);
+  background: var(--accentlightblue);
   border: none;
-  border-bottom: 5px solid var(--ColorTert-3);
+  border-bottom: 5px solid var(--tertiarydark-1);
   box-shadow: none;
   -webkit-transform: none;
   transform: none;
@@ -1679,7 +1704,7 @@
 .user-css .leaflet-control-layers-base span,
 .map-context-user-css .leaflet-control-layers,
 .map-context-user-css .leaflet-control-layers-base span {
-  border-color: var(--ColorTert-2);
+  border-color: var(--accentcyan);
 }
 
 .map-context-user-css .leaflet-control-zoom-in,
@@ -1692,8 +1717,8 @@
 
 .user-css .leaflet-bar a:first-child,
 .map-context-user-css .leaflet-bar a:first-child {
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-1);
+  color: var(--secondarydark-1);
+  background: var(--accentlightblue);
   border-radius: 0px;
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
@@ -1702,8 +1727,8 @@
 
 .user-css .leaflet-bar a:last-child,
 .map-context-user-css .leaflet-bar a:last-child {
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-2);
+  color: var(--secondarydark-1);
+  background: var(--accentcyan);
   border-radius: 0px;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
@@ -1712,7 +1737,7 @@
 
 .map-context-user-css .leaflet-bar a:hover,
 .user-css .leaflet-bar a:hover {
-  background: var(--ColorSec-1);
+  background: var(--secondarydark-1);
   border: none;
 }
 
@@ -1727,21 +1752,21 @@
 /* -------------------------*/
 .user-css .leaflet-control-layers,
 .map-context-user-css .leaflet-control-layers {
-  background: var(--ColorTert-2);
+  background: var(--accentcyan);
   border: none;
-  border-right: 5px solid var(--ColorTert-3);
+  border-right: 5px solid var(--tertiarydark-1);
   border-radius: 0px;
 }
 
 .user-css .leaflet-control-layers-expanded,
 .map-context-user-css .leaflet-control-layers-expanded {
-  background: var(--ColorTert-2);
+  background: var(--accentcyan);
   font-family: var(--font-body);
 }
 
 .map-context-user-css .leaflet-control-layers-base span {
   font-size: 1.5em;
-  color: var(--ColorSec-1);
+  color: var(--secondarydark-1);
 }
 
 /*--------------------------*/
@@ -1750,9 +1775,9 @@
 .user-css .legend,
 .map-context-user-css .legend {
   font-family: var(--font-body);
-  color: var(--BodyColor);
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-4);
+  color: var(--mainbodycolor);
+  background: var(--secondarydark-2);
+  border: 3px solid var(--tertiarydark-2);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1778,9 +1803,9 @@
 .user-css .leaflet-popup-tip,
 .map-context-user-css .leaflet-popup-content-wrapper,
 .map-context-user-css .leaflet-popup-tip {
-  color: var(--BodyColor);
+  color: var(--mainbodycolor);
   font-family: var(--font-body);
-  background: var(--ColorSec-1);
+  background: var(--secondarydark-1);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1793,13 +1818,13 @@
 .user-css .leaflet-popup-content .header-title,
 .map-context-user-css .leaflet-popup-content-wrapper h5 {
   font-family: var(--font-header-primary);
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
   font-size: 1.5em;
 }
 
 .user-css .leaflet-popup-close-button,
 .map-context-user-css .leaflet-popup-close-button {
-  color: var(--ColorTert-1) !important;
+  color: var(--accentlightblue) !important;
   margin: 5px;
   font-size: 1.2em;
 }
@@ -1808,9 +1833,9 @@
 /* ---- Maps Inline Map   ---- */
 /* -------------------------*/
 .user-css-presentation .leaflet-grab {
-  border: 3px solid var(--ColorTert-4);
+  border: 3px solid var(--tertiarydark-2);
   border-radius: 0px;
-  background: var(--ColorSec-2);
+  background: var(--secondarydark-2);
   box-shadow: none;
 }
 
@@ -1818,8 +1843,8 @@
 /* ---- Maps Navigation   ---- */
 /* -------------------------*/
 .user-css .map-included-navigation {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--secondarydark-1);
+  border: 3px solid var(--tertiarydark-2);
   padding: 5px 5px 10px 5px;
   border-top-width: 0px;
 }
@@ -1830,14 +1855,14 @@
 
 .user-css .map-included-navigation-title {
   font-family: var(--font-header-primary);
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
   font-size: 1.3em;
   padding-top: 5px;
   margin-right: 10px;
 }
 
 .user-css .map-included-navigation-information .fa-info-circle {
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
 }
 
 /*--------------------------*/
@@ -1850,8 +1875,8 @@
 
 .user-css-extended .timeline li .timeline-panel,
 .user-css .timeline li .timeline-panel {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--secondarydark-1);
+  border: 3px solid var(--tertiarydark-2);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1864,7 +1889,7 @@
 
 .user-css-extended .timeline:before,
 .user-css .timeline:before {
-  background-color: var(--ColorTert-2);
+  background-color: var(--accentcyan);
 }
 
 /*--------------------------*/
@@ -1872,14 +1897,14 @@
 /* -------------------------*/
 .user-css .tl-heading-date,
 .user-css-extended .tl-heading-date {
-  color: var(--BodyColor);
+  color: var(--mainbodycolor);
 }
 
 .user-css .timeline li .timeline-panel small,
 .user-css .timeline li .milestone-panel small,
 .user-css-extended .timeline li .timeline-panel small,
 .user-css-extended .timeline li .milestone-panel small {
-  color: var(--BodyColor);
+  color: var(--mainbodycolor);
 }
 
 .user-css .timeline li .timeline-panel h5,
@@ -1894,7 +1919,7 @@
 }
 
 .user-css .timeline .history-category-name {
-  color: var(--MuteColor);
+  color: var(--mutedlightpurple);
 }
 
 /*--------------------------*/
@@ -1938,8 +1963,8 @@
 /* -------------------------*/
 .user-css-extended .timeline li .tl-circ,
 .user-css .timeline li .tl-circ {
-  background: var(--ColorPrime);
-  border-color: var(--ColorTert-2);
+  background: var(--primarydark);
+  border-color: var(--accentcyan);
 }
 
 .user-css .timeline .date-divider,
@@ -1958,17 +1983,17 @@
 /* -------------------------*/
 .user-css-extended .timeline .milestone,
 .user-css .timeline .milestone {
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-2);
+  background: var(--secondarydark-2);
+  border: 3px solid var(--accentcyan);
   border-radius: 0px;
   box-shadow: none;
 }
 
 .user-css-extended .timeline .timeline-entry-milestone .header-icon,
 .user-css .timeline .timeline-entry-milestone .header-icon {
-  border: 3px solid var(--ColorTert-2);
-  background: var(--ColorSec-2);
-  color: var(--ColorTert-2);
+  border: 3px solid var(--accentcyan);
+  background: var(--secondarydark-2);
+  color: var(--accentcyan);
 }
 
 /*--------------------------*/
@@ -1976,16 +2001,16 @@
 /* -------------------------*/
 .user-css-extended .timeline .major .header-icon,
 .user-css .timeline .major .header-icon {
-  border: 3px solid var(--ColorTert-2);
-  border-color: var(--ColorTert-1);
-  background: var(--ColorSec-2);
-  color: var(--ColorTert-1);
+  border: 3px solid var(--accentcyan);
+  border-color: var(--accentlightblue);
+  background: var(--secondarydark-2);
+  color: var(--accentlightblue);
 }
 
 .user-css-extended .timeline .major .timeline-panel,
 .user-css .timeline .major .timeline-panel {
-  border: 3px solid var(--ColorTert-2);
-  border-color: var(--ColorTert-1);
+  border: 3px solid var(--accentcyan);
+  border-color: var(--accentlightblue);
 }
 
 /*--------------------------*/
@@ -1993,16 +2018,16 @@
 /* -------------------------*/
 .user-css-extended .timeline .important .header-icon,
 .user-css .timeline .important .header-icon {
-  border: 3px solid var(--ColorTert-4);
-  border-color: var(--ColorTert-2);
-  background: var(--ColorSec-2);
-  color: var(--ColorTert-2);
+  border: 3px solid var(--tertiarydark-2);
+  border-color: var(--accentcyan);
+  background: var(--secondarydark-2);
+  color: var(--accentcyan);
 }
 
 .user-css-extended .timeline .important .timeline-panel,
 .user-css .timeline .important .timeline-panel {
-  border: 3px solid var(--ColorTert-4);
-  border-color: var(--ColorTert-2);
+  border: 3px solid var(--tertiarydark-2);
+  border-color: var(--accentcyan);
 }
 
 /*--------------------------*/
@@ -2010,14 +2035,14 @@
 /* -------------------------*/
 .user-css-extended .timeline .minor .header-icon,
 .user-css .timeline .minor .header-icon {
-  border: 3px solid var(--ColorTert-4);
-  background: var(--ColorSec-2);
-  color: var(--ColorTert-1);
+  border: 3px solid var(--tertiarydark-2);
+  background: var(--secondarydark-2);
+  color: var(--accentlightblue);
 }
 
 .user-css-extended .timeline .minor .timeline-panel,
 .user-css .timeline .minor .timeline-panel {
-  background: var(--ColorSec-2);
+  background: var(--secondarydark-2);
 }
 
 /*--------------------------*/
@@ -2025,15 +2050,15 @@
 /* -------------------------*/
 .user-css-extended .timeline .trivial .header-icon,
 .user-css .timeline .trivial .header-icon {
-  border: 3px solid var(--ColorTert-4);
-  background: var(--ColorSec-2);
-  color: var(--BodyColor);
+  border: 3px solid var(--tertiarydark-2);
+  background: var(--secondarydark-2);
+  color: var(--mainbodycolor);
 }
 
 .user-css-extended .timeline .trivial .timeline-panel,
 .user-css .timeline .trivial .timeline-panel {
-  background: var(--ColorSec-2);
-  border-color: var(--ColorSec-2);
+  background: var(--secondarydark-2);
+  border-color: var(--secondarydark-2);
 }
 
 /*--------------------------*/
@@ -2041,15 +2066,15 @@
 /* -------------------------*/
 .user-css-extended .timeline .no-importance .header-icon,
 .user-css .timeline .no-importance .header-icon {
-  border: 3px solid var(--ColorTert-4);
-  background: var(--ColorSec-2);
-  color: var(--ColorTert-4);
+  border: 3px solid var(--tertiarydark-2);
+  background: var(--secondarydark-2);
+  color: var(--tertiarydark-2);
 }
 
 .user-css-extended .timeline .no-importance .timeline-panel,
 .user-css .timeline .no-importance .timeline-panel {
-  background: var(--ColorSec-2);
-  border-color: var(--ColorSec-2);
+  background: var(--secondarydark-2);
+  border-color: var(--secondarydark-2);
 }
 
 /*--------------------------*/
@@ -2057,8 +2082,8 @@
 /* -------------------------*/
 .user-css .orphan-era .alert,
 .user-css-extended .orphan-era .alert {
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--secondarydark-2);
+  border: 3px solid var(--tertiarydark-2);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -2067,14 +2092,14 @@
 /* ---- Diplomacy Webs   ---- */
 /* -------------------------*/
 .user-css .clotho-box {
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-2);
+  background: var(--secondarydark-2);
+  border: 3px solid var(--accentcyan);
   border-radius: 0px;
   box-shadow: none;
 }
 
 .user-css .clotho-box .clotho-node {
-  border: 3px solid var(--ColorTert-2);
+  border: 3px solid var(--accentcyan);
   box-shadow: none;
 }
 
@@ -2084,7 +2109,7 @@
 }
 
 .user-css .clotho-box .clotho-node .clotho-text-frame {
-  background: var(--ColorSec-1);
+  background: var(--secondarydark-1);
 }
 
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label {
@@ -2095,16 +2120,16 @@
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label a {
   font-size: 1em;
   font-family: var(--font-body);
-  color: var(--BodyColor);
+  color: var(--mainbodycolor);
 }
 
 /*--------------------------*/
 /* ---- Diplomacy Hover elements   ---- */
 /* -------------------------*/
 .user-css [class*=clotho-title-] {
-  background: var(--ColorSec-2);
+  background: var(--secondarydark-2);
   box-shadow: none;
-  border-top: 3px solid var(--ColorTert-4);
+  border-top: 3px solid var(--tertiarydark-2);
 }
 
 .user-css .clotho-title-arrows,
@@ -2114,12 +2139,12 @@
 }
 
 .user-css [class*=clotho-title-] {
-  border: 3px solid var(--ColorTert-2);
+  border: 3px solid var(--accentcyan);
   padding: 0px !important;
 }
 
 .user-css .clotho-box div:nth-of-type(2) .clotho-title-arrows .clotho-rel-text {
-  color: var(--ColorTert-2);
+  color: var(--accentcyan);
   top: -120px;
 }
 
@@ -2140,12 +2165,12 @@
   .cover
   div
   .w-o-b.btn.btn-xs {
-  background: var(--ColorPrime) !important;
-  color: var(--BodyColor) !important;
+  background: var(--primarydark) !important;
+  color: var(--mainbodycolor) !important;
 }
 
 .user-css.bow {
-  background: var(--ColorPrime) !important;
+  background: var(--primarydark) !important;
 }
 
 .user-css.bow p,
@@ -2153,11 +2178,11 @@
 .user-css.bow .article-content h2,
 .user-css.bow .article-content h3,
 .user-css.bow .article-content h4 {
-  color: var(--BodyColor) !important;
+  color: var(--mainbodycolor) !important;
 }
 
 .user-css.bow .article-content h1 {
-  color: var(--ColorTert-1) !important;
+  color: var(--accentlightblue) !important;
 }
 
 .user-css-presentation
@@ -2165,12 +2190,12 @@
   .cover
   div
   .b-o-w.btn.btn-xs {
-  background: var(--BodyColor) !important;
-  color: var(--ColorPrime) !important;
+  background: var(--mainbodycolor) !important;
+  color: var(--primarydark) !important;
 }
 
 .user-css.wob {
-  background: var(--BodyColor) !important;
+  background: var(--mainbodycolor) !important;
 }
 
 .user-css.wob p,
@@ -2178,11 +2203,11 @@
 .user-css.wob .article-content h2,
 .user-css.wob .article-content h3,
 .user-css.wob .article-content h4 {
-  color: var(--ColorPrime) !important;
+  color: var(--primarydark) !important;
 }
 
 .user-css.wob .article-content h1 {
-  color: var(--ColorPrime) !important;
+  color: var(--primarydark) !important;
 }
 
 /*--------------------------*/
@@ -2194,26 +2219,28 @@
 
 ::-webkit-scrollbar-track {
   border-radius: 0px;
-  background: var(--ColorSec-2);
+  background: var(--secondarydark-2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--ColorTert-2);
+  background: var(--accentcyan);
   width: 9px;
   border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--ColorTert-1);
+  background: var(--accentlightblue);
 }
 
 /*--------------------------*/
 /* ---- White Label   ---- */
 /* -------------------------*/
 .user-css-whitelabel {
-  background: var(--ColorPrime);
-  border-right: 5px solid var(--ColorTert-3);
-  color: var(--BodyColor) !important;
+  background: var(--primarydark);
+  border: 2px solid var(--accentcyan);
+  border-radius: 20px;
+  color: var(--mainbodycolor) !important;
+  margin-left: 14px;
 }
 
 /*--------------------------*/
@@ -2225,8 +2252,8 @@
 
 .world-global-header.user-css .pc-top-navbar {
   position: fixed;
-  background: var(--ColorPrime);
-  border-bottom: 3px solid var(--ColorTert-1);
+  background: var(--primarydark);
+  border-bottom: 3px solid var(--accentlightblue);
   width: 100%;
   height: 60px;
   top: 0;
@@ -2261,7 +2288,7 @@
   width: 100%;
   left: 0;
   top: 0;
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
   font-family: var(--font-header-tertiary);
   font-size: 1.5em;
   line-height: 60px;
@@ -2282,6 +2309,7 @@
   .user-css-extended .page {
     overflow: hidden;
   }
+
   .user-css-presentation #world-navigation-sidebar {
     top: 26%;
     min-height: 60% !important;
@@ -2295,6 +2323,7 @@
   .user-css-extended .page {
     overflow: hidden;
   }
+
   .user-css .search-form {
     top: 0px;
     left: 0px;
@@ -2314,12 +2343,14 @@
   .article-social-media,
   .user-css-whitelabel,
   .user-css-presentation .backtotop-button,
-  .user-css .copyright-attribution {
+  .user-css .copyright-attribution,
+  .user-css .article-horizontal-navigation {
     display: none;
   }
 
   .user-css .pc-letter-grid {
-    grid-template-columns: 1fr !important; /* One column */
+    grid-template-columns: 1fr !important;
+    /* One column */
   }
 }
 
@@ -2336,12 +2367,14 @@
   .article-social-media,
   .user-css-whitelabel,
   .user-css-presentation .backtotop-button,
-  .user-css .copyright-attribution {
+  .user-css .copyright-attribution,
+  .user-css .article-horizontal-navigation {
     display: none;
   }
 
   .user-css .pc-letter-grid {
-    grid-template-columns: 1fr !important; /* One column */
+    grid-template-columns: 1fr !important;
+    /* One column */
   }
 }
 
@@ -2349,13 +2382,13 @@
 /* ---- World Editor  ---- */
 /* -------------------------*/
 #world-editor-bar {
-  background: var(--ColorPrime);
+  background: var(--primarydark);
   width: 120px;
   top: auto;
   bottom: 200px;
   left: -100px;
   border-bottom: none;
-  border-right: var(--ColorTert-1);
+  border-right: var(--accentlightblue);
   opacity: 0.6;
   padding: 15px 15px 0px 15px;
   transition: all 0.3s;
@@ -2367,7 +2400,7 @@
 
 #world-editor-bar .fa {
   font-size: 2em;
-  color: var(--ColorTert-1);
+  color: var(--accentlightblue);
 }
 
 #world-editor-bar .btn {
@@ -2399,7 +2432,7 @@
 }
 
 #world-editor-bar .btn {
-  background: var(--ColorTert-1);
+  background: var(--accentlightblue);
   border: none;
   overflow: hidden;
 }
@@ -2431,18 +2464,19 @@
 /* -------------------------*/
 .pcpage-title {
   font-family: var(--font-header-tertiary);
-  color: var(--ColorTert-6);
+  color: var(--highlightcyan);
   background: linear-gradient(
     90deg,
-    var(--ColorSec-1) 25%,
-    var(--ColorTert-1) 50%,
-    var(--ColorSec-1) 75%
+    var(--secondarydark-1) 25%,
+    var(--accentlightblue) 50%,
+    var(--secondarydark-1) 75%
   );
   background-size: 400% 100%;
   animation: slidebg 5s linear infinite;
   padding: 15px 30px;
-  border: 2px solid var(--ColorTert-3);
-  box-shadow: 0 0 15px var(--ColorTert-1), inset 0 0 10px var(--ColorSec-2);
+  border: 2px solid var(--tertiarydark-1);
+  box-shadow: 0 0 15px var(--accentlightblue),
+    inset 0 0 10px var(--secondarydark-2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2478,11 +2512,11 @@
 /* -------------------------*/
 .pcpage-intro {
   font-family: var(--font-body), sans-serif;
-  color: var(--BodyColor);
-  background-color: var(--ColorSec-2);
+  color: var(--mainbodycolor);
+  background-color: var(--secondarydark-2);
   padding: 20px;
   margin: 20px 0;
-  border-left: 4px solid var(--ColorTert-1);
+  border-left: 4px solid var(--accentlightblue);
   position: relative;
   border-radius: 25px;
   overflow: hidden;
@@ -2497,7 +2531,11 @@
   left: -50%;
   right: -50%;
   bottom: -50%;
-  background: radial-gradient(circle, transparent 0%, var(--ColorSec-1) 100%);
+  background: radial-gradient(
+    circle,
+    transparent 0%,
+    var(--secondarydark-1) 100%
+  );
   transition: all 0.5s ease-in-out;
   opacity: 0;
   z-index: 0;
@@ -2640,13 +2678,29 @@
   background-size: 25px 25px;
 }
 
+.as-synth-bullet {
+  list-style-type: none;
+  padding-left: 36px;
+  background: url(https://www.worldanvil.com/media/cache/apollo_preview/uploads/images/4bc72961a1925f1fb3d7d16a49c17254.png)
+    no-repeat left center;
+  background-size: 25px 25px;
+}
+
+.as-pk-bullet {
+  list-style-type: none;
+  padding-left: 36px;
+  background: url(https://www.worldanvil.com/media/cache/apollo_preview/uploads/images/15b164f47fdd77401b53d392b3bc3f1f.png)
+    no-repeat left center;
+  background-size: 25px 25px;
+}
+
 /*--------------------------*/
 /* ---- Stubs  ---- */
 /* -------------------------*/
 .user-css .stub {
-  background-color: var(--ColorSec-2);
-  border: 2px dashed var(--ColorTert-1);
-  color: var(--MuteColor);
+  background-color: var(--secondarydark-2);
+  border: 2px dashed var(--accentlightblue);
+  color: var(--mutedlightpurple);
   padding: 20px;
   margin: 20px 0;
   text-align: center;
@@ -2664,8 +2718,8 @@
 }
 
 .user-css .pc-letter-card {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-1);
+  background: var(--secondarydark-1);
+  border: 3px solid var(--accentlightblue);
   box-shadow: none;
   height: 300px;
   border-radius: 25px;
@@ -2674,8 +2728,8 @@
 }
 
 .user-css .pc-letter-title {
-  background: var(--ColorTert-4);
-  color: var(--BodyColor);
+  background: var(--tertiarydark-2);
+  color: var(--mainbodycolor);
   padding: 12px 16px;
   position: absolute;
   font-family: var(--font-header-tertiary);
@@ -2696,9 +2750,9 @@
 /* -------------------------*/
 .tabholder .spoiler-button {
   display: inline-block;
-  background: var(--ColorSec-2);
-  color: var(--BodyColor) !important;
-  border: 3px solid var(--ColorTert-1);
+  background: var(--secondarydark-2);
+  color: var(--mainbodycolor) !important;
+  border: 3px solid var(--accentlightblue);
   border-radius: 20px;
   font-family: var(--font-header-secondary);
   margin-bottom: 20px;
@@ -2707,7 +2761,7 @@
 }
 
 .tabholder .spoiler-button:focus {
-  background: var(--ColorSec-2);
+  background: var(--secondarydark-2);
 }
 
 .tab1,
@@ -2721,21 +2775,21 @@
   animation-duration: 1ms;
   animation-fill-mode: forwards;
   animation-play-state: paused;
-  background: var(--ColorSec-2);
-  color: var(--BodyColor);
+  background: var(--secondarydark-2);
+  color: var(--mainbodycolor);
   padding: 15px;
   margin-top: -11px;
   width: 100%;
   position: absolute;
   display: block;
   z-index: -1;
-  border: 3px solid var(--ColorTert-1);
+  border: 3px solid var(--accentlightblue);
   border-radius: 25px;
 }
 
 .blanktab {
   z-index: 0;
-  background: var(--ColorSec-2);
+  background: var(--secondarydark-2);
   transition: all 0.3s ease-in-out;
   animation: pulseGlow 5s infinite ease-in-out;
   font-size: 17px;
@@ -2753,7 +2807,7 @@
 .tabholder h3,
 .tabholder h4,
 .tabholder h5 {
-  color: var(--ColorTert-1) !important;
+  color: var(--accentlightblue) !important;
 }
 
 .tabholder .well,
@@ -2915,4 +2969,21 @@
 
 .user-css .blurredbox-spoiler .spoiler-button[aria-expanded$=true] p {
   opacity: 0%;
+}
+
+.user-css .article-horizontal-navigation {
+  padding-bottom: 20px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+  width: 100%;
+  left: 0px;
+  background: var(--primarydark);
+  border-top: 2px solid var(--highlightcyan);
+  border-color: var(--accentcyan);
+  padding: 10px 100px 5px 100px;
+}
+
+.user-css .article-horizontal-navigation hr {
+  display: none;
 }
