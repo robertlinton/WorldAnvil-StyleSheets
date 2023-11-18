@@ -14,18 +14,17 @@
   --BodyFont: Baskervville;
 
   /* Colors */
-  --ros-colorprime: #131727;   
---ros-colorsec-1: #34515e;
---ros-colorsec-2: #1f3a46;
---ros-colortert-1: #3E8ECF;
---ros-colortert-2: #2678a8;  
---ros-colortert-3: #1e4a5f;   
---ros-colortert-4: #2f6275;
---ros-colortert-5: #52a3a5ba;
---ros-colortert-6: -webkit-linear-gradient(left, #4376e9, #56f938);
---ros-bodycolor: #77d3dd; 
---ros-mutecolor: #7a9bae;  
-
+  --ros-colorprime: #131727;
+  --ros-colorsec-1: #34515e;
+  --ros-colorsec-2: #1f3a46;
+  --ros-colortert-1: #3e8ecf;
+  --ros-colortert-2: #2678a8;
+  --ros-colortert-3: #1e4a5f;
+  --ros-colortert-4: #2f6275;
+  --ros-colortert-5: #52a3a5ba;
+  --ros-colortert-6: -webkit-linear-gradient(left, #4376e9, #56f938);
+  --ros-bodycolor: #cde3ff;
+  --ros-mutecolor: #ccfaff;
 }
 
 /*--------------------------*/
@@ -37,7 +36,8 @@
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/baskervville/v16/YA9Ur0yU4l_XOrogbkun3kQQvpmptvY.woff2);
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -46,7 +46,9 @@
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/baskervville/v16/YA9Ur0yU4l_XOrogbkun3kQQsJmp.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -131,9 +133,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent; 
+  color: transparent;
 }
-
 
 .user-css h2,
 .user-css-extended .page h2,
@@ -305,7 +306,7 @@
   font-family: var(--BodyFont);
   font-size: 1em;
   font-weight: bold;
-  color: var(--ros-colorprime)!important;
+  color: var(--ros-colorprime) !important;
   background: var(--ros-colortert-2);
   border: none;
   border-radius: 20px;
@@ -336,15 +337,15 @@
 .user-css .btn-success,
 .user-css-extended .btn .btn-success {
   background: var(--ros-colortert-1) !important;
-  border: none!important;
-  border-left: 5px solid var(--ros-colortert-4)!important;
+  border: none !important;
+  border-left: 5px solid var(--ros-colortert-4) !important;
 }
 
 .user-css .btn-success:hover,
 .user-css-extended .btn .btn-success:hover {
   background: var(--ros-colortert-2) !important;
-  border: none!important;
-  border-left: 5px solid var(--ros-colortert-4)!important;
+  border: none !important;
+  border-left: 5px solid var(--ros-colortert-4) !important;
 }
 
 .user-css .visibility-toggler-trigger .fas,
