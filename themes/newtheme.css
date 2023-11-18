@@ -31,31 +31,10 @@
 /* ---- Fonts   ---- */
 /* -------------------------*/
 @font-face {
-  font-family: Josefin Sans;
+  font-family: Alinore;
   font-style: normal;
   font-weight: 700;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/5ffcaacccaf4efab76bb611772de2e694207bd4d/fonts/Josefin%20Sans/JosefinSans-Regular.ttf);
-}
-
-@font-face {
-  font-family: Josefin Sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/5ffcaacccaf4efab76bb611772de2e694207bd4d/fonts/Josefin%20Sans/JosefinSans-Medium.ttf);
-}
-
-@font-face {
-  font-family: Josefin Sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/4cac01cae0a43ea9b67468ae5f813ff78411a036/fonts/Josefin%20Sans/JosefinSans-Italic.ttf);
-}
-
-@font-face {
-  font-family: Josefin Sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/4cac01cae0a43ea9b67468ae5f813ff78411a036/fonts/Josefin%20Sans/JosefinSans-Italic.ttf);
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/4e55fa97eb9d225088c913a43182ab750bd2298d/fonts/Realms%20of%20Sfaira/Alinore.otf);
 }
 
 /*--------------------------*/
