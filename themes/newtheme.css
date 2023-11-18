@@ -10,20 +10,21 @@
 .map-context-user-css,
 .tooltipster-content {
   /* Fonts */
-  --HeaderFont: Matchbook Texture;
+  --HeaderFont: Staatliches;
   --BodyFont: Balthazar;
 
   /* Colors */
-  --ros-colorprime: #132527;
-  --ros-colorsec-1: #2e5232;
-  --ros-colorsec-2: #3c6843;
-  --ros-colortert-1: #2eae6c;
-  --ros-colortert-2: #489e75;
-  --ros-colortert-3: #2d5548;
-  --ros-colortert-4: #426b59;
-  --ros-colortert-5: #5c826b;
-  --ros-bodycolor: #77d3dd;
-  --ros-mutecolor: #9bb3a0;
+  --ros-colorprime: #131727;    /* New: Deep blue-green, dark and moody for a primary base */
+--ros-colorsec-1: #34515e;    /* New: Steel blue, representing the modern urban environment */
+--ros-colorsec-2: #1f3a46;    /* New: Darker shade of blue for a deeper contrast in secondary elements */
+--ros-colortert-1: #4a90e2;   /* New: Bright blue for vibrant accents and interactive elements */
+--ros-colortert-2: #2678a8;   /* New: Medium blue, gives a sense of reliability and trust */
+--ros-colortert-3: #1e4a5f;   /* New: Bluish-grey, muted for tertiary accents and subdued highlights */
+--ros-colortert-4: #2f6275;   /* New: Ocean blue, calming and associated with depth and stability */
+--ros-colortert-5: #5294a5;   /* New: Sky blue, lighter for a contrasting pop against darker hues */
+--ros-bodycolor: #77d3dd;     /* New: Light cerulean, invigorating and clean for the main body */
+--ros-mutecolor: #7a9bae;     /* New: Soft blue, harmonizing with the scheme for muted elements */
+
 }
 
 /*--------------------------*/
@@ -41,10 +42,22 @@
 }
 
 @font-face {
-  font-family: Matchbook Texture;
+  font-family: Staatliches;
   font-style: normal;
-  font-weight: 600;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/4530c090d5d6c118fa9d4345fb8fa168bd2acd51/fonts/MatchbookTexture.otf);
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYeVvpCNOw.woff2);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Staatliches;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYebvpA.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 /*--------------------------*/
@@ -61,8 +74,8 @@
 .user-css-extended .page,
 .user-css-presentation .tooltipster-content {
   background: var(--ros-colorprime);
-  border: 5px solid var(--ros-colortert-5);
-  border-radius: 15px;
+  border: 8px double var(--ros-colortert-5);
+  border-radius: 30px;
   box-shadow: none;
   overflow: hidden;
 }
@@ -177,6 +190,166 @@
   padding-top: 15px;
 }
 
+/*--------------------------*/
+/* ---- Links   ---- */
+/* -------------------------*/
+.user-css a,
+.user-css a:focus,
+.user-css-extended .page a,
+.user-css .artist-credits a,
+.user-css .timeline li .timeline-panel a,
+.user-css .timeline li .milestone-panel a,
+.user-css-extended .timeline li .timeline-panel a,
+.user-css-extended .timeline li .milestone-panel a,
+.user-css-presentation .tooltipster-content a,
+.user-css .usercard a {
+  color: var(--ros-colortert-1);
+  transition: all 0.3s;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 1px;
+}
+
+.user-css a:hover,
+.user-css-extended a:hover,
+.user-css-presentation .tooltipster-content a:hover,
+.user-css .usercard a:hover {
+  color: var(--ros-colortert-2);
+}
+
+/*--------------------------*/
+/* ---- Tooltips   ---- */
+/* -------------------------*/
+.user-css .text-abbreviation {
+  cursor: default !important;
+  border-bottom: 1px dotted var(--ros-bodycolor);
+}
+
+.user-css .tooltip .tooltip-inner,
+.user-css-presentation .tooltip .tooltip-inner,
+.user-css-extended .tooltip .tooltip-inner,
+.user-css-worldmenu .tooltip .tooltip-inner,
+.user-css-presentation .tooltipster-borderless .tooltipster-content {
+  color: var(--ros-bodycolor);
+  font-family: var(--BodyFont);
+  font-size: 1.4em;
+  background: var(--ros-colorprime);
+  border: 5px solid var(--ros-colortert-3);
+  border-width: 3px;
+  border-radius: 25px;
+  box-shadow: none;
+}
+
+.user-css-presentation .tooltip-arrow::before,
+.user-css-presentation .tooltipster-arrow-border,
+.user-css .tooltip.top .tooltip-arrow,
+.user-css-extended .tooltip.top .tooltip-arrow,
+.user-css-worldmenu .tooltip.top .tooltip-arrow {
+  border-top-color: var(--ros-colortert-1) !important;
+}
+
+.user-css-presentation .tooltipster-borderless .tooltipster-box {
+  background: none;
+}
+
+/*--------------------------*/
+/* ---- Article Excepts   ---- */
+/* -------------------------*/
+.user-css-presentation .tooltip {
+  opacity: 1;
+}
+.user-css-presentation .tooltip-arrow::before {
+  border-top-color: var(--ros-colortert-1);
+}
+
+.user-css-presentation .tooltip .tooltip-inner {
+  max-width: 300px;
+  background: var(--ros-colorprime);
+  border: 5px solid var(--ros-colortert-3);
+  border-width: 3px;
+}
+
+/*--------------------------*/
+/* ---- Misc   ---- */
+/* -------------------------*/
+.user-css .article-subheading,
+.user-css .article-title-author {
+  text-align: center;
+  font-style: italic;
+  padding-left: 0px;
+}
+
+.user-css .text-muted,
+.user-css-extended .text-muted {
+  color: var(--ros-mutecolor) !important;
+}
+
+.user-css .text-danger,
+.user-css-extended .text-danger {
+  color: var(--ros-colortert-2) !important;
+}
+
+.user-css .dropcap {
+  font-family: var(--BodyFont);
+}
+
+/*--------------------------*/
+/* ---- Buttons   ---- */
+/* -------------------------*/
+.user-css .btn,
+.user-css-extended .btn,
+.user-css .label-roller,
+.user-css .rhea-ft-zoom-controls button,
+.user-css-presentation .tooltipster-content .btn,
+.user-css .discussion-board-section [class*=rep] .btn {
+  font-family: var(--BodyFont);
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--ros-colorprime)!important;
+  background: var(--ros-colortert-2);
+  border: 8px double var(--ros-colorprime);
+  border-radius: 0px;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.user-css .btn:hover,
+.user-css-extended .btn:hover,
+.user-css .label-roller:hover,
+.user-css .rhea-ft-zoom-controls button:hover,
+.user-css-presentation .tooltipster-content .btn:hover,
+.user-css .discussion-board-section [class*=rep] .btn:hover {
+  text-shadow: none;
+  text-decoration: none;
+  font-style: normal;
+  padding-left: 15px;
+  background: var(--ros-colortert-1);
+}
+
+.user-css .btn:focus,
+.user-css-extended .btn:focus,
+.map-context-user-css .btn:focus,
+.tooltipster-content .btn:focus {
+  box-shadow: none;
+}
+
+.user-css .btn-success,
+.user-css-extended .btn .btn-success {
+  background: var(--ros-colortert-1) !important;
+  border: none!important;
+  border-left: 5px solid var(--ros-colortert-4)!important;
+}
+
+.user-css .btn-success:hover,
+.user-css-extended .btn .btn-success:hover {
+  background: var(--ros-colortert-2) !important;
+  border: none!important;
+  border-left: 5px solid var(--ros-colortert-4)!important;
+}
+
+.user-css .visibility-toggler-trigger .fas,
+.user-css-extended .visibility-toggler-trigger .fas {
+  padding: 5px;
+}
 
 /*--------------------------*/
 /* ---- World Navigation   ---- */
