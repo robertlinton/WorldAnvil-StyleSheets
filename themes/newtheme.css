@@ -10,7 +10,7 @@
 .map-context-user-css,
 .tooltipster-content {
   /* Fonts */
-  --HeaderFont: Vinage Deco;
+  --HeaderFont: Matchbook Texture;
   --BodyFont: Balthazar;
 
   /* Colors */
@@ -41,10 +41,10 @@
 }
 
 @font-face {
-  font-family: Vinage Deco;
+  font-family: Matchbook Texture;
   font-style: normal;
   font-weight: 600;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/6005647a7fca0f16297098b058322b7ebbb8583a/fonts/Vinage%20Deco%20Regular.otf);
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/4530c090d5d6c118fa9d4345fb8fa168bd2acd51/fonts/MatchbookTexture.otf);
 }
 
 /*--------------------------*/
