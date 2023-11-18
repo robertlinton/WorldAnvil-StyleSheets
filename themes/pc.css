@@ -271,6 +271,11 @@
   }
 }
 
+@keyframes glowing {
+  from { box-shadow: 0 0 5px var(--accentcyan); }
+  to { box-shadow: 0 0 15px var(--accentcyan); }
+}
+
 /*--------------------------*/
 /* ---- Background   ---- */
 /* -------------------------*/
@@ -346,6 +351,23 @@
   animation: glow 2s ease-in-out infinite;
   color: var(--highlightcyan);
   font-weight: bold;
+}
+
+.user-css .article-horizontal-navigation {
+  padding-bottom: 20px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+  width: 100%;
+  left: 0px;
+  background: var(--primarydark);
+  border-top: 2px solid var(--highlightcyan);
+  border-color: var(--accentcyan);
+  padding: 10px 100px 5px 100px;
+}
+
+.user-css .article-horizontal-navigation hr {
+  display: none;
 }
 
 /*--------------------------*/
@@ -584,9 +606,9 @@
 .user-css .panel,
 .user-css-extended .panel {
   background: none;
-  border: none;
-  border-radius: none;
   box-shadow: none;
+  border: none;
+  border-radius: 0px;
 }
 
 /*-------------------------*/
@@ -840,11 +862,19 @@
 
 /* Animation for the glowing border */
 @keyframes pulseBorder {
-  0% { border-color: #4aa8de; box-shadow: 0 0 10px #4aa8de; }
-  50% { border-color: #22d3ee; box-shadow: 0 0 20px #22d3ee; }
-  100% { border-color: #4aa8de; box-shadow: 0 0 10px #4aa8de; }
+  0% {
+    border-color: #4aa8de;
+    box-shadow: 0 0 10px #4aa8de;
+  }
+  50% {
+    border-color: #22d3ee;
+    box-shadow: 0 0 20px #22d3ee;
+  }
+  100% {
+    border-color: #4aa8de;
+    box-shadow: 0 0 10px #4aa8de;
+  }
 }
-
 
 /*--------------------------*/
 /* ---- Imageblocks   ---- */
@@ -1086,6 +1116,7 @@
   transition: all 0.3s ease-in-out;
   animation: pulseGlow 5s infinite ease-in-out;
   font-size: 17px;
+  display: none;
 }
 
 /*--------------------------*/
@@ -2089,6 +2120,66 @@
 }
 
 /*--------------------------*/
+/* ---- Org Relationships ---- */
+/*--------------------------*/
+.user-css .relation .relationScore {
+  background: var(--secondarydark-2);
+  border: 5px solid var(--accentlightblue);
+  border-width: 3px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--accentlightblue); 
+}
+
+/*--------------------------*/
+/* ---- Org Tree ---- */
+/*--------------------------*/
+.user-css-extended .orgtree li a,
+.user-css-extended .orgtree li a:hover + ul li a {
+  font-family:var(--font-header-primary);
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--primarydark);
+  background: var(--accentlightblue);
+  border: 2px solid var(--accentcyan);
+  border-radius: 20px;
+  transition: all 0.3s;
+  box-shadow: 0 0 8px var(--accentcyan); 
+}
+
+.user-css-extended .orgtree li a:hover {
+  background: var(--accentcyan);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--accentcyan);
+}
+
+.user-css-extended .orgtree li a:hover + ul li a {
+  background: var(--primarydark);
+  color: var(--accentlightblue);
+  outline: 5px solid var(--accentlightblue);
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+.user-css-extended .orgtree {
+  --BorderLinesBorder: 3px solid var(--accentcyan);
+  --GlowingAnimation: glowing 1.5s infinite alternate;
+}
+
+.user-css-extended .orgtree li::before,
+.user-css-extended .orgtree li::after,
+.user-css-extended .orgtree ul ul::before,
+.user-css-extended .orgtree li:last-child::before,
+.user-css-extended .orgtree li:first-child::after {
+  animation: var(--GlowingAnimation);
+}
+
+.user-css-extended .orgtree li a:hover + ul::before,
+.user-css-extended .orgtree li a:hover + ul li::before,
+.user-css-extended .orgtree li a:hover + ul li::after {
+  border-color: var(--accentcyan);
+}
+
+/*--------------------------*/
 /* ---- Diplomacy Webs   ---- */
 /* -------------------------*/
 .user-css .clotho-box {
@@ -2123,9 +2214,6 @@
   color: var(--mainbodycolor);
 }
 
-/*--------------------------*/
-/* ---- Diplomacy Hover elements   ---- */
-/* -------------------------*/
 .user-css [class*=clotho-title-] {
   background: var(--secondarydark-2);
   box-shadow: none;
@@ -2151,6 +2239,165 @@
 .user-css [class*=clotho-title-] {
   padding-top: 25px;
   padding-bottom: 35px;
+}
+
+/*--------------------------*/
+/* ---- Family Trees   ---- */
+/* -------------------------*/
+.user-css .rhea-family-tree {
+  background: var(--secondarydark-2);
+  border: 5px solid var(--accentlightblue);
+  border-radius: 25px;
+  box-shadow: none;
+}
+
+.user-css .rhea-family-tree .loader {
+  background-color: var(--accentlightblue);
+  border: none;
+}
+
+.user-css .rhea-loader-text {
+  font-family: var(--font-header-primary);
+  color: var(--primarydark);
+  text-shadow: none;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait:after {
+  background: none;
+  border: none;
+}
+
+.user-css .rhea-family-tree .main-character .character-portrait:after {
+  background: none;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait-wrapper {
+  border: 5px solid var(--accentlightblue);
+  border-width: 3px;
+  border-radius: 25px;
+}
+
+.user-css .rhea-family-tree .main-character .character-portrait-wrapper {
+  border-color: var(--accentcyan);
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-label {
+  margin-top: -2px;
+  font-family: var(--font-body);
+  background: var(--accentlightblue);
+  border: none;
+  border-radius: 25px;
+  width: 100px;
+}
+
+.user-css
+  .rhea-family-tree
+  .rhea-character-node
+  .character-data
+  .character-name {
+  font-family: var(--font-body);
+  color: var(--primarydark);
+  font-weight: bold;
+}
+
+.user-css
+  .rhea-family-tree
+  .rhea-character-node
+  .character-label
+  .character-life {
+  color: var(--primarydark);
+  margin-top: 5px;
+}
+
+.user-css .rhea-family-tree .rhea-character-node:hover .character-label {
+  background: var(--accentcyan);
+}
+
+.user-css .rhea-family-tree .character-relationship {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.user-css .rhea-family-tree .rhea-character-node:hover .character-relationship {
+  color: var(--primarydark);
+  background: var(--accentlightblue);
+  top: -1px;
+  opacity: 1;
+}
+.user-css .rhea-family-tree svg path {
+  stroke: var(--accentcyan);
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait img {
+  border: none;
+  /* Nothing else. */
+}
+
+.user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap {
+  border: 5px solid var(--accentlightblue);
+  border-width: 3px;
+  padding: 5px 15px;
+}
+
+.user-css .rhea-family-tree input::placeholder {
+  color: var(--mutedlightpurple);
+}
+
+.user-css .rhea-search-clear .fal {
+  color: var(--mutedlightpurple);
+}
+
+.user-css .rhea-ft-zoom-controls {
+  border: none;
+}
+
+/*--------------------------*/
+/* ---- Carousels   ---- */
+/* -------------------------*/
+.user-css .carousel {
+  height: 500px;
+}
+
+.user-css .carousel-inner img {
+  height: 500px;
+  object-fit: contain;
+}
+
+.user-css .carousel-item.active {
+  display: flex;
+  justify-content: center;
+}
+
+.user-css .carousel-caption h3 {
+  background: var(--primarydark);
+  padding: 0px;
+}
+
+.user-css .carousel-indicators li {
+  background-color: var(--accentlightblue);
+}
+
+.user-css .carousel-control {
+  opacity: 1;
+  background: none;
+}
+
+.user-css .carousel-control-next-icon {
+  background-image: none;
+  background: var(--accentlightblue);
+  clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
+}
+
+.user-css .carousel-control-prev-icon {
+  background-image: none;
+  background: var(--accentlightblue);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
 }
 
 /*--------------------------*/
@@ -2209,6 +2456,65 @@
 .user-css.wob .article-content h1 {
   color: var(--primarydark) !important;
 }
+
+/*--------------------------*/
+/* ---- Navigation Sidebar   ---- */
+/* -------------------------*/
+.user-css-presentation #world-navigation-sidebar {
+  display: block !important;
+  opacity: 1;
+  border-radius: 5px;
+  width: 20%;
+  overflow-x: hidden;
+  background: var(--primarydark);
+  border: 5px solid var(--accentlightblue);
+  border-radius: 20px;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.user-css-presentation #world-navigation-sidebar[style^=display] {
+  opacity: 0;
+  display: block !important;
+  pointer-events: none;
+}
+
+.user-css-presentation .world-navigation-palette-trigger {
+  color: black;
+    content: url(https://www.worldanvil.com/uploads/images/7fba148212855d5d935d2d25dfa4774f.png) !important;
+    border-radius: 50%;
+    margin-left: 10px;
+    padding: 0px;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    transition: left 0.2s, top 0.5s, width 0.3s, height 0.3s, margin 0.1s;
+    z-index: 3001 !important;
+}
+
+.user-css-presentation .world-navigation-palette-trigger-active {
+  color: black;
+  content: url(https://www.worldanvil.com/uploads/images/ea4344fb072a373e3c92aa8b42a47b1e.png) !important;
+  border-radius: 50%;
+  margin-left: 10px;
+  padding: 0px;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  transition: left 0.2s, top 0.5s, width 0.3s, height 0.3s, margin 0.1s;
+  z-index: 3001 !important;
+}
+
+.user-css-presentation #world-navigation-sidebar .world-menu {
+  background: none;
+  border: none;
+  padding: 15px;
+  padding-left: 0px;
+  margin-bottom: 15px;
+}
+
 
 /*--------------------------*/
 /* ---- Scrollbar   ---- */
@@ -2444,7 +2750,7 @@
 /*--------------------------*/
 /* ---- Hide Various Elements  ---- */
 /* -------------------------*/
-.user-css-presentation .world-navigation-palette-trigger,
+.user-css .world-content .world-menu,
 .user-css #world-category-content,
 .user-css .world-content .world-maps,
 .user-css .world-meta-categories-link,
@@ -2969,21 +3275,4 @@
 
 .user-css .blurredbox-spoiler .spoiler-button[aria-expanded$=true] p {
   opacity: 0%;
-}
-
-.user-css .article-horizontal-navigation {
-  padding-bottom: 20px;
-  position: fixed;
-  bottom: 0px;
-  z-index: 1000;
-  width: 100%;
-  left: 0px;
-  background: var(--primarydark);
-  border-top: 2px solid var(--highlightcyan);
-  border-color: var(--accentcyan);
-  padding: 10px 100px 5px 100px;
-}
-
-.user-css .article-horizontal-navigation hr {
-  display: none;
 }
