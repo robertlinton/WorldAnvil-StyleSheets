@@ -62,7 +62,14 @@
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 700;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/5ffcaacccaf4efab76bb611772de2e694207bd4d/fonts/Josefin%20Sans/JosefinSans-Regular.ttf);
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/5ffcaacccaf4efab76bb611772de2e694207bd4d/fonts/Josefin%20Sans/JosefinSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/5ffcaacccaf4efab76bb611772de2e694207bd4d/fonts/Josefin%20Sans/JosefinSans-Medium.ttf);
 }
 
 /*--------------------------*/
