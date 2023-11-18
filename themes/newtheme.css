@@ -11,8 +11,7 @@
 .tooltipster-content {
   /* Fonts */
   --HeaderFont: Alinore;
-  --BodyFont: Baskervville;
-  --SubtitleFont: Retrofunk;
+  --BodyFont: Josefin Sans;
 
   /* Colors */
   --ros-colorprime: #131727;
@@ -53,17 +52,17 @@
 }
 
 @font-face {
-  font-family: Retrofunk;
+  font-family: Josefin Sans;
   font-style: normal;
   font-weight: 700;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/50d589566c4bdadf10710ba2e1cd51fb798ca177/fonts/Retrofunk.otf);
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/5ffcaacccaf4efab76bb611772de2e694207bd4d/fonts/Josefin%20Sans/JosefinSans-Regular.ttf);
 }
 
 @font-face {
-  font-family: Alinore;
+  font-family: Josefin Sans;
   font-style: normal;
   font-weight: 700;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/83d1481a4580f54a9f77ba36b8dbc2b62d13e234/fonts/Alinore.otf);
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/5ffcaacccaf4efab76bb611772de2e694207bd4d/fonts/Josefin%20Sans/JosefinSans-Regular.ttf);
 }
 
 /*--------------------------*/
