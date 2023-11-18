@@ -10,20 +10,21 @@
 .map-context-user-css,
 .tooltipster-content {
   /* Fonts */
-  --HeaderFont: Staatliches;
-  --BodyFont: Balthazar;
+  --HeaderFont: Alinore;
+  --BodyFont: Baskervville;
 
   /* Colors */
-  --ros-colorprime: #131727;    /* New: Deep blue-green, dark and moody for a primary base */
---ros-colorsec-1: #34515e;    /* New: Steel blue, representing the modern urban environment */
---ros-colorsec-2: #1f3a46;    /* New: Darker shade of blue for a deeper contrast in secondary elements */
---ros-colortert-1: #4a90e2;   /* New: Bright blue for vibrant accents and interactive elements */
---ros-colortert-2: #2678a8;   /* New: Medium blue, gives a sense of reliability and trust */
---ros-colortert-3: #1e4a5f;   /* New: Bluish-grey, muted for tertiary accents and subdued highlights */
---ros-colortert-4: #2f6275;   /* New: Ocean blue, calming and associated with depth and stability */
---ros-colortert-5: #5294a5;   /* New: Sky blue, lighter for a contrasting pop against darker hues */
---ros-bodycolor: #77d3dd;     /* New: Light cerulean, invigorating and clean for the main body */
---ros-mutecolor: #7a9bae;     /* New: Soft blue, harmonizing with the scheme for muted elements */
+  --ros-colorprime: #131727;   
+--ros-colorsec-1: #34515e;
+--ros-colorsec-2: #1f3a46;
+--ros-colortert-1: #3E8ECF;
+--ros-colortert-2: #2678a8;  
+--ros-colortert-3: #1e4a5f;   
+--ros-colortert-4: #2f6275;
+--ros-colortert-5: #52a3a5ba;
+--ros-colortert-6: -webkit-linear-gradient(left, #4376e9, #56f938);
+--ros-bodycolor: #77d3dd; 
+--ros-mutecolor: #7a9bae;  
 
 }
 
@@ -31,33 +32,28 @@
 /* ---- Fonts   ---- */
 /* -------------------------*/
 @font-face {
-  font-family: Balthazar;
+  font-family: Baskervville;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/balthazar/v17/d6lKkaajS8Gm4CVQjFEfzh7p.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/baskervville/v16/YA9Ur0yU4l_XOrogbkun3kQQvpmptvY.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-  font-family: Staatliches;
+  font-family: Baskervville;
   font-style: normal;
-  font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYeVvpCNOw.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baskervville/v16/YA9Ur0yU4l_XOrogbkun3kQQsJmp.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: Staatliches;
+  font-family: Alinore;
   font-style: normal;
-  font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYebvpA.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+  font-weight: 700;
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/83d1481a4580f54a9f77ba36b8dbc2b62d13e234/fonts/Alinore.otf);
 }
 
 /*--------------------------*/
@@ -127,12 +123,17 @@
 .user-css-presentation .tooltipster-content h1,
 .user-css .statblock h1,
 .user-css-extended .orphan-era h1 {
-  color: var(--ros-colortert-1);
   font-family: var(--HeaderFont);
-  font-size: 3.3em;
+  font-size: 5.2em;
   text-align: center;
   padding-top: 17px;
+  background: var(--ros-colortert-6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; 
 }
+
 
 .user-css h2,
 .user-css-extended .page h2,
@@ -306,8 +307,8 @@
   font-weight: bold;
   color: var(--ros-colorprime)!important;
   background: var(--ros-colortert-2);
-  border: 8px double var(--ros-colorprime);
-  border-radius: 0px;
+  border: none;
+  border-radius: 20px;
   box-shadow: none;
   transition: all 0.3s;
 }
