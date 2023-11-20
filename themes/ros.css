@@ -15,14 +15,14 @@
   --BodyFont: Atkinson Hyperlegible;
 
   /* Colors */
-  --ColorPrime: #0b1212;
-  --ColorSec-1: #34515e;
-  --ColorSec-2: #1f3a46;
-  --ColorTert-1: -webkit-linear-gradient(left, #4376e9, #56f938);
-  --ColorTert-2: #26a879;
-  --ColorTert-3: #1e4a5f;
-  --ColorTert-4: #2f6275;
-  --ColorTert-5: #52a4a5;
+  --ColorPrime: #2a272e;
+  --ColorSec-1: #1b1324;
+  --ColorSec-2: #1e1225;
+  --ColorTert-1: #b663c7;
+  --ColorTert-2: #895ec5;
+  --ColorTert-3: #46356c;
+  --ColorTert-4: #5d366b;
+  --ColorTert-5: #803d7c;
   --BodyColor: #cebbce;
   --MuteColor: #a38ca3;
 }
@@ -30,6 +30,7 @@
 /*--------------------------*/
 /* ---- Fonts   ---- */
 /* -------------------------*/
+
 @font-face {
   font-family: Atkinson Hyperlegible;
   font-style: italic;
@@ -136,8 +137,20 @@
 /*--------------------------*/
 /* ---- Backgrounds   ---- */
 /* -------------------------*/
+#cover img {
+  opacity: 0;
+}
+
+#cover {
+  background: #ffffff;
+}
+
+.cover-global {
+  background-image: url(BANNERGOESHERE) !important;
+}
+
 .user-css-presentation {
-  background: url(https://www.worldanvil.com/uploads/images/29d2eff9fea15051324ccc06a3bad978.jpeg);
+  background: url(https://cdn.discordapp.com/attachments/806091110278627349/920771136051085352/Hummelverse_Background2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -147,10 +160,8 @@
 .user-css-extended .page,
 .user-css-presentation .tooltipster-content {
   background: var(--ColorPrime);
-  border: 8px double var(--ColorTert-5);
-  border-radius: 30px;
+  border: 5px solid var(--ColorTert-5);
   box-shadow: none;
-  overflow: hidden;
 }
 
 .user-css #cover img {
@@ -192,15 +203,11 @@
 .user-css-presentation .tooltipster-content h1,
 .user-css .statblock h1,
 .user-css-extended .orphan-era h1 {
+  color: var(--ColorTert-1);
   font-family: var(--HeaderFont);
   font-size: 3.3em;
   text-align: center;
   padding-top: 17px;
-  background: var(--ColorTert-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
 }
 
 .user-css h2,
@@ -260,7 +267,7 @@
 }
 
 /*--------------------------*/
-/* ---- links   ---- */
+/* ---- Links   ---- */
 /* -------------------------*/
 .user-css a,
 .user-css a:focus,
@@ -304,7 +311,7 @@
   font-size: 1.4em;
   background: var(--ColorTert-4);
   border: none;
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
 }
 
@@ -315,6 +322,7 @@
 .user-css-worldmenu .tooltip.top .tooltip-arrow {
   border-top-color: var(--ColorTert-4) !important;
 }
+
 .user-css-presentation .tooltipster-borderless .tooltipster-box {
   background: none;
 }
@@ -375,7 +383,7 @@
   background: var(--ColorTert-2);
   border: none;
   border-left: 5px solid var(--ColorTert-3);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
   transition: all 0.3s;
 }
@@ -427,7 +435,7 @@
 .user-css-presentation .tooltipster-content blockquote {
   background: var(--ColorSec-2);
   border-left: 5px solid var(--ColorTert-3);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
 }
 
@@ -446,7 +454,7 @@
 .user-css-extended .panel {
   background: var(--ColorSec-1);
   border-left: 5px solid var(--ColorTert-4);
-  border-radius: 25px;
+  border-radius: 0px;
 }
 
 /*--------------------------*/
@@ -474,7 +482,7 @@
 .user-css .image-panel {
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
   text-align: center;
   padding: 15px;
@@ -495,6 +503,49 @@
 
 .user-css .image-panel .artist-credits {
   font-size: 1em;
+}
+
+/*--------------------------*/
+/* ---- Carousels   ---- */
+/* -------------------------*/
+.user-css .carousel {
+  height: 500px;
+}
+
+.user-css .carousel-inner img {
+  height: 500px;
+  object-fit: contain;
+}
+
+.user-css .carousel-item.active {
+  display: flex;
+  justify-content: center;
+}
+
+.user-css .carousel-caption h3 {
+  background: var(--ColorPrime);
+  padding: 0px;
+}
+
+.user-css .carousel-indicators li {
+  background-color: var(--ColorTert-1);
+}
+
+.user-css .carousel-control {
+  opacity: 1;
+  background: none;
+}
+
+.user-css .carousel-control-next-icon {
+  background-image: none;
+  background: var(--ColorTert-1);
+  clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
+}
+
+.user-css .carousel-control-prev-icon {
+  background-image: none;
+  background: var(--ColorTert-1);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
 }
 
 /*--------------------------*/
@@ -519,7 +570,7 @@
   border-top: 5px solid var(--ColorTert-3);
   color: var(--BodyColor);
   background: var(--ColorSec-2);
-  border-radius: 25px;
+  border-radius: 0px;
 }
 
 .user-css .spoiler-card,
@@ -537,18 +588,18 @@
   background: var(--ColorSec-1);
   color: var(--ColorTert-1);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 25px;
+  border-radius: 0px;
 }
 
 /*--------------------------*/
-/* ---- Article Panels   ---- */
+/* ---- Article Blocks   ---- */
 /* -------------------------*/
 .user-css .article-panel,
 .user-css-extended .article-panel,
 .user-css .map-box {
   background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-2);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
   transition: all 0.3s;
 }
@@ -558,8 +609,10 @@
 .user-css .map-box:hover {
   border-color: var(--ColorTert-4);
 }
+
 .user-css .article-panel .article-link:hover {
   text-decoration: none;
+  font-style: normal;
 }
 
 .user-css .article-panel .heading {
@@ -587,7 +640,7 @@
 .user-css .bookcover {
   border: 3px solid var(--ColorTert-4);
   background: var(--ColorSec-2);
-  border-radius: 25px;
+  border-radius: 0px;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -714,7 +767,7 @@
 }
 
 /*--------------------------*/
-/* ---- Followers page    ---- */
+/* ---- Followers page   ---- */
 /* -------------------------*/
 .user-css.page-followers .subheading {
   font-size: 1em;
@@ -723,7 +776,7 @@
 
 .user-css .follower-box {
   background: var(--ColorSec-2);
-  border-radius: 25px;
+  border-radius: 0px;
 }
 
 .user-css .follower-box img {
@@ -737,7 +790,7 @@
 }
 
 /*--------------------------*/
-/* ---- Top    ---- */
+/* ---- Top   ---- */
 /* -------------------------*/
 .user-css .backtoworld a,
 .user-css .nav-strip a {
@@ -745,11 +798,11 @@
   letter-spacing: 0.05em;
   text-decoration: none;
   left: -13px;
-  top: -44px;
+  top: -39px;
   color: var(--ColorSec-1);
   background: var(--ColorTert-2);
   border: none;
-  border-radius: 25px;
+  border-radius: 0px;
   font-family: var(--HeaderFont);
   box-shadow: none;
   transition: all 0.3s;
@@ -765,14 +818,14 @@
 }
 
 /*--------------------------*/
-/* ---- Timelines Strip    ---- */
+/* ---- Timeline Top   ---- */
 /* -------------------------*/
 .user-css .nav-strip {
   background: none;
   box-shadow: none;
-  
   margin-top: -43px;
 }
+
 .user-css .nav-strip a {
   margin-left: -10px;
   font-size: 1.2em;
@@ -786,7 +839,7 @@
 }
 
 /*--------------------------*/
-/* ---- Backtotop    ---- */
+/* ---- Backtotop   ---- */
 /* -------------------------*/
 .user-css-presentation #backtotop {
   bottom: 20%;
@@ -809,7 +862,7 @@
 }
 
 /*--------------------------*/
-/* ---- Search Form    ---- */
+/* ---- Search Form   ---- */
 /* -------------------------*/
 .user-css .search-form .typeahead-input,
 .user-css .form-control,
@@ -818,7 +871,7 @@
   color: var(--BodyColor) !important;
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 25px;
+  border-radius: 0px;
   color: var(--ColorSec-1);
   width: 200px;
   box-shadow: none;
@@ -842,7 +895,7 @@
   border: none;
   border-left: 3px solid var(--ColorTert-3);
   border-right: 3px solid var(--ColorTert-3);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
 }
 
@@ -854,7 +907,6 @@
 
 .user-css .typeahead.dropdown-menu li.active .dropdown-item,
 .map-context-user-css .typeahead.dropdown-menu li.active .dropdown-item {
-
   background: var(--ColorPrime);
   font-weight: normal;
 }
@@ -865,7 +917,7 @@
 }
 
 /*--------------------------*/
-/* ---- Breadcrumbs    ---- */
+/* ---- Breadcrumbs   ---- */
 /* -------------------------*/
 .user-css .breadcrumb,
 .user-css-extended .breadcrumb {
@@ -880,7 +932,7 @@
 }
 
 /*--------------------------*/
-/* ---- Bottom    ---- */
+/* ---- Bottom   ---- */
 /* -------------------------*/
 .user-css .copyright-attribution {
   background: var(--ColorSec-1);
@@ -888,13 +940,51 @@
   padding: 10px;
   margin-bottom: -17px;
 }
-
 .user-css .cp.btn-primary {
   padding-top: 7px;
 }
 
+.user-css .article- .btn {
+  color: var(--ColorPrime) !important;
+}
+.user-css .article- .btn:hover {
+  color: var(--ColorTert-1) !important;
+}
+
 /*--------------------------*/
-/* ---- Navtab    ---- */
+/* ---- Category + Social   ---- */
+/* -------------------------*/
+.user-css .social-media {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- Nav/Category   ---- */
+/* -------------------------*/
+.user-css .article-horizontal-navigation {
+  padding-bottom: 20px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+  width: 100%;
+  left: 0px;
+  background: var(--ColorPrime);
+  border-top: none;
+  border-color: var(--ColorTert-2);
+  padding: 10px 100px 5px 100px;
+}
+
+.user-css .article-horizontal-navigation hr {
+  display: none;
+}
+
+.user-css .article-horizontal-navigation a {
+  font-size: 1.5em;
+  margin-top: 3px;
+}
+
+/*--------------------------*/
+/* ---- Nav tabs   ---- */
 /* -------------------------*/
 .user-css-extended .extended-tabs {
   position: initial;
@@ -935,7 +1025,7 @@
 }
 
 /*--------------------------*/
-/* ---- Secrets and notes    ---- */
+/* ---- Secrets and notes   ---- */
 /* -------------------------*/
 .user-css-extended .panel-default {
   font-family: var(--BodyFont);
@@ -952,7 +1042,7 @@
 }
 
 /*--------------------------*/
-/* ---- Tags    ---- */
+/* ---- Tags   ---- */
 /* -------------------------*/
 .user-css .label-default,
 .user-css-extended .label-default,
@@ -961,7 +1051,7 @@
   font-weight: bold;
   background: var(--ColorTert-1);
   border: none;
-  border-radius: 25px;
+  border-radius: 0px;
   transition: all 0.3s;
   box-shadow: none;
 }
@@ -973,7 +1063,7 @@
 }
 
 /*--------------------------*/
-/* ---- Comments form    ---- */
+/* ---- Comments Form   ---- */
 /* -------------------------*/
 .user-css-extended .comment-form textarea {
   color: var(--BodyColor);
@@ -981,7 +1071,7 @@
   font-size: 1em;
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 25px;
+  border-radius: 0px;
   transition: all 0.3s;
 }
 
@@ -999,17 +1089,16 @@
 }
 
 /*--------------------------*/
-/* ---- Comments Box    ---- */
+/* ---- Comments Box   ---- */
 /* -------------------------*/
 .user-css-extended .comment-box {
   background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 25px;
+  border-radius: 0px;
 }
 
 .user-css-extended .comment-box-content p {
   font-size: 1em;
-
 }
 
 .user-css-extended .comment-box .comment-box-reply {
@@ -1017,7 +1106,7 @@
 }
 
 /*--------------------------*/
-/* ---- Comments Author    ---- */
+/* ---- Comments Author   ---- */
 /* -------------------------*/
 .user-css-extended .comment-box-author {
   font-family: var(--HeaderFont);
@@ -1060,12 +1149,12 @@
 }
 
 /*--------------------------*/
-/* ---- Maps Fullscreen    ---- */
+/* ---- Maps Fullscreen ---- */
 /* -------------------------*/
 .map-context-user-css {
   background: var(--ColorSec-1);
-
 }
+
 .user-css-map-sidebar {
   background: var(--ColorPrime);
   border-right: 5px solid var(--ColorTert-4);
@@ -1081,7 +1170,7 @@
   color: var(--ColorSec-2);
   background: var(--ColorTert-2);
   border-right: 5px solid var(--ColorTert-3);
-  border-radius: 25px;
+  border-radius: 0px;
   border-left-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1097,27 +1186,34 @@
   color: var(--BodyColor);
   background: var(--ColorTert-2);
   border: none;
-  border-radius: 25px;
+  border-radius: 0px;
   font-family: var(--HeaderFont);
   box-shadow: none;
   transition: all 0.3s;
 }
+
 .map-context-user-css .nav-strip:hover {
   color: var(--BodyColor);
   background: var(--ColorTert-1);
 }
+
 .map-context-user-css .nav-strip .text-white {
   color: var(--BodyColor) !important;
 }
+
 .map-context-user-css .nav-strip:hover .text-white {
   color: var(--BodyColor) !important;
 }
-/* Logo/sage nav */
+
+/*--------------------------*/
+/* ---- Maps Logo/sage nav ---- */
+/* -------------------------*/
 .presentation-interface-map #logo {
   color: var(--BodyFont);
   font-family: var(--HeaderFont);
   font-size: 1.2em;
 }
+
 .presentation-interface-map #logo:before {
   background: var(--ColorTert-1);
   border: none;
@@ -1126,17 +1222,22 @@
   -webkit-transform: none;
   transform: none;
 }
-/* Zoom buttons */
+
+/*--------------------------*/
+/* ---- Maps Zoom buttons ---- */
+/* -------------------------*/
 .leaflet-touch .leaflet-bar {
   border: none;
-  border-radius: 25px;
+  border-radius: 0px;
 }
+
 .user-css .leaflet-control-layers,
 .user-css .leaflet-control-layers-base span,
 .map-context-user-css .leaflet-control-layers,
 .map-context-user-css .leaflet-control-layers-base span {
   border-color: var(--ColorTert-2);
 }
+
 .map-context-user-css .leaflet-control-zoom-in,
 .map-context-user-css .leaflet-control-zoom-out,
 .user-css .leaflet-control-zoom-in,
@@ -1144,73 +1245,91 @@
   border: none;
   text-shadow: none;
 }
+
 .user-css .leaflet-bar a:first-child,
 .map-context-user-css .leaflet-bar a:first-child {
   color: var(--ColorSec-1);
   background: var(--ColorTert-1);
-  border-radius: 25px;
+  border-radius: 0px;
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
   transition: all 0.3s;
 }
+
 .user-css .leaflet-bar a:last-child,
 .map-context-user-css .leaflet-bar a:last-child {
   color: var(--ColorSec-1);
   background: var(--ColorTert-2);
-  border-radius: 25px;
+  border-radius: 0px;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   transition: all 0.3s;
 }
+
 .map-context-user-css .leaflet-bar a:hover,
 .user-css .leaflet-bar a:hover {
   background: var(--ColorSec-1);
   border: none;
 }
+
 .map-context-user-css .leaflet-bar a.leaflet-disabled,
 .user-css .leaflet-bar a.leaflet-disabled {
   border: none;
   color: transparent;
 }
-/*Layers*/
+
+/*--------------------------*/
+/* ---- Maps Layers ---- */
+/* -------------------------*/
 .user-css .leaflet-control-layers,
 .map-context-user-css .leaflet-control-layers {
   background: var(--ColorTert-2);
   border: none;
   border-right: 5px solid var(--ColorTert-3);
-  border-radius: 25px;
+  border-radius: 0px;
 }
+
 .user-css .leaflet-control-layers-expanded,
 .map-context-user-css .leaflet-control-layers-expanded {
   background: var(--ColorTert-2);
   font-family: var(--BodyFont);
 }
+
 .map-context-user-css .leaflet-control-layers-base span {
   font-size: 1.5em;
   color: var(--ColorSec-1);
 }
-/* Legend */
+
+/*--------------------------*/
+/* ---- Maps Legend ---- */
+/* -------------------------*/
 .user-css .legend,
 .map-context-user-css .legend {
   font-family: var(--BodyFont);
   color: var(--BodyColor);
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
 }
+
 .user-css .legend {
   padding: 10px;
 }
+
 .map-context-user-css .legend {
   font-size: 1.5em;
 }
+
 .user-css .legend ul,
 .map-context-user-css .legend ul {
   padding-left: 20px;
   margin: 0px;
 }
-/* Popups */
+
+/*--------------------------*/
+/* ---- Maps Popups ---- */
+/* -------------------------*/
 .user-css .leaflet-popup-content-wrapper,
 .user-css .leaflet-popup-tip,
 .map-context-user-css .leaflet-popup-content-wrapper,
@@ -1218,42 +1337,53 @@
   color: var(--BodyColor);
   font-family: var(--BodyFont);
   background: var(--ColorSec-1);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
 }
+
 .map-context-user-css .leaflet-popup-content-wrapper,
 .map-context-user-css .leaflet-popup-tip {
   font-size: 1.3em;
 }
+
 .user-css .leaflet-popup-content .header-title,
 .map-context-user-css .leaflet-popup-content-wrapper h5 {
   font-family: var(--HeaderFont);
   color: var(--ColorTert-1);
   font-size: 1.5em;
 }
+
 .user-css .leaflet-popup-close-button,
 .map-context-user-css .leaflet-popup-close-button {
   color: var(--ColorTert-1) !important;
   margin: 5px;
   font-size: 1.2em;
 }
-/* ---Inline Maps--- */
+
+/*--------------------------*/
+/* ---- Inline Maps ---- */
+/* -------------------------*/
 .user-css-presentation .leaflet-grab {
   border: 3px solid var(--ColorTert-4);
-  border-radius: 25px;
+  border-radius: 0px;
   background: var(--ColorSec-2);
   box-shadow: none;
 }
-/* Navigation */
+
+/*--------------------------*/
+/* ---- Maps Navigation ---- */
+/* -------------------------*/
 .user-css .map-included-navigation {
   background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-4);
   padding: 5px 5px 10px 5px;
   border-top-width: 0px;
 }
+
 .user-css .map-included-navigation-information {
   margin-top: 0px !important;
 }
+
 .user-css .map-included-navigation-title {
   font-family: var(--HeaderFont);
   color: var(--ColorTert-2);
@@ -1261,57 +1391,71 @@
   padding-top: 5px;
   margin-right: 10px;
 }
+
 .user-css .map-included-navigation-information .fa-info-circle {
   color: var(--ColorTert-1);
 }
 
-/* __TIMELINES__ */
+/*--------------------------*/
+/* ---- Timelines ---- */
+/* -------------------------*/
 .user-css.page-timeline .subheading {
   font-family: var(--BodyFont);
   font-size: 1em;
 }
+
 .user-css-extended .timeline li .timeline-panel,
 .user-css .timeline li .timeline-panel {
   background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
 }
+
 .user-css-extended .timeline-panel .fa,
 .user-css .timeline-panel .fa {
   margin-top: -25px;
   font-size: 20px;
 }
+
 .user-css-extended .timeline:before,
 .user-css .timeline:before {
   background-color: var(--ColorTert-2);
 }
-/* Text */
+
+/*--------------------------*/
+/* ---- Timelines Text ---- */
+/* -------------------------*/
 .user-css .tl-heading-date,
 .user-css-extended .tl-heading-date {
   color: var(--BodyColor);
-  /* Change color and font if desiered, otherwise squish w/ below. */
 }
+
 .user-css .timeline li .timeline-panel small,
 .user-css .timeline li .milestone-panel small,
 .user-css-extended .timeline li .timeline-panel small,
 .user-css-extended .timeline li .milestone-panel small {
-  /* Date  */
   color: var(--BodyColor);
 }
+
 .user-css .timeline li .timeline-panel h5,
 .user-css .timeline .history-title {
   font-size: 1.5em;
 }
+
 .user-css .tl-heading-date .fa-chevron-right,
 .user-css-extended .tl-heading-date .fa-chevron-right {
   font-size: 1.3em;
   padding-top: 5px;
 }
+
 .user-css .timeline .history-category-name {
   color: var(--MuteColor);
 }
-/* Pointers */
+
+/*--------------------------*/
+/* ---- Timelines Pointers ---- */
+/* -------------------------*/
 .timeline li .timeline-panel:before {
   position: absolute;
   top: 32px;
@@ -1324,6 +1468,7 @@
   border-right-color: inherit;
   border-left-color: inherit;
 }
+
 .timeline li .timeline-panel:after {
   position: absolute;
   top: 32px;
@@ -1335,44 +1480,61 @@
   border-right-color: inherit;
   border-left-color: inherit;
 }
+
 .user-css .timeline li.timeline-entry-inverted .timeline-panel:before {
   left: -17px;
 }
+
 .user-css .timeline li.timeline-entry-inverted .timeline-panel:after {
   left: -17px;
 }
-/* Shield icons */
+
+/*--------------------------*/
+/* ---- Timelines Shield icons ---- */
+/* -------------------------*/
 .user-css-extended .timeline li .tl-circ,
 .user-css .timeline li .tl-circ {
   background: var(--ColorPrime);
   border-color: var(--ColorTert-2);
 }
-/* --Icons &amp; panels-- */
+
+/*--------------------------*/
+/* ---- Timelines Icon Panels ---- */
+/* -------------------------*/
 .user-css .timeline .date-divider,
 .user-css-extended .timeline .date-divider {
   margin: 2px 0;
 }
-/* ICON FIX */
+/*--------------------------*/
+/* ---- Timelines Icon Fix ---- */
+/* -------------------------*/
 .user-css-extended .timeline .header-icon,
 .user-css .timeline .header-icon {
   padding: 14px;
   font-size: 15.5px;
 }
-/* Milestones */
+
+/*--------------------------*/
+/* ---- Timelines Milestones ---- */
+/* -------------------------*/
 .user-css-extended .timeline .milestone,
 .user-css .timeline .milestone {
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-2);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
 }
+
 .user-css-extended .timeline .timeline-entry-milestone .header-icon,
 .user-css .timeline .timeline-entry-milestone .header-icon {
   border: 3px solid var(--ColorTert-2);
   background: var(--ColorSec-2);
   color: var(--ColorTert-2);
 }
-/* Major */
+
+/*--------------------------*/
+/* ---- Timelines Major ---- */
+/* -------------------------*/
 .user-css-extended .timeline .major .header-icon,
 .user-css .timeline .major .header-icon {
   border: 3px solid var(--ColorTert-2);
@@ -1380,12 +1542,16 @@
   background: var(--ColorSec-2);
   color: var(--ColorTert-1);
 }
+
 .user-css-extended .timeline .major .timeline-panel,
 .user-css .timeline .major .timeline-panel {
   border: 3px solid var(--ColorTert-2);
   border-color: var(--ColorTert-1);
 }
-/* Important */
+
+/*--------------------------*/
+/* ---- Timelines Importnat ---- */
+/* -------------------------*/
 .user-css-extended .timeline .important .header-icon,
 .user-css .timeline .important .header-icon {
   border: 3px solid var(--ColorTert-4);
@@ -1393,116 +1559,334 @@
   background: var(--ColorSec-2);
   color: var(--ColorTert-2);
 }
+
 .user-css-extended .timeline .important .timeline-panel,
 .user-css .timeline .important .timeline-panel {
   border: 3px solid var(--ColorTert-4);
   border-color: var(--ColorTert-2);
 }
-/* Minor */
+
+/*--------------------------*/
+/* ---- Timelines Minor ---- */
+/* -------------------------*/
 .user-css-extended .timeline .minor .header-icon,
 .user-css .timeline .minor .header-icon {
   border: 3px solid var(--ColorTert-4);
   background: var(--ColorSec-2);
   color: var(--ColorTert-1);
 }
+
 .user-css-extended .timeline .minor .timeline-panel,
 .user-css .timeline .minor .timeline-panel {
   background: var(--ColorSec-2);
 }
-/* Trivial */
+
+/*--------------------------*/
+/* ---- Timelines Trival ---- */
+/* -------------------------*/
 .user-css-extended .timeline .trivial .header-icon,
 .user-css .timeline .trivial .header-icon {
   border: 3px solid var(--ColorTert-4);
   background: var(--ColorSec-2);
   color: var(--BodyColor);
 }
+
 .user-css-extended .timeline .trivial .timeline-panel,
 .user-css .timeline .trivial .timeline-panel {
   background: var(--ColorSec-2);
   border-color: var(--ColorSec-2);
 }
-/* No Importance */
+
+/*--------------------------*/
+/* ---- Timelines No Importance ---- */
+/* -------------------------*/
 .user-css-extended .timeline .no-importance .header-icon,
 .user-css .timeline .no-importance .header-icon {
   border: 3px solid var(--ColorTert-4);
   background: var(--ColorSec-2);
   color: var(--ColorTert-4);
 }
+
 .user-css-extended .timeline .no-importance .timeline-panel,
 .user-css .timeline .no-importance .timeline-panel {
   background: var(--ColorSec-2);
   border-color: var(--ColorSec-2);
 }
-/* Orphans */
+
+/*--------------------------*/
+/* ---- Timelines Orphans ---- */
+/* -------------------------*/
 .user-css .orphan-era .alert,
 .user-css-extended .orphan-era .alert {
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
 }
-/* __DIPLOMACY WEBS__ */
+
+/*--------------------------*/
+/* ---- Diplomacy Webs ---- */
+/* -------------------------*/
 .user-css .clotho-box {
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-2);
-  border-radius: 25px;
+  border-radius: 0px;
   box-shadow: none;
 }
+
 .user-css .clotho-box .clotho-node {
   border: 3px solid var(--ColorTert-2);
   box-shadow: none;
 }
+
 .user-css .clotho-box .clotho-node .clotho-portrait-frame {
   height: 100%;
   max-height: 140px;
-  /* Nothing else. */
 }
+
 .user-css .clotho-box .clotho-node .clotho-text-frame {
   background: var(--ColorSec-1);
 }
+
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label {
   border: none;
   margin-left: -3px;
-  /* Nothing else. */
 }
+
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label a {
   font-size: 1em;
   font-family: var(--BodyFont);
   color: var(--BodyColor);
 }
-/* Hover element */
+
+/*--------------------------*/
+/* ---- Diplomacy Webs Hover ---- */
+/* -------------------------*/
 .user-css [class*=clotho-title-] {
-  /* This is the main box. */
   background: var(--ColorSec-2);
   box-shadow: none;
   border-top: 3px solid var(--ColorTert-4);
 }
+
 .user-css .clotho-title-arrows,
 .user-css .clotho-box div:nth-of-type(2) .clotho-title-item img,
 .user-css [class*=clotho-title-item] {
-  /* Undo anything you did above HERE. */
   border-top: none;
 }
+
 .user-css [class*=clotho-title-item] {
   border: 3px solid var(--ColorTert-2);
   padding: 0px !important;
 }
+
 .user-css .clotho-box div:nth-of-type(2) .clotho-title-arrows .clotho-rel-text {
-  /* This is the disposition header */
   color: var(--ColorTert-2);
   top: -120px;
 }
+
 .user-css [class*=show] {
-  /* Padding here top/bottom if the thing is too low. */
   padding-top: 25px;
   padding-bottom: 35px;
 }
 
-/* __TEMPLATE SPECIFICS__ */
-/* Prose */
+/*--------------------------*/
+/* ---- Org Relaitonships ---- */
+/* -------------------------*/
+.user-css .relation .relationScore {
+  background: var(--ColorSec-2);
+  border: 5px solid var(--ColorTert-3);
+  border-width: 3px;
+  border-radius: 0px;
+}
+
+/*--------------------------*/
+/* ---- Org  Tree ---- */
+/* -------------------------*/
+.user-css-extended .orgtree li a,
+.user-css-extended .orgtree li a:hover + ul li a {
+  font-family: var(--BodyFont);
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--ColorPrime);
+  background: var(--ColorTert-1);
+  border: none;
+  border-radius: 0px;
+  transition: all 0.3s;
+}
+
+.user-css-extended .orgtree li a:hover {
+  background: var(--ColorTert-2);
+  transform: scale(1.05);
+}
+
+.user-css-extended .orgtree li a:hover + ul li a {
+  background: var(--ColorPrime);
+  color: var(--ColorTert-1);
+  outline: 5px solid var(--ColorTert-3);
+  outline-width: 3px;
+  outline-offset: -3px;
+}
+
+/*--------------------------*/
+/* ---- Org Tree Lines ---- */
+/* -------------------------*/
+.user-css-extended .orgtree ul ul::before {
+  border-left: 3px solid var(--ColorTert-2);
+}
+
+.user-css-extended .orgtree li::before {
+  border-top: 3px solid var(--ColorTert-2);
+}
+
+.user-css-extended .orgtree li::after {
+  border-top: 3px solid var(--ColorTert-2);
+  border-left: 3px solid var(--ColorTert-2);
+}
+
+.user-css-extended .orgtree li:last-child::before {
+  border-right: 3px solid var(--ColorTert-2);
+}
+
+.user-css-extended .orgtree li:first-child::after {
+  border-left: 3px solid var(--ColorTert-2);
+}
+
+.user-css-extended .orgtree li:first-child::before,
+.user-css-extended .orgtree li:last-child::after {
+  border: transparent;
+}
+
+.user-css-extended .orgtree li a:hover + ul::before,
+.user-css-extended .orgtree li a:hover + ul li::before,
+.user-css-extended .orgtree li a:hover + ul li::after {
+  border-color: var(--ColorTert-2);
+}
+
+/*--------------------------*/
+/* ---- Family Trees ---- */
+/* -------------------------*/
+.user-css .rhea-family-tree {
+  background: var(--ColorSec-2);
+  border: 5px solid var(--ColorTert-3);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.user-css .rhea-family-tree .loader {
+  background-color: var(--ColorTert-1);
+  border: none;
+}
+
+.user-css .rhea-loader-text {
+  font-family: var(--HeaderFont);
+  color: var(--ColorPrime);
+  text-shadow: none;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait:after {
+  background: none;
+  border: none;
+}
+
+.user-css .rhea-family-tree .main-character .character-portrait:after {
+  background: none;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait-wrapper {
+  border: 5px solid var(--ColorTert-3);
+  border-width: 3px;
+  border-radius: 0px;
+}
+
+.user-css .rhea-family-tree .main-character .character-portrait-wrapper {
+  border-color: var(--ColorTert-2);
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-label {
+  margin-top: -2px;
+  font-family: var(--BodyFont);
+  background: var(--ColorTert-1);
+  border: none;
+  border-radius: 0px;
+  width: 100px;
+}
+
+.user-css
+  .rhea-family-tree
+  .rhea-character-node
+  .character-data
+  .character-name {
+  font-family: var(--BodyFont);
+  color: var(--ColorPrime);
+  font-weight: bold;
+}
+
+.user-css
+  .rhea-family-tree
+  .rhea-character-node
+  .character-label
+  .character-life {
+  color: var(--ColorPrime);
+  margin-top: 5px;
+}
+
+.user-css .rhea-family-tree .rhea-character-node:hover .character-label {
+  background: var(--ColorTert-2);
+}
+
+.user-css .rhea-family-tree .character-relationship {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.user-css .rhea-family-tree .rhea-character-node:hover .character-relationship {
+  color: var(--ColorPrime);
+  background: var(--ColorTert-1);
+  top: -1px;
+  opacity: 1;
+}
+
+.user-css .rhea-family-tree svg path {
+  stroke: var(--ColorTert-2);
+}
+.user-css .rhea-family-tree .rhea-character-node .character-portrait img {
+  border: none;
+}
+
+/*--------------------------*/
+/* ---- Family Tree Search ---- */
+/* -------------------------*/
+.user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap {
+  border: 5px solid var(--ColorTert-3);
+  border-width: 3px;
+  padding: 5px 15px;
+}
+
+.user-css .rhea-family-tree input::placeholder {
+  color: var(--MuteColor);
+}
+
+.user-css .rhea-search-clear .fal {
+  color: var(--MuteColor);
+}
+
+.user-css .rhea-ft-zoom-controls {
+  border: none;
+}
+
+/*--------------------------*/
+/* ---- Prose ---- */
+/* -------------------------*/
 .user-css-presentation .page-article.template-prose .article-content {
   font-size: 1em;
 }
+
 .user-css-presentation
   .page-article.template-prose
   .cover
@@ -1511,9 +1895,11 @@
   background: var(--ColorPrime) !important;
   color: var(--BodyColor) !important;
 }
+
 .user-css.bow {
   background: var(--ColorPrime) !important;
 }
+
 .user-css.bow p,
 .user-css.bow .article-content,
 .user-css.bow .article-content h2,
@@ -1521,9 +1907,11 @@
 .user-css.bow .article-content h4 {
   color: var(--BodyColor) !important;
 }
+
 .user-css.bow .article-content h1 {
   color: var(--ColorTert-1) !important;
 }
+
 .user-css-presentation
   .page-article.template-prose
   .cover
@@ -1532,9 +1920,11 @@
   background: var(--BodyColor) !important;
   color: var(--ColorPrime) !important;
 }
+
 .user-css.wob {
   background: var(--BodyColor) !important;
 }
+
 .user-css.wob p,
 .user-css.wob .article-content,
 .user-css.wob .article-content h2,
@@ -1542,46 +1932,57 @@
 .user-css.wob .article-content h4 {
   color: var(--ColorPrime) !important;
 }
+
 .user-css.wob .article-content h1 {
   color: var(--ColorPrime) !important;
 }
 
-/* __SCROLLBAR__ */
+/*--------------------------*/
+/* ---- Scrollbar ---- */
+/* -------------------------*/
 ::-webkit-scrollbar {
   width: 13px;
 }
+
 ::-webkit-scrollbar-track {
-  border-radius: 25px;
-  /* Probably no radius. */
+  border-radius: 0px;
   background: var(--ColorSec-2);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--ColorTert-2);
   width: 9px;
-  border-radius: 25px;
+  border-radius: 0px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--ColorTert-1);
 }
 
-/* __WHITE LABEL__ */
+/*--------------------------*/
+/* ---- White Label ---- */
+/* -------------------------*/
 .user-css-whitelabel {
   background: var(--ColorPrime);
   border-right: 5px solid var(--ColorTert-3);
   color: var(--BodyColor) !important;
 }
 
-/* __SCREEN SCALING__ */
+/*--------------------------*/
+/* ---- Screen Scaling ---- */
+/* -------------------------*/
 @media only screen and (max-width: 1199px) {
   .user-css-presentation #world-navigation-sidebar {
     width: 30%;
   }
 }
+
 @media only screen and (max-width: 991px) {
   .user-css.page,
   .user-css-extended .page {
     overflow: hidden;
   }
+
   .user-css-presentation #world-navigation-sidebar {
     top: 26%;
     min-height: 60% !important;
@@ -1589,109 +1990,87 @@
     left: 25px;
   }
 }
+
 @media only screen and (max-width: 425px) {
   .user-css.page,
   .user-css-extended .page {
     overflow: hidden;
   }
+
   .user-css .search-form {
     top: 0px;
     left: 0px;
   }
 }
 
-/* __SCREENPLAY__ */
-.user-css.tag-screenplay .article-content .tab-content {
-  letter-spacing: 0.1em;
-  padding-left: 160px;
-  padding-right: 160px;
-  font-size: 1em;
-}
-.user-css.tag-screenplay h4 {
-  text-transform: uppercase;
-  text-align: left !important;
-  font-weight: bold;
-  font-family: var(--BodyFont);
-  color: var(--BodyColor);
-  font-size: 1em;
-}
-.user-css.tag-screenplay blockquote {
-  text-align: center;
-  border: none;
+/*--------------------------*/
+/* ---- Editor Bar ---- */
+/* -------------------------*/
+#world-editor-bar {
+  width: 120px;
+  top: auto;
+  bottom: 200px;
+  left: -100px;
+  border-bottom: none;
   box-shadow: none;
-  background: none;
-  margin: -12px 30px;
-  font-size: 1.1em;
-}
-.user-css.tag-screenplay blockquote p {
-  text-align: justify !important;
-}
-.user-css.tag-screenplay blockquote p:first-of-type {
-  text-transform: uppercase;
-  text-align: center !important;
-  margin-bottom: -8px;
-}
-.user-css.tag-screenplay .article-content .text-right {
-  text-transform: uppercase;
-}
-@media only screen and (max-width: 680px) {
-  .user-css.tag-screenplay blockquote p {
-    margin: 0;
-  }
-  .user-css.tag-screenplay #profile {
-    padding: 0;
-  }
-}
-/* __PLAY BY POST__ */
-.user-css .post-stuka,
-.user-css .post-arty {
-  border: 3px solid var(--ColorTert-4);
-  background: var(--ColorSec-1);
-  padding: 15px;
-  margin: 15px;
-}
-.user-css .post-arty {
-  margin: 15px 30px 15px 15px;
-}
-.user-css .post-stuka {
-  background: var(--BodyColor);
-  color: var(--ColorSec-1);
-  margin: 15px 15px 15px 30px;
-}
-.user-css div.post-stuka:after {
-  content: url();
-  position: absolute;
-  left: 55px;
-  /* bottom: calc(0px + 20px); */
-  width: 0;
-  height: 0;
-  border: 19px solid transparent;
-  border-right-color: var(--ColorTert-4);
-  border-left: 0;
-  border-top: 0;
-  margin-top: -40px;
-  margin-left: -19px;
-}
-.user-css div.post-arty:after {
-  content: url();
-  position: absolute;
-  right: 55px;
-  /* bottom: calc(0px + 20px); */
-  width: 0;
-  height: 0;
-  border: 19px solid transparent;
-  border-left-color: var(--ColorTert-4);
-  border-right: 0;
-  border-top: 0;
-  margin-top: -40px;
-  margin-right: -19px;
+  opacity: 0.6;
+  padding: 15px 15px 0px 15px;
+  transition: all 0.3s;
 }
 
-/* EDITS */
-.user-css-presentation .world-navigation-palette-trigger {
+#world-editor-bar:hover {
+  left: 0px;
+}
+
+#world-editor-bar .fa {
+  font-size: 2em;
+}
+
+#world-editor-bar .btn {
+  width: 85px !important;
+  margin-bottom: 10px;
+}
+
+#world-editor-bar .world-edit-toggle .fa {
+  color: white !important;
+}
+
+#world-editor-bar .world-edit-toggle .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 36px;
+}
+
+#world-editor-bar .pull-right {
+  float: none !important;
+}
+
+#world-editor-bar [class*=cont] {
+  width: 100px !important;
+}
+
+#world-editor-bar .label,
+#world-editor-bar .btn-success:nth-child(1) {
   display: none;
 }
 
-.user-css #world-category-content {
+#world-editor-bar .btn {
+  background: var(--ColorTert-1);
+  border: none;
+  overflow: hidden;
+}
+
+#world-editor-bar .btn .hidden-xs {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- Edits ---- */
+/* -------------------------*/
+.user-css-presentation .world-navigation-palette-trigger,
+.user-css #world-category-content,
+.user-css .world-content .world-maps,
+.user-css .world-meta-categories-link,
+.user-css .discussion-boards-world-link {
   display: none;
 }
