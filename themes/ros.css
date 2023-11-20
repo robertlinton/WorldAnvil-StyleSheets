@@ -15,16 +15,17 @@
   --BodyFont: Atkinson Hyperlegible;
 
   /* Colors */
-  --ColorPrime: #2a272e;
-  --ColorSec-1: #1b1324;
-  --ColorSec-2: #1e1225;
-  --ColorTert-1: #b663c7;
-  --ColorTert-2: #895ec5;
-  --ColorTert-3: #46356c;
-  --ColorTert-4: #5d366b;
-  --ColorTert-5: #803d7c;
-  --BodyColor: #cebbce;
-  --MuteColor: #a38ca3;
+  --ColorPrime: #16151c;
+  --ColorSec-1: #1e222e;
+  --ColorSec-2: #203539;
+  --ColorTert-1: #63c7ba;
+  --ColorTert-2: #4aa2a7;
+  --ColorTert-3: #356c6c;
+  --ColorTert-4: #366b5c;
+  --ColorTert-5: #3d8079;
+  --ColorTert-6: -webkit-linear-gradient(left, #4376e9, #56f938);
+  --BodyColor: #cfd5dd;
+  --MuteColor: #ccfaff;
 }
 
 /*--------------------------*/
@@ -119,7 +120,7 @@
   font-family: Staatliches;
   font-style: normal;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYeVvpCNOw.woff2);
+  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYeVvrosNOw.woff2);
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
@@ -137,18 +138,6 @@
 /*--------------------------*/
 /* ---- Backgrounds   ---- */
 /* -------------------------*/
-#cover img {
-  opacity: 0;
-}
-
-#cover {
-  background: #ffffff;
-}
-
-.cover-global {
-  background-image: url(BANNERGOESHERE) !important;
-}
-
 .user-css-presentation {
   background: url(https://cdn.discordapp.com/attachments/806091110278627349/920771136051085352/Hummelverse_Background2.png);
   background-size: cover;
@@ -160,7 +149,9 @@
 .user-css-extended .page,
 .user-css-presentation .tooltipster-content {
   background: var(--ColorPrime);
-  border: 5px solid var(--ColorTert-5);
+  border: 6px double var(--ColorTert-5);
+  border-radius: 15px;
+  overflow: hidden;
   box-shadow: none;
 }
 
@@ -195,6 +186,14 @@
   color: var(--BodyColor);
 }
 
+
+.user-css .subheading {
+  font-size: 17px;
+  color: var(--BodyColor);
+
+}
+
+
 /*--------------------------*/
 /* ---- Headers   ---- */
 /* -------------------------*/
@@ -203,11 +202,15 @@
 .user-css-presentation .tooltipster-content h1,
 .user-css .statblock h1,
 .user-css-extended .orphan-era h1 {
-  color: var(--ColorTert-1);
   font-family: var(--HeaderFont);
-  font-size: 3.3em;
+  font-size: 3.8em;
   text-align: center;
   padding-top: 17px;
+  background: var(--ColorTert-6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .user-css h2,
@@ -363,7 +366,7 @@
   color: var(--ColorTert-2) !important;
 }
 
-.user-css .dropcap {
+.user-css .drorosap {
   font-family: var(--BodyFont);
 }
 
@@ -871,8 +874,7 @@
   color: var(--BodyColor) !important;
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
-  color: var(--ColorSec-1);
+  border-radius: 20px;
   width: 200px;
   box-shadow: none;
   padding: 13px 10px 12px 10px;
@@ -2064,6 +2066,89 @@
   display: none;
 }
 
+/*-------------------------*/
+/* ----Infobox   ---- */
+/* -------------------------*/
+.ros-profilebox {
+  background: var(--ColorPrime);
+  color: var(--BodyColor);
+  border: 3px solid var(--ColorTert-2);
+  border-radius: 10px;
+  padding: 0;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+.ros-profilebox-header {
+  background: var(--ColorSec-2);
+  color: var(--ColorTert-6);
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  font-family: var(--HeaderFont);
+  border-bottom: 2px solid var(--ColorTert-2);
+
+}
+
+.ros-profilebox-content b {
+  color: var(--ColorTert-2);
+  font-family: var(--HeaderFont);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ros-profilebox-entry {
+  color: var(--ColorTert-2);
+  padding: 0.2em 0.5em;
+  margin: 0.2em 0;
+}
+
+.ros-profilebox-nickname {
+  display: block;
+  color: var(--MuteColor);
+  font-family: var(--HeaderFont);
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 14px;
+}
+
+.ros-profilebox-image {
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.ros-profilebox-subheader {
+  background: var(--ColorTert-1);
+  color: var(--BodyColor);
+  padding: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  font-family: var(--HeaderFont);
+  border-bottom: 1px solid var(--ColorSec-1);
+  letter-spacing: 1px;
+}
+
+.ros-profilebox-content {
+  padding: 0.5em;
+  background: var(--ColorSec-1);
+  color: var(--BodyColor);
+  border-bottom: 1px solid var(--ColorTert-3);
+}
+
+.ros-profilebox-content:last-of-type {
+  border-bottom: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.ros-character-image img {
+    height: auto;
+    box-shadow: none;
+    overflow: hidden;
+}
+
 /*--------------------------*/
 /* ---- Edits ---- */
 /* -------------------------*/
@@ -2074,3 +2159,19 @@
 .user-css .discussion-boards-world-link {
   display: none;
 }
+
+.alert-success {
+  background: var(--ColorSec-2);
+  border: 5px double var(--ColorTert-4);
+  border-radius: 25px;
+  color: var(--BodyColor);
+  font-family: var(--BodyFont);
+  font-size: 1.2em;
+}
+
+.label-primary {
+  background: var(--ColorSec-2);
+  border: 2px solid var(--ColorTert-4);
+  color: var(--BodyColor);
+}
+
