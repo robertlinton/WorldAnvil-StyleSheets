@@ -36,6 +36,13 @@
   font-family: Bebas Neue;
   font-style: normal;
   font-weight: 400;
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/3c246a52bb6ac71e4ac0fd2b9bed8c5c60ad0aa1/fonts/Realms%20of%20Sfaira/Bebas%20Neue.ttf);
+}
+
+@font-face {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wdhyzbi.woff2);
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
