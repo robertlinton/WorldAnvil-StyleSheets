@@ -40,12 +40,25 @@
 }
 
 @font-face {
-  font-family: Faustina;
+  font-family: Phenomena;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/cada431d11b82d140dd9862dbc4954fa45a89097/fonts/Realms%20of%20Sfaira/Phenomena/Phenomena-Regular.ttf);
+}
+
+@font-face {
+  font-family: Phenomena;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/cada431d11b82d140dd9862dbc4954fa45a89097/fonts/Realms%20of%20Sfaira/Phenomena/Phenomena-Regular.ttf);
+}
+
+@font-face {
+  font-family: Spectral;
   font-style: normal;
   font-weight: 400;
   src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/e6cbdb08fd80e3b1e784567db45834580d0fcfb1/fonts/Realms%20of%20Sfaira/Faustina.ttf);
 }
-
 
 @font-face {
   font-family: Spectral;
@@ -867,7 +880,7 @@
 .user-css .label-roller,
 .user-css .rhea-ft-zoom-controls button,
 .user-css-presentation .tooltipster-content .btn,
-.user-css .discussion-board-section [class*=rep] .btn {
+.user-css .discussion-board-section [class*="rep"] .btn {
   font-family: var(--BodyFont);
   font-size: 1em;
   font-weight: bold;
@@ -885,7 +898,7 @@
 .user-css .label-roller:hover,
 .user-css .rhea-ft-zoom-controls button:hover,
 .user-css-presentation .tooltipster-content .btn:hover,
-.user-css .discussion-board-section [class*=rep] .btn:hover {
+.user-css .discussion-board-section [class*="rep"] .btn:hover {
   text-shadow: none;
   text-decoration: none;
   font-style: normal;
@@ -1050,9 +1063,9 @@
 }
 
 .user-css .spoiler-button:hover,
-.user-css .spoiler-button[aria-expanded=true],
+.user-css .spoiler-button[aria-expanded="true"],
 .user-css-extended .spoiler-button:hover,
-.user-css-extended .spoiler-button[aria-expanded=true] {
+.user-css-extended .spoiler-button[aria-expanded="true"] {
   padding-left: 0.5rem;
   padding-top: 10px;
 }
@@ -1647,7 +1660,7 @@
 }
 
 .user-css-extended .comment-box-date,
-.user-css-extended [class*=comment-foo] {
+.user-css-extended [class*="comment-foo"] {
   border: none;
 }
 
@@ -2165,7 +2178,7 @@
 /*--------------------------*/
 /* ---- Diplomacy Webs Hover ---- */
 /* -------------------------*/
-.user-css [class*=clotho-title-] {
+.user-css [class*="clotho-title-"] {
   background: var(--ColorSec-2);
   box-shadow: none;
   border-top: 3px solid var(--ColorTert-4);
@@ -2173,11 +2186,11 @@
 
 .user-css .clotho-title-arrows,
 .user-css .clotho-box div:nth-of-type(2) .clotho-title-item img,
-.user-css [class*=clotho-title-item] {
+.user-css [class*="clotho-title-item"] {
   border-top: none;
 }
 
-.user-css [class*=clotho-title-item] {
+.user-css [class*="clotho-title-item"] {
   border: 3px solid var(--ColorTert-2);
   padding: 0px !important;
 }
@@ -2187,7 +2200,7 @@
   top: -120px;
 }
 
-.user-css [class*=show] {
+.user-css [class*="show"] {
   padding-top: 25px;
   padding-bottom: 35px;
 }
@@ -2548,7 +2561,7 @@
   float: none !important;
 }
 
-#world-editor-bar [class*=cont] {
+#world-editor-bar [class*="cont"] {
   width: 100px !important;
 }
 
@@ -2722,7 +2735,7 @@
 .user-css .world-meta-categories-link,
 .user-css .discussion-boards-world-link,
 .user-css .character-article-portrait,
-  .user-css .character-relationship-panel,
+.user-css .character-relationship-panel,
 .user-css .character-relationships-header,
 .user-css .character-children,
 .user-css .character-relationships {
