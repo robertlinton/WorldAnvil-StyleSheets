@@ -10,9 +10,10 @@
 .map-context-user-css,
 .tooltipster-content {
   /* Fonts */
-  --HeaderFont: Staatliches;
-  --HeaderFont-2: Staatliches;
-  --BodyFont: Atkinson Hyperlegible;
+  --HeaderFont: Bebas Neue;
+  --HeaderFont-2: Phenomena;
+  --HeaderFont-3: Spectral;
+  --BodyFont: Faustina;
 
   /* Colors */
   --ColorPrime: #16151c;
@@ -31,115 +32,996 @@
 /*--------------------------*/
 /* ---- Fonts   ---- */
 /* -------------------------*/
-
 @font-face {
-  font-family: Atkinson Hyperlegible;
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v7/9Bt43C1KxNDXMspQ1lPyU89-1h6ONRlW45G056IkUwCybQ.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Atkinson Hyperlegible;
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v7/9Bt43C1KxNDXMspQ1lPyU89-1h6ONRlW45G056IqUwA.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Atkinson Hyperlegible;
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v7/9Bt93C1KxNDXMspQ1lPyU89-1h6ONRlW45G056qRdhWDTFieFA.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Atkinson Hyperlegible;
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v7/9Bt93C1KxNDXMspQ1lPyU89-1h6ONRlW45G056qRdhWNTFg.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Atkinson Hyperlegible;
+  font-family: Bebas Neue;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v7/9Bt23C1KxNDXMspQ1lPyU89-1h6ONRlW45G07JIoSwQ.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wdhyzbi.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-  font-family: Atkinson Hyperlegible;
+  font-family: Bebas Neue;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v7/9Bt23C1KxNDXMspQ1lPyU89-1h6ONRlW45G04pIo.woff2);
+  src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2);
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: Atkinson Hyperlegible;
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcFio08v.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcBio08v.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6Lc5iow.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcFio08v.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcBio08v.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6Lc5iow.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcFio08v.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcBio08v.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6Lc5iow.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcFio08v.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcBio08v.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6Lc5iow.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcFio08v.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcBio08v.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6Lc5iow.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcFio08v.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6LcBio08v.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYjIZPxYpJfTbZAFV-6Lc5iow.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-wHcx6pw.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-xHcx6pw.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-_Hcw.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-wHcx6pw.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-xHcx6pw.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-_Hcw.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-wHcx6pw.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-xHcx6pw.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-_Hcw.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-wHcx6pw.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-xHcx6pw.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-_Hcw.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v7/9Bt73C1KxNDXMspQ1lPyU89-1h6ONRlW45G8Wbc9eiWPVFw.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-wHcx6pw.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
-  font-family: Atkinson Hyperlegible;
+  font-family: Faustina;
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/atkinsonhyperlegible/v7/9Bt73C1KxNDXMspQ1lPyU89-1h6ONRlW45G8Wbc9dCWP.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-xHcx6pw.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
-  font-family: Staatliches;
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-_Hcw.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Faustina;
   font-style: normal;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYeVvrosNOw.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-wHcx6pw.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
-  font-family: Staatliches;
+  font-family: Faustina;
   font-style: normal;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYebvpA.woff2);
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-xHcx6pw.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Faustina;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/faustina/v20/XLYlIZPxYpJfTbZAFV-_Hcw.woff2);
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qrXHWfCFXUIJ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qrXHWfuFXUIJ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qrXHWfqFXUIJ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qrXHWfSFXQ.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qtHEWfCFXUIJ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qtHEWfuFXUIJ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qtHEWfqFXUIJ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qtHEWfSFXQ.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8on7mTMuk.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8onXmTMuk.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8onTmTMuk.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCt-xNNww_2s0amA9M8onrmTA.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qonFWfCFXUIJ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qonFWfuFXUIJ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qonFWfqFXUIJ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qonFWfSFXQ.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qqXCWfCFXUIJ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qqXCWfuFXUIJ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qqXCWfqFXUIJ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qqXCWfSFXQ.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qsHDWfCFXUIJ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qsHDWfuFXUIJ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qsHDWfqFXUIJ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qsHDWfSFXQ.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qt3AWfCFXUIJ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qt3AWfuFXUIJ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qt3AWfqFXUIJ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCu-xNNww_2s0amA9M8qt3AWfSFXQ.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9v2s23FafadWQ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9v2s23OafadWQ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9v2s23PafadWQ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9v2s23BafY.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uSsG3FafadWQ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uSsG3OafadWQ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uSsG3PafadWQ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uSsG3BafY.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M9knj-SA.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M2knj-SA.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M3knj-SA.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCr-xNNww_2s0amA9M5kng.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vKsW3FafadWQ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vKsW3OafadWQ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vKsW3PafadWQ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vKsW3BafY.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3FafadWQ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3OafadWQ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3PafadWQ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9vmtm3BafY.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uCt23FafadWQ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uCt23OafadWQ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uCt23PafadWQ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uCt23BafY.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uetG3FafadWQ.woff2);
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uetG3OafadWQ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uetG3PafadWQ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Spectral;
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/spectral/v13/rnCs-xNNww_2s0amA9uetG3BafY.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /*--------------------------*/
 /* ---- Backgrounds   ---- */
 /* -------------------------*/
 .user-css-presentation {
-  background: url(https://cdn.discordapp.com/attachments/806091110278627349/920771136051085352/Hummelverse_Background2.png);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--ColorPrime),
+    var(--ColorSec-2),
+    var(--ColorTert-1),
+    var(--ColorTert-5)
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -186,13 +1068,10 @@
   color: var(--BodyColor);
 }
 
-
 .user-css .subheading {
   font-size: 17px;
   color: var(--BodyColor);
-
 }
-
 
 /*--------------------------*/
 /* ---- Headers   ---- */
@@ -203,7 +1082,7 @@
 .user-css .statblock h1,
 .user-css-extended .orphan-era h1 {
   font-family: var(--HeaderFont);
-  font-size: 3.8em;
+  font-size: 4.3em;
   text-align: center;
   padding-top: 17px;
   background: var(--ColorTert-6);
@@ -314,7 +1193,7 @@
   font-size: 1.4em;
   background: var(--ColorTert-4);
   border: none;
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
 }
 
@@ -438,7 +1317,7 @@
 .user-css-presentation .tooltipster-content blockquote {
   background: var(--ColorSec-2);
   border-left: 5px solid var(--ColorTert-3);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
 }
 
@@ -456,8 +1335,8 @@
 .user-css .panel,
 .user-css-extended .panel {
   background: var(--ColorSec-1);
-  border-left: 5px solid var(--ColorTert-4);
-  border-radius: 0px;
+  border: 3px solid var(--ColorTert-4);
+  border-radius: 20px;
 }
 
 /*--------------------------*/
@@ -485,7 +1364,7 @@
 .user-css .image-panel {
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
   text-align: center;
   padding: 15px;
@@ -573,7 +1452,7 @@
   border-top: 5px solid var(--ColorTert-3);
   color: var(--BodyColor);
   background: var(--ColorSec-2);
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .user-css .spoiler-card,
@@ -591,7 +1470,7 @@
   background: var(--ColorSec-1);
   color: var(--ColorTert-1);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 /*--------------------------*/
@@ -602,8 +1481,9 @@
 .user-css .map-box {
   background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-2);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
+  overflow: hidden;
   transition: all 0.3s;
 }
 
@@ -626,6 +1506,7 @@
 .user-css .article-panel .subheading,
 .user-css .article-panel .date {
   color: var(--MuteColor);
+  display: none;
 }
 
 /*--------------------------*/
@@ -643,7 +1524,7 @@
 .user-css .bookcover {
   border: 3px solid var(--ColorTert-4);
   background: var(--ColorSec-2);
-  border-radius: 0px;
+  border-radius: 20px;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -697,9 +1578,10 @@
 .user-css.page-world-homepage #world-maps,
 .user-css.page-world-homepage #world-timelines,
 .user-css-presentation #world-navigation-sidebar .world-menu {
-  background: var(--ColorSec-1);
+  background: linear-gradient(to right, var(--ColorSec-1), var(--ColorSec-2));
   border: 3px solid var(--ColorTert-4);
   padding: 15px;
+  border-radius: 20px;
   margin-bottom: 15px;
 }
 
@@ -709,9 +1591,10 @@
 
 .user-css.page-world-homepage #world-menu,
 .user-css-presentation #world-navigation-sidebar .world-menu {
-  background: var(--ColorSec-1);
+  background: linear-gradient(to right, var(--ColorSec-1), var(--ColorSec-2));
   border: 3px solid var(--ColorTert-4);
   padding: 15px;
+  border-radius: 20px;
   padding-left: 0px;
   margin-bottom: 15px;
 }
@@ -738,6 +1621,14 @@
 
 .user-css .world-category-link {
   color: var(--ColorTert-1);
+  font-family: var(--HeaderFont-2);
+  font-size: 1.1em;
+}
+
+.user-css.page-world-homepage #world-timelines li h5 {
+  color: var(--ColorTert-1);
+  font-family: var(--HeaderFont-2);
+  font-size: 1.1em;
 }
 
 .user-css .category-title-icon {
@@ -779,7 +1670,7 @@
 
 .user-css .follower-box {
   background: var(--ColorSec-2);
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .user-css .follower-box img {
@@ -853,9 +1744,9 @@
   color: var(--ColorSec-1);
   background: var(--ColorTert-2);
   border: 3px solid var(--ColorTert-4);
-  border-right: 0px;
   padding: 10px 15px;
   transition: all 0.3s;
+  margin: 9px;
 }
 
 .user-css-presentation .backtotop-button:hover {
@@ -897,7 +1788,7 @@
   border: none;
   border-left: 3px solid var(--ColorTert-3);
   border-right: 3px solid var(--ColorTert-3);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
 }
 
@@ -938,8 +1829,9 @@
 /* -------------------------*/
 .user-css .copyright-attribution {
   background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-4);
+  border: 4px double var(--ColorTert-4);
   padding: 10px;
+  border-radius: 20px;
   margin-bottom: -17px;
 }
 .user-css .cp.btn-primary {
@@ -964,14 +1856,13 @@
 /* ---- Nav/Category   ---- */
 /* -------------------------*/
 .user-css .article-horizontal-navigation {
-  padding-bottom: 20px;
   position: fixed;
   bottom: 0px;
   z-index: 1000;
   width: 100%;
   left: 0px;
   background: var(--ColorPrime);
-  border-top: none;
+  border-top: 2px solid var(--ColorTert-1);
   border-color: var(--ColorTert-2);
   padding: 10px 100px 5px 100px;
 }
@@ -981,7 +1872,7 @@
 }
 
 .user-css .article-horizontal-navigation a {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-top: 3px;
 }
 
@@ -1053,7 +1944,7 @@
   font-weight: bold;
   background: var(--ColorTert-1);
   border: none;
-  border-radius: 0px;
+  border-radius: 20px;
   transition: all 0.3s;
   box-shadow: none;
 }
@@ -1073,7 +1964,7 @@
   font-size: 1em;
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
+  border-radius: 20px;
   transition: all 0.3s;
 }
 
@@ -1096,7 +1987,7 @@
 .user-css-extended .comment-box {
   background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .user-css-extended .comment-box-content p {
@@ -1172,7 +2063,7 @@
   color: var(--ColorSec-2);
   background: var(--ColorTert-2);
   border-right: 5px solid var(--ColorTert-3);
-  border-radius: 0px;
+  border-radius: 20px;
   border-left-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1188,7 +2079,7 @@
   color: var(--BodyColor);
   background: var(--ColorTert-2);
   border: none;
-  border-radius: 0px;
+  border-radius: 20px;
   font-family: var(--HeaderFont);
   box-shadow: none;
   transition: all 0.3s;
@@ -1230,7 +2121,7 @@
 /* -------------------------*/
 .leaflet-touch .leaflet-bar {
   border: none;
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .user-css .leaflet-control-layers,
@@ -1252,7 +2143,7 @@
 .map-context-user-css .leaflet-bar a:first-child {
   color: var(--ColorSec-1);
   background: var(--ColorTert-1);
-  border-radius: 0px;
+  border-radius: 20px;
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
   transition: all 0.3s;
@@ -1262,7 +2153,7 @@
 .map-context-user-css .leaflet-bar a:last-child {
   color: var(--ColorSec-1);
   background: var(--ColorTert-2);
-  border-radius: 0px;
+  border-radius: 20px;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
   transition: all 0.3s;
@@ -1288,7 +2179,7 @@
   background: var(--ColorTert-2);
   border: none;
   border-right: 5px solid var(--ColorTert-3);
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .user-css .leaflet-control-layers-expanded,
@@ -1311,7 +2202,7 @@
   color: var(--BodyColor);
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
 }
 
@@ -1339,7 +2230,7 @@
   color: var(--BodyColor);
   font-family: var(--BodyFont);
   background: var(--ColorSec-1);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
 }
 
@@ -1367,7 +2258,7 @@
 /* -------------------------*/
 .user-css-presentation .leaflet-grab {
   border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
+  border-radius: 20px;
   background: var(--ColorSec-2);
   box-shadow: none;
 }
@@ -1410,7 +2301,7 @@
 .user-css .timeline li .timeline-panel {
   background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
 }
 
@@ -1523,7 +2414,7 @@
 .user-css .timeline .milestone {
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-2);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
 }
 
@@ -1622,7 +2513,7 @@
 .user-css-extended .orphan-era .alert {
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
 }
 
@@ -1632,7 +2523,7 @@
 .user-css .clotho-box {
   background: var(--ColorSec-2);
   border: 3px solid var(--ColorTert-2);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
 }
 
@@ -1698,7 +2589,7 @@
   background: var(--ColorSec-2);
   border: 5px solid var(--ColorTert-3);
   border-width: 3px;
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 /*--------------------------*/
@@ -1712,7 +2603,7 @@
   color: var(--ColorPrime);
   background: var(--ColorTert-1);
   border: none;
-  border-radius: 0px;
+  border-radius: 20px;
   transition: all 0.3s;
 }
 
@@ -1770,7 +2661,7 @@
 .user-css .rhea-family-tree {
   background: var(--ColorSec-2);
   border: 5px solid var(--ColorTert-3);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
 }
 
@@ -1797,7 +2688,7 @@
 .user-css .rhea-family-tree .rhea-character-node .character-portrait-wrapper {
   border: 5px solid var(--ColorTert-3);
   border-width: 3px;
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .user-css .rhea-family-tree .main-character .character-portrait-wrapper {
@@ -1815,7 +2706,7 @@
   font-family: var(--BodyFont);
   background: var(--ColorTert-1);
   border: none;
-  border-radius: 0px;
+  border-radius: 20px;
   width: 100px;
 }
 
@@ -2066,6 +2957,68 @@
   display: none;
 }
 
+/*--------------------------*/
+/* ---- World Navigation   ---- */
+/* -------------------------*/
+.user-css-presentation .world-global-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.user-css-presentation .world-global-header .ros-nav {
+  background-color: var(--ColorPrime);
+  border-bottom: 4px solid var(--ColorTert-3);
+  height: 50px;
+  color: var(--BodyColor);
+  display: flex !important;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em 3em;
+  text-align: center;
+}
+.user-css .ros-nav .empty {
+  visibility: hidden;
+}
+
+.user-css .ros-nav .nav-links,
+.user-css .ros-nav .logo,
+.user-css .ros-nav .empty {
+  flex: 1;
+}
+
+.user-css .ros-nav .nav-links {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: var(--HeaderFont);
+  text-align: right;
+}
+
+.user-css .ros-nav .nav-links a {
+  color: var(--ColorTert-1);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.user-css .logo {
+  text-align: center;
+  width: 100px;
+  margin: auto;
+}
+
+.user-css .logo img {
+  z-index: 1;
+  width: 100px !important;
+  height: 100px !important;
+  position: relative;
+  top: -20px;
+  margin: 0 auto;
+}
+
 /*-------------------------*/
 /* ----Infobox   ---- */
 /* -------------------------*/
@@ -2088,20 +3041,21 @@
   font-weight: bold;
   font-family: var(--HeaderFont);
   border-bottom: 2px solid var(--ColorTert-2);
-
 }
 
 .ros-profilebox-content b {
-  color: var(--ColorTert-2);
-  font-family: var(--HeaderFont);
-  text-transform: uppercase;
+  color: var(--ColorTert-1);
+  font-family: var(--BodyFont);
   letter-spacing: 0.05em;
+  font-size: 19px;
 }
 
 .ros-profilebox-entry {
   color: var(--ColorTert-2);
   padding: 0.2em 0.5em;
+  font-family: var(--HeaderFont-3);
   margin: 0.2em 0;
+  font-size: 18.2px;
 }
 
 .ros-profilebox-nickname {
@@ -2122,11 +3076,11 @@
 
 .ros-profilebox-subheader {
   background: var(--ColorTert-1);
-  color: var(--BodyColor);
+  color: #1d868b;
   padding: 0.3em;
   font-weight: bold;
   text-align: center;
-  font-family: var(--HeaderFont);
+  font-family: var(--BodyFont);
   border-bottom: 1px solid var(--ColorSec-1);
   letter-spacing: 1px;
 }
@@ -2144,9 +3098,9 @@
 }
 
 .ros-character-image img {
-    height: auto;
-    box-shadow: none;
-    overflow: hidden;
+  height: auto;
+  box-shadow: none;
+  overflow: hidden;
 }
 
 /*--------------------------*/
@@ -2156,7 +3110,12 @@
 .user-css #world-category-content,
 .user-css .world-content .world-maps,
 .user-css .world-meta-categories-link,
-.user-css .discussion-boards-world-link {
+.user-css .discussion-boards-world-link,
+.user-css .character-article-portrait,
+  .user-css .character-relationship-panel,
+.user-css .character-relationships-header,
+.user-css .character-children,
+.user-css .character-relationships {
   display: none;
 }
 
@@ -2174,4 +3133,3 @@
   border: 2px solid var(--ColorTert-4);
   color: var(--BodyColor);
 }
-
