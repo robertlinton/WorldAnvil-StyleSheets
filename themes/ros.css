@@ -10,107 +10,110 @@
 .map-context-user-css,
 .tooltipster-content {
   /* Fonts */
-  --HeaderFont: Staatliches;
-  --HeaderFont-2: Staatliches;
+  --HeaderFont: Libre Baskerville;
+  --HeaderFont: Libre Baskerville;
   --BodyFont: Barlow;
 
-  /* Colors */
-  --ColorPrime: #16151c;
-  --ColorSec-1: #1e222e;
-  --ColorSec-2: #203539;
-  --ColorTert-1: #63c7ba;
-  --ColorTert-2: #4aa2a7;
-  --ColorTert-3: #356c6c;
-  --ColorTert-4: #366b5c;
-  --ColorTert-5: #3d8079;
-  --ColorTert-6: -webkit-linear-gradient(left, #4376e9, #56f938);
-  --BodyColor: #cfd5dd;
-  --MuteColor: #ccfaff;
+  --ColorPrime: #141c21;
+  --ColorSec-1: #1c242f;
+  --ColorSec-2: #1d303d;
+  --ColorTert-1: #5fb1b8;
+  --ColorTert-2: #43919a;
+  --ColorTert-3: #2e5e68;
+  --ColorTert-4: #2e5a60;
+  --ColorTert-5: #367580;
+  --BodyColor: #c2cdd7;
+  --MuteColor: #bde6ff;
 }
-
 /*--------------------------*/
 /* ---- Fonts   ---- */
 /* -------------------------*/
+@font-face {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/115df2dd01b7d6b995d8f6a875b4f794de2e377b/fonts/Realms%20of%20Sfaira/LibreBaskerville-Regular.ttf);
+}
+
 @font-face {
   font-family: Barlow;
   font-style: italic;
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/barlow/v12/7cHrv4kjgoGqM7E_Cfs1wH8RnA.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 @font-face {
   font-family: Barlow;
   font-style: italic;
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/barlow/v12/7cHrv4kjgoGqM7E_Cfs7wH8.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: Barlow;
   font-style: italic;
   font-weight: 700;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/barlow/v12/7cHsv4kjgoGqM7E_CfOA5WogvTobdw.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 @font-face {
   font-family: Barlow;
   font-style: italic;
   font-weight: 700;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/barlow/v12/7cHsv4kjgoGqM7E_CfOA5WouvTo.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: Barlow;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/barlow/v12/7cHpv4kjgoGqM7E_Ass52Hs.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 @font-face {
   font-family: Barlow;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/barlow/v12/7cHpv4kjgoGqM7E_DMs5.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: Barlow;
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E3t-4s6VospT4.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 @font-face {
   font-family: Barlow;
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E3t-4s51os.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-
-@font-face {
-  font-family: Staatliches;
-  font-style: normal;
-  font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYeVvrosNOw.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Staatliches;
-  font-style: normal;
-  font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYebvpA.woff2);
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
@@ -135,11 +138,8 @@
 .user-css.page,
 .user-css-extended .page,
 .user-css-presentation .tooltipster-content {
-  background: linear-gradient(145deg, var(--ColorPrime), #0c1c1b);
-  border: 8px double var(--ColorTert-5);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0px 4px 6px -2px rgba(0, 0, 0, 0.05);
-  max-width: 1250px;
+  background: var(--ColorPrime);
+  border: 5px double var(--ColorTert-5);
   border-radius: 15px;
   overflow: hidden;
 }
@@ -175,6 +175,14 @@
   color: var(--BodyColor);
 }
 
+.user-css-vignette {
+  font-size: 18px;
+}
+
+.user-css .subheading {
+  font-size: 18px;
+}
+
 /*--------------------------*/
 /* ---- Headers   ---- */
 /* -------------------------*/
@@ -183,15 +191,11 @@
 .user-css-presentation .tooltipster-content h1,
 .user-css .statblock h1,
 .user-css-extended .orphan-era h1 {
+  color: var(--ColorTert-1);
   font-family: var(--HeaderFont);
-  font-size: 4.5em;
+  font-size: 2.7em;
   text-align: center;
   padding-top: 17px;
-  background: var(--ColorTert-6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
 }
 
 .user-css h2,
@@ -201,9 +205,9 @@
   font-family: var(--HeaderFont);
   color: var(--ColorTert-2);
   padding-top: 15px;
-  border-bottom: none;
-  font-size: 2.5em;
-  margin-bottom: 0px;
+  border-bottom: 3px solid var(--ColorTert-1);
+  font-size: 1.5em;
+  margin-bottom: 5px;
 }
 
 .user-css h3,
@@ -243,6 +247,7 @@
   font-family: var(--HeaderFont);
   padding-top: 10px;
   margin-top: 0px;
+  font-size: 15px;
 }
 
 .user-css h6 {
@@ -347,7 +352,7 @@
   color: var(--ColorTert-2) !important;
 }
 
-.user-css .drorosap {
+.user-css .dropcap {
   font-family: var(--BodyFont);
 }
 
@@ -366,8 +371,8 @@
   color: var(--ColorSec-1) !important;
   background: var(--ColorTert-2);
   border: none;
-  border-left: 5px solid var(--ColorTert-3);
-  border-radius: 0px;
+  border: 3px solid var(--ColorTert-3);
+  border-radius: 20px;
   box-shadow: none;
   transition: all 0.3s;
 }
@@ -437,8 +442,8 @@
 .user-css .panel,
 .user-css-extended .panel {
   background: var(--ColorSec-1);
-  border-left: 5px solid var(--ColorTert-4);
-  border-radius: 0px;
+  border: 3px solid var(--ColorTert-4);
+  border-radius: 20px;
 }
 
 /*--------------------------*/
@@ -583,7 +588,7 @@
 .user-css .map-box {
   background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-2);
-  border-radius: 0px;
+  border-radius: 20px;
   box-shadow: none;
   transition: all 0.3s;
 }
@@ -607,11 +612,19 @@
 .user-css .article-panel .subheading,
 .user-css .article-panel .date {
   color: var(--MuteColor);
+  display: none;
 }
 
 /*--------------------------*/
 /* ---- Homepage   ---- */
 /* -------------------------*/
+.hplogo {
+  background-image: url(https://www.worldanvil.com/uploads/images/735ba923f3338bb3ae9ee32ad5907b3b.png);
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* Adjust height as needed */
+}
+
 .user-css .world-author {
   font-family: var(--BodyFont);
   font-size: 1em;
@@ -625,6 +638,8 @@
   border: 3px solid var(--ColorTert-4);
   background: var(--ColorSec-2);
   border-radius: 20px;
+  height: 354px;
+  width: 300px;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -664,6 +679,20 @@
   transition: all 0.3s;
 }
 
+/*--------------------------*/
+/* ---- Book Links   ---- */
+/* -------------------------*/
+.user-css .bookcover a[href*=realms-category] img,
+.user-css .bookcover a[href*=races-category] img,
+.user-css .bookcover a[href*=characters-category] img,
+.user-css .bookcover a[href*=magic-category] img,
+.user-css .bookcover a[href*=technology-category] img,
+.user-css .bookcover a[href*=factions-category] img,
+.user-css .bookcover a[href*=economy-category] img,
+.user-css .bookcover a[href*=mythology-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/ce894b590c4aa118cc7955f06e3ac1ce.png);
+}
+
 .user-css .world-bookcase .bookcover a:hover .booktitle,
 .user-css .bookcover a:hover .booktitle {
   color: var(--ColorSec-1);
@@ -672,13 +701,9 @@
 }
 
 /*--------------------------*/
-/* ---- Book Links   ---- */
-/* -------------------------*/
-
-
-/*--------------------------*/
 /* ---- Table of Contents   ---- */
 /* -------------------------*/
+
 .user-css.page-world-homepage #world-menu,
 .user-css.page-world-homepage #world-maps,
 .user-css.page-world-homepage #world-timelines,
@@ -686,6 +711,7 @@
   background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-4);
   padding: 15px;
+  border-radius: 20px;
   margin-bottom: 15px;
 }
 
@@ -698,6 +724,7 @@
   background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-4);
   padding: 15px;
+  border-radius: 20px;
   padding-left: 0px;
   margin-bottom: 15px;
 }
@@ -710,6 +737,27 @@
 .user-css .world-campaigns-title {
   padding: 0px;
   padding-left: 15px;
+}
+
+.user-css .table-of-contents h2,
+.user-css .world-featured-articles h2,
+.user-css .world-recent-articles h2,
+.user-css .timelines-list-header {
+  border-bottom: 3px solid var(--ColorTert-1);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 25px;
+  text-align: center;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.user-css .world-social-discord {
+  background: var(--ColorSec-1);
+  border: 3px solid var(--ColorTert-4);
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
 }
 
 .user-css .toc-article-link {
@@ -791,11 +839,11 @@
   color: var(--ColorSec-1);
   background: var(--ColorTert-2);
   border: none;
-  display: none;
   border-radius: 0px;
   font-family: var(--HeaderFont);
   box-shadow: none;
   transition: all 0.3s;
+  display: none;
   padding-top: 9px;
 }
 
@@ -873,12 +921,13 @@
 .user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
 .map-context-user-css .search-form .typeahead-input {
   color: var(--BodyColor) !important;
-    background: var(--ColorSec-2);
-    border: 3px solid var(--ColorTert-4);
-    border-radius: 20px;
-    width: 252px;
-    box-shadow: none;
-    padding: 17px 15px 13px 13px;
+  background: var(--ColorSec-2);
+  border: 4px solid var(--ColorTert-4);
+  border-radius: 20px;
+  color: var(--ColorSec-1);
+  width: 200px;
+  box-shadow: none;
+  padding: 13px 10px 12px 10px;
 }
 
 .user-css .search-form .typeahead-input::placeholder,
@@ -922,36 +971,45 @@
 /*--------------------------*/
 /* ---- Breadcrumbs   ---- */
 /* -------------------------*/
+.user-css .breadbox .breadcrumb-world-link-wrapper {
+  display: none;
+}
+
 .user-css .breadcrumb,
 .user-css-extended .breadcrumb {
   font-family: var(--BodyFont);
-  font-size: 1.1em;
+  font-size: 1.5em;
   font-style: normal;
+  margin-top: 15px;
 }
 
 .user-css .breadcrumb .fas,
 .user-css-extended .breadcrumb .fas {
-  color: var(--ColorTert-2);
+  color: var(--ColorTert-1);
+}
+
+.user-css .breadbox .breadcrumb-card {
+  font-family: var(--BodyFont), sans-serif;
+  color: var(--HeaderFont);
+  background-color: var(--ColorSec-2);
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 4px solid var(--ColorTert-1);
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 /*--------------------------*/
 /* ---- Bottom   ---- */
 /* -------------------------*/
 .user-css .copyright-attribution {
-  background: linear-gradient(
-    135deg,
-    var(--ColorSec-1) 0%,
-    var(--ColorSec-2) 100%
-  );
+  background: var(--ColorSec-1);
   border: 3px solid var(--ColorTert-4);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding: 15px;
-  margin-bottom: 10px;
-  font-size: 1em;
-  color: var(--BodyColor);
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: -17px;
 }
-
 .user-css .cp.btn-primary {
   padding-top: 7px;
 }
@@ -961,38 +1019,6 @@
 }
 .user-css .article- .btn:hover {
   color: var(--ColorTert-1) !important;
-}
-
-/*--------------------------*/
-/* ---- Category + Social   ---- */
-/* -------------------------*/
-.user-css .social-media {
-  display: none;
-}
-
-/*--------------------------*/
-/* ---- Nav/Category   ---- */
-/* -------------------------*/
-.user-css .article-horizontal-navigation {
-  padding-bottom: 20px;
-  position: fixed;
-  bottom: 0px;
-  z-index: 1000;
-  width: 100%;
-  left: 0px;
-  background: var(--ColorPrime);
-  border-top: none;
-  border-color: var(--ColorTert-2);
-  padding: 10px 100px 5px 100px;
-}
-
-.user-css .article-horizontal-navigation hr {
-  display: none;
-}
-
-.user-css .article-horizontal-navigation a {
-  font-size: 1.5em;
-  margin-top: 3px;
 }
 
 /*--------------------------*/
@@ -1977,9 +2003,59 @@
 .user-css-whitelabel {
   background: var(--ColorPrime);
   border: 2px solid var(--ColorTert-1);
-  border-radius: 5px;
+  border-radius: 20px;
   color: var(--BodyColor) !important;
   margin-left: 14px;
+}
+
+/*--------------------------*/
+/* ---- Navbar  ---- */
+/* -------------------------*/
+[id*=visual-conta] {
+  margin-top: 50px !important;
+}
+
+.world-global-header.user-css .ros-top-navbar {
+  position: fixed;
+  background: var(--ColorPrime); /* Ensure variables are defined */
+  border-bottom: 3px solid var(--ColorTert-1);
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  padding-top: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+}
+
+.world-global-header.user-css .ros-top-navlogo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 3011;
+}
+
+.world-global-header.user-css .ros-top-navlogo img {
+  height: auto;
+  max-height: 60px;
+  transition: transform 0.3s ease-in-out;
+  filter: brightness(150%);
+}
+
+.world-global-header.user-css .ros-top-nav-text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: var(--ColorTert-1);
+  font-family: var(--HeaderFont); /* Ensure the font is properly defined */
+  font-size: 1.5em;
+  line-height: 60px;
 }
 
 /*--------------------------*/
@@ -2079,63 +2155,12 @@
 }
 
 /*--------------------------*/
-/* ---- Navbar  ---- */
-/* -------------------------*/
-[id*=visual-conta] {
-  margin-top: 80px !important;
-}
-
-.world-global-header.user-css .ros-top-navbar {
-  position: fixed;
-  background: var(--ColorPrime);
-  border-bottom: 3px solid var(--ColorTert-1);
-  width: 100%;
-  height: 60px;
-  top: 0;
-  left: 0;
-  z-index: 3000;
-  padding-top: 5px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 50px;
-}
-
-.world-global-header.user-css .ros-top-navlogo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  z-index: 3011;
-}
-
-.world-global-header.user-css .ros-top-navlogo img {
-  height: auto;
-  max-height: 60px;
-  transition: transform 0.3s ease-in-out;
-  filter: brightness(150%);
-}
-
-.world-global-header.user-css .ros-top-nav-text {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  color: var(--ColorTert-1);
-  font-family: var(--HeaderFont);
-  font-size: 1.5em;
-  line-height: 60px;
-}
-
-/*--------------------------*/
 /* ---- World Navigation ---- */
 /*--------------------------*/
 .user-css-presentation .world-navigation-palette-trigger,
-.user-css .world-content .world-menu,
-.user-css #world-category-content,
 .user-css .world-content .world-maps,
-.user-css .world-content .world-timelines,
+.user-css .world-authors,
+.user-css #world-category-content,
 .user-css .world-title {
   display: none;
 }
@@ -2161,42 +2186,21 @@
   display: none;
 }
 
-.alert-success {
-  background: var(--ColorSec-2);
-  border: 5px double var(--ColorTert-4);
-  border-radius: 25px;
-  color: var(--BodyColor);
-  font-family: var(--BodyFont);
-  font-size: 1.2em;
-}
-
-.label-primary {
-  background: var(--ColorSec-2);
-  border: 2px solid var(--ColorTert-4);
-  color: var(--BodyColor);
-}
-
-.user-css .world-owners img {
-  max-width: 95%;
-  height: auto;
-  margin-bottom: 27px;
-}
-
 /*--------------------------*/
 /* ---- Character Index  ---- */
 /* -------------------------*/
 .user-css .ros-letter-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px; 
+  gap: 20px;
   margin-bottom: 20px;
 }
 
 .user-css .ros-letter-card {
   background: var(--ColorSec-1);
-  border: 6px double var(--ColorTert-1);
+  border: 4px solid var(--ColorTert-1);
   box-shadow: none;
-  height: 300px; 
+  height: 300px;
   border-radius: 20px;
   overflow-y: auto;
   position: relative;
@@ -2217,20 +2221,157 @@
 
 .user-css .ros-letter-content {
   padding: 12px 16px;
-  margin-top: 48px; 
-  overflow-y: auto; 
+  margin-top: 48px;
+  overflow-y: auto;
 }
 
-.user-css .ros-normal-bullet {
+/*--------------------------*/
+/* ---- Bullets  ---- */
+/* -------------------------*/
+.user-css .ros-index-bullet {
   display: block;
   margin-bottom: 20px;
-  padding-left: 32px; 
-  background: url(https://www.worldanvil.com/uploads/images/dcced16d5f4d1b93d69fc1641cec19df.png) no-repeat left center;
+  padding-left: 32px;
+  background: url(https://www.worldanvil.com/uploads/images/dcced16d5f4d1b93d69fc1641cec19df.png)
+    no-repeat left center;
   background-size: 15px 15px;
   padding-top: 5px;
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
 }
 
-.user-css .ros-normal-bullet {
-  background-position: 0 50%;
+.ros-normal-bullet {
+  list-style-type: none;
+  padding-left: 32px;
+  background: url(https://www.worldanvil.com/uploads/images/8aeb7f8502df02070d8fba94f515f9f4.png)
+    no-repeat left center;
+  background-size: 15px 15px;
+}
+
+.ros-male-bullet {
+  list-style-type: none;
+  padding-left: 32px;
+  background: url(https://www.worldanvil.com/uploads/images/8aeb7f8502df02070d8fba94f515f9f4.png)
+    no-repeat left center;
+  background-size: 15px 15px;
+}
+
+.ros-female-bullet {
+  list-style-type: none;
+  padding-left: 32px;
+  background: url(https://www.worldanvil.com/uploads/images/b9681c4688dedfcf9086b4330803547a.png)
+    no-repeat left center;
+  background-size: 25px 25px;
+}
+
+.ros-cat-anthro-bullet {
+  list-style-type: none;
+  padding-left: 32px;
+  background: url(https://www.worldanvil.com/uploads/images/13000bb23f3ee5fa3000ed974af38c77.png)
+    no-repeat left center;
+  background-size: 25px 25px;
+}
+
+.ros-halt-bullet {
+  list-style-type: none;
+  padding-left: 32px;
+  background: url(https://www.worldanvil.com/uploads/images/e5e7acdd6f6bdd13fbf850f8d10a1654.png)
+    no-repeat left center;
+  background-size: 25px 25px;
+}
+
+/*--------------------------*/
+/* ---- Custom CSS Articles  ---- */
+/* -------------------------*/
+.user-css .ros-custom-title {
+  color: var(--ColorTert-1);
+  font-family: var(--HeaderFont);
+  font-size: 2em;
+  text-align: center;
+  padding-top: 17px;
+  padding-bottom: 29px;
+}
+
+.user-css .article-title {
+  font-size: 0.6em;
+}
+
+/*-------------------------*/
+/* ----Infobox   ---- */
+/* -------------------------*/
+.ros-profilebox {
+  background: var(--ColorPrime);
+  color: var(--BodyColor);
+  border: 3px solid var(--ColorTert-2);
+  border-radius: 10px;
+  padding: 0;
+  margin-bottom: 1em;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.ros-profilebox-header {
+  background: var(--ColorSec-2);
+  color: var(--ColorTert-1);
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  font-family: var(--font-header-tertiary);
+  border-bottom: 2px solid var(--ColorTert-2);
+}
+
+.ros-profilebox-content b {
+  color: var(--ColorTert-2);
+}
+
+.ros-profilebox-entry {
+  color: var(--BodyColor);
+  padding: 0.2em 0.5em;
+  margin: 0.2em 0;
+}
+
+.ros-profilebox-image {
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.ros-profilebox-subheader {
+  background: var(--ColorTert-1);
+  color: var(--BodyColor);
+  padding: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  font-family: var(--font-header-tertiary);
+  border-bottom: 1px solid var(--ColorSec-1);
+  letter-spacing: 1px;
+}
+
+.ros-profilebox-content {
+  padding: 0.5em;
+  background: var(--ColorSec-1);
+  color: var(--BodyColor);
+  border-bottom: 1px solid var(--ColorTert-3);
+}
+
+.ros-profilebox-content:last-of-type {
+  border-bottom: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.ros-character-image img {
+  height: auto;
+  overflow: hidden;
+  max-width: 90%;
+}
+
+.user-css .aloud {
+  background: var(--ColorSec-2);
+  color: var(--BodyColor);
+  font-size: 0.9em;
+  border-radius: 20px;
+  border: 3px solid var(--ColorTert-1);
+  display: inline-block; /* or use display: table for older browsers */
+  padding: 0.5em 1em; /* Adjust padding as necessary */
+  margin: 0; /* Remove default margin */
 }

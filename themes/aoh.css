@@ -1,3 +1,7 @@
+/** Originally Mortal Coil Theme Designed By
+** Timepool (Garrett Lewis)
+https://www.worldanvil.com/author/Timepool */
+
 /*--------------------------*/
 /* ---- Variables   ---- */
 /* -------------------------*/
@@ -10,122 +14,56 @@
 .map-context-user-css,
 .tooltipster-content {
   /* Fonts */
-  --HeaderFont: Staatliches;
-  --BodyFont: Barlow;
+  --HeaderFont: Iceland;
+  --HeaderFont-2: Aldrich;
+  --BodyFont: Electrolize;
 
   /* Colors */
-  --ColorPrime: #16151c;
-  --ColorSec-1: #1e222e;
-  --ColorSec-2: #203539;
-  --ColorTert-1: #63c7ba;
-  --ColorTert-2: #4aa2a7;
-  --ColorTert-3: #356c6c;
-  --ColorTert-4: #366b5c;
-  --ColorTert-5: #3d8079;
-  --BodyColor: #cfd5dd;
-  --MuteColor: #ccfaff;
+  --ColorPrime: #1d2230;
+  --ColorSec-1: #1a2c4b;
+  --ColorSec-2: #1e3a60;
+  --ColorTert-1: #4b7bdc;
+  --ColorTert-2: #3272c9;
+  --ColorTert-3: #2d5475;
+  --ColorTert-4: #396087;
+  --ColorTert-5: #507cb3;
+  --BodyColor: #d6e2f0;
+  --MuteColor: #b0c4de;
 }
+
+
+
 /*--------------------------*/
 /* ---- Fonts   ---- */
 /* -------------------------*/
 @font-face {
-  font-family: Staatliches;
+  font-family: Iceland;
   font-style: normal;
-  font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYeVvpCNOw.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Staatliches;
-  font-style: normal;
-  font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMYebvpA.woff2);
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/iceland/v8/rax9HiuFsdMNOnWPaKtMAQ.woff2);
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: Barlow;
-  font-style: italic;
+  font-family: Aldrich;
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHrv4kjgoGqM7E_Cfs1wH8RnA.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Barlow;
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHrv4kjgoGqM7E_Cfs7wH8.woff2);
+  src: url(https://fonts.gstatic.com/s/aldrich/v10/MCoTzAn-1s3IGyJMVacY3w.woff2);
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: Barlow;
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHsv4kjgoGqM7E_CfOA5WogvTobdw.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Barlow;
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHsv4kjgoGqM7E_CfOA5WouvTo.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Barlow;
+  font-family: Electrolize;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHpv4kjgoGqM7E_Ass52Hs.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHpv4kjgoGqM7E_DMs5.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E3t-4s6VospT4.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Barlow;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E3t-4s51os.woff2);
+  src: url(https://fonts.gstatic.com/s/electrolize/v8/cIf5Ma1dtE0zSiGSiED7AXEBuI8.woff2);
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
     U+FEFF, U+FFFD;
@@ -135,12 +73,12 @@
 /* ---- Backgrounds   ---- */
 /* -------------------------*/
 .user-css-presentation {
-  background-image: linear-gradient(
-    to right bottom,
-    var(--ColorPrime),
-    var(--ColorSec-2),
-    var(--ColorTert-1),
-    var(--ColorTert-5)
+  background: linear-gradient(
+    0deg,
+    #3a7ca5 15%,
+    #4b8e8d 35%,
+    #5d89a6 65%,
+    #97c8eb 100%
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -151,9 +89,10 @@
 .user-css-extended .page,
 .user-css-presentation .tooltipster-content {
   background: var(--ColorPrime);
-  border: 7px double var(--ColorTert-5);
-  border-radius: 15px;
+  border: 8px double var(--ColorTert-5);
+  border-radius: 20px;
   overflow: hidden;
+  box-shadow: none;
 }
 
 .user-css #cover img {
@@ -197,9 +136,11 @@
 .user-css-extended .orphan-era h1 {
   color: var(--ColorTert-1);
   font-family: var(--HeaderFont);
-  font-size: 3.3em;
+  font-size: 4em;
   text-align: center;
-  padding-top: 17px;
+  padding-top: 15px;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .user-css h2,
@@ -210,7 +151,7 @@
   color: var(--ColorTert-2);
   padding-top: 15px;
   border-bottom: none;
-  font-size: 2.5em;
+  font-size: 3.1em;
   margin-bottom: 0px;
 }
 
@@ -219,9 +160,10 @@
 .user-css-map-sidebar h3,
 .user-css-presentation .tooltipster-content h3 {
   font-family: var(--HeaderFont);
-  color: var(--ColorTert-2);
-  padding-top: 15px;
-  font-size: 2em;
+  color: var(--ColorTert-1);
+  font-size: 2.5em;
+  padding-top: 20px;
+  line-height: 1;
 }
 
 .user-css h4,
@@ -233,9 +175,10 @@
 .user-css-extended .timeline li .milestone-panel h4,
 .user-css-presentation .tooltipster-content h4 {
   font-family: var(--HeaderFont);
-  color: var(--ColorTert-1);
-  padding-top: 15px;
-  font-size: 2em;
+  color: var(--ColorTert-2);
+  font-size: 2.1em;
+  padding-top: 20px;
+  line-height: 1;
 }
 
 .user-css h5,
@@ -248,14 +191,17 @@
 .user-css-presentation .tooltipster-content h5,
 .user-css-presentation #world-navigation-sidebar .world-menu h5 {
   color: var(--ColorTert-2);
-  font-family: var(--HeaderFont);
+  font-family: var(--HeaderFont-2);
   padding-top: 10px;
+  font-family: 32px;
   margin-top: 0px;
+  line-height: 1;
 }
 
 .user-css h6 {
   font-family: var(--HeaderFont);
   padding-top: 15px;
+  line-height: 1;
 }
 
 /*--------------------------*/
@@ -374,8 +320,8 @@
   color: var(--ColorSec-1) !important;
   background: var(--ColorTert-2);
   border: none;
-  border: 3px double var(--ColorTert-3);
-  border-radius: 20px;
+  border-left: 5px solid var(--ColorTert-3);
+  border-radius: 0px;
   box-shadow: none;
   transition: all 0.3s;
 }
@@ -444,9 +390,10 @@
 /* -------------------------*/
 .user-css .panel,
 .user-css-extended .panel {
-  background: var(--ColorSec-1);
-  border: 5px double var(--ColorTert-4);
-  border-radius: 20px;
+  background: none;
+  border-left: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /*--------------------------*/
@@ -630,11 +577,9 @@
 /* ---- Bookcovers   ---- */
 /* -------------------------*/
 .user-css .bookcover {
-  border: 8px double var(--ColorTert-4);
+  border: 3px solid var(--ColorTert-4);
   background: var(--ColorSec-2);
-  border-radius: 20px;
-  height: 354px;
-  width: 300px;
+  border-radius: 0px;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -684,41 +629,6 @@
 /*--------------------------*/
 /* ---- Table of Contents   ---- */
 /* -------------------------*/
-.user-css.page-world-homepage #world-menu,
-.user-css.page-world-homepage #world-maps,
-.user-css.page-world-homepage #world-timelines,
-.user-css-presentation #world-navigation-sidebar .world-menu {
-  background: var(--ColorSec-1);
-  border: 3px double var(--ColorTert-4);
-  padding: 15px;
-  border-radius: 20px;
-  margin-bottom: 15px;
-}
-
-.user-css .world-toc-header {
-  padding: 0px;
-}
-
-.user-css.page-world-homepage #world-menu,
-.user-css-presentation #world-navigation-sidebar .world-menu {
-  background: var(--ColorSec-1);
-  border: 3px double var(--ColorTert-4);
-  padding: 15px;
-  border-radius: 20px;
-  padding-left: 0px;
-  margin-bottom: 15px;
-}
-
-.user-css .timelines-list-header,
-.user-css .maps-list-header,
-.user-css .world-toc-header,
-.user-css .world-featured-articles h2,
-.user-css .world-recent-articles h2,
-.user-css .world-campaigns-title {
-  padding: 0px;
-  padding-left: 15px;
-}
-
 .user-css .toc-article-link {
   color: var(--ColorTert-2);
 }
@@ -860,13 +770,6 @@
 /*--------------------------*/
 /* ---- Search Form   ---- */
 /* -------------------------*/
-.user-css .search-form {
-  left: 73px;
-  position: fixed;
-  top: 7px;
-  z-index: 3010;
-}
-
 .user-css .search-form .typeahead-input,
 .user-css .form-control,
 .user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
@@ -952,38 +855,6 @@
 }
 .user-css .article- .btn:hover {
   color: var(--ColorTert-1) !important;
-}
-
-/*--------------------------*/
-/* ---- Category + Social   ---- */
-/* -------------------------*/
-.user-css .social-media {
-  display: none;
-}
-
-/*--------------------------*/
-/* ---- Nav/Category   ---- */
-/* -------------------------*/
-.user-css .article-horizontal-navigation {
-  padding-bottom: 20px;
-  position: fixed;
-  bottom: 0px;
-  z-index: 1000;
-  width: 100%;
-  left: 0px;
-  background: var(--ColorPrime);
-  border-top: none;
-  border-color: var(--ColorTert-2);
-  padding: 10px 100px 5px 100px;
-}
-
-.user-css .article-horizontal-navigation hr {
-  display: none;
-}
-
-.user-css .article-horizontal-navigation a {
-  font-size: 1.5em;
-  margin-top: 3px;
 }
 
 /*--------------------------*/
@@ -1972,56 +1843,6 @@
 }
 
 /*--------------------------*/
-/* ---- Navbar  ---- */
-/* -------------------------*/
-[id*=visual-conta] {
-  margin-top: 50px !important;
-}
-
-.world-global-header.user-css .ros-top-navbar {
-  position: fixed;
-  background: var(--ColorPrime); /* Ensure variables are defined */
-  border-bottom: 3px solid var(--ColorTert-1);
-  width: 100%;
-  height: 60px;
-  top: 0;
-  left: 0;
-  z-index: 3000;
-  padding-top: 5px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 50px;
-}
-
-.world-global-header.user-css .ros-top-navlogo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  z-index: 3011;
-}
-
-.world-global-header.user-css .ros-top-navlogo img {
-  height: auto;
-  max-height: 60px;
-  transition: transform 0.3s ease-in-out;
-  filter: brightness(150%);
-}
-
-.world-global-header.user-css .ros-top-nav-text {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  color: var(--ColorTert-1);
-  font-family: var(--HeaderFont); /* Ensure the font is properly defined */
-  font-size: 1.5em;
-  line-height: 60px;
-}
-
-/*--------------------------*/
 /* ---- Screen Scaling ---- */
 /* -------------------------*/
 @media only screen and (max-width: 1199px) {
@@ -2118,12 +1939,124 @@
 }
 
 /*--------------------------*/
-/* ---- Edits ---- */
-/* -------------------------*/
+/* ---- World Navigation ---- */
+/*--------------------------*/
 .user-css-presentation .world-navigation-palette-trigger,
-.user-css #world-category-content,
 .user-css .world-content .world-maps,
-.user-css .world-meta-categories-link,
-.user-css .discussion-boards-world-link {
+.user-css #world-category-content,
+.user-css .world-content .world-timelines,
+.user-css .world-authors {
   display: none;
+}
+
+/*--------------------------*/
+/* ---- Links and Counters ---- */
+/*--------------------------*/
+.user-css .world-meta-categories-link,
+.user-css .discussion-boards-world-link,
+.user-css a.world-share-rss-feed-link,
+.user-css .followers-counter {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- Character Elements ---- */
+/*--------------------------*/
+.user-css .character-relationship-panel,
+.user-css .character-relationships-header,
+.user-css .character-children,
+.user-css .character-relationships,
+.user-css .character-article-portrait {
+  display: none;
+}
+
+/*-------------------------*/
+/* ----Infobox   ---- */
+/* -------------------------*/
+.aoh-profilebox {
+  background: var(--ColorPrime);
+  color: var(--BodyColor);
+  border: 7px double var(--ColorTert-2);
+  border-radius: 20px;
+  padding: 0;
+  margin-bottom: 1em;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.aoh-profilebox-header {
+  background: var(--ColorSec-2);
+  color: var(--ColorTert-1);
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  font-family: var(--BodyFont);
+  border-bottom: 2px solid var(--ColorTert-2);
+}
+
+.aoh-profilebox-content b {
+  color: var(--BodyColor);
+}
+
+.aoh-profilebox-entry {
+  color: var(--BodyColor);
+  padding: 0.2em 0.5em;
+  margin: 0.2em 0;
+}
+
+.aoh-profilebox-image {
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.aoh-profilebox-subheader {
+  background: var(--ColorTert-1);
+  color: var(--BodyColor);
+  padding: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  font-family: var(--BodyFont);
+  border-bottom: 1px solid var(--ColorSec-1);
+  letter-spacing: 1px;
+}
+
+.aoh-profilebox-nickname {
+  display: block;
+  color: var(--ColorTert-1);
+  font-family: var(--BodyFont);
+  text-align: center;
+  font-size: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 14px;
+}
+
+.aoh-profilebox-content {
+  padding: 0.5em;
+  background: var(--ColorSec-1);
+  color: var(--BodyColor);
+  border-bottom: 1px solid var(--ColorTert-3);
+}
+
+.aoh-profilebox-content:last-of-type {
+  border-bottom: none;
+  border-radius: 0px;
+}
+
+.aoh-character-image img {
+  height: auto;
+  overflow: hidden;
+  max-width: 90%;
+}
+
+/*--------------------------*/
+/* ---- Bullets  ---- */
+/* -------------------------*/
+.normal-bullet {
+  list-style-type: none;
+  padding-left: 32px;
+  background: url(https://www.worldanvil.com/uploads/images/8aeb7f8502df02070d8fba94f515f9f4.png)
+    no-repeat left center;
+  background-size: 15px 15px;
 }
