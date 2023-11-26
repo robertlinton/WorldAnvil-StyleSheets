@@ -1,0 +1,2081 @@
+/*--------------------------*/
+/* ---- Variables  ---- */
+/* -------------------------*/
+.user-css,
+.user-css-extended,
+.user-css-presentation,
+.user-css-map,
+.user-css-map-sidebar,
+.map-context-user-css,
+.tooltipster-content {
+  /* Fonts */
+  --HeaderFont: Pirata One;
+  --BodyFont: Crimson Pro, serif;
+
+  /* Colors */
+  --Bkgrust: #341515;
+  --Obsidred: #3d1a1a;
+  --Firestone: #823131;
+  --PaleFirestone: #854747;
+  --DarkFirestone: #582828;
+  --Scar: #e97272;
+  --WhiteScar: #f3c4c4;
+
+  /* Misc */
+  --shadow: rgba(0, 0, 0, 0.6);
+}
+
+/*--------------------------*/
+/* ---- Fonts  ---- */
+/* -------------------------*/
+@font-face {
+  font-family: Pirata One;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/pirataone/v15/I_urMpiDvgLdLh0fAtofhiGOrq_B.woff2);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Pirata One;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/pirataone/v15/I_urMpiDvgLdLh0fAtofhi-Org.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v14/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MMZs-ZNU.woff2);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v14/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MP5s-.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/*--------------------------*/
+/* ---- Background  ---- */
+/* -------------------------*/
+.user-css-presentation {
+  background: var(--Bkgrust);
+}
+
+.user-css.page,
+.user-css-extended .page,
+.user-css-presentation .tooltipster-content {
+  background: #e8c0c1;
+  background-color: #e8c0c1;
+  background-image: url(https://www.worldanvil.com/uploads/images/43ac6de853ee317fd39deb1dc1c8519c.png);
+  border: 5px solid var(--Firestone);
+}
+
+.user-css,
+.user-css p,
+.user-css-extended,
+.user-css-extended p,
+.user-css blockquote,
+.user-css-extended blockquote,
+.user-css .article-content,
+.user-css .thales-cell,
+.user-css-map-sidebar p,
+.user-css .calendar-presentation sup,
+.user-css .timeline li .timeline-panel p,
+.user-css .timeline li .milestone-panel p,
+.user-css-extended .timeline li .timeline-panel p,
+.user-css-extended .timeline li .milestone-panel p,
+.user-css-extended dl,
+.user-css-presentation .tooltipster-content,
+.user-css.page-world-homepage .subheading {
+  font-size: 20px;
+  font-family: var(--BodyFont);
+  color: var(--Obsidred);
+}
+
+/*--------------------------*/
+/* ---- Headers  ---- */
+/* -------------------------*/
+.user-css h1,
+.user-css-map-sidebar h1,
+.user-css-presentation .tooltipster-content h1,
+.user-css .statblock h1,
+.user-css-extended .orphan-era h1 {
+  text-align: center;
+  font-family: var(--HeaderFont);
+  color: var(--Firestone);
+  font-size: 3em;
+}
+
+.user-css h2,
+.user-css-extended .page h2,
+.user-css-map-sidebar h2,
+.user-css-presentation .tooltipster-content h2 {
+  font-family: var(--HeaderFont);
+  font-size: 2em;
+  color: var(--Firestone);
+  border-bottom: 2px solid var(--Firestone);
+}
+
+.user-css h3,
+.user-css-extended .page h3,
+.user-css-map-sidebar h3,
+.user-css-presentation .tooltipster-content h3 {
+  font-family: var(--HeaderFont);
+  font-size: 1.8em;
+  color: var(--DarkFirestone);
+}
+
+.user-css h4,
+.user-css-extended .page h4,
+.user-css-map-sidebar h4,
+.user-css .timeline li .timeline-panel h4,
+.user-css .timeline li .milestone-panel h4,
+.user-css-extended .timeline li .timeline-panel h4,
+.user-css-extended .timeline li .milestone-panel h4,
+.user-css-presentation .tooltipster-content h4 {
+  font-family: var(--HeaderFont);
+  font-size: 1.5em;
+  color: var(--Firestone);
+  margin-top: 10px;
+}
+
+.user-css h5,
+.user-css-extended .page h5,
+.user-css-map-sidebar h5,
+.user-css .timeline li .timeline-panel h5,
+.user-css .timeline li .milestone-panel h5,
+.user-css-extended .timeline li .timeline-panel h5,
+.user-css-extended .timeline li .milestone-panel h5,
+.user-css-presentation .tooltipster-content h5,
+.user-css-presentation #world-navigation-sidebar .world-menu h5 {
+  font-family: var(--HeaderFont);
+  font-size: 1.5em;
+  color: var(--Firestone);
+}
+
+.user-css h6 {
+  font-family: var(--HeaderFont);
+  font-size: 1.5em;
+  color: var(--Firestone);
+}
+
+/*--------------------------*/
+/* ---- Links  ---- */
+/* -------------------------*/
+.user-css a,
+.user-css a:focus,
+.user-css-extended .page a,
+.user-css .artist-credits a,
+.user-css .timeline li .timeline-panel a,
+.user-css .timeline li .milestone-panel a,
+.user-css-extended .timeline li .timeline-panel a,
+.user-css-extended .timeline li .milestone-panel a,
+.user-css-presentation .tooltipster-content a {
+  color: var(--Firestone);
+}
+
+.user-css a:hover,
+.user-css-extended a:hover,
+.user-css-presentation .tooltipster-content a:hover {
+  text-decoration-style: dotted;
+}
+
+/*--------------------------*/
+/* ---- Tooltips  ---- */
+/* -------------------------*/
+.user-css-presentation .tooltipster-borderless .tooltipster-box {
+  background: none;
+  text-align: center;
+}
+
+.user-css-presentation .tooltipster-borderless .tooltipster-arrow {
+  display: block;
+}
+
+.user-css-presentation .tooltipster-arrow-border {
+  border-top-color: var(--Firestone) !important;
+}
+
+.user-css .tooltip.top .tooltip-arrow,
+.user-css-extended .tooltip.top .tooltip-arrow,
+.user-css-worldmenu .tooltip.top .tooltip-arrow {
+  border-top-color: var(--Firestone);
+}
+
+.user-css-presentation .tooltipster-borderless .tooltipster-box {
+  background: none;
+}
+
+.user-css .tooltip .tooltip-inner,
+.user-css-extended .tooltip .tooltip-inner,
+.user-css-worldmenu .tooltip .tooltip-inner,
+.user-css-presentation .tooltipster-borderless .tooltipster-content {
+  font-family: var(--BodyFont);
+  font-size: 1.4em;
+  color: var(--Obsidred);
+}
+
+/*--------------------------*/
+/* ---- Misc  ---- */
+/* -------------------------*/
+.user-css .text-abbreviation {
+  cursor: default !important;
+}
+
+.user-css .text-muted {
+  color: var(--PaleFirestone) !important;
+}
+
+.user-css .text-danger,
+.user-css-extended .text-danger {
+  color: var(--Firestone);
+}
+
+.user-css .dropcap {
+  font-family: var(--BodyFont);
+  padding: 0px;
+  padding-right: 5px;
+}
+
+/*--------------------------*/
+/* ---- Butons  ---- */
+/* -------------------------*/
+.user-css .btn:focus,
+.user-css-extended .btn:focus,
+.map-context-user-css .btn:focus,
+.tooltipster-content .btn:focus {
+  box-shadow: none;
+}
+
+.user-css .btn,
+.user-css-extended .btn,
+.user-css .label-roller,
+.user-css .rhea-ft-zoom-controls button,
+.user-css .btn-success,
+.user-css-extended .btn .btn-success,
+.user-css-presentation .tooltipster-content .btn {
+  font-family: var(--BodyFont);
+  font-size: 0.9em;
+  color: var(--WhiteScar) !important;
+  background: var(--Firestone) !important;
+  border: none !important;
+  border-radius: 0px;
+  transition: all 0.2s;
+}
+
+.user-css .btn:hover,
+.user-css-extended .btn:hover,
+.user-css .label-roller:hover,
+.user-css .rhea-ft-zoom-controls button:hover,
+.user-css .btn-success:hover,
+.user-css-extended .btn .btn-success:hover,
+.user-css-presentation .tooltipster-content .btn:hover {
+  background: var(--Scar) !important;
+}
+
+.user-css .visibility-toggler-trigger .fas,
+.user-css-extended .visibility-toggler-trigger .fas {
+  padding: 5px;
+}
+
+/*--------------------------*/
+/* ---- Quotes  ---- */
+/* -------------------------*/
+.user-css blockquote,
+.user-css-extended blockquote,
+.user-css-presentation .tooltipster-content blockquote {
+  font-size: 1em;
+  background: var(--Scar);
+  border-radius: 0px;
+  border-left: 5px solid var(--Firestone);
+  box-shadow: none;
+}
+
+.user-css blockquote .author,
+.user-css-extended blockquote .author,
+.user-css-presentation .tooltipster-content blockquote .author {
+  font-family: var(--HeaderFont);
+  color: var(--PaleFirestone);
+  font-size: 1em;
+}
+
+/*--------------------------*/
+/* ---- Sidebar Panel  ---- */
+/* -------------------------*/
+.user-css .panel,
+.user-css-extended .panel {
+  background: none;
+  box-shadow: none;
+  border: 5px solid var(--Scar);
+  border-right-width: 0px;
+  border-radius: 0px;
+  margin: 15px -25px 15px 0px;
+}
+
+.user-css-presentation .tooltipster-content {
+  color: var(--Obsidred) !important;
+}
+
+.tooltipster-sidetip.tooltipster-light .tooltipster-box {
+  border: none;
+  background: transparent;
+}
+
+.user-css-presentation .tooltipster-arrow {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- HR  ---- */
+/* -------------------------*/
+.user-css hr,
+.user-css-extended hr,
+.user-css-map-sidebar hr,
+.user-css .tooltipster-content hr {
+  border-top: 3px solid var(--Firestone);
+  opacity: 1;
+}
+
+/*--------------------------*/
+/* ---- Images  ---- */
+/* -------------------------*/
+.user-css .artist-credits {
+  color: var(--Firestone);
+}
+
+.user-css .image-panel {
+  text-align: center;
+  padding: 15px;
+  background: var(--Scar);
+  border: 5px solid var(--Firestone);
+  box-shadow: none;
+}
+
+.user-css .image-panel .cover,
+.user-css-image-thumbnail {
+  margin-top: 0px;
+}
+
+.user-css .image-panel .artist-credits {
+  font-size: 1.2em;
+}
+
+/*--------------------------*/
+/* ---- Spoilers  ---- */
+/* -------------------------*/
+.user-css .spoiler-button:hover,
+.user-css .spoiler-button[aria-expanded=true],
+.user-css-extended .spoiler-button:hover,
+.user-css-extended .spoiler-button[aria-expanded=true] {
+  background: var(--Scar) !important;
+}
+
+.user-css .spoiler-card,
+.user-css-extended .spoiler-card {
+  background: none;
+  border: none;
+  padding: 0px !important;
+}
+
+.user-css .spoiler-content,
+.user-css-extended .spoiler-content {
+  background: var(--Scar);
+  border-top: 5px solid var(--Firestone);
+  border-radius: 0px;
+}
+
+/*--------------------------*/
+/* ---- Aloud Boxes  ---- */
+/* -------------------------*/
+.user-css .aloud,
+.user-css-presentation .tooltipster-content .aloud {
+  background: var(--WhiteScar);
+  border: 5px solid var(--Firestone);
+  color: var(--Firestone);
+}
+
+/*--------------------------*/
+/* ---- Code Boxes  ---- */
+/* -------------------------*/
+.user-css pre {
+  background: var(--WhiteScar);
+  border: 5px solid var(--Scar);
+  padding: 5px 10px;
+  font-family: var(--BodyFont);
+  font-size: 1em;
+}
+
+/*--------------------------*/
+/* ---- Article Blocks  ---- */
+/* -------------------------*/
+.user-css .article-panel,
+.user-css-extended .article-panel,
+.user-css .map-box {
+  background: var(--WhiteScar);
+  border: 5px solid var(--Firestone);
+  border-left: none;
+  border-right: none;
+  transition: all 0.2s;
+}
+
+.user-css .article-panel:hover,
+.user-css-extended .article-panel:hover,
+.user-css .map-box:hover {
+  background: var(--Scar);
+}
+
+.user-css .article-panel .heading {
+  font-size: 1.5em;
+  color: var(--Firestone);
+}
+
+.user-css .article-panel .subheading,
+.user-css .article-panel .date {
+  color: var(--PaleFirestone);
+}
+
+/*--------------------------*/
+/* ---- Homeepage  ---- */
+/* -------------------------*/
+.user-css .world-author {
+  font-family: var(--BodyFont);
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/*--------------------------*/
+/* ---- Bookcovers  ---- */
+/* -------------------------*/
+.user-css .bookcover {
+  border: 5px solid var(--Firestone);
+  max-width: 300px;
+  max-height: 300px;
+  background: var(--Firestone);
+  transition: all 0.2s;
+}
+
+.user-css .bookcover:hover {
+  background: var(--Scar);
+}
+
+.user-css .bookcover a:hover img {
+  opacity: 0;
+}
+
+.user-css .world-bookcase .booktitle,
+.user-css .booktitle {
+  background: var(--Firestone);
+  color: var(--WhiteScar);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.user-css .world-bookcase .bookcover a:hover .booktitle,
+.user-css .bookcover a:hover .booktitle {
+  text-align: center;
+  background: var(--DarkFirestone);
+}
+
+.user-css .world-bookcase .bookcover .img {
+  width: 100%;
+  max-width: 300px;
+}
+
+/*--------------------------*/
+/* ---- Table of Contents  ---- */
+/* -------------------------*/
+.user-css .toc-article-link {
+  padding-left: 5px;
+}
+
+.user-css .category-title-icon {
+  color: var(--DarkFirestone);
+}
+
+.user-css .fa-external-link {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- World Meta Page  ---- */
+/* -------------------------*/
+.user-css .world-meta-section .world-title {
+  margin-top: 25px;
+}
+
+.user-css .world-meta-section .panel {
+  margin-right: 0px;
+  border-right-width: 5px;
+}
+
+.user-css .world-meta-section .panel .fa,
+.user-css .world-meta-section .panel .fas {
+  color: var(--DarkFirestone);
+}
+
+.user-css .world-meta-section .list-box.selected {
+  background: var(--Scar);
+}
+
+/*--------------------------*/
+/* ---- Followers panel  ---- */
+/* -------------------------*/
+.user-css .followers-counter h4 {
+  color: var(--DarkFirestone);
+}
+
+.user-css .followers-counter .panel {
+  margin-right: 0px;
+  border-right-width: 5px;
+}
+
+.user-css .followers-counter dl {
+  margin-bottom: 0;
+}
+
+/*--------------------------*/
+/* ---- Followers page  ---- */
+/* -------------------------*/
+.user-css.page-followers .subheading {
+  font-size: 1em;
+  font-family: var(--BodyFont);
+}
+
+.user-css .follower-box {
+  background: var(--Scar);
+  border-top: 5px solid var(--Firestone);
+}
+
+.user-css .follower-box img {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+/*--------------------------*/
+/* ---- Top  ---- */
+/* -------------------------*/
+.user-css .backtoworld a {
+  color: var(--WhiteScar);
+  background: var(--Firestone);
+  border-right: 5px solid var(--DarkFirestone);
+  left: -18px;
+  top: -31px;
+  box-shadow: none;
+  transition: all 0.2s;
+}
+
+.user-css div .backtoworld a:hover {
+  color: var(--WhiteScar);
+  background: var(--DarkFirestone);
+  padding-left: 30px;
+}
+
+/*--------------------------*/
+/* ---- Backtotop  ---- */
+/* -------------------------*/
+.user-css-presentation #backtotop {
+  bottom: 20%;
+}
+
+.user-css-presentation .backtotop-button {
+  top: 10px;
+  color: var(--WhiteScar);
+  background: var(--Firestone);
+  border: 3px solid var(--Scar);
+  border-right: 0px;
+  padding: 10px 15px;
+  transition: all 0.3s;
+}
+
+.user-css-presentation .backtotop-button:hover {
+  color: var(--WhiteScar);
+  background: var(--Firestone);
+  padding-right: 25px;
+}
+
+/*--------------------------*/
+/* ---- Timeline Strip  ---- */
+/* -------------------------*/
+.user-css .nav-strip {
+  background: var(--Firestone);
+}
+
+.user-css .nav-strip a {
+  color: var(--WhiteScar);
+}
+
+.user-css .nav-strip:hover {
+  background: var(--DarkFirestone);
+}
+
+.user-css .nav-strip:hover a {
+  color: var(--WhiteScar);
+}
+
+/*--------------------------*/
+/* ---- Search Form  ---- */
+/* -------------------------*/
+.user-css .search-form .typeahead-input,
+.user-css .form-control,
+.user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
+.map-context-user-css .search-form .typeahead-input {
+  background: var(--WhiteScar);
+  color: var(--Obsidred);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.user-css .search-form .typeahead-input::placeholder,
+.user-css .form-control::placeholder,
+.user-css .rhea-family-tree input::placeholder,
+.map-context-user-css .search-form .typeahead-input::placeholder {
+  color: var(--PaleFirestone);
+}
+
+.user-css .typeahead.dropdown-menu,
+.map-context-user-css .typeahead.dropdown-menu {
+  background: var(--WhiteScar);
+}
+
+.user-css .form-group .dropdown-menu,
+.map-context-user-css .form-group .dropdown-menu {
+  border: none;
+  border-top: 5px solid var(--Firestone);
+  border-radius: 0px;
+}
+
+.user-css .typeahead.dropdown-menu li.active .dropdown-item,
+.map-context-user-css .typeahead.dropdown-menu li.active .dropdown-item {
+  background: var(--Scar);
+  color: var(--Obsidred);
+  text-shadow: none;
+}
+
+.user-css .typeahead.dropdown-menu li,
+.map-context-user-css .typeahead.dropdown-menu li {
+  background: var(--WhiteScar);
+  padding: 0;
+}
+
+.user-css .typeahead.dropdown-menu li a,
+.map-context-user-css .typeahead.dropdown-menu li a {
+  color: var(--Obsidred);
+}
+
+.user-css .typeahead.dropdown-menu .text-muted,
+.map-context-user-css
+  .typeahead.dropdown-menu
+  li.active
+  .dropdown-item
+  .text-muted {
+  color: var(--Firestone) !important;
+}
+
+/*--------------------------*/
+/* ---- Breadcrumbs  ---- */
+/* -------------------------*/
+.user-css .breadcrumb,
+.user-css-extended .breadcrumb {
+  font-family: var(--BodyFont);
+  font-size: 1.2em;
+}
+
+.user-css .breadcrumb .fas,
+.user-css-extended .breadcrumb .fas {
+  color: var(--Firestone);
+}
+
+/*--------------------------*/
+/* ---- Category + social  ---- */
+/* -------------------------*/
+.user-css .article-social-media a:hover {
+  color: var(--Scar);
+  transition: all 0.2s;
+}
+
+/*--------------------------*/
+/* ---- Navtabs  ---- */
+/* -------------------------*/
+.user-css-extended .extendedbody-tabs {
+  position: initial;
+  margin: 0 -10px;
+}
+
+.user-css-extended .nav-tabs {
+  background: var(--DarkFirestone);
+  margin-right: -25px;
+  margin-left: -25px;
+  left: 0;
+  top: 0;
+}
+
+.user-css-extended .nav-tabs li {
+  padding: 0;
+}
+
+.user-css-extended .nav-tabs li.nav-item a.nav-link {
+  font-family: var(--BodyFont);
+  color: var(--WhiteScar);
+  background: var(--Firestone);
+  margin-bottom: 0px;
+}
+
+.user-css-extended .nav-tabs .active,
+.user-css-extended .nav-tabs .active:hover,
+.user-css-extended .nav-tabs li a:hover {
+  font-family: var(--BodyFont) !important;
+  color: var(--Firestone) !important;
+  background: var(--Scar) !important;
+}
+
+/*--------------------------*/
+/* ---- Secret and notes  ---- */
+/* -------------------------*/
+.user-css-extended .panel-default {
+  background: var(--WhiteScar);
+  font-family: var(--BodyFont);
+}
+
+.user-css-extended .panel-default .panel-heading {
+  background: none;
+  border: none;
+}
+
+.user-css-extended .panel-default .panel-heading .text-muted {
+  font-family: var(--BodyFont);
+  color: var(--Firestone) !important;
+}
+
+.user-css-extended #notes .panel-default .panel-heading {
+  padding: 0 1rem 0 1rem;
+}
+
+/*--------------------------*/
+/* ---- Tags  ---- */
+/* -------------------------*/
+.user-css .label-default,
+.user-css-extended .label-default,
+.user-css .timeline li .label-default {
+  background: var(--WhiteScar);
+  font-weight: bold;
+  border-left: 5px solid var(--Scar);
+  border-radius: 0px;
+}
+
+.user-css .label,
+.user-css-extended .label,
+.user-css .timeline li .label,
+.user-css-extended .timeline li .label {
+  display: inline-block;
+}
+
+/*--------------------------*/
+/* ---- Comments Form  ---- */
+/* -------------------------*/
+.user-css-extended .comment-form textarea {
+  font-size: 1.1em;
+  font-family: var(--BodyFont);
+  color: var(--Obsidred);
+  background: var(--WhiteScar);
+  border: 5px solid var(--Scar);
+  border-radius: 0px;
+}
+
+.user-css-extended .form-control:focus {
+  border-color: var(--Firestone);
+}
+
+.user-css-extended .comment-form .pull-right {
+  font-family: var(--BodyFont);
+}
+
+/*--------------------------*/
+/* ---- Comments Box  ---- */
+/* -------------------------*/
+.user-css-extended .comment-box {
+  border-top: 5px solid var(--Firestone);
+  border-radius: 0px;
+  background: var(--WhiteScar);
+}
+
+.user-css-extended .comment-box .text-danger {
+  color: var(--Firestone) !important;
+}
+
+.user-css-extended .comment-box .comment-box-reply {
+  border-top: 3px solid var(--Scar);
+  padding-top: 20px;
+}
+
+/*--------------------------*/
+/* ---- Comments Author  ---- */
+/* -------------------------*/
+.user-css-extended .comment-box-author {
+  font-family: var(--HeaderFont);
+  font-size: 1.3em;
+  padding-top: 0px;
+}
+
+.user-css-extended .comment-box-author a {
+  text-decoration: none;
+}
+
+.user-css-extended .comment-box-author small {
+  opacity: 1;
+  color: var(--PaleFirestone);
+}
+
+.user-css-extended .text-gold {
+  color: var(--Firestone) !important;
+  font-size: 0.8em;
+}
+
+.user-css-extended .comment-box-avatar .img-avatar {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.user-css-extended .comment-box-date {
+  font-family: var(--BodyFont);
+  color: var(--Firestone);
+  opacity: 1;
+}
+
+.user-css-extended .comment-box-signature {
+  border-top: 3px solid var(--Scar);
+}
+
+.user-css-extended .comment-box-date,
+.user-css-extended [class*=comment-foo] {
+  border: none;
+}
+
+/*--------------------------*/
+/* ---- Dictionary  ---- */
+/* -------------------------*/
+.user-css .dictionary-panel {
+  padding-bottom: 10px;
+}
+
+.user-css .dictionary-panel .form-control {
+  border: 3px solid var(--Firestone);
+}
+
+.user-css .dictionary-panel .pull-right {
+  float: none !important;
+  margin-bottom: 5px;
+}
+
+.user-css .dictionary-panel {
+  text-align: center;
+}
+
+.user-css .dictionary-search-results {
+  text-align: left;
+}
+
+.user-css .dictionary-word-title {
+  color: var(--DarkFirestone);
+  font-size: 1.1em;
+}
+
+.user-css .dictionary-word {
+  background: var(--Scar);
+  color: var(--Obsidred);
+  border-bottom: 5px solid var(--Firestone);
+}
+
+/*--------------------------*/
+/* ---- Maps Fullscreen  ---- */
+/* -------------------------*/
+.map-context-user-css {
+  background: var(--Bkgrust);
+}
+
+.user-css-map-sidebar {
+  background: var(--WhiteScar);
+  border-right: 5px solid var(--Firestone);
+}
+
+.user-css-map-sidebar #sidebar-extras .card {
+  font-family: var(--BodyFont);
+  background: none;
+  border: none;
+}
+
+.map-context-user-css #sidebarCollapse {
+  background: var(--Scar);
+  border: 5px solid var(--Firestone);
+  border-left-width: 0px;
+  color: var(--Firestone);
+  padding: 10px;
+}
+
+.map-context-user-css .nav-strip {
+  box-shadow: none;
+  background: var(--Scar);
+  font-family: var(--BodyFont);
+}
+
+.map-context-user-css .nav-strip:hover {
+  background: var(--Firestone);
+}
+
+.map-context-user-css .nav-strip .text-white {
+  color: var(--Firestone) !important;
+}
+
+.map-context-user-css .nav-strip:hover .text-white {
+  color: var(--WhiteScar) !important;
+}
+
+/*--------------------------*/
+/* ---- Logo/saga nav  ---- */
+/* -------------------------*/
+.presentation-interface-map #logo {
+  color: #823131;
+  font-family: var(--BodyFont), serif;
+}
+
+.presentation-interface-map #logo:before {
+  background: #e97272;
+  border: 5px solid #823131;
+  border-top-width: 0px;
+  box-shadow: none;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.leaflet-touch .leaflet-bar {
+  border: none;
+  border-radius: 0px;
+}
+
+.user-css .leaflet-control-layers,
+.user-css .leaflet-control-layers-base span,
+.map-context-user-css .leaflet-control-layers,
+.map-context-user-css .leaflet-control-layers-base span {
+  border-color: var(--Firestone);
+}
+
+.map-context-user-css .leaflet-control-zoom-in,
+.map-context-user-css .leaflet-control-zoom-out,
+.user-css .leaflet-control-zoom-in,
+.user-css .leaflet-control-zoom-out {
+  border: none;
+  background: var(--Scar);
+  color: var(--Firestone);
+  transition: all 0.2s;
+}
+
+.user-css .leaflet-bar a:first-child,
+.map-context-user-css .leaflet-bar a:first-child {
+  border-radius: 0px !important;
+}
+
+.user-css .leaflet-bar a:last-child,
+.map-context-user-css .leaflet-bar a:last-child {
+  border-radius: 0px !important;
+}
+
+.map-context-user-css .leaflet-bar a:hover,
+.user-css .leaflet-bar a:hover {
+  border: none;
+  color: var(--WhiteScar);
+  background: var(--Firestone);
+}
+
+.map-context-user-css .leaflet-bar a.leaflet-disabled,
+.user-css .leaflet-bar a.leaflet-disabled {
+  border: none;
+  color: var(--Scar);
+  background: var(--Scar);
+}
+
+/*--------------------------*/
+/* ---- Maps Layers  ---- */
+/* -------------------------*/
+.user-css .leaflet-control-layers,
+.map-context-user-css .leaflet-control-layers {
+  background: var(--Scar);
+  border: none;
+  border-radius: 0px;
+}
+
+.user-css .leaflet-control-layers-expanded,
+.map-context-user-css .leaflet-control-layers-expanded {
+  background: var(--Scar);
+  font-family: var(--BodyFont);
+}
+
+.map-context-user-css .leaflet-control-layers-expanded {
+  font-size: 1.5em;
+}
+
+.map-context-user-css .legend {
+  font-family: var(--BodyFont);
+  font-size: 1.4em;
+  color: var(--Obsidred);
+  background: var(--WhiteScar);
+  border: 5px solid var(--Scar);
+  box-shadow: none;
+}
+
+.map-context-user-css .legend ul {
+  padding-left: 20px;
+  margin: 0px;
+}
+
+/*--------------------------*/
+/* ---- Map Popups  ---- */
+/* -------------------------*/
+.map-context-user-css .leaflet-popup-content-wrapper,
+.map-context-user-css .leaflet-popup-tip {
+  font-family: var(--BodyFont);
+  font-size: 1.4em;
+  color: var(--Obsidred);
+  background: var(--WhiteScar);
+  border: 5px solid var(--Scar);
+  border-radius: 0px;
+}
+
+.map-context-user-css .leaflet-popup-content-wrapper h5 {
+  color: var(--Firestone);
+}
+
+.map-context-user-css .leaflet-popup-close-button {
+  color: var(--Firestone) !important;
+  margin: 5px;
+  font-size: 1.2em;
+}
+
+/*--------------------------*/
+/* ---- Inline Maps  ---- */
+/* -------------------------*/
+.user-css-presentation .leaflet-grab {
+  background: var(--Bkgrust);
+  box-shadow: none;
+  border: 5px solid var(--Firestone);
+}
+
+/*--------------------------*/
+/* ---- Maps Navigiation  ---- */
+/* -------------------------*/
+.user-css .map-included-navigation {
+  padding: 5px;
+  border-top-width: 0px;
+  background: var(--Scar);
+  border: 5px solid var(--Firestone);
+  border-top-width: 0px;
+  padding-bottom: 10px;
+}
+
+.user-css .map-included-navigation-information {
+  margin-top: 0px !important;
+}
+
+.user-css .map-included-navigation-title {
+  font-size: 1.4em;
+}
+
+.user-css .map-included-navigation-information .fa-info-circle {
+  color: var(--RubyRed);
+  font-size: 0.6em;
+  margin-right: 10px;
+}
+
+/*--------------------------*/
+/* ---- Timelines  ---- */
+/* -------------------------*/
+.user-css-extended .timeline li .timeline-panel,
+.user-css .timeline li .timeline-panel {
+  background: var(--Scar);
+  border: none;
+  box-shadow: none;
+  border-color: var(--Scar);
+  padding: 10px;
+}
+
+.user-css-extended .timeline-panel .fa,
+.user-css .timeline-panel .fa {
+  margin-top: -25px;
+  font-size: 20px;
+}
+
+.user-css-extended .timeline:before,
+.user-css .timeline:before {
+  background-color: var(--Firestone);
+}
+
+/*--------------------------*/
+/* ---- Timeline Text  ---- */
+/* -------------------------*/
+.user-css .timeline li .timeline-panel small,
+.user-css .timeline li .milestone-panel small,
+.user-css-extended .timeline li .timeline-panel small,
+.user-css-extended .timeline li .milestone-panel small {
+  color: var(--PaleFirestone) !important;
+}
+
+.user-css .tl-heading-date,
+.user-css-extended .tl-heading-date {
+  font-family: var(--HeaderFont);
+  color: var(--Firestone);
+  margin-top: 2px;
+}
+
+.user-css .tl-heading-date strong,
+.user-css-extended .tl-heading-date strong {
+  font-size: 1.5em;
+}
+
+.user-css .timeline li .timeline-panel h5,
+.user-css-extended .timeline li .timeline-panel h5 {
+  color: var(--DarkFirestone);
+}
+
+.user-css.page-timeline .subheading {
+  font-family: var(--BodyFont);
+  font-size: 1em;
+}
+
+/*--------------------------*/
+/* ---- Timeline Pointers  ---- */
+/* -------------------------*/
+.timeline li .timeline-panel:before {
+  position: absolute;
+  top: 32px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid;
+  border-right: 0 solid;
+  border-bottom: 15px solid transparent;
+  border-right-color: inherit;
+  border-left-color: inherit;
+}
+
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 32px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid;
+  border-right: 0 solid;
+  border-right-color: inherit;
+  border-left-color: inherit;
+}
+
+.user-css .timeline li.timeline-entry-inverted .timeline-panel:before {
+  left: -15px;
+}
+
+.user-css .timeline li.timeline-entry-inverted .timeline-panel:after {
+  left: -15px;
+}
+
+/*--------------------------*/
+/* ---- Timeline shield icons  ---- */
+/* -------------------------*/
+.user-css-extended .timeline li .tl-circ,
+.user-css .timeline li .tl-circ {
+  border: 5px solid var(--Firestone);
+  background: var(--Firestone);
+}
+
+.user-css .timeline .date-divider,
+.user-css-extended .timeline .date-divider {
+  margin: 2px 6px;
+  font-size: 0.5em;
+}
+
+.user-css-extended .timeline .header-icon,
+.user-css .timeline .header-icon {
+  padding: 12px;
+  font-size: 15.5px;
+}
+
+/*--------------------------*/
+/* ---- Timeline Milestones  ---- */
+/* -------------------------*/
+.user-css-extended .timeline .milestone,
+.user-css .timeline .milestone {
+  background: var(--WhiteScar);
+  border: 5px solid var(--Firestone);
+  padding: 10px;
+  box-shadow: none;
+}
+
+.user-css-extended .timeline .timeline-entry-milestone .header-icon,
+.user-css .timeline .timeline-entry-milestone .header-icon {
+  border: 5px solid var(--Firestone);
+  color: var(--Firestone);
+}
+
+/*--------------------------*/
+/* ---- Timeline Major  ---- */
+/* -------------------------*/
+.user-css-extended .timeline .major .header-icon,
+.user-css .timeline .major .header-icon {
+  border: 5px solid var(--DarkFirestone);
+  color: var(--DarkFirestone);
+}
+.user-css-extended .timeline .major .timeline-panel,
+.user-css .timeline .major .timeline-panel {
+  border-top: 5px solid var(--DarkFirestone);
+}
+
+/*--------------------------*/
+/* ---- Timeline Important  ---- */
+/* -------------------------*/
+.user-css-extended .timeline .important .header-icon,
+.user-css .timeline .important .header-icon {
+  border: 5px solid var(--Firestone);
+  color: var(--Firestone);
+}
+
+.user-css-extended .timeline .important .timeline-panel,
+.user-css .timeline .important .timeline-panel {
+  border-top: 5px solid var(--Firestone);
+}
+
+/*--------------------------*/
+/* ---- Timeline Minor  ---- */
+/* -------------------------*/
+.user-css-extended .timeline .minor .header-icon,
+.user-css .timeline .minor .header-icon {
+  border: 5px solid var(--Firestone);
+  color: var(--Firestone);
+}
+
+.user-css-extended .timeline .minor .timeline-panel,
+.user-css .timeline .minor .timeline-panel {
+  border-top: 5px solid var(--Firestone);
+  background: var(--WhiteScar);
+}
+
+/*--------------------------*/
+/* ---- Timeline Trival  ---- */
+/* -------------------------*/
+.user-css-extended .timeline .trivial .header-icon,
+.user-css .timeline .trivial .header-icon {
+  border: 5px solid var(--Scar);
+  color: var(--Scar);
+}
+
+.user-css-extended .timeline .trivial .timeline-panel,
+.user-css .timeline .trivial .timeline-panel {
+  border-top: 5px solid var(--Scar);
+  background: var(--WhiteScar);
+}
+
+/*--------------------------*/
+/* ---- Timelime Importance  ---- */
+/* -------------------------*/
+.user-css-extended .timeline .no-importance .header-icon,
+.user-css .timeline .no-importance .header-icon {
+  border: 5px solid var(--Scar);
+  color: var(--Scar);
+}
+
+.user-css-extended .timeline .no-importance .timeline-panel,
+.user-css .timeline .no-importance .timeline-panel {
+  border-top: 5px solid var(--Scar);
+  background: none;
+}
+
+/*--------------------------*/
+/* ---- Timeline Oprhans  ---- */
+/* -------------------------*/
+.user-css .orphan-era .alert,
+.user-css-extended .orphan-era .alert {
+  border: 5px solid var(--Scar);
+  background: none;
+  border-radius: 0px;
+}
+
+/*--------------------------*/
+/* ---- Navigation Sidebar  ---- */
+/* -------------------------*/
+.user-css-presentation #world-navigation-sidebar {
+  background: var(--WhiteScar);
+  border: 5px solid var(--Firestone);
+  box-shadow: none;
+  display: block !important;
+  opacity: 1;
+  border-radius: 0px;
+  width: 20%;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+
+.user-css-presentation #world-navigation-sidebar[style^=display] {
+  opacity: 0;
+  display: block !important;
+  pointer-events: none;
+}
+
+.user-css-presentation .world-navigation-palette-trigger {
+  background: var(--WhiteScar);
+  color: var(--Firestone);
+  border: 5px solid var(--Firestone);
+  border-left-width: 0px;
+  width: 60px;
+  height: 60px;
+  padding: 13px;
+  margin: 0px;
+  top: 75px;
+  transition: all 0.2s;
+}
+
+.user-css-presentation .world-navigation-palette-trigger:hover {
+  background: var(--Firestone);
+  color: var(--WhiteScar);
+}
+
+.user-css-presentation .world-navigation-palette-trigger-active {
+  background: var(--Firestone);
+  color: var(--WhiteScar);
+  transition: all 0.2s;
+}
+
+.user-css-presentation #world-navigation-sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.user-css-presentation #world-navigation-sidebar::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+.user-css-presentation #world-navigation-sidebar::-webkit-scrollbar-thumb {
+  box-shadow: none;
+}
+
+/*--------------------------*/
+/* ---- Calendars & Tables  ---- */
+/* -------------------------*/
+.user-css .thales-table,
+.user-css .thales-table th,
+.user-css .thales-wrapper .thales-row .thales-cell {
+  border: none;
+}
+
+.user-css .table td {
+  background: none;
+  border: none;
+  font-family: var(--BodyFont);
+}
+
+.user-css .table {
+  background-color: transparent;
+}
+
+.user-css .table-striped th,
+.user-css-calendar .table th,
+.user-css .thales-table th {
+  font-family: var(--BodyFont);
+  text-align: left;
+  background: var(--Firestone) !important;
+  color: var(--WhiteScar) !important;
+}
+
+.user-css .table tr,
+.user-css .thales-table tr {
+  border: none;
+}
+
+.user-css .table-striped tr:nth-child(odd),
+.user-css .calendar-presentation tr:nth-child(odd),
+.user-css tr.thales-row:nth-child(odd) {
+  background: var(--Scar);
+}
+
+.user-css .table-striped tr:nth-child(even),
+.user-css .calendar-presentation tr:nth-child(even),
+.user-css tr.thales-row:nth-child(even) {
+  background: var(--WhiteScar);
+}
+
+/*--------------------------*/
+/* ---- Calendars Specific  ---- */
+/* -------------------------*/
+.user-css .calendar-presentation .panel {
+  margin-right: 0px;
+  border: 5px solid var(--Scar);
+  padding: 15px;
+}
+
+.user-css .table-bordered {
+  border: transparent;
+  margin-bottom: 0px;
+}
+
+.user-css .calendar-presentation td,
+.user-css .calendar-presentation th {
+  border: transparent;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.user-css-calendar h3 {
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.user-css-calendar .celestials {
+  position: relative;
+}
+
+.user-css-calendar .celestial-icon {
+  bottom: 19%;
+}
+
+.user-css-calendar .celestials .btn {
+  background: none !important;
+}
+
+.user-css .calendar-presentation .blank-day {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--Scar),
+    var(--Scar) 10px,
+    var(--WhiteScar) 10px,
+    var(--WhiteScar) 20px
+  );
+}
+
+/*--------------------------*/
+/* ---- Calendars Month Buttons  ---- */
+/* -------------------------*/
+.user-css .calendar-presentation .nav-item a {
+  font-weight: bold;
+  color: var(--WhiteScar) !important;
+  background: var(--Firestone);
+  border-radius: 0px;
+  margin: 0px;
+  transition: all 0.2s;
+}
+
+.user-css .calendar-presentation .nav-item a:hover,
+.user-css .calendar-presentation .nav-link.active {
+  color: var(--Firestone) !important;
+  background: var(--Scar);
+}
+
+.user-css-calendar sup {
+  font-size: 15px;
+}
+
+/*--------------------------*/
+/* ---- Calendars Holiday Popup  ---- */
+/* -------------------------*/
+.user-css .modal-content {
+  background: var(--WhiteScar);
+  border: 5px solid var(--Scar);
+  border-radius: 0px;
+}
+
+.user-css .modal-title {
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.user-css #modal-subtitle {
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.user-css .modal-header {
+  border-bottom: none;
+}
+
+.user-css .close {
+  background: none;
+  border: none;
+  color: var(--Firestone);
+  font-size: 2em;
+}
+
+.user-css .modal-dialog [class*=foo] {
+  border-top: none;
+}
+
+.user-css .modal-celestials {
+  border-top: 3px solid var(--Scar);
+  padding-top: 15px;
+  text-align: center;
+  background: none;
+}
+
+.user-css .modal-celestials #modal-subtitle {
+  margin-left: 0px;
+}
+
+.user-css-calendar .modal-celestials .celestial-object .btn {
+  border: none;
+  background: none !important;
+}
+
+/*--------------------------*/
+/* ---- Org Relationships  ---- */
+/* -------------------------*/
+.user-css .relation .fa-arrows-h {
+  font-size: 22px;
+}
+
+.user-css .relation .relationScore {
+  background: none;
+  border: none;
+}
+
+.user-css .relation .text-warning {
+  color: #a77d0b !important;
+}
+
+/*--------------------------*/
+/* ---- Org Tree  ---- */
+/* -------------------------*/
+.user-css-extended .orgtree li a {
+  color: var(--WhiteScar);
+  font-family: var(--BodyFont);
+  font-size: 1em;
+  background: var(--Firestone);
+  border: none;
+  border-radius: 0px;
+  transition: all 0.2s;
+}
+
+.user-css-extended .orgtree li a:hover {
+  background: var(--Scar);
+}
+
+.user-css-extended .orgtree li a:hover + ul li a {
+  background: var(--DarkFirestone);
+  border: none;
+  color: var(--WhiteScar);
+  font-family: var(--BodyFont);
+  font-size: 1em;
+}
+
+/*--------------------------*/
+/* ---- Connecting Lines  ---- */
+/* -------------------------*/
+.user-css-extended .orgtree {
+  --BorderLinesBorder: 3px solid var(--Firestone);
+}
+
+.user-css-extended .orgtree ul ul::before {
+  border-left: var(--BorderLinesBorder);
+}
+
+.user-css-extended .orgtree li::before {
+  border-top: var(--BorderLinesBorder);
+  border-radius: 0px;
+}
+
+.user-css-extended .orgtree li::after {
+  border-top: var(--BorderLinesBorder);
+  border-left: var(--BorderLinesBorder);
+  border-radius: 0px;
+}
+
+.user-css-extended .orgtree li:last-child::before {
+  border-right: var(--BorderLinesBorder);
+}
+
+.user-css-extended .orgtree li:first-child::after {
+  border-left: var(--BorderLinesBorder);
+}
+
+.user-css-extended .orgtree li:first-child::before,
+.user-css-extended .orgtree li:last-child::after {
+  border: transparent;
+}
+
+.user-css-extended .orgtree li a:hover + ul::before,
+.user-css-extended .orgtree li a:hover + ul li::before,
+.user-css-extended .orgtree li a:hover + ul li::after {
+  border-color: var(--Scar);
+  transition: 0.2s;
+}
+
+/*--------------------------*/
+/* ---- Dice Results  ---- */
+/* -------------------------*/
+.notifyjs-corner {
+  margin-bottom: 10px !important;
+}
+
+.notifyjs-bootstrap-roller-alert {
+  font-family: var(--BodyFont);
+  color: var(--WhiteScar);
+  background: var(--Firestone) !important;
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+/*--------------------------*/
+/* ---- Diplomacy Webs  ---- */
+/* -------------------------*/
+.user-css .clotho-box {
+  border: 5px solid var(--Firestone);
+  box-shadow: none;
+}
+
+.user-css .clotho-box .clotho-node {
+  background: var(--Firestone);
+  box-shadow: none;
+}
+
+.user-css .clotho-box .clotho-node .clotho-portrait-frame {
+  height: 100%;
+  max-height: 140px;
+}
+.user-css .clotho-box .clotho-node .clotho-text-frame {
+  background: var(--Firestone);
+}
+
+.user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label {
+  border: none;
+  margin-left: -3px;
+}
+
+.user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label a {
+  color: var(--WhiteScar);
+  font-family: var(--BodyFont);
+  font-size: 1em;
+}
+
+.user-css [class*=clotho-title-] {
+  font-family: var(--BodyFont);
+  background: var(--Scar);
+  box-shadow: none;
+  border-top: 5px solid var(--Firestone);
+  padding: 20px 10px;
+}
+
+.user-css .clotho-title-arrows,
+.user-css .clotho-box div:nth-of-type(2) .clotho-title-item img,
+.user-css [class*=clotho-title-item] {
+  border-top: none;
+  padding: 0px;
+}
+
+.user-css .clotho-box div:nth-of-type(2) .clotho-title-arrows .clotho-rel-text {
+  color: var(--Firestone);
+  top: -120px;
+}
+
+/*--------------------------*/
+/* ---- Family Trees  ---- */
+/* -------------------------*/
+.user-css .rhea-family-tree {
+  border: 5px solid var(--Scar);
+  border-radius: 0px;
+  background: var(--WhiteScar);
+}
+
+.user-css .rhea-family-tree .loader {
+  background-color: var(--Firestone);
+  border: none;
+}
+
+.user-css .rhea-loader-text {
+  font-family: var(--HeaderFont);
+  color: var(--WhiteScar);
+  text-shadow: none;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait-wrapper {
+  border: 5px solid var(--Firestone);
+  border-radius: 0px;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait:after {
+  background: none;
+  border: none;
+}
+
+.user-css .rhea-family-tree .main-character .character-portrait-wrapper {
+  border-color: var(--Scar);
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-label {
+  font-family: var(--BodyFont);
+  background: var(--Scar);
+  border: none;
+}
+
+.user-css
+  .rhea-family-tree
+  .rhea-character-node
+  .character-data
+  .character-name {
+  font-family: var(--BodyFont);
+  color: var(--DarkFirestone);
+  font-weight: bold;
+}
+
+.user-css
+  .rhea-family-tree
+  .rhea-character-node
+  .character-label
+  .character-life {
+  color: var(--WhiteScar);
+}
+
+.user-css .rhea-family-tree .rhea-character-node:hover .character-label {
+  background: var(--Firestone);
+  transition: all 0.2s;
+}
+
+.user-css .rhea-family-tree .character-relationship {
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.user-css .rhea-family-tree .rhea-character-node:hover .character-relationship {
+  background: var(--DarkFirestone);
+  color: var(--WhiteScar);
+  top: 0px;
+  opacity: 1;
+}
+
+.user-css
+  .rhea-family-tree
+  .rhea-character-node:hover
+  .character-data
+  .character-name {
+  color: var(--WhiteScar);
+}
+
+.user-css .rhea-family-tree svg path {
+  stroke: var(--Scar);
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait img {
+  border: none;
+}
+
+/*--------------------------*/
+/* ---- Search Bar  ---- */
+/* -------------------------*/
+.user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap {
+  border: 5px solid var(--Scar);
+}
+
+.user-css .rhea-search-clear .fal {
+  color: var(--Firestone);
+}
+
+.user-css .rhea-ft-zoom-controls {
+  border: 3px solid var(--Firestone);
+  border-radius: 0px;
+}
+
+/*--------------------------*/
+/* ---- Carousels  ---- */
+/* -------------------------*/
+.user-css .carousel {
+  border: 5px solid var(--Scar);
+  border-width: 0px 5px;
+  background: var(--WhiteScar);
+}
+
+.user-css .carousel-inner img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.user-css .carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-css .carousel-caption h3 {
+  color: var(--Firestone);
+  text-shadow: none;
+  background: var(--WhiteScar);
+  padding: 0px;
+}
+
+.user-css .carousel-indicators li {
+  background-color: var(--Firestone);
+}
+
+.user-css .carousel-control {
+  opacity: 0.5;
+  background: none;
+}
+
+.user-css .carousel-control-next-icon {
+  background-image: none;
+  background: var(--Scar);
+  clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
+}
+
+.user-css .carousel-control-prev-icon {
+  background-image: none;
+  background: var(--Scar);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+}
+
+/*--------------------------*/
+/* ---- Usercards  ---- */
+/* -------------------------*/
+.user-css .usercard {
+  background: var(--Scar);
+  border: none;
+}
+
+.user-css .usercard a {
+  color: var(--Firestone);
+}
+
+.user-css .usercard-social-media a {
+  transition: all 0.2s;
+}
+
+.user-css .usercard-social-media a:hover {
+  color: var(--WhiteScar);
+}
+
+.user-css .usercard img {
+  border: 5px solid var(--WhiteScar);
+}
+
+/*--------------------------*/
+/* ---- Extinct Panel  ---- */
+/* -------------------------*/
+.user-css .extinction-display .label-danger {
+  font-family: var(--HeaderFont);
+  font-size: 1.5em;
+  color: var(--Firestone);
+  background: var(--Scar) !important;
+  border-radius: 0px;
+}
+
+.user-css .chemical-element {
+  background: var(--Scar);
+  color: var(--Firestone);
+  border: none;
+}
+
+.user-css .chemical-element h1 {
+  color: var(--Firestone);
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.user-css .chemical-element sup {
+  color: var(--Firestone);
+  font-size: 0.5em;
+  padding-right: 10px;
+}
+
+.user-css .chemical-element small {
+  font-size: 1em;
+}
+
+/*--------------------------*/
+/* ---- Pros  ---- */
+/* -------------------------*/
+.user-css-presentation
+  .page-article.template-prose
+  .cover
+  div
+  .w-o-b.btn.btn-xs {
+  background: var(--WhiteScar) !important;
+  color: var(--Obsidred) !important;
+}
+
+.user-css.bow {
+  background: var(--WhiteScar) !important;
+}
+
+.user-css.bow p,
+.user-css.bow .article-content,
+.user-css.bow .article-content h2,
+.user-css.bow .article-content h3,
+.user-css.bow .article-content h4 {
+  color: var(--Obsidred);
+}
+
+.user-css.bow .article-content h1 {
+  color: var(--Firestone) !important;
+}
+
+.user-css.wob {
+  background: var(--Firestone) !important;
+}
+
+.user-css.wob p,
+.user-css.wob .article-content,
+.user-css.wob .article-content h2,
+.user-css.wob .article-content h3,
+.user-css.wob .article-content h4 {
+  color: var(--WhiteScar);
+}
+
+.user-css.wob .article-content h1 {
+  color: var(--WhiteScar) !important;
+}
+
+.user-css.wob .article-content h2 {
+  border-color: var(--WhiteScar);
+}
+
+/*--------------------------*/
+/* ---- Scrollbar  ---- */
+/* -------------------------*/
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: var(--Scar);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--Firestone);
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--DarkFirestone);
+}
+
+/*--------------------------*/
+/* ---- White Label ---- */
+/* -------------------------*/
+.user-css-whitelabel {
+  color: var(--DarkFirestone) !important;
+  background: var(--WhiteScar) !important;
+  border: 3px solid var(--Scar);
+  margin-left: 10px;
+}
+
+/*--------------------------*/
+/* ---- Screen Scaling  ---- */
+/* -------------------------*/
+@media only screen and (max-width: 1199px) {
+  .user-css-presentation #world-navigation-sidebar {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .user-css.page,
+  .user-css-extended .page {
+    overflow: hidden;
+  }
+
+  .user-css-presentation #world-navigation-sidebar {
+    top: 26%;
+    min-height: 60% !important;
+    width: 100%;
+    left: 25px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .user-css.page,
+  .user-css-extended .page {
+    overflow: hidden;
+  }
+
+  .user-css .search-form {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+/*--------------------------*/
+/* ---- Editor Bar ---- */
+/* -------------------------*/
+#world-editor-bar {
+  width: 120px;
+  top: auto;
+  bottom: 200px;
+  left: -100px;
+  border-bottom: none;
+  box-shadow: none;
+  opacity: 0.6;
+  padding: 15px 15px 0px 15px;
+  transition: all 0.3s;
+}
+
+#world-editor-bar:hover {
+  left: 0px;
+}
+
+#world-editor-bar .fa {
+  font-size: 2em;
+}
+
+#world-editor-bar .btn {
+  width: 85px !important;
+  margin-bottom: 10px;
+}
+
+#world-editor-bar .world-edit-toggle .fa {
+  color: white !important;
+}
+
+#world-editor-bar .world-edit-toggle .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 36px;
+}
+
+#world-editor-bar .pull-right {
+  float: none !important;
+}
+
+#world-editor-bar [class*=cont] {
+  width: 100px !important;
+}
+
+#world-editor-bar .label,
+#world-editor-bar .btn-success:nth-child(1) {
+  display: none;
+}
+
+#world-editor-bar .btn {
+  background: var(--Firestone);
+  border: none;
+  overflow: hidden;
+}
+
+#world-editor-bar .btn .hidden-xs {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- Edits  ---- */
+/* -------------------------*/
+.user-css #world-category-content,
+.user-css .discussion-boards-world-link {
+  display: none;
+}

@@ -1,0 +1,1485 @@
+/* Variables */
+/* For an official theme, just use * */
+.user-css,
+.user-css-extended,
+.user-css-presentation,
+.user-css-map,
+.user-css-map-sidebar,
+.presentation-interface-map,
+.map-context-user-css,
+.tooltipster-content {
+  /* Fonts */
+  --HeaderFont: Barlow Condensed;
+  --HeaderFont-2: Barlow Condensed;
+  --BodyFont: Montserrat;
+
+  /* Colors */
+  --ColorPrime: #080707;
+  --ColorSec-1: #080707;
+  --ColorSec-2: #810e0f;
+  --ColorTert-1: #ee3c3c;
+  --ColorTert-2: #ffffff;
+  --BodyColor: #ffffff;
+  --MuteColor: #e9c4c4;
+  --Shadow: none;
+
+  /* Misc */
+  --Border-N: none;
+  --Border-1: 5px solid var(--ColorTert-1);
+  --Border-2: none;
+  --Border-3: 3px solid var(--ColorTert-1);
+  --Border-4: 3px solid var(--ColorTert-2);
+  --BorderRad: 0px;
+  --BorderRad-2: 0px 0px 10px 10px;
+  --BoxShad-1: none;
+  --Transit: all 0.3s;
+  overflow-wrap: break-word;
+}
+
+/* __BACKGROUNDS__ */
+.user-css-presentation {
+  background: url(https://www.worldanvil.com/uploads/images/523c56ce258770734fc5a9537be6a5e4.webp);
+  /* background: linear-gradient(0deg, var(--ColorPrime) 15%, var(--ColorSec-2) 100%); */
+  /* For a static BKG, */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.user-css.page,
+.user-css-extended .page,
+.user-css-presentation .tooltipster-content {
+  background: var(--ColorPrime);
+  box-shadow: none;
+}
+
+/* __TEXT__ */
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRxy7mw9c.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUQjIg1_i6t8kCHKm459WxRyS7m.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3jWuZEC.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: Barlow Condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.user-css,
+.user-css p,
+.user-css-extended,
+.user-css-extended p,
+.user-css .article-content,
+.user-css blockquote,
+.user-css-extended blockquote,
+.user-css .thales-cell,
+.user-css-map-sidebar p,
+.user-css-map-sidebar .world-vignette,
+.user-css .calendar-presentation sup,
+.user-css .timeline li .timeline-panel p,
+.user-css .timeline li .milestone-panel p,
+.user-css-extended .timeline li .timeline-panel p,
+.user-css-extended .timeline li .milestone-panel p,
+.user-css-extended dl,
+.user-css-presentation .tooltipster-content,
+.user-css.page-world-homepage .subheading,
+.map-context-user-css {
+  font-size: 17px; /* Has to set to px or other solids, to offset their various bases. */
+  font-family: var(--BodyFont);
+  color: var(--BodyColor);
+}
+/* Highlight color */
+.user-css *::selection,
+.user-css-extended *::selection,
+.user-css-presentation *::selection,
+.user-css-map *::selection,
+.user-css-map-sidebar *::selection,
+.presentation-interface-map *::selection,
+.map-context-user-css *::selection,
+.tooltipster-content *::selection {
+  /* Suggested color is still white, or unique */
+  color: var(--ColorPrime);
+  background-color: var(--ColorTert-1);
+}
+/* Headers */
+.user-css h1,
+.user-css-map-sidebar h1,
+.user-css-presentation .tooltipster-content h1,
+.user-css .statblock h1,
+.user-css-extended .orphan-era h1 {
+  color: var(--ColorTert-1);
+  font-family: var(--HeaderFont);
+  font-size: 4em;
+  text-align: center;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+.user-css h2,
+.user-css-extended .page h2,
+.user-css-map-sidebar h2,
+.user-css-presentation .tooltipster-content h2 {
+  font-family: var(--HeaderFont);
+  font-size: 3em;
+  color: var(--ColorTert-2);
+  padding-top: 0px;
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+.user-css h3,
+.user-css-extended .page h3,
+.user-css-map-sidebar h3,
+.user-css-presentation .tooltipster-content h3 {
+  font-family: var(--HeaderFont);
+  font-size: 2.5em;
+  color: var(--ColorTert-1);
+  padding-top: 0px;
+}
+.user-css h4,
+.user-css-extended .page h4,
+.user-css-map-sidebar h4,
+.user-css .timeline li .timeline-panel h4,
+.user-css .timeline li .milestone-panel h4,
+.user-css-extended .timeline li .timeline-panel h4,
+.user-css-extended .timeline li .milestone-panel h4,
+.user-css-presentation .tooltipster-content h4 {
+  font-family: var(--HeaderFont);
+  font-size: 2em;
+  color: var(--ColorTert-2);
+  padding-top: 0px;
+}
+.user-css h5,
+.user-css-extended .page h5,
+.user-css-map-sidebar h5,
+.user-css .timeline li .timeline-panel h5,
+.user-css .timeline li .milestone-panel h5,
+.user-css-extended .timeline li .timeline-panel h5,
+.user-css-extended .timeline li .milestone-panel h5,
+.user-css-presentation .tooltipster-content h5,
+.user-css-presentation #world-navigation-sidebar .world-menu h5 {
+  color: var(--ColorTert-2);
+  font-family: var(--HeaderFont);
+  font-size: 2em;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.user-css h6 {
+  font-family: var(--HeaderFont);
+  font-size: 2em;
+  padding-top: 0px;
+}
+/* Links */
+.user-css a,
+.user-css a:focus,
+.user-css-extended .page a,
+.user-css .artist-credits a,
+.user-css .timeline li .timeline-panel a,
+.user-css .timeline li .milestone-panel a,
+.user-css-extended .timeline li .timeline-panel a,
+.user-css-extended .timeline li .milestone-panel a,
+.user-css-presentation .tooltipster-content a,
+.user-css .usercard a {
+  color: var(--ColorPrime);
+  transition: var(--Transit);
+  background: var(--ColorTert-1);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0px 3px;
+}
+.user-css a:hover,
+.user-css-extended a:hover,
+.user-css-presentation .tooltipster-content a:hover,
+.user-css .usercard a:hover {
+  background: transparent;
+  color: var(--ColorTert-1);
+}
+/* Tooltips */
+.user-css .text-abbreviation {
+  cursor: default !important;
+  border-bottom: 1px dashed var(--ColorTert-1);
+}
+.user-css .tooltip .tooltip-inner,
+.user-css-presentation .tooltip .tooltip-inner,
+.user-css-extended .tooltip .tooltip-inner,
+.user-css-worldmenu .tooltip .tooltip-inner,
+.user-css-presentation .tooltipster-borderless .tooltipster-content {
+  color: var(--BodyColor);
+  font-family: var(--BodyFont);
+  font-size: 1.4em;
+  background: var(--ColorPrime);
+  border: var(--Border-1);
+  border-radius: var(--BorderRad);
+  box-shadow: var(--BoxShad-1);
+}
+.user-css-presentation .tooltip-arrow::before,
+.user-css-presentation .tooltipster-arrow-border,
+.user-css .tooltip.top .tooltip-arrow,
+.user-css-extended .tooltip.top .tooltip-arrow,
+.user-css-worldmenu .tooltip.top .tooltip-arrow {
+  border-top-color: var(--ColorTert-1) !important;
+}
+.user-css-presentation .tooltipster-borderless .tooltipster-box {
+  background: none;
+}
+/* Old tooltips (For article excerpts) */
+.user-css-presentation .tooltip {
+  font-size: 1em;
+  opacity: 1;
+}
+.user-css-presentation .tooltip .tooltip-inner {
+  max-width: 300px;
+  background: var(--ColorPrime);
+  /* Background no longer necessary? */
+}
+/* Misc */
+.user-css .article-subheading,
+.user-css .article-title-author {
+  text-align: center;
+  font-style: italic;
+  padding-left: 0px;
+}
+.user-css .text-muted,
+.user-css-extended .text-muted {
+  color: var(--MuteColor) !important;
+}
+.user-css .text-danger,
+.user-css-extended .text-danger {
+  color: var(--ColorTert-2) !important;
+}
+.user-css .dropcap {
+  font-family: var(--BodyFont);
+}
+
+/* __BUTTONS__ */
+.user-css .btn,
+.user-css-extended .btn,
+.user-css .label-roller,
+.user-css .rhea-ft-zoom-controls button,
+.user-css-presentation .tooltipster-content .btn,
+.user-css .discussion-board-section [class*=rep] .btn {
+  font-family: var(--BodyFont);
+  font-size: 1em;
+  border: none;
+  border-left: 11px solid var(--ColorPrime);
+  border-radius: 0px 0px 20px 0px;
+  background: var(--ColorTert-1);
+  outline: var(--Border-1);
+  outline-offset: -5px;
+  transition: var(--Transit);
+  padding: 5px 10px 5px 5px;
+}
+.user-css .btn:hover,
+.user-css-extended .btn:hover,
+.user-css .label-roller:hover,
+.user-css .rhea-ft-zoom-controls button:hover,
+.user-css-presentation .tooltipster-content .btn:hover,
+.user-css .discussion-board-section [class*=rep] .btn:hover,
+.user-css .btn-success:hover,
+.user-css-extended .btn .btn-success:hover {
+  text-shadow: none;
+  text-decoration: none;
+  color: var(--ColorTert-1) !important;
+  background: var(--ColorPrime) !important;
+  border-left-width: 0px !important;
+}
+.user-css .btn:focus,
+.user-css-extended .btn:focus,
+.map-context-user-css .btn:focus,
+.tooltipster-content .btn:focus {
+  box-shadow: none;
+}
+.user-css .btn-success,
+.user-css-extended .btn .btn-success {
+  color: var(--ColorPrime) !important;
+  background: var(--ColorTert-1) !important;
+  border: none !important;
+  border-left: 11px solid var(--ColorPrime) !important;
+}
+.user-css .btn-primary,
+.user-css-extended .btn .btn-primary,
+.user-css .btn-info,
+.user-css-extended .btn .btn-info,
+.user-css .btn-danger,
+.user-css-extended .btn .btn-danger {
+  color: var(--ColorPrime) !important;
+}
+.user-css .btn-primary:hover,
+.user-css-extended .btn .btn-primary:hover,
+.user-css .btn-info:hover,
+.user-css-extended .btn .btn-info:hover,
+.user-css .btn-danger:hover,
+.user-css-extended .btn .btn-danger:hover {
+  color: var(--ColorTert-1) !important;
+}
+/* Visibility toggler */
+.user-css .visibility-toggler-trigger .fas,
+.user-css-extended .visibility-toggler-trigger .fas {
+  padding: 5px;
+}
+
+/* __QUOTES__ */
+.user-css blockquote,
+.user-css-extended blockquote,
+.user-css-map-sidebar blockquote,
+.user-css-presentation .tooltipster-content blockquote {
+  background: var(--ColorPrime);
+  border: var(--Border-2);
+  border-radius: var(--BorderRad);
+  box-shadow: var(--BoxShad-1);
+  padding: 0px 50px;
+}
+.user-css blockquote .author,
+.user-css-extended blockquote .author,
+.user-css-map-sidebar blockquote .author,
+.user-css-presentation .tooltipster-content blockquote .author {
+  color: var(--BodyColor);
+  font-family: var(--BodyFont);
+  font-size: 1em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1em;
+  padding: 0px;
+}
+.user-css blockquote::before,
+.user-css-extended blockquote::before,
+.user-css-map-sidebar blockquote::before,
+.user-css-presentation .tooltipster-content blockquote::before {
+  content: url();
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 100%;
+  background: var(--ColorTert-1);
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 50px;
+}
+.user-css blockquote::after,
+.user-css-extended blockquote::after,
+.user-css-map-sidebar blockquote::after,
+.user-css-presentation .tooltipster-content blockquote::after {
+  content: url();
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 100%;
+  background: var(--ColorTert-1);
+  top: 0px;
+  right: 0px;
+  border-bottom-right-radius: 50px;
+}
+
+/* __SIDEBAR PANEL__ */
+.user-css .panel,
+.user-css-extended .panel {
+  background: var(--ColorPrime);
+  border: var(--Border-1);
+  border-radius: var(--BorderRad);
+  box-shadow: var(--BoxShad-1);
+}
+
+/* __HR__ */
+.user-css hr,
+.user-css-extended hr,
+.user-css-map-sidebar hr,
+.user-css .tooltipster-content hr {
+  border-top: var(--Border-4);
+  opacity: 1;
+}
+
+/* __IMAGES__ */
+.user-css img,
+.user-css-extended img {
+  will-change: transform;
+  /* Fixes blurry edges on Chromium based browsers. */
+}
+.user-css .user-css-image-thumbnail a,
+.user-css-extended .user-css-image-thumbnail a {
+  background: none;
+}
+/* IMAGE LINK FIX */
+/* .user-css a:has(img),
+.user-css-extended a:has(img) {
+    background: none!important;
+} */
+/* __SPOILERS__ */
+.user-css .spoiler-button,
+.user-css-extended .spoiler-button {
+  color: var(--ColorPrime) !important;
+  background: var(--ColorTert-2);
+  outline-color: var(--ColorTert-2);
+}
+.user-css .spoiler-button:hover,
+.user-css .spoiler-button[aria-expanded=true],
+.user-css-extended .spoiler-button:hover,
+.user-css-extended .spoiler-button[aria-expanded=true] {
+  color: var(--ColorTert-2) !important;
+  background: var(--ColorPrime);
+  padding: 5px 10px 5px 5px;
+}
+.user-css .spoiler-content,
+.user-css-extended .spoiler-content {
+  color: var(--BodyColor);
+  background: var(--ColorPrime);
+  outline: var(--Border-1);
+  outline-color: var(--ColorTert-2) !important;
+  outline-offset: -1px;
+  border-radius: var(--BorderRad);
+  margin: 0px;
+}
+.user-css .spoiler-card,
+.user-css-extended .spoiler-card {
+  background: none;
+  border: none;
+  padding: 0px !important;
+  border-radius: var(--BorderRad);
+  /* This is just to remove the background-background, don&#039;t style this! */
+  margin-top: 5px;
+  /* If you want to remove the gap between the button and the card use this */
+}
+.user-css .spoiler-content:first-child,
+.user-css-extended .spoiler-content:first-child {
+  padding-top: 0px;
+  /* Removes padding on top of any headers, *if* they are the first thing used in the box. */
+}
+
+/* __ALOUD BOXES__ */
+.user-css .aloud,
+.user-css-presentation .tooltipster-content .aloud {
+  background: var(--ColorTert-1);
+  color: var(--ColorPrime);
+  border: none;
+  outline: var(--Border-1);
+  outline-offset: -5px;
+  border-bottom: 11px solid var(--ColorPrime);
+  border-radius: 40px 40px 0px 0px;
+  padding: 0px;
+  margin: 20px 0px 15px 0px;
+}
+.user-css .aloud h3 {
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--ColorPrime);
+  margin: -5px 5px 3px 5px;
+}
+
+/* __ARTICLE BLOCKS__ */
+.user-css .article-panel,
+.user-css-extended .article-panel,
+.user-css .map-box {
+  background: var(--ColorSec-1);
+  border: var(--Border-3);
+  border-radius: var(--BorderRad);
+  transition: var(--Transit);
+  padding-top: 0px;
+}
+.user-css .article-panel a,
+.user-css-extended .article-panel a {
+  background: none;
+  padding: 0px;
+}
+.user-css .article-panel .cover,
+.user-css-extended .article-panel .cover {
+  margin-top: 0px;
+}
+.user-css .article-panel:hover,
+.user-css-extended .article-panel:hover,
+.user-css .map-box:hover {
+  background: var(--ColorTert-1);
+  color: var(--ColorPrime);
+}
+.user-css .article-panel .heading {
+  color: var(--ColorTert-1);
+  font-size: 1.8em;
+  transition: var(--Transit);
+}
+.user-css .article-panel:hover .heading,
+.user-css-extended .article-panel:hover .heading,
+.user-css .map-box:hover .heading,
+.user-css .article-panel:hover .date,
+.user-css-extended .article-panel:hover .date,
+.user-css .map-box:hover .date,
+.user-css .article-panel:hover .subheading,
+.user-css-extended .article-panel:hover .subheading,
+.user-css .map-box:hover .subheading,
+.user-css .article-panel:hover .excerpt,
+.user-css-extended .article-panel:hover .excerpt,
+.user-css .map-box:hover .excerpt {
+  color: var(--ColorPrime);
+}
+.user-css .article-panel .subheading,
+.user-css .article-panel .date {
+  color: var(--MuteColor);
+  transition: var(--Transit);
+}
+.user-css .article-panel .excerpt {
+  font-weight: normal;
+  transition: var(--Transit);
+  margin: 0px;
+}
+
+/* __HOMEPAGE__ */
+.user-css.page-world-homepage .world-title {
+  display: none;
+}
+.user-css .world-currentDate {
+  /* Uses subheading styling, not needed always. */
+  display: none;
+}
+.user-css .world-authors {
+  display: none;
+  margin-top: 10px;
+}
+.user-css .world-author {
+  font-family: var(--BodyFont);
+  font-size: 1em;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+/* Book covers */
+.user-css .bookcover {
+  border: var(--Border-3);
+  background: var(--ColorPrime);
+  border-radius: 0px 0px 60px 60px;
+  overflow: hidden;
+  max-height: 200px;
+  transition: var(--Transit);
+}
+.user-css .bookcover:hover {
+  background: var(--ColorSec-1);
+}
+.user-css .bookcover a {
+  background: none;
+  padding: 0px;
+}
+.user-css .bookcover a:hover .excerpt {
+  color: var(--BodyColor);
+  transition: var(--Transit);
+}
+.user-css .bookcover a img {
+  width: 100%;
+  max-width: 300px;
+  max-height: 200px;
+  opacity: 1;
+  transition: var(--Transit);
+}
+.user-css .bookcover a:hover img {
+  opacity: 0.3;
+}
+.user-css .world-bookcase .booktitle,
+.user-css .booktitle {
+  color: var(--ColorTert-1);
+  position: absolute;
+  max-width: 100%;
+  top: unset;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--ColorSec-1);
+  border-top: var(--Border-3);
+  text-align: center;
+  transition: var(--Transit);
+}
+.user-css .world-bookcase .bookcover a:hover .booktitle,
+.user-css .bookcover a:hover .booktitle {
+  color: var(--ColorPrime);
+  background: var(--ColorTert-1);
+  border-top: var(--Border-2);
+}
+/* Table of Contents */
+.user-css .timelines-list-header,
+.user-css .maps-list-header,
+.user-css .world-toc-header,
+.user-css .world-featured-articles h2,
+.user-css .world-recent-articles h2,
+.user-css .world-campaigns-title {
+  text-align: center;
+}
+.user-css .article-title-icon,
+.user-css .category-title-icon,
+.user-css .open-category-page {
+  display: none;
+}
+.user-css .world-category-link {
+  color: var(--ColorTert-1);
+  background: none;
+}
+.user-css .world-category-link:hover {
+  background: var(--ColorTert-1);
+  color: var(--ColorPrime);
+}
+.user-css .fa-external-link {
+  display: none;
+}
+/* Custom Icons */
+.user-css #world-menu .fa-folder,
+.user-css .fa-folder {
+  display: inline-block;
+  content: url();
+  position: relative;
+  width: 20px;
+  height: 15px;
+  background: var(--ColorTert-1);
+  top: -6px;
+  left: 1px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+.user-css #world-menu .fa-file,
+.user-css .fa-file {
+  display: inline-block;
+  content: url();
+  position: relative;
+  width: 15px;
+  height: 20px;
+  background: transparent;
+  border-right: 3px solid var(--ColorTert-1);
+  top: 4px;
+  left: 1px;
+}
+/* Followers panel */
+.user-css .followers-counter .panel {
+  display: none;
+}
+/*Followers page */
+.user-css.page-followers .subheading {
+  font-size: 1em;
+  font-family: var(--BodyFont);
+}
+.user-css .follower-box {
+  background: var(--ColorPrime);
+  border-radius: var(--BorderRad);
+  border: var(--Border-3);
+}
+.user-css .follower-box img {
+  border: var(--Border-2);
+  max-height: 50px;
+  max-width: 50px;
+  margin-bottom: 5px;
+}
+/* Discussion boards link */
+.user-css .discussion-boards-world-link {
+  display: none;
+}
+/* Readstart */
+.user-css .readstart a {
+  padding: 6px 20px 10px 20px;
+  font-family: var(--HeaderFont);
+  font-size: 3em;
+}
+
+/* __TOP__ */
+.user-css .backtoworld a,
+.user-css .nav-strip a {
+  content: url();
+  width: 45px;
+  height: 45px;
+  background: var(--ColorTert-1);
+  top: 35px;
+  left: 25px;
+  box-shadow: none;
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 50%);
+  transition: all 0.3s;
+}
+.user-css div .backtoworld a:hover,
+.user-css .nav-strip a:hover {
+  background: var(--ColorTert-2);
+  transform: scale(1.05) translatex(-10px);
+  transition: all 0.3s;
+}
+/* Backtotop */
+.user-css-presentation #backtotop {
+  bottom: 100px;
+  right: 50px;
+}
+.user-css-presentation .backtotop-button {
+  top: 10px;
+  color: transparent;
+  background: var(--ColorTert-1);
+  border: var(--Border-2);
+  border-right-width: 0px;
+  padding: 10px 15px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transition: var(--Transit);
+  display: none;
+}
+.user-css-presentation .backtotop-button:hover {
+  color: transparent;
+  background: var(--ColorTert-2);
+}
+/* Search Form */
+.user-css .search-form {
+  position: fixed;
+  z-index: 3010;
+  top: 7px;
+  left: 20%;
+}
+.user-css .search-form .typeahead-input,
+.user-css .form-control,
+.user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
+.map-context-user-css .search-form .typeahead-input {
+  font-size: 1em;
+  color: var(--BodyColor) !important;
+  background: var(--ColorPrime);
+  border: none;
+  border-bottom: var(--Border-3);
+  border-radius: 0px;
+  color: var(--ColorPrime);
+  width: 270px;
+  box-shadow: none;
+  padding: 15px 0px;
+  transition: var(--Transit);
+}
+.user-css .search-form .typeahead-input:focus-visible,
+.user-css .form-control:focus-visible,
+.user-css
+  .rhea-family-tree
+  .rhea-ft-search
+  .rhea-search-input-wrap:focus-visible,
+.map-context-user-css .search-form .typeahead-input:focus-visible {
+  outline: none;
+  border-color: var(--ColorTert-2);
+  /* Allows the addition of a custom focus outline/effect, removes the old */
+  /* Consider using a new outline here instead of a border, in some cases! */
+}
+.user-css .search-form .typeahead-input::placeholder,
+.user-css .form-control::placeholder,
+.user-css .rhea-family-tree input::placeholder,
+.map-context-user-css .search-form .typeahead-input::placeholder {
+  color: var(--MuteColor);
+  opacity: 1;
+}
+.user-css .typeahead.dropdown-menu,
+.map-context-user-css .typeahead.dropdown-menu {
+  font-size: 1em;
+}
+.user-css .form-group .dropdown-menu,
+.map-context-user-css .form-group .dropdown-menu {
+  border: none;
+  border-radius: var(--BorderRad);
+  overflow: hidden;
+  box-shadow: var(--BoxShad-1);
+  /* No other styling here unless you want to add a border. Just removing the default border. */
+}
+.user-css .typeahead.dropdown-menu li,
+.map-context-user-css .typeahead.dropdown-menu li {
+  padding: 0;
+  background: var(--ColorPrime);
+}
+.user-css .typeahead.dropdown-menu li.active .dropdown-item,
+.map-context-user-css .typeahead.dropdown-menu li.active .dropdown-item {
+  /* Active selection */
+  background: var(--ColorPrime);
+  border-left: var(--Border-3);
+}
+.user-css .typeahead.dropdown-menu li a,
+.map-context-user-css .typeahead.dropdown-menu li a {
+  color: var(--ColorTert-1);
+  background: var(--ColorPrime);
+}
+/* Breadcrumbs */
+.user-css .breadcrumb,
+.user-css-extended .breadcrumb {
+  font-family: var(--BodyFont);
+  font-size: 1.1em;
+  font-style: normal;
+}
+.user-css .breadcrumb .fas,
+.user-css-extended .breadcrumb .fas {
+  color: var(--ColorTert-2);
+}
+
+/* __BOTTOM__ */
+.user-css .copyright-attribution {
+  /* Optional */
+  border-top: var(--Border-3);
+  border-bottom: var(--Border-3);
+  padding: 5px 0px 4px 0px;
+  font-size: 0.8em;
+  margin-bottom: -5px;
+}
+.user-css .article- .btn {
+  color: var(--ColorPrime) !important;
+}
+.user-css .article- .btn:hover {
+  color: var(--ColorTert-1) !important;
+}
+/* Category + social */
+.user-css .social-media {
+  display: none;
+}
+/* Nav/Category box, optional */
+.user-css .article-horizontal-navigation {
+  padding-bottom: 20px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+  width: 100%;
+  left: 0px;
+  background: var(--ColorPrime);
+  border-top: var(--Border-3);
+  border-color: var(--ColorTert-2);
+  padding: 10px 100px 5px 100px;
+}
+.user-css .article-horizontal-navigation hr {
+  display: none;
+}
+.user-css .article-horizontal-navigation a {
+  font-size: 1.5em;
+  margin-top: 3px;
+}
+/* Nav tabs */
+.user-css.page,
+.user-css-extended .article-extended-tabs {
+  margin-bottom: 0px;
+}
+.user-css-extended .extended-tabs {
+  position: initial;
+  margin: 0 -9px;
+  /* No other styling here. */
+}
+.user-css-extended .nav-tabs {
+  background: var(--ColorTert-1);
+  margin-right: -25px;
+  margin-left: -25px;
+  left: 0;
+  top: 0;
+}
+.user-css-extended .nav-tabs li {
+  padding: 0;
+  /* No other styling here. */
+}
+.user-css-extended .nav-tabs li.nav-item a.nav-link {
+  font-family: var(--BodyFont);
+  color: var(--ColorPrime);
+  background: var(--ColorTert-1);
+  border-right: var(--Border-3);
+  margin-bottom: 0px;
+  transition: var(--Transit);
+}
+.user-css-extended .nav-tabs .active,
+.user-css-extended .nav-tabs .active:hover,
+.user-css-extended .nav-tabs li a:hover {
+  color: var(--ColorTert-1) !important;
+  background: var(--ColorPrime) !important;
+}
+/* Tags */
+.user-css .label-default,
+.user-css-extended .label-default,
+.user-css .timeline li .label-default {
+  background: var(--ColorTert-1);
+  border-radius: var(--BorderRad);
+  transition: var(--Transit);
+  padding: 5px !important;
+}
+
+/* __COMMENTS__ */
+/* Header */
+.user-css-extended #comments h2 {
+  text-align: center;
+}
+/* Form */
+.user-css-extended .comment-form textarea {
+  color: var(--BodyColor);
+  font-family: var(--BodyFont);
+  font-size: 1em;
+  background: var(--ColorPrime);
+  border: var(--Border-3);
+  border-radius: var(--BorderRad);
+  transition: var(--Transit);
+}
+.user-css-extended .form-control:focus {
+  border: var(--Border-3);
+  border-color: var(--ColorTert-2);
+  box-shadow: none;
+}
+.user-css-extended .comment-form .btn {
+  font-weight: bold;
+  color: var(--ColorPrime) !important;
+  transition: var(--Transit);
+}
+.user-css-extended .comment-form .btn:hover {
+  /* Optional */
+  font-weight: bold;
+  color: var(--ColorTert-2) !important;
+  transition: var(--Transit);
+}
+.user-css-extended .comment-form .pull-right {
+  font-family: var(--BodyFont);
+}
+/* Box */
+.user-css-extended .comment-box {
+  background: var(--ColorPrime);
+  border-radius: var(--BorderRad);
+  border-left: var(--Border-1);
+  padding: 0px;
+}
+.user-css-extended .comment-box .comment-box-reply {
+  border-left: var(--Border-1);
+  border-top: none;
+  margin-left: 10px;
+}
+.user-css-extended .comment-box [class*=conta] {
+  margin-left: 10px;
+}
+/* Author */
+.user-css-extended .comment-box-author {
+  font-family: var(--BodyFont);
+  font-size: 1.1em;
+  padding-top: 0px;
+}
+.user-css-extended .comment-box-author small {
+  opacity: 1;
+  color: var(--MuteColor);
+  /* .7 default. */
+}
+.user-css-extended .text-gold {
+  color: var(--ColorPrime) !important;
+  font-size: 0.85em;
+}
+.uss-css-user-title {
+  display: none;
+}
+.user-css-extended .comment-box-avatar .img-avatar {
+  display: none;
+}
+.user-css-extended .comment-box-date {
+  font-family: var(--BodyFont);
+  color: var(--MuteColor);
+  font-size: 1em;
+  opacity: 1;
+  border-bottom: 0px;
+}
+.user-css-extended .comment-box-signature {
+  border-top: var(--Border-3);
+  border-color: var(--ColorTert-2);
+}
+/* Removing/editing comment borders */
+/* Please note that the comment  border only shows author-side */
+.user-css-extended .comment-box-date,
+.user-css-extended [class*=comment-foo] {
+  border: none;
+}
+
+/* __SCROLLBAR__ */
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-track {
+  border-radius: var(--BorderRad);
+  /* Probably no radius. */
+  background: var(--ColorSec-2);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--ColorTert-1);
+  width: 9px;
+  border-radius: var(--BorderRad);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ColorTert-2);
+}
+
+/* __WHITE LABEL__ */
+.user-css-whitelabel {
+  left: -160px;
+  background: var(--ColorPrime);
+  border-radius: 0px 50px 50px 0px;
+  color: var(--BodyColor) !important;
+  padding: 10px 30px 10px 10px;
+  transition: var(--Transit) ease-in-out;
+}
+.user-css-whitelabel:hover {
+  left: 0px;
+}
+
+/* NAVBAR */
+.user-css.page-world-homepage,
+.user-css.page-article-main,
+.user-css.page-category {
+  margin-top: 60px !important;
+}
+.qetnav {
+  position: fixed;
+  background: var(--ColorPrime);
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  z-index: 3000;
+  padding-top: 5px;
+}
+.qetnav li,
+.qetnav-mobile li {
+  display: initial;
+  font-size: 2em;
+  margin: 10px;
+}
+.qetnav li a,
+.qetnav-mobile a {
+  display: inline-block;
+  color: var(--ColorTert-1);
+  background: none;
+  background-size: 100%;
+}
+.qetnav li:hover {
+  transform: scale(1.05) translateY(-3px);
+}
+.qetnav li a:hover,
+.qetnav-mobile a:hover {
+  text-decoration: none;
+  transform: scale(1.05) translateY(-3px);
+}
+.qetnav .qethome,
+.qetnav-mobile .qethome {
+  content: url();
+  background: var(--ColorTert-1);
+  -webkit-mask-image: url(https://www.worldanvil.com/uploads/images/a8a884a9deea621af6f6347bd80b6a24.svg);
+  mask-image: url(https://www.worldanvil.com/uploads/images/a8a884a9deea621af6f6347bd80b6a24.svg);
+  width: 30px;
+  height: 30px;
+  margin-bottom: -4px;
+  margin-right: 4px;
+}
+.qetnav .timespool,
+.qetnav-mobile .timespool {
+  content: url();
+  background: var(--ColorTert-1);
+  -webkit-mask-image: url(https://www.worldanvil.com/uploads/images/ad47ee661d08b1326157a7e8c541e986.svg);
+  mask-image: url(https://www.worldanvil.com/uploads/images/22a6bda9e6582c617d72b2486c4748e1.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  margin-bottom: -6px;
+  margin-left: -8px;
+}
+/* Mobile */
+.qetnav-mobile {
+  display: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .qetnav {
+    display: none;
+  }
+  .qetnav-mobile {
+    display: block !important;
+    position: fixed;
+    background: var(--ColorPrime);
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    z-index: 3000;
+    padding-top: 10px;
+  }
+  .qetnav-mobile .spoiler-button {
+    position: fixed;
+    margin-top: 4px;
+    top: 7px;
+    left: 2%;
+    border: none !important;
+    background: none !important;
+    outline: none !important;
+  }
+  .qetnav-mobile .spoiler-button .fas {
+    font-size: 2.2em;
+    color: var(--ColorTert-2) !important;
+  }
+  .qetnav-mobile .spoiler-button:active .fas {
+    color: var(--ColorPrime) !important;
+  }
+  .qetnav-mobile .spoiler-content {
+    position: fixed;
+    background: var(--ColorPrime) !important;
+    width: 100%;
+    top: 60px;
+    border: none;
+    border-radius: 0px;
+    outline-color: var(--ColorTert-1);
+    outline-width: 3px;
+    padding-top: 20px !important;
+  }
+}
+
+/* __NAVIGATION SIDEBAR__ */
+.user-css-presentation #world-navigation-sidebar,
+.user-css-presentation .world-navigation-palette-trigger {
+  display: none;
+}
+
+.user-css .article-subheading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.user-css .contentwarning {
+  font-family: var(--BodyFont);
+  font-size: 0.5em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2em;
+  background: var(--ColorTert-2);
+  width: max-content;
+  height: max-content;
+  padding: 0px 5px;
+  color: var(--ColorPrime);
+  border-left: 11px solid var(--ColorPrime);
+  border-right: 11px solid var(--ColorPrime);
+  outline: 5px solid var(--ColorTert-2);
+  outline-offset: -5px;
+}
+
+/* __SCREEN SCALING__ */
+@media only screen and (max-width: 1199px) {
+  .user-css .search-form {
+    left: 2%;
+  }
+  @media only screen and (max-width: 1440px) {
+    .user-css .search-form {
+      left: 2%;
+    }
+  }
+  .user-css-presentation #world-navigation-sidebar {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .user-css.page,
+  .user-css-extended .page {
+    overflow: hidden;
+  }
+  .user-css-presentation #world-navigation-sidebar {
+    top: 26%;
+    min-height: 60% !important;
+    width: 100%;
+    left: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .user-css .search-form {
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .user-css.page,
+  .user-css-extended .page {
+    overflow: hidden;
+  }
+  .user-css .search-form .typeahead-input,
+  .user-css .form-control,
+  .user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
+  .map-context-user-css .search-form .typeahead-input {
+    width: 200px;
+  }
+  .user-css h1 {
+    font-size: 3em;
+  }
+  .user-css .backtoworld a {
+    width: 35px;
+    height: 35px;
+    background: var(--ColorPrime);
+    top: -43px;
+  }
+  .user-css .anthpdf {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* END NOTES: Remove the editor tweaks, dumbus. Top bar.*/
+/* Look at new features, add them-- 
+
+TO ADD:
+- World global header (navbar) position: sticky, and then set the top: 0px to stay under the WA navbar but be on top when you scroll!
+- CHRONICLES!
+- Manu embeds!
+- /Mark BBCode
+
+/* INDEV ONLY, banner replacement because you are lazy. */
+/* #cover img {
+    content: url(BANNERGOESHERE);
+}
+#cover {
+    background: red; only if needed as flat color
+}
+.cover-global {
+    background-image: url(BANNERGOESHERE)!important;
+} */
+
+/* Editor bar */
+#world-editor-bar {
+  background: var(--ColorPrime);
+  width: 120px;
+  top: auto;
+  bottom: 200px;
+  left: -115px;
+  border-bottom: none;
+  box-shadow: none;
+  opacity: 0.6;
+  padding: 15px 15px 0px 15px;
+  transition: all 0.3s;
+}
+#world-editor-bar:hover {
+  left: 0px;
+}
+#world-editor-bar .fa {
+  font-size: 2em;
+}
+#world-editor-bar .btn {
+  width: 85px !important;
+  margin-bottom: 10px;
+}
+#world-editor-bar .world-edit-toggle .fa {
+  color: white !important;
+}
+#world-editor-bar .world-edit-toggle .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 36px;
+}
+#world-editor-bar .pull-right {
+  float: none !important;
+}
+#world-editor-bar [class*=cont] {
+  width: 100px !important;
+}
+#world-editor-bar .label,
+#world-editor-bar .btn-success:nth-child(1) {
+  display: none;
+}
+#world-editor-bar .btn {
+  background: var(--ColorTert-1);
+  border: var(--Border-3);
+  overflow: hidden;
+}
+#world-editor-bar .btn .hidden-xs {
+  display: none;
+}
+
+/* __CSS PALETTE__ */
+#css-palette-panel,
+-palette-trigger {
+  /* Variables */
+  --pal-text: #754660;
+  --pal-: linear-gradient(180deg, #fdd1ae 0%, #754660 80%);
+  --pal-textbkg: #ffffcb;
+  --pal-textbkg-2: #fdd1ae;
+  --pal-tertiary: #6e404f;
+  --pal-font: barlow condensed;
+}
+#hidden-sidebar {
+  background-color: transparent;
+}
+#css-palette-panel {
+  font-family: barlow condensed;
+  font-size: 1.4em;
+  color: var(--pal-textbkg) !important;
+  position: fixed !important;
+  right: 0.1px;
+  width: 17% !important;
+  background: var(--pal-) !important;
+  border: 3px solid var(--pal-text) !important;
+  border-right-width: 0;
+}
+#css-palette-panel h4 {
+  font-family: var(--pal-font) !important;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--pal-text) !important;
+}
+-palette-panel textarea {
+  background: var(--pal-textbkg);
+  color: var(--pal-text);
+  border: 0px solid black;
+  border-radius: 0px;
+}
+#css-palette-panel textarea.form-control {
+  height: 0;
+}
+#css-palette-panel textarea.form-control:focus {
+  color: var(--pal-text);
+  background: var(--pal-textbkg-2);
+  box-shadow: none;
+}
+#css-palette-panel .form-group {
+  background: var(--pal-tertiary);
+  color: var(--pal-textbkg);
+  font-size: 1.2em;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+#css-palette-panel .form-group label {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+#css-palette-panel textarea {
+  min-height: 55vh !important;
+}
+#css-palette-save {
+  color: var(--pal-textbkg) !important;
+  background: var(--pal-text);
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  border: 3px solid var(--pal-textbkg);
+  border-radius: 0px;
+  transition: all 0.1s;
+}
+#css-palette-save:hover {
+  background: var(--pal-tertiary);
+}
+#css-palette-panel a {
+  color: var(--pal-textbkg);
+}
+/* Button */
+.hidden-xs {
+  background: transparent;
+}
+-palette-trigger {
+  position: fixed !important;
+  color: var(--pal-text);
+  background: var(--pal-textbkg);
+  padding: 5px;
+  padding-top: 8px;
+  border: 3px solid var(--pal-text);
+  border-right-width: 0px;
+  margin-left: -5px;
+}
+-palette-trigger-pushed {
+  right: 324px;
+}
+
+/* Mod Tools */
+.card-box.do-not-print:last-of-type {
+  margin-bottom: 120px;
+}
+
+/* __SUPER BUTTON REMOVAL__ */
+.user-css-presentation [id*=super-button],
+.user-css-presentation [id*=super-article-button] {
+  display: none;
+}

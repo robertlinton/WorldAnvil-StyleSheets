@@ -1,0 +1,71 @@
+
+/*--------------------------*/
+/* ---- Backgrounds   ---- */
+/* -------------------------*/
+.user-css-presentation {
+  background: url(https://www.worldanvil.com/uploads/images/0781f63f3793950fea433054ed7be54e.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*--------------------------*/
+/* ---- Backtotop ---- */
+/* -------------------------*/
+.user-css-presentation .backtotop-button {
+  color: #213a4b;
+  background: #4a7ec9;
+  border: 3px solid #3a609c;
+}
+
+.user-css-presentation .backtotop-button:hover {
+  color: #213a4b;
+  background: #5e8ed8;
+}
+
+/*--------------------------*/
+/* ---- Scrollbar ---- */
+/* -------------------------*/
+::-webkit-scrollbar-track {
+  background: #25475c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a7ec9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5e8ed8;
+}
+
+/*--------------------------*/
+/* ---- Tooltips ---- */
+/* -------------------------*/
+.user-css .text-abbreviation {
+  border-bottom: 1px dotted #c1d7e7;
+}
+
+.user-css .tooltip .tooltip-inner,
+.user-css-presentation .tooltip .tooltip-inner,
+.user-css-extended .tooltip .tooltip-inner,
+.user-css-worldmenu .tooltip .tooltip-inner,
+.user-css-presentation .tooltipster-borderless .tooltipster-content {
+  color: #c1d7e7;
+  background: #3a609c;
+}
+
+.user-css-presentation .tooltip-arrow::before,
+.user-css-presentation .tooltipster-arrow-border,
+.user-css .tooltip.top .tooltip-arrow,
+.user-css-extended .tooltip.top .tooltip-arrow,
+.user-css-worldmenu .tooltip.top .tooltip-arrow {
+  border-top-color: #3a609c !important;
+}
+
+
+/*--------------------------*/
+/* ---- Misc ---- */
+/* -------------------------*/
+#world-editor-bar .btn {
+  background: #5e8ed8;
+}
