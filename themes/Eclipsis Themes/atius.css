@@ -1,0 +1,96 @@
+/*--------------------------*/
+/* ---- Variables   ---- */
+/* -------------------------*/
+.user-css,
+.user-css-extended,
+.user-css-presentation,
+.user-css-map,
+.user-css-map-sidebar,
+.presentation-interface-map,
+.map-context-user-css,
+.tooltipster-content {
+  --atius-font: Pirata One;
+  
+  /* Atius Colors */
+  --ec-primary: #fff4eb;
+  --ec-secondary: #ffc5a0;
+  --ec-gradient: #fdf2e9;
+  --ec-tertiary-1: #ce7942;
+  --ec-tertiary-2: #e38a53;
+  --ec-tertiary-3: #ecb596;
+  --ec-tertiary-4: #eba57c;
+  --ec-tertiary-5: #e39666;
+  --body-background: #4d3120;
+  --muted-accent: #6e4c38;
+}
+
+/*--------------------------*/
+/* ---- Background   ---- */
+/* -------------------------*/
+.user-css-presentation {
+  background: url(https://www.worldanvil.com/uploads/images/0d70d42b83afa03148248e504debcc81.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/*--------------------------*/
+/* ---- Headers   ---- */
+/* -------------------------*/
+.user-css h1,
+.user-css-map-sidebar h1,
+.user-css-presentation .tooltipster-content h1,
+.user-css .statblock h1,
+.user-css-extended .orphan-era h1 {
+  font-family: var(--atius-font);
+  font-size: 2.9em;
+}
+
+.user-css h2,
+.user-css-extended .page h2,
+.user-css-map-sidebar h2,
+.user-css-presentation .tooltipster-content h2 {
+  font-family: var(--atius-font);
+}
+
+.user-css h3,
+.user-css-extended .page h3,
+.user-css-map-sidebar h3,
+.user-css-presentation .tooltipster-content h3 {
+  font-family: var(--atius-font);
+}
+
+.user-css h4,
+.user-css-extended .page h4,
+.user-css-map-sidebar h4,
+.user-css .timeline li .timeline-panel h4,
+.user-css .timeline li .milestone-panel h4,
+.user-css-extended .timeline li .timeline-panel h4,
+.user-css-extended .timeline li .milestone-panel h4,
+.user-css-presentation .tooltipster-content h4 {
+  font-family: var(--atius-font);
+}
+
+.user-css h5,
+.user-css-extended .page h5,
+.user-css-map-sidebar h5,
+.user-css .timeline li .timeline-panel h5,
+.user-css .timeline li .milestone-panel h5,
+.user-css-extended .timeline li .timeline-panel h5,
+.user-css-extended .timeline li .milestone-panel h5,
+.user-css-presentation .tooltipster-content h5,
+.user-css-presentation #world-navigation-sidebar .world-menu h5 {
+  font-family: var(--atius-font);
+}
+
+.user-css h6 {
+  font-family: var(--atius-font);
+}
+
+/*--------------------------*/
+/* ---- Infobox   ---- */
+/* -------------------------*/
+.user-css .ec-profilebox-header {
+  background: #ffe5d0;
+}
