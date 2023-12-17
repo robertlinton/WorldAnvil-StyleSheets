@@ -1,3 +1,7 @@
+/** Originally Mortal Coil Theme Designed By
+** Timepool (Garrett Lewis)
+https://www.worldanvil.com/author/Timepool */
+
 /*--------------------------*/
 /* ---- Variables   ---- */
 /* -------------------------*/
@@ -10,68 +14,28 @@
 .map-context-user-css,
 .tooltipster-content {
   /* Fonts */
-  --HeaderFont: Pirata One;
-  --BodyFont: Crimson Pro;
+  --aotg-font-main: Pirata One;
+  --aotg-font-secondary: Cloister Black;
+  --aotg-font-body: Crimson Pro;
 
   /* Colors */
-  --ColorPrime: #2e2927;
-  --ColorSec-1: #241813;
-  --ColorSec-2: #251a12;
-  --ColorTert-1: #c7a263;
-  --ColorTert-2: #c5745e;
-  --ColorTert-3: #6c3b35;
-  --ColorTert-4: #6b5236;
-  --ColorTert-5: #80773d;
-  --BodyColor: #cecabb;
-  --MuteColor: #a39e8c;
-}
-
-/*--------------------------*/
-/* ---- Fonts   ---- */
-/* -------------------------*/
-@font-face {
-  font-family: Pirata One;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/pirataone/v15/I_urMpiDvgLdLh0fAtofhiGOrq_B.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Pirata One;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/pirataone/v15/I_urMpiDvgLdLh0fAtofhi-Org.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: Crimson Pro;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/crimsonpro/v14/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MMZs-ZNU.woff2);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: Crimson Pro;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/crimsonpro/v14/q5uUsoa5M_tv7IihmnkabC5XiXCAlXGks1WZzm1MP5s-.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
-    U+FEFF, U+FFFD;
+  --aotg-prime-color: #2e2927;
+  --aotg-secondary-color: #241813;
+  --aotg-secondary-color-2: #251a12;
+  --aotg-tertiary-color: #c7a263;
+  --aotg-tertiary-color-2: #c5745e;
+  --aotg-tertiary-color-3: #6c3b35;
+  --aotg-tertiary-color-4: #6b5236;
+  --aotg-tertiary-color-5: #b9984e;
+  --aotg-body-text-color: #cecabb;
+  --aotg-muted-color: #a39e8c;
 }
 
 /*--------------------------*/
 /* ---- Backgrounds   ---- */
 /* -------------------------*/
 .user-css-presentation {
-  background: url(https://cdnb.artstation.com/p/assets/images/images/042/003/965/large/vincent-lau-.jpg?1633333706);
+  background: url(https://www.worldanvil.com/uploads/images/294bdde77d28d13b9637992109dade82.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -80,12 +44,173 @@
 .user-css.page,
 .user-css-extended .page,
 .user-css-presentation .tooltipster-content {
-  background: var(--ColorPrime);
-  border: 5px solid var(--ColorTert-5);
+  background: var(--aotg-prime-color);
+  border: 5px double var(--aotg-tertiary-color-5);
   border-radius: 25px;
   overflow: hidden;
   box-shadow: none;
 }
+
+
+/*--------------------------*/
+/* ---- Fonts   ---- */
+/* -------------------------*/
+@font-face {
+  font-family: Pirata One;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pirataone/v22/I_urMpiDvgLdLh0fAtofhiGOrq_B.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Pirata One;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pirataone/v22/I_urMpiDvgLdLh0fAtofhi-Org.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARUoYFoCQ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARVoYFoCQ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARboYE.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARUoYFoCQ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARVoYFoCQ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARboYE.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARUoYFoCQ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARVoYFoCQ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARboYE.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARUoYFoCQ.woff2);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARVoYFoCQ.woff2);
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF,
+    U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsonpro/v24/q5uDsoa5M_tv7IihmnkabARboYE.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Cloister Black;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/3a9fc121fc423a12261b658070359c30b2233864/fonts/CloisterBlack.ttf);
+}
+
 
 /*--------------------------*/
 /* ---- Text   ---- */
@@ -109,17 +234,18 @@
 .user-css-extended .article-extended-tabs,
 .user-css-extended .metadata-label,
 .user-css-extended .metadata-value {
-  font-size: 20px;
-  font-family: var(--BodyFont);
-  color: var(--BodyColor);
+  font-size: 18px;
+  font-family: var(--aotg-font-body);
+  color: var(--aotg-body-text-color);
 }
 
 .user-css-vignette {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .user-css .highlight {
   color: #ffeac6;
+  font-family: var(--aotg-font-secondary);
 }
 
 /*--------------------------*/
@@ -130,8 +256,8 @@
 .user-css-presentation .tooltipster-content h1,
 .user-css .statblock h1,
 .user-css-extended .orphan-era h1 {
-  color: var(--ColorTert-1);
-  font-family: var(--HeaderFont);
+  color: var(--aotg-tertiary-color);
+  font-family: var(--aotg-font-main);
   font-size: 3em;
   text-align: center;
   padding-top: 17px;
@@ -141,10 +267,12 @@
 .user-css-extended .page h2,
 .user-css-map-sidebar h2,
 .user-css-presentation .tooltipster-content h2 {
-  font-family: var(--HeaderFont);
-  color: var(--ColorTert-2);
+  font-family: var(--aotg-font-main);
+  color: var(--aotg-tertiary-color-2);
   padding-top: 15px;
-  border-bottom: 2px solid var(--ColorTert-1);
+  border-bottom: 3px solid var(--aotg-tertiary-color);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   font-size: 2em;
   margin-bottom: 10px;
 }
@@ -153,8 +281,8 @@
 .user-css-extended .page h3,
 .user-css-map-sidebar h3,
 .user-css-presentation .tooltipster-content h3 {
-  font-family: var(--HeaderFont);
-  color: var(--ColorTert-2);
+  font-family: var(--aotg-font-main);
+  color: var(--aotg-tertiary-color-2);
   padding-top: 15px;
   font-size: 1.8em;
 }
@@ -167,8 +295,8 @@
 .user-css-extended .timeline li .timeline-panel h4,
 .user-css-extended .timeline li .milestone-panel h4,
 .user-css-presentation .tooltipster-content h4 {
-  font-family: var(--HeaderFont);
-  color: var(--ColorTert-1);
+  font-family: var(--aotg-font-main);
+  color: var(--aotg-tertiary-color);
   padding-top: 15px;
   font-size: 1.5em;
 }
@@ -182,15 +310,15 @@
 .user-css-extended .timeline li .milestone-panel h5,
 .user-css-presentation .tooltipster-content h5,
 .user-css-presentation #world-navigation-sidebar .world-menu h5 {
-  color: var(--ColorTert-2);
-  font-family: var(--HeaderFont);
+  color: var(--aotg-tertiary-color-2);
+  font-family: var(--aotg-font-main);
   font-size: 1.5em;
   padding-top: 10px;
   margin-top: 0px;
 }
 
 .user-css h6 {
-  font-family: var(--HeaderFont);
+  font-family: var(--aotg-font-main);
   font-size: 1.5em;
   padding-top: 15px;
 }
@@ -208,7 +336,7 @@
 .user-css-extended .timeline li .milestone-panel a,
 .user-css-presentation .tooltipster-content a,
 .user-css .usercard a {
-  color: var(--ColorTert-2);
+  color: var(--aotg-tertiary-color-2);
   transition: all 0.3s;
   text-shadow: none;
 }
@@ -217,7 +345,7 @@
 .user-css-extended a:hover,
 .user-css-presentation .tooltipster-content a:hover,
 .user-css .usercard a:hover {
-  color: var(--ColorTert-1);
+  color: var(--aotg-tertiary-color);
   text-shadow: none;
   font-style: italic;
 }
@@ -227,7 +355,7 @@
 /* -------------------------*/
 .user-css .text-abbreviation {
   cursor: default !important;
-  border-bottom: 1px dotted var(--BodyColor);
+  border-bottom: 1px dotted var(--aotg-body-text-color);
 }
 
 .user-css .tooltip .tooltip-inner,
@@ -236,11 +364,12 @@
 .user-css-worldmenu .tooltip .tooltip-inner,
 .user-css-presentation .tooltipster-borderless .tooltipster-content {
   color: black;
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
   font-size: 1.4em;
   background: #ddd1bcfc;
   border: 5px double #b37619;
-  border-radius: 20px;
+  border-radius: 25px;
+  overflow: hidden;
   box-shadow: none;
 }
 
@@ -249,7 +378,7 @@
 .user-css .tooltip.top .tooltip-arrow,
 .user-css-extended .tooltip.top .tooltip-arrow,
 .user-css-worldmenu .tooltip.top .tooltip-arrow {
-  border-top-color: var(--ColorTert-4) !important;
+  border-top-color: var(--aotg-tertiary-color-4) !important;
 }
 
 .user-css-presentation .tooltipster-borderless .tooltipster-box {
@@ -271,7 +400,7 @@
 }
 
 .user-css-presentation .tooltip-arrow::before {
-  border-top-color: var(--ColorTert-4);
+  border-top-color: var(--aotg-tertiary-color-4);
 }
 
 .user-css-presentation .tooltip .tooltip-inner {
@@ -292,17 +421,26 @@
 
 .user-css .text-muted,
 .user-css-extended .text-muted {
-  color: var(--MuteColor) !important;
+  color: var(--aotg-muted-color) !important;
 }
 
 .user-css .text-danger,
 .user-css-extended .text-danger {
-  color: var(--ColorTert-2) !important;
+  color: var(--aotg-tertiary-color-2) !important;
 }
 
 .user-css .dropcap {
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
 }
+
+
+.user-css-presentation .user-css .article-subheading {
+  font-family: var(--aotg-font-secondary);
+  border-bottom: 3px solid var(--aotg-tertiary-color);
+  padding-bottom: 10px;
+}
+
+
 
 /*--------------------------*/
 /* ---- Buttons   ---- */
@@ -313,13 +451,13 @@
 .user-css .rhea-ft-zoom-controls button,
 .user-css-presentation .tooltipster-content .btn,
 .user-css .discussion-board-section [class*=rep] .btn {
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
   font-size: 1em;
   font-weight: bold;
-  color: var(--ColorSec-1) !important;
-  background: var(--ColorTert-2);
-  border: none;
-  border-radius: 0px;
+  color: var(--aotg-secondary-color) !important;
+  background: var(--aotg-tertiary-color-2);
+  border: 3px double var(--aotg-tertiary-color-3);
+  border-radius: 8px;
   box-shadow: none;
   transition: all 0.3s;
 }
@@ -334,7 +472,7 @@
   text-decoration: none;
   font-style: normal;
   padding-left: 15px;
-  background: var(--ColorTert-1);
+  background: var(--aotg-tertiary-color);
 }
 
 .user-css .btn:focus,
@@ -346,13 +484,13 @@
 
 .user-css .btn-success,
 .user-css-extended .btn .btn-success {
-  background: var(--ColorTert-1) !important;
+  background: var(--aotg-tertiary-color) !important;
   border: none !important;
 }
 
 .user-css .btn-success:hover,
 .user-css-extended .btn .btn-success:hover {
-  background: var(--ColorTert-2) !important;
+  background: var(--aotg-tertiary-color-2) !important;
   border: none !important;
 }
 
@@ -367,17 +505,20 @@
 .user-css blockquote,
 .user-css-extended blockquote,
 .user-css-presentation .tooltipster-content blockquote {
-  background: var(--ColorSec-2);
-  border-radius: 0px;
+  background: #ddd1bcfc;
   border: none;
+  font-size: 1em;
+  border-left: 5px solid var(--aotg-tertiary-color-2);
+  border-radius: 10px 30px 30px 10px;
+  color: black;
   box-shadow: none;
 }
 
 .user-css blockquote .author,
 .user-css-extended blockquote .author,
 .user-css-presentation .tooltipster-content blockquote .author {
-  color: var(--MuteColor);
-  font-family: var(--HeaderFont);
+  color: var(--aotg-muted-color);
+  font-family: var(--aotg-font-main);
   font-size: 1em;
 }
 
@@ -386,9 +527,99 @@
 /* -------------------------*/
 .user-css .panel,
 .user-css-extended .panel {
-  background: var(--ColorSec-1);
-  border: 5px double var(--ColorTert-1);
-  border-radius: 20px;
+  background: var(--aotg-secondary-color);
+  border: 5px double var(--aotg-tertiary-color);
+  border-radius: 25px;
+}
+
+/*-------------------------*/
+/* ---- Main Profilebox ---- */
+/* -------------------------*/
+.user-css .profilebox {
+  background: var(--aotg-prime-color);
+  color: var(--aotg-muted-color);
+  border: 6px double var(--aotg-tertiary-color-2);
+  padding: 0;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.user-css .profilebox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.user-css .profilebox-header {
+  background: var(--aotg-secondary-color-2);
+  color: var(--aotg-tertiary-color);
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: var(--aotg-font-body, sans-serif);
+  border-bottom: 2px solid var(--aotg-tertiary-color-2);
+}
+
+.user-css .profilebox-content b {
+  color: var(--aotg-muted-color);
+  font-family: var(--aotg-font-body, sans-serif);
+}
+
+.user-css .profilebox-entry {
+  color: var(--aotg-muted-color);
+  padding: 0.2em 0.5em;
+  font-family: var(--aotg-font-body, sans-serif);
+  margin: 0.2em 0;
+}
+
+.user-css .profilebox-image {
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.user-css .profilebox-image:hover img {
+  opacity: 1;
+}
+
+.user-css .profilebox-subheader {
+  background: var(--aotg-tertiary-color);
+  color: #fff1bd;
+  padding: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  font-family: var(--aotg-font-body, sans-serif);
+  border-bottom: 1px solid var(--aotg-secondary-color);
+  letter-spacing: 1px;
+}
+
+.user-css .profilebox-nickname {
+  display: block;
+  color: var(--aotg-tertiary-color);
+  font-family: var(--aotg-font-body, sans-serif);
+  text-align: center;
+  margin-top: 0.8em;
+  margin-bottom: 14px;
+}
+
+.user-css .profilebox-content {
+  padding: 0.5em;
+  background: var(--aotg-secondary-color);
+  color: var(--aotg-muted-color);
+  border-bottom: 1px solid var(--aotg-tertiary-color-3);
+}
+
+.user-css .profilebox-content:last-of-type {
+  border-bottom: none;
+}
+
+.user-css .profilebox-image img {
+  height: auto;
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
 }
 
 /*--------------------------*/
@@ -398,7 +629,7 @@
 .user-css-extended hr,
 .user-css-map-sidebar hr,
 .user-css .tooltipster-content hr {
-  border-top: 3px solid var(--ColorTert-2);
+  border-top: 3px solid var(--aotg-tertiary-color-2);
   opacity: 1;
 }
 
@@ -406,16 +637,31 @@
 /* ---- Images   ---- */
 /* -------------------------*/
 .user-css .artist-credits {
-  background: var(--ColorSec-1);
-  color: var(--ColorTert-1);
+  background: var(--aotg-secondary-color);
+  color: var(--aotg-tertiary-color);
+}
+
+.user-css img,
+.user-css-extended img {
+  will-change: transform;
+}
+
+.user-css .user-css-image-thumbnail a,
+.user-css-extended .user-css-image-thumbnail a {
+  background: none;
+}
+
+.user-css a:has(img),
+.user-css-extended a:has(img) {
+  background: none !important;
 }
 
 /*--------------------------*/
 /* ---- Imageblocks   ---- */
 /* -------------------------*/
 .user-css .image-panel {
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--aotg-secondary-color-2);
+  border: 3px solid var(--aotg-tertiary-color-4);
   border-radius: 0px;
   box-shadow: none;
   text-align: center;
@@ -449,6 +695,9 @@
 .user-css .carousel-inner img {
   height: 500px;
   object-fit: contain;
+  margin-top: 11px;
+  border-radius: 8px;
+  border: 8px double var(--aotg-tertiary-color);
 }
 
 .user-css .carousel-item.active {
@@ -457,12 +706,14 @@
 }
 
 .user-css .carousel-caption h3 {
-  background: var(--ColorPrime);
+  background: none;
   padding: 0px;
+  margin: -34px;
+  font-size: 1.5em;
 }
 
 .user-css .carousel-indicators li {
-  background-color: var(--ColorTert-1);
+  display: none;
 }
 
 .user-css .carousel-control {
@@ -472,14 +723,16 @@
 
 .user-css .carousel-control-next-icon {
   background-image: none;
-  background: var(--ColorTert-1);
+  background: var(--aotg-tertiary-color);
   clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
+  display: none;
 }
 
 .user-css .carousel-control-prev-icon {
   background-image: none;
-  background: var(--ColorTert-1);
+  background: var(--aotg-tertiary-color);
   clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+  display: none;
 }
 
 /*--------------------------*/
@@ -500,8 +753,8 @@
 
 .user-css .spoiler-content,
 .user-css-extended .spoiler-content {
-  color: var(--BodyColor);
-  background: var(--ColorSec-2);
+  color: var(--aotg-body-text-color);
+  background: var(--aotg-secondary-color-2);
   border-radius: 0px;
 }
 
@@ -517,20 +770,10 @@
 /* -------------------------*/
 .user-css .aloud,
 .user-css-presentation .tooltipster-content .aloud {
-  background: var(--ColorSec-1);
-  color: var(--ColorTert-1);
-  border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
-}
-
-/*--------------------------*/
-/* ---- Code boxes   ---- */
-/* -------------------------*/
-.user-css pre {
-  background: var(--ColorSec-1);
-  color: var(--ColorTert-1);
-  border: 3px solid var(--ColorTert-4);
-  border-radius: 0px;
+  background: var(--aotg-secondary-color);
+  color: var(--aotg-tertiary-color);
+  border: 6px double var(--aotg-tertiary-color-4);
+  border-radius: 25px;
 }
 
 /*--------------------------*/
@@ -539,68 +782,98 @@
 .user-css .article-panel,
 .user-css-extended .article-panel,
 .user-css .map-box {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-2);
-  border-radius: 20px;
-  box-shadow: none;
+  background: var(--aotg-secondary-color);
+  border: 3px solid var(--aotg-tertiary-color);
+  border-radius: 25px;
+  transition: all 0.2s;
   overflow: hidden;
-  transition: all 0.3s;
 }
 
 .user-css .article-panel:hover,
 .user-css-extended .article-panel:hover,
 .user-css .map-box:hover {
-  border-color: var(--ColorTert-4);
+  border-color: var(--aotg-tertiary-color-2);
 }
 
 .user-css .article-panel .article-link:hover {
   text-decoration: none;
-  font-style: normal;
 }
 
 .user-css .article-panel .heading {
-  color: var(--ColorTert-1);
-    font-size: 1.3em;
+  color: var(--aotg-tertiary-color);
 }
 
 .user-css .article-panel .subheading,
 .user-css .article-panel .date {
-  color: var(--MuteColor);
+  color: var(--aotg-muted-color);
   display: none;
 }
 
 .user-css .article-panel .details p {
-  font-size: 19px;
-  margin-top: 13px;
+  display: none;
 }
 
 /*--------------------------*/
 /* ---- Homepage   ---- */
 /* -------------------------*/
 .user-css .world-author {
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
   font-size: 1em;
   margin-bottom: 10px;
+}
+
+.user-css.page-world-homepage .subheading {
+  font-size: 1.1em;
+  margin-top: 35px;
+}
+
+/*--------------------------*/
+/* ---- Page Logo ---- */
+/* -------------------------*/
+.user-css .aotg-logo {
+  background-image: url(https://www.worldanvil.com/uploads/images/a3dad64405f9d3edf3e7330e8722b325.png);
+  background-repeat: no-repeat;
+  background-size: 96%;
+  background-position: center;
+  z-index: 1;
+  top: 50px;
+  width: 100%;
+  height: 12vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: transparent;
+  filter: drop-shadow(0 15px 10px var(--aotg-tertiary-color));
+  animation: 1s 0.5s logofade backwards ease-in;
+}
+
+@keyframes logofade {
+  from {
+    transform: translateY(0.5em);
+    opacity: 0;
+  }
 }
 
 /*--------------------------*/
 /* ---- Bookcovers   ---- */
 /* -------------------------*/
 .user-css .bookcover {
-  border: 3px solid var(--ColorTert-4);
-  background: var(--ColorSec-2);
-  border-radius: 0px;
+  border: 4px double var(--aotg-tertiary-color-2);
+  background: var(--aotg-secondary-color-2);
+  border-radius: 25px;
   overflow: hidden;
   transition: all 0.3s;
 }
 
 .user-css .bookcover:hover {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-2);
+  background: var(--aotg-secondary-color);
+  border: 3px solid var(--aotg-tertiary-color-2);
 }
 
 .user-css .bookcover a:hover .excerpt {
-  color: var(--BodyColor);
+  color: var(--aotg-body-text-color);
   transition: all 0.3s;
 }
 
@@ -623,40 +896,46 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--ColorSec-1);
-  border-top: 3px solid var(--ColorTert-4);
+  background: var(--aotg-secondary-color);
+  border-top: 3px solid var(--aotg-tertiary-color-4);
   text-align: center;
   transition: all 0.3s;
 }
 
 .user-css .world-bookcase .bookcover a:hover .booktitle,
 .user-css .bookcover a:hover .booktitle {
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-2);
-  border-top: 3px solid var(--ColorTert-2);
+  color: var(--aotg-secondary-color);
+  background: var(--aotg-tertiary-color-2);
+  border-top: 3px solid var(--aotg-tertiary-color-2);
 }
 
 /*--------------------------*/
 /* ---- Table of Contents   ---- */
 /* -------------------------*/
+.user-css .timelines-list-header,
+.user-css .world-toc-header,
+.user-css .world-recent-articles {
+  text-align: center;
+}
+
 .user-css .toc-article-link {
-  color: var(--ColorTert-2);
+  color: var(--aotg-tertiary-color-2);
 }
 
 .user-css .article-title-icon {
-  color: var(--ColorTert-1);
+  color: var(--aotg-tertiary-color);
   margin-right: 5px;
   font-size: 0.8em;
 }
 
 .user-css .world-category-link {
-  color: var(--ColorTert-1);
+  color: var(--aotg-tertiary-color);
   font-size: 23px;
   text-decoration: none;
 }
 
 .user-css .category-title-icon {
-  color: var(--ColorTert-2);
+  color: var(--aotg-tertiary-color-2);
   margin-right: 5px;
 }
 
@@ -680,7 +959,7 @@
 }
 
 .user-css .map-box small {
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
   font-size: 1em;
 }
 
@@ -689,22 +968,22 @@
 /* -------------------------*/
 .user-css.page-followers .subheading {
   font-size: 1em;
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
 }
 
 .user-css .follower-box {
-  background: var(--ColorSec-2);
+  background: var(--aotg-secondary-color-2);
   border-radius: 0px;
 }
 
 .user-css .follower-box img {
-  border: 3px solid var(--ColorTert-4);
+  border: 3px solid var(--aotg-tertiary-color-4);
   max-height: 50px;
   max-width: 50px;
 }
 
 .user-css .follower-box small {
-  color: var(--ColorTert-2);
+  color: var(--aotg-tertiary-color-2);
 }
 
 /*--------------------------*/
@@ -717,21 +996,22 @@
   text-decoration: none;
   left: -13px;
   top: -39px;
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-2);
+  color: var(--aotg-secondary-color);
+  background: var(--aotg-tertiary-color-2);
   border: none;
   border-radius: 0px;
-  font-family: var(--HeaderFont);
+  font-family: var(--aotg-font-main);
   box-shadow: none;
   transition: all 0.3s;
   padding-top: 9px;
+  display: none;
 }
 
 .user-css div .backtoworld a:hover,
 .user-css .nav-strip a:hover {
   font-style: normal;
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-1);
+  color: var(--aotg-secondary-color);
+  background: var(--aotg-tertiary-color);
   padding-left: 25px;
 }
 
@@ -764,35 +1044,43 @@
 }
 
 .user-css-presentation .backtotop-button {
-  top: 10px;
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-2);
-  border: 3px solid var(--ColorTert-4);
-  border: 3px solid var(--ColorTert-1);
+  color: var(--aotg-secondary-color);
+  background: var(--aotg-tertiary-color-2);
+  border: 3px solid var(--aotg-tertiary-color);
   padding: 10px 15px;
-  border-radius: 20px;
+  border-radius: 10px;
+  top: 104px !important;
+  right: 10px !important;
+  position: fixed !important;
   transition: all 0.3s;
-  margin: 5px;
+  margin: 1px;
 }
 
 .user-css-presentation .backtotop-button:hover {
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-1);
+  color: var(--aotg-secondary-color);
+  background: var(--aotg-tertiary-color);
   padding-right: 25px;
 }
 
 /*--------------------------*/
 /* ---- Search Form   ---- */
 /* -------------------------*/
+.user-css .search-form {
+  left: 2px;
+  position: fixed;
+  top: 2px;
+  z-index: 7001;
+}
+
 .user-css .search-form .typeahead-input,
 .user-css .form-control,
 .user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
 .map-context-user-css .search-form .typeahead-input {
-  color: var(--BodyColor) !important;
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-4);
-  border-radius: 20px;
-  color: var(--ColorSec-1);
+  color: var(--aotg-body-text-color) !important;
+  background: var(--aotg-secondary-color-2);
+  border: 5px double var(--aotg-tertiary-color-2);
+  border-radius: 25px;
+  color: var(--aotg-secondary-color);
   width: 200px;
   box-shadow: none;
   padding: 13px 10px 12px 10px;
@@ -802,19 +1090,19 @@
 .user-css .form-control::placeholder,
 .user-css .rhea-family-tree input::placeholder,
 .map-context-user-css .search-form .typeahead-input::placeholder {
-  color: var(--MuteColor);
+  color: var(--aotg-muted-color);
 }
 
 .user-css .typeahead.dropdown-menu,
 .map-context-user-css .typeahead.dropdown-menu {
-  background: var(--ColorSec-1);
+  background: var(--aotg-secondary-color);
 }
 
 .user-css .form-group .dropdown-menu,
 .map-context-user-css .form-group .dropdown-menu {
   border: none;
-  border-left: 3px solid var(--ColorTert-3);
-  border-right: 3px solid var(--ColorTert-3);
+  border-left: 3px solid var(--aotg-tertiary-color-3);
+  border-right: 3px solid var(--aotg-tertiary-color-3);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -822,42 +1110,59 @@
 .user-css .typeahead.dropdown-menu li,
 .map-context-user-css .typeahead.dropdown-menu li {
   padding: 0;
-  background: var(--ColorSec-1);
+  background: var(--aotg-secondary-color);
 }
 
 .user-css .typeahead.dropdown-menu li.active .dropdown-item,
 .map-context-user-css .typeahead.dropdown-menu li.active .dropdown-item {
-  background: var(--ColorPrime);
+  background: var(--aotg-prime-color);
   font-weight: normal;
 }
 
 .user-css .typeahead.dropdown-menu li a,
 .map-context-user-css .typeahead.dropdown-menu li a {
-  color: var(--ColorTert-1);
+  color: var(--aotg-tertiary-color);
 }
 
 /*--------------------------*/
 /* ---- Breadcrumbs   ---- */
 /* -------------------------*/
+.user-css .breadbox .breadcrumb-world-link-wrapper {
+  display: none;
+}
+
 .user-css .breadcrumb,
 .user-css-extended .breadcrumb {
-  font-family: var(--BodyFont);
-  font-size: 1.1em;
+  font-family: var(--aotg-font-body);
+  font-size: 0.9em;
   font-style: normal;
+  margin-top: 15px;
 }
 
 .user-css .breadcrumb .fas,
 .user-css-extended .breadcrumb .fas {
-  color: var(--ColorTert-2);
+  color: var(--aotg-tertiary-color);
+}
+
+.user-css .breadbox .breadcrumb-card {
+  font-family: var(--aotg-font-body), sans-serif;
+  color: var(--aotg-body-text-color);
+  background-color: var(--aotg-secondary-color-2);
+  padding: 20px;
+  margin: 20px 0;
+  border: 4px solid var(--aotg-tertiary-color-2);
+  position: relative;
+  border-radius: 0px;
+  overflow: hidden;
 }
 
 /*--------------------------*/
 /* ---- Bottom   ---- */
 /* -------------------------*/
 .user-css .copyright-attribution {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-4);
-  border-radius: 20px;
+  background: var(--aotg-secondary-color);
+  border: 3px solid var(--aotg-tertiary-color);
+  border-radius: 25px;
   padding: 10px;
   margin-bottom: -17px;
 }
@@ -871,7 +1176,7 @@
 }
 
 .user-css-extended .nav-tabs {
-  background: var(--ColorSec-2);
+  background: var(--aotg-secondary-color-2);
   margin-right: -25px;
   margin-left: -25px;
   left: 0;
@@ -883,9 +1188,9 @@
 }
 
 .user-css-extended .nav-tabs li.nav-item a.nav-link {
-  font-family: var(--BodyColor);
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-2);
+  font-family: var(--aotg-body-text-color);
+  color: var(--aotg-secondary-color);
+  background: var(--aotg-tertiary-color-2);
   border-right: none;
   margin-bottom: 0px;
   padding: 0px 15px;
@@ -895,7 +1200,7 @@
 .user-css-extended .nav-tabs .active,
 .user-css-extended .nav-tabs .active:hover,
 .user-css-extended .nav-tabs li a:hover {
-  background: var(--ColorTert-1) !important;
+  background: var(--aotg-tertiary-color) !important;
   font-style: normal;
 }
 
@@ -907,7 +1212,7 @@
 /* ---- Secrets and notes   ---- */
 /* -------------------------*/
 .user-css-extended .panel-default {
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
 }
 
 .user-css-extended .panel-default .panel-heading {
@@ -926,9 +1231,9 @@
 .user-css .label-default,
 .user-css-extended .label-default,
 .user-css .timeline li .label-default {
-  color: var(--ColorSec-1) !important;
+  color: var(--aotg-secondary-color) !important;
   font-weight: bold;
-  background: var(--ColorTert-1);
+  background: var(--aotg-tertiary-color);
   border: none;
   border-radius: 0px;
   transition: all 0.3s;
@@ -938,41 +1243,41 @@
 .user-css .label-default:hover,
 .user-css-extended .label-default:hover,
 .user-css .timeline li .label-default:hover {
-  background: var(--ColorTert-2);
+  background: var(--aotg-tertiary-color-2);
 }
 
 /*--------------------------*/
 /* ---- Comments Form   ---- */
 /* -------------------------*/
 .user-css-extended .comment-form textarea {
-  color: var(--BodyColor);
-  font-family: var(--BodyFont);
+  color: var(--aotg-body-text-color);
+  font-family: var(--aotg-font-body);
   font-size: 1em;
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--aotg-secondary-color-2);
+  border: 3px solid var(--aotg-tertiary-color-4);
   border-radius: 0px;
   transition: all 0.3s;
 }
 
 .user-css-extended .form-control:focus {
-  border: 3px solid var(--ColorTert-2);
+  border: 3px solid var(--aotg-tertiary-color-2);
   box-shadow: none;
 }
 
 .user-css-extended .comment-form .btn:hover {
-  border-left: 5px solid var(--ColorTert-3);
+  border-left: 5px solid var(--aotg-tertiary-color-3);
 }
 
 .user-css-extended .comment-form .pull-right {
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
 }
 
 /*--------------------------*/
 /* ---- Comments Box   ---- */
 /* -------------------------*/
 .user-css-extended .comment-box {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--aotg-secondary-color);
+  border: 3px solid var(--aotg-tertiary-color-4);
   border-radius: 0px;
 }
 
@@ -981,14 +1286,14 @@
 }
 
 .user-css-extended .comment-box .comment-box-reply {
-  border-top: 3px solid var(--ColorTert-4);
+  border-top: 3px solid var(--aotg-tertiary-color-4);
 }
 
 /*--------------------------*/
 /* ---- Comments Author   ---- */
 /* -------------------------*/
 .user-css-extended .comment-box-author {
-  font-family: var(--HeaderFont);
+  font-family: var(--aotg-font-main);
   letter-spacing: 0.05em;
   font-size: 1.2em;
   padding-top: 0px;
@@ -996,30 +1301,30 @@
 
 .user-css-extended .comment-box-author small {
   opacity: 1;
-  color: var(--MuteColor);
+  color: var(--aotg-muted-color);
 }
 
 .user-css-extended .text-gold {
-  color: var(--ColorTert-1) !important;
+  color: var(--aotg-tertiary-color) !important;
   font-size: 0.85em;
 }
 
 .user-css-extended .comment-box-avatar .img-avatar {
-  border: 3px solid var(--ColorTert-4);
+  border: 3px solid var(--aotg-tertiary-color-4);
   max-width: 60px;
   max-height: 60px;
   box-shadow: none;
 }
 
 .user-css-extended .comment-box-date {
-  font-family: var(--BodyFont);
-  color: var(--MuteColor);
+  font-family: var(--aotg-font-body);
+  color: var(--aotg-muted-color);
   font-size: 1em;
   opacity: 1;
 }
 
 .user-css-extended .comment-box-signature {
-  border-top: 3px solid var(--ColorTert-2);
+  border-top: 3px solid var(--aotg-tertiary-color-2);
 }
 
 .user-css-extended .comment-box-date,
@@ -1031,24 +1336,24 @@
 /* ---- Maps Fullscreen ---- */
 /* -------------------------*/
 .map-context-user-css {
-  background: var(--ColorSec-1);
+  background: var(--aotg-secondary-color);
 }
 
 .user-css-map-sidebar {
-  background: var(--ColorPrime);
-  border-right: 5px solid var(--ColorTert-4);
+  background: var(--aotg-prime-color);
+  border-right: 5px solid var(--aotg-tertiary-color-4);
 }
 
 .user-css-map-sidebar #sidebar-extras .card {
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
   background: none;
   border: none;
 }
 
 .map-context-user-css #sidebarCollapse {
-  color: var(--ColorSec-2);
-  background: var(--ColorTert-2);
-  border-right: 5px solid var(--ColorTert-3);
+  color: var(--aotg-secondary-color-2);
+  background: var(--aotg-tertiary-color-2);
+  border-right: 5px solid var(--aotg-tertiary-color-3);
   border-radius: 0px;
   border-left-width: 0px;
   border-top-left-radius: 0px;
@@ -1062,41 +1367,41 @@
 }
 
 .map-context-user-css .nav-strip {
-  color: var(--BodyColor);
-  background: var(--ColorTert-2);
+  color: var(--aotg-body-text-color);
+  background: var(--aotg-tertiary-color-2);
   border: none;
   border-radius: 0px;
-  font-family: var(--HeaderFont);
+  font-family: var(--aotg-font-main);
   box-shadow: none;
   transition: all 0.3s;
 }
 
 .map-context-user-css .nav-strip:hover {
-  color: var(--BodyColor);
-  background: var(--ColorTert-1);
+  color: var(--aotg-body-text-color);
+  background: var(--aotg-tertiary-color);
 }
 
 .map-context-user-css .nav-strip .text-white {
-  color: var(--BodyColor) !important;
+  color: var(--aotg-body-text-color) !important;
 }
 
 .map-context-user-css .nav-strip:hover .text-white {
-  color: var(--BodyColor) !important;
+  color: var(--aotg-body-text-color) !important;
 }
 
 /*--------------------------*/
 /* ---- Maps Logo/sage nav ---- */
 /* -------------------------*/
 .presentation-interface-map #logo {
-  color: var(--BodyFont);
-  font-family: var(--HeaderFont);
+  color: var(--aotg-font-body);
+  font-family: var(--aotg-font-main);
   font-size: 1.2em;
 }
 
 .presentation-interface-map #logo:before {
-  background: var(--ColorTert-1);
+  background: var(--aotg-tertiary-color);
   border: none;
-  border-bottom: 5px solid var(--ColorTert-3);
+  border-bottom: 5px solid var(--aotg-tertiary-color-3);
   box-shadow: none;
   -webkit-transform: none;
   transform: none;
@@ -1114,7 +1419,7 @@
 .user-css .leaflet-control-layers-base span,
 .map-context-user-css .leaflet-control-layers,
 .map-context-user-css .leaflet-control-layers-base span {
-  border-color: var(--ColorTert-2);
+  border-color: var(--aotg-tertiary-color-2);
 }
 
 .map-context-user-css .leaflet-control-zoom-in,
@@ -1127,8 +1432,8 @@
 
 .user-css .leaflet-bar a:first-child,
 .map-context-user-css .leaflet-bar a:first-child {
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-1);
+  color: var(--aotg-secondary-color);
+  background: var(--aotg-tertiary-color);
   border-radius: 0px;
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
@@ -1137,8 +1442,8 @@
 
 .user-css .leaflet-bar a:last-child,
 .map-context-user-css .leaflet-bar a:last-child {
-  color: var(--ColorSec-1);
-  background: var(--ColorTert-2);
+  color: var(--aotg-secondary-color);
+  background: var(--aotg-tertiary-color-2);
   border-radius: 0px;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
@@ -1147,7 +1452,7 @@
 
 .map-context-user-css .leaflet-bar a:hover,
 .user-css .leaflet-bar a:hover {
-  background: var(--ColorSec-1);
+  background: var(--aotg-secondary-color);
   border: none;
 }
 
@@ -1162,21 +1467,21 @@
 /* -------------------------*/
 .user-css .leaflet-control-layers,
 .map-context-user-css .leaflet-control-layers {
-  background: var(--ColorTert-2);
+  background: var(--aotg-tertiary-color-2);
   border: none;
-  border-right: 5px solid var(--ColorTert-3);
+  border-right: 5px solid var(--aotg-tertiary-color-3);
   border-radius: 0px;
 }
 
 .user-css .leaflet-control-layers-expanded,
 .map-context-user-css .leaflet-control-layers-expanded {
-  background: var(--ColorTert-2);
-  font-family: var(--BodyFont);
+  background: var(--aotg-tertiary-color-2);
+  font-family: var(--aotg-font-body);
 }
 
 .map-context-user-css .leaflet-control-layers-base span {
   font-size: 1.5em;
-  color: var(--ColorSec-1);
+  color: var(--aotg-secondary-color);
 }
 
 /*--------------------------*/
@@ -1184,10 +1489,10 @@
 /* -------------------------*/
 .user-css .legend,
 .map-context-user-css .legend {
-  font-family: var(--BodyFont);
-  color: var(--BodyColor);
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-4);
+  font-family: var(--aotg-font-body);
+  color: var(--aotg-body-text-color);
+  background: var(--aotg-secondary-color-2);
+  border: 3px solid var(--aotg-tertiary-color-4);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1213,9 +1518,9 @@
 .user-css .leaflet-popup-tip,
 .map-context-user-css .leaflet-popup-content-wrapper,
 .map-context-user-css .leaflet-popup-tip {
-  color: var(--BodyColor);
-  font-family: var(--BodyFont);
-  background: var(--ColorSec-1);
+  color: var(--aotg-body-text-color);
+  font-family: var(--aotg-font-body);
+  background: var(--aotg-secondary-color);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1227,14 +1532,14 @@
 
 .user-css .leaflet-popup-content .header-title,
 .map-context-user-css .leaflet-popup-content-wrapper h5 {
-  font-family: var(--HeaderFont);
-  color: var(--ColorTert-1);
+  font-family: var(--aotg-font-main);
+  color: var(--aotg-tertiary-color);
   font-size: 1.5em;
 }
 
 .user-css .leaflet-popup-close-button,
 .map-context-user-css .leaflet-popup-close-button {
-  color: var(--ColorTert-1) !important;
+  color: var(--aotg-tertiary-color) !important;
   margin: 5px;
   font-size: 1.2em;
 }
@@ -1243,9 +1548,9 @@
 /* ---- Inline Maps ---- */
 /* -------------------------*/
 .user-css-presentation .leaflet-grab {
-  border: 3px solid var(--ColorTert-4);
+  border: 3px solid var(--aotg-tertiary-color-4);
   border-radius: 0px;
-  background: var(--ColorSec-2);
+  background: var(--aotg-secondary-color-2);
   box-shadow: none;
 }
 
@@ -1253,8 +1558,8 @@
 /* ---- Maps Navigation ---- */
 /* -------------------------*/
 .user-css .map-included-navigation {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--aotg-secondary-color);
+  border: 3px solid var(--aotg-tertiary-color-4);
   padding: 5px 5px 10px 5px;
   border-top-width: 0px;
 }
@@ -1264,29 +1569,29 @@
 }
 
 .user-css .map-included-navigation-title {
-  font-family: var(--HeaderFont);
-  color: var(--ColorTert-2);
+  font-family: var(--aotg-font-main);
+  color: var(--aotg-tertiary-color-2);
   font-size: 1.3em;
   padding-top: 5px;
   margin-right: 10px;
 }
 
 .user-css .map-included-navigation-information .fa-info-circle {
-  color: var(--ColorTert-1);
+  color: var(--aotg-tertiary-color);
 }
 
 /*--------------------------*/
 /* ---- Timelines ---- */
 /* -------------------------*/
 .user-css.page-timeline .subheading {
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
   font-size: 1em;
 }
 
 .user-css-extended .timeline li .timeline-panel,
 .user-css .timeline li .timeline-panel {
-  background: var(--ColorSec-1);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--aotg-secondary-color);
+  border: 3px solid var(--aotg-tertiary-color-4);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1299,7 +1604,7 @@
 
 .user-css-extended .timeline:before,
 .user-css .timeline:before {
-  background-color: var(--ColorTert-2);
+  background-color: var(--aotg-tertiary-color-2);
 }
 
 /*--------------------------*/
@@ -1307,14 +1612,14 @@
 /* -------------------------*/
 .user-css .tl-heading-date,
 .user-css-extended .tl-heading-date {
-  color: var(--BodyColor);
+  color: var(--aotg-body-text-color);
 }
 
 .user-css .timeline li .timeline-panel small,
 .user-css .timeline li .milestone-panel small,
 .user-css-extended .timeline li .timeline-panel small,
 .user-css-extended .timeline li .milestone-panel small {
-  color: var(--BodyColor);
+  color: var(--aotg-body-text-color);
 }
 
 .user-css .timeline li .timeline-panel h5,
@@ -1329,7 +1634,7 @@
 }
 
 .user-css .timeline .history-category-name {
-  color: var(--MuteColor);
+  color: var(--aotg-muted-color);
 }
 
 /*--------------------------*/
@@ -1373,8 +1678,8 @@
 /* -------------------------*/
 .user-css-extended .timeline li .tl-circ,
 .user-css .timeline li .tl-circ {
-  background: var(--ColorPrime);
-  border-color: var(--ColorTert-2);
+  background: var(--aotg-prime-color);
+  border-color: var(--aotg-tertiary-color-2);
 }
 
 /*--------------------------*/
@@ -1384,6 +1689,7 @@
 .user-css-extended .timeline .date-divider {
   margin: 2px 0;
 }
+
 /*--------------------------*/
 /* ---- Timelines Icon Fix ---- */
 /* -------------------------*/
@@ -1398,17 +1704,17 @@
 /* -------------------------*/
 .user-css-extended .timeline .milestone,
 .user-css .timeline .milestone {
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-2);
+  background: var(--aotg-secondary-color-2);
+  border: 3px solid var(--aotg-tertiary-color-2);
   border-radius: 0px;
   box-shadow: none;
 }
 
 .user-css-extended .timeline .timeline-entry-milestone .header-icon,
 .user-css .timeline .timeline-entry-milestone .header-icon {
-  border: 3px solid var(--ColorTert-2);
-  background: var(--ColorSec-2);
-  color: var(--ColorTert-2);
+  border: 3px solid var(--aotg-tertiary-color-2);
+  background: var(--aotg-secondary-color-2);
+  color: var(--aotg-tertiary-color-2);
 }
 
 /*--------------------------*/
@@ -1416,16 +1722,16 @@
 /* -------------------------*/
 .user-css-extended .timeline .major .header-icon,
 .user-css .timeline .major .header-icon {
-  border: 3px solid var(--ColorTert-2);
-  border-color: var(--ColorTert-1);
-  background: var(--ColorSec-2);
-  color: var(--ColorTert-1);
+  border: 3px solid var(--aotg-tertiary-color-2);
+  border-color: var(--aotg-tertiary-color);
+  background: var(--aotg-secondary-color-2);
+  color: var(--aotg-tertiary-color);
 }
 
 .user-css-extended .timeline .major .timeline-panel,
 .user-css .timeline .major .timeline-panel {
-  border: 3px solid var(--ColorTert-2);
-  border-color: var(--ColorTert-1);
+  border: 3px solid var(--aotg-tertiary-color-2);
+  border-color: var(--aotg-tertiary-color);
 }
 
 /*--------------------------*/
@@ -1433,16 +1739,16 @@
 /* -------------------------*/
 .user-css-extended .timeline .important .header-icon,
 .user-css .timeline .important .header-icon {
-  border: 3px solid var(--ColorTert-4);
-  border-color: var(--ColorTert-2);
-  background: var(--ColorSec-2);
-  color: var(--ColorTert-2);
+  border: 3px solid var(--aotg-tertiary-color-4);
+  border-color: var(--aotg-tertiary-color-2);
+  background: var(--aotg-secondary-color-2);
+  color: var(--aotg-tertiary-color-2);
 }
 
 .user-css-extended .timeline .important .timeline-panel,
 .user-css .timeline .important .timeline-panel {
-  border: 3px solid var(--ColorTert-4);
-  border-color: var(--ColorTert-2);
+  border: 3px solid var(--aotg-tertiary-color-4);
+  border-color: var(--aotg-tertiary-color-2);
 }
 
 /*--------------------------*/
@@ -1450,14 +1756,14 @@
 /* -------------------------*/
 .user-css-extended .timeline .minor .header-icon,
 .user-css .timeline .minor .header-icon {
-  border: 3px solid var(--ColorTert-4);
-  background: var(--ColorSec-2);
-  color: var(--ColorTert-1);
+  border: 3px solid var(--aotg-tertiary-color-4);
+  background: var(--aotg-secondary-color-2);
+  color: var(--aotg-tertiary-color);
 }
 
 .user-css-extended .timeline .minor .timeline-panel,
 .user-css .timeline .minor .timeline-panel {
-  background: var(--ColorSec-2);
+  background: var(--aotg-secondary-color-2);
 }
 
 /*--------------------------*/
@@ -1465,15 +1771,15 @@
 /* -------------------------*/
 .user-css-extended .timeline .trivial .header-icon,
 .user-css .timeline .trivial .header-icon {
-  border: 3px solid var(--ColorTert-4);
-  background: var(--ColorSec-2);
-  color: var(--BodyColor);
+  border: 3px solid var(--aotg-tertiary-color-4);
+  background: var(--aotg-secondary-color-2);
+  color: var(--aotg-body-text-color);
 }
 
 .user-css-extended .timeline .trivial .timeline-panel,
 .user-css .timeline .trivial .timeline-panel {
-  background: var(--ColorSec-2);
-  border-color: var(--ColorSec-2);
+  background: var(--aotg-secondary-color-2);
+  border-color: var(--aotg-secondary-color-2);
 }
 
 /*--------------------------*/
@@ -1481,15 +1787,15 @@
 /* -------------------------*/
 .user-css-extended .timeline .no-importance .header-icon,
 .user-css .timeline .no-importance .header-icon {
-  border: 3px solid var(--ColorTert-4);
-  background: var(--ColorSec-2);
-  color: var(--ColorTert-4);
+  border: 3px solid var(--aotg-tertiary-color-4);
+  background: var(--aotg-secondary-color-2);
+  color: var(--aotg-tertiary-color-4);
 }
 
 .user-css-extended .timeline .no-importance .timeline-panel,
 .user-css .timeline .no-importance .timeline-panel {
-  background: var(--ColorSec-2);
-  border-color: var(--ColorSec-2);
+  background: var(--aotg-secondary-color-2);
+  border-color: var(--aotg-secondary-color-2);
 }
 
 /*--------------------------*/
@@ -1497,8 +1803,8 @@
 /* -------------------------*/
 .user-css .orphan-era .alert,
 .user-css-extended .orphan-era .alert {
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-4);
+  background: var(--aotg-secondary-color-2);
+  border: 3px solid var(--aotg-tertiary-color-4);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1507,14 +1813,14 @@
 /* ---- Diplomacy Webs ---- */
 /* -------------------------*/
 .user-css .clotho-box {
-  background: var(--ColorSec-2);
-  border: 3px solid var(--ColorTert-2);
+  background: var(--aotg-secondary-color-2);
+  border: 3px solid var(--aotg-tertiary-color-2);
   border-radius: 0px;
   box-shadow: none;
 }
 
 .user-css .clotho-box .clotho-node {
-  border: 3px solid var(--ColorTert-2);
+  border: 3px solid var(--aotg-tertiary-color-2);
   box-shadow: none;
 }
 
@@ -1524,7 +1830,7 @@
 }
 
 .user-css .clotho-box .clotho-node .clotho-text-frame {
-  background: var(--ColorSec-1);
+  background: var(--aotg-secondary-color);
 }
 
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label {
@@ -1534,17 +1840,17 @@
 
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label a {
   font-size: 1em;
-  font-family: var(--BodyFont);
-  color: var(--BodyColor);
+  font-family: var(--aotg-font-body);
+  color: var(--aotg-body-text-color);
 }
 
 /*--------------------------*/
 /* ---- Diplomacy Webs Hover ---- */
 /* -------------------------*/
 .user-css [class*=clotho-title-] {
-  background: var(--ColorSec-2);
+  background: var(--aotg-secondary-color-2);
   box-shadow: none;
-  border-top: 3px solid var(--ColorTert-4);
+  border-top: 3px solid var(--aotg-tertiary-color-4);
 }
 
 .user-css .clotho-title-arrows,
@@ -1554,12 +1860,12 @@
 }
 
 .user-css [class*=clotho-title-item] {
-  border: 3px solid var(--ColorTert-2);
+  border: 3px solid var(--aotg-tertiary-color-2);
   padding: 0px !important;
 }
 
 .user-css .clotho-box div:nth-of-type(2) .clotho-title-arrows .clotho-rel-text {
-  color: var(--ColorTert-2);
+  color: var(--aotg-tertiary-color-2);
   top: -120px;
 }
 
@@ -1572,8 +1878,8 @@
 /* ---- Org Relaitonships ---- */
 /* -------------------------*/
 .user-css .relation .relationScore {
-  background: var(--ColorSec-2);
-  border: 5px solid var(--ColorTert-3);
+  background: var(--aotg-secondary-color-2);
+  border: 5px solid var(--aotg-tertiary-color-3);
   border-width: 3px;
   border-radius: 0px;
 }
@@ -1583,25 +1889,25 @@
 /* -------------------------*/
 .user-css-extended .orgtree li a,
 .user-css-extended .orgtree li a:hover + ul li a {
-  font-family: var(--BodyFont);
+  font-family: var(--aotg-font-body);
   font-weight: bold;
   font-size: 1em;
-  color: var(--ColorPrime);
-  background: var(--ColorTert-1);
+  color: var(--aotg-prime-color);
+  background: var(--aotg-tertiary-color);
   border: none;
   border-radius: 0px;
   transition: all 0.3s;
 }
 
 .user-css-extended .orgtree li a:hover {
-  background: var(--ColorTert-2);
+  background: var(--aotg-tertiary-color-2);
   transform: scale(1.05);
 }
 
 .user-css-extended .orgtree li a:hover + ul li a {
-  background: var(--ColorPrime);
-  color: var(--ColorTert-1);
-  outline: 5px solid var(--ColorTert-3);
+  background: var(--aotg-prime-color);
+  color: var(--aotg-tertiary-color);
+  outline: 5px solid var(--aotg-tertiary-color-3);
   outline-width: 3px;
   outline-offset: -3px;
 }
@@ -1610,24 +1916,24 @@
 /* ---- Org Tree Lines ---- */
 /* -------------------------*/
 .user-css-extended .orgtree ul ul::before {
-  border-left: 3px solid var(--ColorTert-2);
+  border-left: 3px solid var(--aotg-tertiary-color-2);
 }
 
 .user-css-extended .orgtree li::before {
-  border-top: 3px solid var(--ColorTert-2);
+  border-top: 3px solid var(--aotg-tertiary-color-2);
 }
 
 .user-css-extended .orgtree li::after {
-  border-top: 3px solid var(--ColorTert-2);
-  border-left: 3px solid var(--ColorTert-2);
+  border-top: 3px solid var(--aotg-tertiary-color-2);
+  border-left: 3px solid var(--aotg-tertiary-color-2);
 }
 
 .user-css-extended .orgtree li:last-child::before {
-  border-right: 3px solid var(--ColorTert-2);
+  border-right: 3px solid var(--aotg-tertiary-color-2);
 }
 
 .user-css-extended .orgtree li:first-child::after {
-  border-left: 3px solid var(--ColorTert-2);
+  border-left: 3px solid var(--aotg-tertiary-color-2);
 }
 
 .user-css-extended .orgtree li:first-child::before,
@@ -1638,27 +1944,27 @@
 .user-css-extended .orgtree li a:hover + ul::before,
 .user-css-extended .orgtree li a:hover + ul li::before,
 .user-css-extended .orgtree li a:hover + ul li::after {
-  border-color: var(--ColorTert-2);
+  border-color: var(--aotg-tertiary-color-2);
 }
 
 /*--------------------------*/
 /* ---- Family Trees ---- */
 /* -------------------------*/
 .user-css .rhea-family-tree {
-  background: var(--ColorSec-2);
-  border: 5px solid var(--ColorTert-3);
+  background: var(--aotg-secondary-color-2);
+  border: 5px solid var(--aotg-tertiary-color-3);
   border-radius: 0px;
   box-shadow: none;
 }
 
 .user-css .rhea-family-tree .loader {
-  background-color: var(--ColorTert-1);
+  background-color: var(--aotg-tertiary-color);
   border: none;
 }
 
 .user-css .rhea-loader-text {
-  font-family: var(--HeaderFont);
-  color: var(--ColorPrime);
+  font-family: var(--aotg-font-main);
+  color: var(--aotg-prime-color);
   text-shadow: none;
 }
 
@@ -1672,13 +1978,13 @@
 }
 
 .user-css .rhea-family-tree .rhea-character-node .character-portrait-wrapper {
-  border: 5px solid var(--ColorTert-3);
+  border: 5px solid var(--aotg-tertiary-color-3);
   border-width: 3px;
   border-radius: 0px;
 }
 
 .user-css .rhea-family-tree .main-character .character-portrait-wrapper {
-  border-color: var(--ColorTert-2);
+  border-color: var(--aotg-tertiary-color-2);
 }
 
 .user-css .rhea-family-tree .rhea-character-node .character-data {
@@ -1689,8 +1995,8 @@
 
 .user-css .rhea-family-tree .rhea-character-node .character-label {
   margin-top: -2px;
-  font-family: var(--BodyFont);
-  background: var(--ColorTert-1);
+  font-family: var(--aotg-font-body);
+  background: var(--aotg-tertiary-color);
   border: none;
   border-radius: 0px;
   width: 100px;
@@ -1701,8 +2007,8 @@
   .rhea-character-node
   .character-data
   .character-name {
-  font-family: var(--BodyFont);
-  color: var(--ColorPrime);
+  font-family: var(--aotg-font-body);
+  color: var(--aotg-prime-color);
   font-weight: bold;
 }
 
@@ -1711,12 +2017,12 @@
   .rhea-character-node
   .character-label
   .character-life {
-  color: var(--ColorPrime);
+  color: var(--aotg-prime-color);
   margin-top: 5px;
 }
 
 .user-css .rhea-family-tree .rhea-character-node:hover .character-label {
-  background: var(--ColorTert-2);
+  background: var(--aotg-tertiary-color-2);
 }
 
 .user-css .rhea-family-tree .character-relationship {
@@ -1725,15 +2031,16 @@
 }
 
 .user-css .rhea-family-tree .rhea-character-node:hover .character-relationship {
-  color: var(--ColorPrime);
-  background: var(--ColorTert-1);
+  color: var(--aotg-prime-color);
+  background: var(--aotg-tertiary-color);
   top: -1px;
   opacity: 1;
 }
 
 .user-css .rhea-family-tree svg path {
-  stroke: var(--ColorTert-2);
+  stroke: var(--aotg-tertiary-color-2);
 }
+
 .user-css .rhea-family-tree .rhea-character-node .character-portrait img {
   border: none;
 }
@@ -1742,17 +2049,17 @@
 /* ---- Family Tree Search ---- */
 /* -------------------------*/
 .user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap {
-  border: 5px solid var(--ColorTert-3);
+  border: 5px solid var(--aotg-tertiary-color-3);
   border-width: 3px;
   padding: 5px 15px;
 }
 
 .user-css .rhea-family-tree input::placeholder {
-  color: var(--MuteColor);
+  color: var(--aotg-muted-color);
 }
 
 .user-css .rhea-search-clear .fal {
-  color: var(--MuteColor);
+  color: var(--aotg-muted-color);
 }
 
 .user-css .rhea-ft-zoom-controls {
@@ -1771,12 +2078,12 @@
   .cover
   div
   .w-o-b.btn.btn-xs {
-  background: var(--ColorPrime) !important;
-  color: var(--BodyColor) !important;
+  background: var(--aotg-prime-color) !important;
+  color: var(--aotg-body-text-color) !important;
 }
 
 .user-css.bow {
-  background: var(--ColorPrime) !important;
+  background: var(--aotg-prime-color) !important;
 }
 
 .user-css.bow p,
@@ -1784,11 +2091,11 @@
 .user-css.bow .article-content h2,
 .user-css.bow .article-content h3,
 .user-css.bow .article-content h4 {
-  color: var(--BodyColor) !important;
+  color: var(--aotg-body-text-color) !important;
 }
 
 .user-css.bow .article-content h1 {
-  color: var(--ColorTert-1) !important;
+  color: var(--aotg-tertiary-color) !important;
 }
 
 .user-css-presentation
@@ -1796,12 +2103,12 @@
   .cover
   div
   .b-o-w.btn.btn-xs {
-  background: var(--BodyColor) !important;
-  color: var(--ColorPrime) !important;
+  background: var(--aotg-body-text-color) !important;
+  color: var(--aotg-prime-color) !important;
 }
 
 .user-css.wob {
-  background: var(--BodyColor) !important;
+  background: var(--aotg-body-text-color) !important;
 }
 
 .user-css.wob p,
@@ -1809,11 +2116,11 @@
 .user-css.wob .article-content h2,
 .user-css.wob .article-content h3,
 .user-css.wob .article-content h4 {
-  color: var(--ColorPrime) !important;
+  color: var(--aotg-prime-color) !important;
 }
 
 .user-css.wob .article-content h1 {
-  color: var(--ColorPrime) !important;
+  color: var(--aotg-prime-color) !important;
 }
 
 /*--------------------------*/
@@ -1825,17 +2132,17 @@
 
 ::-webkit-scrollbar-track {
   border-radius: 0px;
-  background: var(--ColorSec-2);
+  background: var(--aotg-secondary-color-2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--ColorTert-2);
+  background: var(--aotg-tertiary-color-2);
   width: 9px;
   border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--ColorTert-1);
+  background: var(--aotg-tertiary-color);
 }
 
 /*--------------------------*/
@@ -1843,10 +2150,10 @@
 /* -------------------------*/
 .user-css-whitelabel {
   left: -160px;
-  background: var(--ColorPrime);
-  border-radius: 0px 50px 50px 0px;
-  color: var(--BodyColor) !important;
-  border: 3px solid var(--ColorTert-4) !important;
+  background: var(--aotg-prime-color);
+  border-radius: 25px;
+  color: var(--aotg-body-text-color) !important;
+  border: 3px solid var(--aotg-tertiary-color-4) !important;
   padding: 10px 30px 10px 10px;
   transition: all 0.3s ease-in-out;
 }
@@ -1856,11 +2163,72 @@
 }
 
 /*--------------------------*/
+/* ---- Navigation Top ---- */
+/* -------------------------*/
+.user-css .aotg-nav {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background: var(--aotg-prime-color);
+  position: fixed;
+  top: 0px;
+  z-index: 7000;
+  border-bottom: 2px solid var(--aotg-tertiary-color-2);
+}
+
+.user-css .aotg-nav-title {
+  color: var(--aotg-tertiary-color-2);
+  text-align: center;
+  font-family: var(--aotg-font-main);
+  font-size: 1.4em;
+}
+
+.user-css .aotg-nav-title a {
+  text-decoration: none;
+}
+
+.user-css .aotg-nav-title a:hover {
+  border-bottom-width: 1px;
+    border-bottom-style: dotted
+}
+
+/*--------------------------*/
+/* ---- Navigation Side ---- */
+/* -------------------------*/
+.user-css .sidebar-date {
+  position: absolute;
+  top: 15px;
+  left: 19px;
+  width: 255px;
+  background-color: var(--aotg-prime-color);
+  border: 4px double var(--aotg-tertiary-color-2);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.user-css .sidebar-date h4 {
+  font-size: 1.8em;
+  color: var(--aotg-tertiary-color);
+  margin-bottom: 10px;
+}
+
+.user-css .sidebar-date p {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: var(--aotg-body-text-color);
+}
+
+/*--------------------------*/
 /* ---- Screen Scaling ---- */
 /* -------------------------*/
 @media only screen and (max-width: 1199px) {
   .user-css-presentation #world-navigation-sidebar {
     width: 30%;
+  }
+
+  .user-css .sidebar-date {
+    display: none;
   }
 }
 
@@ -1876,6 +2244,10 @@
     width: 100%;
     left: 25px;
   }
+
+  .user-css .sidebar-date {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -1888,6 +2260,10 @@
     top: 0px;
     left: 0px;
   }
+
+  .user-css .sidebar-date {
+    display: none;
+  }
 }
 
 /*--------------------------*/
@@ -1898,9 +2274,9 @@
   top: auto;
   bottom: 200px;
   left: -100px;
-  background: var(--ColorPrime);
-  border-radius: 20px;
-  border: 3px solid var(--ColorTert-4);
+  background: var(--aotg-prime-color);
+  border-radius: 25px;
+  border: 3px solid var(--aotg-tertiary-color-4);
   box-shadow: none;
   opacity: 0.6;
   padding: 15px 15px 0px 15px;
@@ -1944,9 +2320,9 @@
 }
 
 #world-editor-bar .btn {
-  background: var(--ColorTert-1);
-  border-radius: 20px;
-  border: 3px solid var(--ColorTert-4);
+  background: var(--aotg-tertiary-color);
+  border-radius: 25px;
+  border: 3px solid var(--aotg-tertiary-color-4);
   overflow: hidden;
 }
 
@@ -1962,7 +2338,9 @@
 .user-css .world-content .world-maps,
 .user-css .world-meta-categories-link,
 .user-css .discussion-boards-world-link,
-.user-css .article-competition-entries {
+.user-css .article-competition-entries,
+.user-css .world-authors,
+.user-css .world-title {
   display: none;
 }
 
@@ -1973,168 +2351,4 @@
   background: none;
   border: none;
   box-shadow: none;
-}
-
-/*-------------------------*/
-/* ---- Main Profilebox ---- */
-/* -------------------------*/
-.user-css .profilebox {
-  background: var(--ColorPrime);
-  color: var(--MuteColor);
-  border: 4px solid var(--ColorTert-2);
-  padding: 0;
-  border-radius: 25px;
-  margin-bottom: 1em;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
-}
-
-.user-css .profilebox:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.user-css .profilebox-header {
-  background: linear-gradient(to right, var(--ColorSec-2), var(--ColorSec-1));
-  color: var(--ColorTert-1);
-  padding: 0.5em;
-  text-align: center;
-  font-size: 1.1em;
-  font-family: var(--BodyFont, sans-serif);
-  border-bottom: 2px solid var(--ColorTert-2);
-}
-
-.user-css .profilebox-content b {
-  color: var(--MuteColor);
-  font-family: var(--BodyFont, sans-serif);
-}
-
-.user-css .profilebox-entry {
-  color: var(--MuteColor);
-  padding: 0.2em 0.5em;
-  font-family: var(--BodyFont, sans-serif);
-  margin: 0.2em 0;
-  transition: background-color 0.3s ease;
-}
-
-.user-css .profilebox-entry:hover {
-  background-color: var(--ColorHighlight); 
-  border-radius: 10px;
-}
-
-.user-css .profilebox-image {
-  display: block;
-  width: 100%;
-  opacity: 0.8;
-  transition: opacity 0.3s ease; 
-}
-
-.user-css .profilebox-image img {
-  height: auto;
-  max-width: 90%;
-  margin: 0 auto; 
-  display: block; 
-  animation: pulse 2s infinite;
-}
-
-.user-css .profilebox-image:hover img {
-  opacity: 1;
-}
-
-.user-css .profilebox-subheader {
-  background: var(--ColorTert-1);
-  color: #fff1bd;
-  padding: 0.3em;
-  font-weight: bold;
-  text-align: center;
-  font-family: var(--BodyFont, sans-serif);
-  border-bottom: 1px solid var(--ColorSec-1);
-  letter-spacing: 1px;
-}
-
-.user-css .profilebox-nickname {
-  display: block;
-  color: var(--ColorTert-1);
-  font-family: var(--BodyFont, sans-serif);
-  text-align: center;
-  margin-top: 0.8em;
-  margin-bottom: 14px;
-}
-
-.user-css .profilebox-content {
-  padding: 0.5em;
-  background: var(--ColorSec-1);
-  color: var(--MuteColor);
-  border-bottom: 1px solid var(--ColorTert-3);
-  max-height: 150px; 
-  overflow-y: auto; 
-}
-
-.user-css .profilebox-content::-webkit-scrollbar {
-  width: 5px;
-}
-
-.user-css .profilebox-content::-webkit-scrollbar-track {
-  background: var(--ColorSec-2);
-}
-
-.user-css .profilebox-content::-webkit-scrollbar-thumb {
-  background: var(--ColorTert-1);
-}
-
-.user-css .profilebox-content::-webkit-scrollbar-thumb:hover {
-  background: var(--ColorTert-2);
-}
-
-.user-css .profilebox-content:last-of-type {
-  border-bottom: none;
-}
-
-/*-------------------------*/
-/* ----Profilebox Bullets   ---- */
-/* -------------------------*/
-.normal-bullet {
-  list-style-type: none;
-  padding-left: 26px;
-  background: url(https://www.worldanvil.com/uploads/images/e3d04a5a38cffc033f3518385419e83c.png)
-    no-repeat left center;
-  background-size: 20px 18px;
-}
-
-.normal-bullet-2 {
-  list-style-type: none;
-  padding-left: 26px;
-  background: url(https://www.worldanvil.com/uploads/images/fe18d230a95391bec26c63d5bd9c6f6c.png)
-    no-repeat left center;
-  background-size: 20px 18px;
-}
-
-.normal-bullet:hover {
-  background-image: url(https://www.worldanvil.com/uploads/images/c188a5be5a1314ae137752ff72bf6130.png);
-  cursor: pointer; 
-  padding-left: 35px;
-  background-size: 22px 22px;
-}
-
-.consortium-bullet {
-  list-style-type: none;
-  padding-left: 26px;
-  background: url(https://www.worldanvil.com/uploads/images/d198dbd2dd36fedab68275dfdcc8b5e1.png)
-    no-repeat left center;
-  background-size: 20px 18px;
-}
-
-.consortium-bullet:hover {
-  background-image: url(https://www.worldanvil.com/uploads/images/f53928542389fdbb4533adfcec81c9e4.png);
-  cursor: pointer; 
-  padding-left: 35px;
-  background-size: 22px 22px;
-}
-
-.concord-bullet {
-  list-style-type: none;
-  padding-left: 26px;
-  background: url(https://www.worldanvil.com/uploads/images/d198dbd2dd36fedab68275dfdcc8b5e1.png)
-    no-repeat left center;
-  background-size: 20px 18px;
 }
