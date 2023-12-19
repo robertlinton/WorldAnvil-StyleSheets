@@ -16,7 +16,6 @@ https://www.worldanvil.com/author/Timepool */
   /* Fonts */
   --aotg-font-main: Pirata One;
   --aotg-font-secondary: Cloister Black;
-  --aotg-font-tertiary: Prince Valiant;
   --aotg-font-body: Crimson Pro;
 
   /* Colors */
@@ -48,16 +47,15 @@ https://www.worldanvil.com/author/Timepool */
 .user-css-extended .page,
 .user-css-presentation .tooltipster-content {
   background: var(--aotg-prime-color);
-  border: 5px double var(--aotg-tertiary-color-5);
-  border-radius: 25px;
+  border: 5px solid var(--aotg-tertiary-color-5);
+  border-radius: 20px;
   overflow: hidden;
   box-shadow: none;
 }
 
 .user-css #cover img {
-  border-bottom: 5px double var(--aotg-tertiary-color-5);
+  border-bottom: 5px solid var(--aotg-tertiary-color-5);
 }
-
 
 /*--------------------------*/
 /* ---- Fonts   ---- */
@@ -211,20 +209,6 @@ https://www.worldanvil.com/author/Timepool */
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@font-face {
-  font-family: Cloister Black;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/3a9fc121fc423a12261b658070359c30b2233864/fonts/CloisterBlack.ttf);
-}
-
-@font-face {
-  font-family: Prince Valiant;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/77b3c9e88b632a498213b574a2c01fd079f347cf/fonts/PrinceValiant.ttf);
-}
-
 /*--------------------------*/
 /* ---- Text   ---- */
 /* -------------------------*/
@@ -252,15 +236,6 @@ https://www.worldanvil.com/author/Timepool */
   color: var(--aotg-body-text-color);
 }
 
-.user-css-vignette {
-  font-size: 20px;
-}
-
-.user-css .highlight {
-  color: #ffeac6;
-  font-family: var(--aotg-font-secondary);
-}
-
 /*--------------------------*/
 /* ---- Headers   ---- */
 /* -------------------------*/
@@ -276,24 +251,6 @@ https://www.worldanvil.com/author/Timepool */
   padding-top: 17px;
 }
 
-.user-css .article-title h1 {
-  color: var(--aotg-tertiary-color-1);
-  font-family: var(--aotg-font-main);
-  font-size: 5em;
-  text-align: center;
-  padding-top: 17px;
-  z-index: 1;
-  top: 50px;
-  width: 100%;
-  height: 12vw;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  animation: 1s 0.5s logofade backwards ease-in;
-}
-
 .user-css h2,
 .user-css-extended .page h2,
 .user-css-map-sidebar h2,
@@ -302,8 +259,6 @@ https://www.worldanvil.com/author/Timepool */
   color: var(--aotg-tertiary-color-2);
   padding-top: 15px;
   border-bottom: 3px solid var(--aotg-tertiary-color-1);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   font-size: 2em;
   margin-bottom: 10px;
 }
@@ -394,13 +349,12 @@ https://www.worldanvil.com/author/Timepool */
 .user-css-extended .tooltip .tooltip-inner,
 .user-css-worldmenu .tooltip .tooltip-inner,
 .user-css-presentation .tooltipster-borderless .tooltipster-content {
-  color: black;
+  color: var(--aotg-body-text-color);
   font-family: var(--aotg-font-body);
   font-size: 1.4em;
-  background: #ddd1bcfc;
-  border: 5px double #b37619;
-  border-radius: 25px;
-  overflow: hidden;
+  background: var(--aotg-tertiary-color-4);
+  border: none;
+  border-radius: 0px;
   box-shadow: none;
 }
 
@@ -416,13 +370,6 @@ https://www.worldanvil.com/author/Timepool */
   background: none;
 }
 
-.user-css-presentation .tooltipster-base .tooltipster-content::first-letter,
-.user-css-presentation .tooltip-inner::first-letter {
-  font-size: 24px;
-  line-height: 14px;
-  color: #b37619;
-}
-
 /*--------------------------*/
 /* ---- Article Excepts   ---- */
 /* -------------------------*/
@@ -436,8 +383,7 @@ https://www.worldanvil.com/author/Timepool */
 
 .user-css-presentation .tooltip .tooltip-inner {
   max-width: 300px;
-  background: #ddd1bcfc;
-  border: 5px double #b37619;
+  background: var(--aotg-prime-color);
 }
 
 /*--------------------------*/
@@ -480,14 +426,14 @@ https://www.worldanvil.com/author/Timepool */
 .user-css .label-roller,
 .user-css .rhea-ft-zoom-controls button,
 .user-css-presentation .tooltipster-content .btn,
-.user-css .discussion-board-section [class*=rep] .btn {
+.user-css .discussion-board-section [class*="rep"] .btn {
   font-family: var(--aotg-font-body);
   font-size: 1em;
   font-weight: bold;
   color: var(--aotg-secondary-color-1) !important;
   background: var(--aotg-tertiary-color-2);
-  border: 3px double var(--aotg-tertiary-color-3);
-  border-radius: 8px;
+  border: 3px solid var(--aotg-tertiary-color-3);
+  border-radius: 0px;
   box-shadow: none;
   transition: all 0.3s;
 }
@@ -497,7 +443,7 @@ https://www.worldanvil.com/author/Timepool */
 .user-css .label-roller:hover,
 .user-css .rhea-ft-zoom-controls button:hover,
 .user-css-presentation .tooltipster-content .btn:hover,
-.user-css .discussion-board-section [class*=rep] .btn:hover {
+.user-css .discussion-board-section [class*="rep"] .btn:hover {
   text-shadow: none;
   text-decoration: none;
   font-style: normal;
@@ -560,102 +506,8 @@ https://www.worldanvil.com/author/Timepool */
 .user-css .panel,
 .user-css-extended .panel {
   background: var(--aotg-secondary-color-1);
-  border: 5px double var(--aotg-tertiary-color-1);
-  border-radius: 25px;
-}
-
-/*-------------------------*/
-/* ---- Main Profilebox ---- */
-/* -------------------------*/
-.user-css .profilebox {
-  background: var(--aotg-prime-color);
-  color: var(--aotg-muted-color);
-  border: 2px solid var(--aotg-tertiary-color-2);
-  padding: 0;
-  border-radius: 20px;
-  margin-bottom: 1em;
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.user-css .profilebox:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.user-css .profilebox-header {
-  background: var(--aotg-tertiary-color-1);
-  color: #fff1bd;
-  padding: 0.5em;
-  text-align: center;
-  font-size: 1.1em;
-  font-family: var(--aotg-font-body);
-  border-bottom: 2px solid var(--aotg-tertiary-color-2);
-}
-
-.user-css .profilebox-content b {
-  color: var(--aotg-muted-color);
-  font-family: var(--aotg-font-tertiary);
-  font-size: 0.9em;
-}
-
-.user-css .profilebox-entry {
-  color: var(--aotg-muted-color);
-  padding: 0.2em 0.5em;
-  font-family: var(--aotg-font-body);
-  margin: 0.2em 0;
-}
-
-.user-css .profilebox-image {
-  display: block;
-  width: 100%;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.user-css .profilebox-image:hover img {
-  opacity: 1;
-}
-
-.user-css .profilebox-subheader {
-  background: var(--aotg-tertiary-color-1);
-  color: #fff1bd;
-  padding: 0.3em;
-  font-weight: bold;
-  text-align: center;
-  font-family: var(--aotg-font-body);
-  border-bottom: 1px solid var(--aotg-secondary-color-1);
-  letter-spacing: 1px;
-}
-
-.user-css .profilebox-nickname {
-  text-align: center;
-  padding: 10px 0px 0px 0px;
-  line-height: 140%;
-  font-style: italic;
-}
-
-.user-css .profilebox-content-entrybefore {
-  color: var(--aotg-muted-color);
-  font-family: var(--aotg-font-body);
-}
-
-.user-css .profilebox-content {
-  padding: 0.5em;
-  background: var(--aotg-secondary-color-1);
-  color: var(--aotg-muted-color);
-  border-bottom: 1px solid var(--aotg-tertiary-color-3);
-}
-
-.user-css .profilebox-content:last-of-type {
-  border-bottom: none;
-}
-
-.user-css .profilebox-image img {
-  height: auto;
-  max-width: 90%;
-  margin: 0 auto;
-  display: block;
+  border: 5px solid var(--aotg-tertiary-color-1);
+  border-radius: 0px;
 }
 
 /*--------------------------*/
@@ -732,8 +584,8 @@ https://www.worldanvil.com/author/Timepool */
   height: 500px;
   object-fit: contain;
   margin-top: 11px;
-  border-radius: 8px;
-  border: 8px double var(--aotg-tertiary-color-1);
+  border-radius: 0px;
+  border: 8px solid var(--aotg-tertiary-color-1);
 }
 
 .user-css .carousel-item.active {
@@ -780,9 +632,9 @@ https://www.worldanvil.com/author/Timepool */
 }
 
 .user-css .spoiler-button:hover,
-.user-css .spoiler-button[aria-expanded=true],
+.user-css .spoiler-button[aria-expanded="true"],
 .user-css-extended .spoiler-button:hover,
-.user-css-extended .spoiler-button[aria-expanded=true] {
+.user-css-extended .spoiler-button[aria-expanded="true"] {
   padding-left: 0.5rem;
   padding-top: 10px;
 }
@@ -808,8 +660,8 @@ https://www.worldanvil.com/author/Timepool */
 .user-css-presentation .tooltipster-content .aloud {
   background: var(--aotg-secondary-color-1);
   color: var(--aotg-tertiary-color-1);
-  border: 6px double var(--aotg-tertiary-color-4);
-  border-radius: 25px;
+  border: 6px solid var(--aotg-tertiary-color-4);
+  border-radius: 0px;
 }
 
 /*--------------------------*/
@@ -820,7 +672,7 @@ https://www.worldanvil.com/author/Timepool */
 .user-css .map-box {
   background: var(--aotg-secondary-color-1);
   border: 3px solid var(--aotg-tertiary-color-1);
-  border-radius: 25px;
+  border-radius: 0px;
   transition: all 0.2s;
   overflow: hidden;
 }
@@ -856,12 +708,9 @@ https://www.worldanvil.com/author/Timepool */
 
 .user-css.page-world-homepage .subheading {
   font-size: 1.1em;
-  margin-top: 35px;
+  margin-top: 10px;
 }
 
-/*--------------------------*/
-/* ---- Page Logo ---- */
-/* -------------------------*/
 .user-css .aotg-logo {
   background-image: url(https://www.worldanvil.com/uploads/images/a3dad64405f9d3edf3e7330e8722b325.png);
   background-repeat: no-repeat;
@@ -892,9 +741,9 @@ https://www.worldanvil.com/author/Timepool */
 /* ---- Bookcovers   ---- */
 /* -------------------------*/
 .user-css .bookcover {
-  border: 4px double var(--aotg-tertiary-color-2);
+  border: 4px solid var(--aotg-tertiary-color-2);
   background: var(--aotg-secondary-color-2);
-  border-radius: 25px;
+  border-radius: 20px;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -1023,45 +872,18 @@ https://www.worldanvil.com/author/Timepool */
 /* -------------------------*/
 .user-css .backtoworld a,
 .user-css .nav-strip a {
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  left: -13px;
-  top: -39px;
-  color: var(--aotg-secondary-color-1);
-  background: var(--aotg-tertiary-color-2);
-  border: none;
-  border-radius: 0px;
-  font-family: var(--aotg-font-main);
-  box-shadow: none;
-  transition: all 0.3s;
-  padding-top: 9px;
   display: none;
-}
-
-.user-css div .backtoworld a:hover,
-.user-css .nav-strip a:hover {
-  font-style: normal;
-  color: var(--aotg-secondary-color-1);
-  background: var(--aotg-tertiary-color-1);
-  padding-left: 25px;
 }
 
 /*--------------------------*/
 /* ---- Timeline Top   ---- */
 /* -------------------------*/
 .user-css .nav-strip {
-  background: none;
-  box-shadow: none;
-  margin-top: -43px;
+  display: none;
 }
 
 .user-css .nav-strip a {
-  margin-left: -10px;
-  font-size: 1.2em;
-  padding-right: 15px;
-  padding-bottom: 5px;
-  padding-left: 15px;
+  display: none;
 }
 
 .user-css .nav-strip .fas {
@@ -1080,7 +902,7 @@ https://www.worldanvil.com/author/Timepool */
   background: var(--aotg-tertiary-color-2);
   border: 3px solid var(--aotg-tertiary-color-1);
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 20px;
   top: 104px !important;
   right: 10px !important;
   position: fixed !important;
@@ -1110,8 +932,8 @@ https://www.worldanvil.com/author/Timepool */
 .map-context-user-css .search-form .typeahead-input {
   color: var(--aotg-body-text-color) !important;
   background: var(--aotg-secondary-color-2);
-  border: 5px double var(--aotg-tertiary-color-2);
-  border-radius: 25px;
+  border: 3px solid var(--aotg-tertiary-color-2);
+  border-radius: 20px;
   color: var(--aotg-secondary-color-1);
   width: 200px;
   box-shadow: none;
@@ -1194,7 +1016,7 @@ https://www.worldanvil.com/author/Timepool */
 .user-css .copyright-attribution {
   background: var(--aotg-secondary-color-1);
   border: 3px solid var(--aotg-tertiary-color-1);
-  border-radius: 25px;
+  border-radius: 0px;
   padding: 10px;
   margin-bottom: -17px;
 }
@@ -1267,7 +1089,7 @@ https://www.worldanvil.com/author/Timepool */
   font-weight: bold;
   background: var(--aotg-tertiary-color-1);
   border: 3px solid var(--aotg-secondary-color-3);
-  border-radius: 25px;
+  border-radius: 0px;
   transition: all 0.3s;
   box-shadow: none;
 }
@@ -1360,7 +1182,7 @@ https://www.worldanvil.com/author/Timepool */
 }
 
 .user-css-extended .comment-box-date,
-.user-css-extended [class*=comment-foo] {
+.user-css-extended [class*="comment-foo"] {
   border: none;
 }
 
@@ -1879,7 +1701,7 @@ https://www.worldanvil.com/author/Timepool */
 /*--------------------------*/
 /* ---- Diplomacy Webs Hover ---- */
 /* -------------------------*/
-.user-css [class*=clotho-title-] {
+.user-css [class*="clotho-title-"] {
   background: var(--aotg-secondary-color-2);
   box-shadow: none;
   border-top: 3px solid var(--aotg-tertiary-color-4);
@@ -1887,11 +1709,11 @@ https://www.worldanvil.com/author/Timepool */
 
 .user-css .clotho-title-arrows,
 .user-css .clotho-box div:nth-of-type(2) .clotho-title-item img,
-.user-css [class*=clotho-title-item] {
+.user-css [class*="clotho-title-item"] {
   border-top: none;
 }
 
-.user-css [class*=clotho-title-item] {
+.user-css [class*="clotho-title-item"] {
   border: 3px solid var(--aotg-tertiary-color-2);
   padding: 0px !important;
 }
@@ -1901,7 +1723,7 @@ https://www.worldanvil.com/author/Timepool */
   top: -120px;
 }
 
-.user-css [class*=show] {
+.user-css [class*="show"] {
   padding-top: 25px;
   padding-bottom: 35px;
 }
@@ -2183,7 +2005,7 @@ https://www.worldanvil.com/author/Timepool */
 .user-css-whitelabel {
   left: -160px;
   background: var(--aotg-prime-color);
-  border-radius: 25px;
+  border-radius: 20px;
   color: var(--aotg-body-text-color) !important;
   border: 3px solid var(--aotg-tertiary-color-4) !important;
   padding: 10px 30px 10px 10px;
@@ -2222,33 +2044,6 @@ https://www.worldanvil.com/author/Timepool */
 .user-css .aotg-nav-title a:hover {
   border-bottom-width: 1px;
   border-bottom-style: dotted;
-}
-
-/*--------------------------*/
-/* ---- Navigation Side ---- */
-/* -------------------------*/
-.user-css .sidebar-date {
-  position: absolute;
-  top: 15px;
-  left: 19px;
-  width: 255px;
-  background-color: var(--aotg-prime-color);
-  border: 4px double var(--aotg-tertiary-color-2);
-  padding: 10px;
-  border-radius: 8px;
-  z-index: 10;
-}
-
-.user-css .sidebar-date h4 {
-  font-size: 1.8em;
-  color: var(--aotg-tertiary-color-1);
-  margin-bottom: 10px;
-}
-
-.user-css .sidebar-date p {
-  font-size: 1.2em;
-  margin-bottom: 5px;
-  color: var(--aotg-body-text-color);
 }
 
 /*--------------------------*/
@@ -2307,7 +2102,7 @@ https://www.worldanvil.com/author/Timepool */
   bottom: 200px;
   left: -100px;
   background: var(--aotg-prime-color);
-  border-radius: 25px;
+  border-radius: 20px;
   border: 3px solid var(--aotg-tertiary-color-4);
   box-shadow: none;
   opacity: 0.6;
@@ -2342,7 +2137,7 @@ https://www.worldanvil.com/author/Timepool */
   float: none !important;
 }
 
-#world-editor-bar [class*=cont] {
+#world-editor-bar [class*="cont"] {
   width: 100px !important;
 }
 
@@ -2353,7 +2148,7 @@ https://www.worldanvil.com/author/Timepool */
 
 #world-editor-bar .btn {
   background: var(--aotg-tertiary-color-1);
-  border-radius: 25px;
+  border-radius: 20px;
   border: 3px solid var(--aotg-tertiary-color-4);
   overflow: hidden;
 }
@@ -2377,169 +2172,88 @@ https://www.worldanvil.com/author/Timepool */
 }
 
 /*--------------------------*/
-/* ---- Additional CSS Classes ---- */
+/* ---- Category Backgrounds ---- */
 /* -------------------------*/
-.user-css.aotg-sidebar .panel {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-
-/*--------------------------*/
-/* ---- WIP ---- */
-/*--------------------------*/
-.user-css .under-construction {
-  padding: 20px;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.user-css .under-construction h2 {
-  margin-bottom: 15px;
-}
-
-.user-css .under-construction img {
-  max-width: 100%;
-  height: auto;
-}
-
-/*--------------------------*/
-/* ---- Char Cards ---- */
-/*--------------------------*/
-.user-css .charcard {
-  background: transparent;
-  width: 300px;
-  height: 477px;
-  perspective: 1000px;
-  margin: auto;
-  position: relative;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.user-css .charcard-front,
-.user-css .charcard-back {
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  position: absolute;
-  top: 0;
+.user-css .realms-bg {
+  position: fixed;
+  bottom: 0;
   left: 0;
-  transition: transform 0.3s ease-in-out;
-}
-
-.user-css .charcard-front {
-  background: var(--aotg-prime-color);
-  color: var(--aotg-muted-color);
-  border: 6px double var(--aotg-tertiary-color-2);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.user-css .charcard-front .charcard-header {
-  background: var(--aotg-secondary-color-2);
-  color: var(--aotg-tertiary-color-1);
-  padding: 0.5em;
-  text-align: center;
-  font-size: 1.1em;
-  font-family: var(--aotg-font-body, sans-serif);
-  border-bottom: 2px solid var(--aotg-tertiary-color-2);
-}
-
-.user-css .charcard-front .charcard-image img {
+  width: 100vw;
+  height: 100vw;
+  background: no-repeat center/100% url(https://www.worldanvil.com/uploads/images/a8f2fe7c9f55ad118f234420cea5e1b7.png);
+  background-size: cover;
   display: block;
-  width: 100%;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+  z-index: -1;
 }
 
-.user-css .charcard-back {
-  background: black;
-  color: var(--aotg-muted-color);
-  border: 6px double var(--aotg-tertiary-color-2);
-  border-radius: 8px;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-  overflow-y: auto;
-  box-sizing: border-box;
-  padding: 20px;
+.user-css .planes-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background: no-repeat center/100% url(https://www.worldanvil.com/uploads/images/6b1710467faed1018e6b2fc8356a76b9.png);
+  background-size: cover;
+  display: block;
+  z-index: -1;
 }
 
-.user-css .charcard-back .charcard-content {
-  height: 100%;
-  overflow-y: auto;
+.user-css .continents-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background: no-repeat center/100% url(https://www.worldanvil.com/uploads/images/7cac4d27476c9e5c88f5e58a218f28ae.png);
+  background-size: cover;
+  display: block;
+  z-index: -1;
 }
 
-.user-css .charcard:hover .charcard-front {
-  transform: rotateY(-180deg);
+.user-css .nations-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background: no-repeat center/100% url(https://www.worldanvil.com/uploads/images/eb4ecbcd91186bd0a5e202d53cf01141.png);
+  background-size: cover;
+  display: block;
+  z-index: -1;
 }
 
-.user-css .charcard:hover .charcard-back {
-  transform: rotateY(0deg);
+.user-css .settlements-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background: no-repeat center/100% url(https://www.worldanvil.com/uploads/images/5381680d5acb5ab1ca11f24131841d3c.png);
+  background-size: cover;
+  display: block;
+  z-index: -1;
 }
 
-.user-css .charcard:hover .charcard-front .charcard-image img {
-  opacity: 1;
+.user-css .landmarks-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background: no-repeat center/100% url(https://www.worldanvil.com/uploads/images/7a0544123eb3a1edf855b90dcef0f1b0.png);
+  background-size: cover;
+  display: block;
+  z-index: -1;
 }
 
-/*--------------------------*/
-/* ---- Icons ---- */
-/* -------------------------*/
-.user-css .base-icon {
-  list-style-type: none;
-  padding-left: 15px;
-  background: url(https://www.worldanvil.com/uploads/images/3f3566b6e17801c1e82be02c268dc9bf.png)
-    no-repeat left center;
-  background-size: 10px 10px;
-  margin-left: -10px;
+.user-css .culture-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background: no-repeat center/100% url(https://www.worldanvil.com/uploads/images/e1e6e0091dfc5e576b346ab34ea933f4.png);
+  background-size: cover;
+  display: block;
+  z-index: -1;
 }
-
-.user-css .northern-wildlands-icon {
-  list-style-type: none;
-  padding-left: 32px;
-  background: url(https://www.worldanvil.com/uploads/images/dd0a8c5eff133cee1aff3ca12f47314d.png)
-    no-repeat left center;
-  background-size: 25px 25px;
-  margin-left: -10px;
-}
-
-/*--------------------------*/
-/* ---- Custom Tables ---- */
-/* -------------------------*/
-.user-css .aotg-table .table {
-  background-color: #483c32;
-  color: #f4eae6;
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 20px;
-  font-family: var(--aotg-font-body);
-}
-
-.user-css .aotg-table th,
-.user-css .aotg-table td {
-  border: 1px solid var(--aotg-tertiary-color-3);
-  padding: 10px;
-  text-align: left;
-  transition: background-color 0.3s ease;
-}
-
-.user-css .aotg-table th {
-  background-color: var(--aotg-tertiary-color-1);
-  color: #fff1bd;
-  font-family: var(--aotg-font-main);
-  font-size: 1.2em;
-}
-
-.user-css .aotg-table tr:hover {
-  background-color: #564e46;
-}
-
-.user-css .aotg-table tr:nth-child(odd) {
-  background-color: #504a40;
-}
-
-.user-css .aotg-table tr:nth-child(even) {
-  background-color: #483c32;
-}
-
