@@ -1,0 +1,2107 @@
+/** Originally Mortal Coil Theme Designed By
+** Timepool (Garrett Lewis)
+https://www.worldanvil.com/author/Timepool */
+
+/*--------------------------*/
+/* ---- Variables   ---- */
+/* -------------------------*/
+.user-css,
+.user-css-extended,
+.user-css-presentation,
+.user-css-map,
+.user-css-map-sidebar,
+.presentation-interface-map,
+.map-context-user-css,
+.tooltipster-content {
+  /* Fonts */
+  --fotr-font-main: Northmen Display;
+  --fotr-font-body: Macondo Swash Caps;
+
+  /* Colors */
+  --fotr-main-color-1: #3d3d3d;
+  --fotr-main-color-2: #111516;
+  --fotr-secondary-color-1: #1b1e27;
+  --fotr-secondary-color-2: #2a2f3f;
+  --fotr-tertiary-color-1: #56b0be;
+  --fotr-tertiary-color-2: #56beb5;
+  --fotr-tertiary-color-3: #356b6c;
+  --fotr-tertiary-color-4: #36696b;
+  --fotr-tertiary-color-5: #56b0be;
+  --fotr-tertiary-color-6: #ce300e;
+  --fotr-tertiary-color-7: #8deff3;
+  --fotr-body-text-color: #ffffff;
+  --fotr-muted-color: #b3e0e7;
+}
+
+@keyframes fade {
+  from {
+    transform: translateY(0.5em);
+    opacity: 0;
+  }
+}
+
+/*--------------------------*/
+/* ---- Fonts   ---- */
+/* -------------------------*/
+@font-face {
+  font-family: Northmen Display;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/9c79923a1a63834dc362f16780fda60eac2ff52b/fonts/Norse.otf);
+}
+
+@font-face {
+  font-family: Macondo Swash Caps;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/macondoswashcaps/v24/6NUL8EaAJgGKZA7lpt941Z9s6ZYgDq6-fUAb.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*--------------------------*/
+/* ---- Backgrounds   ---- */
+/* -------------------------*/
+.user-css-presentation {
+  background: var(--fotr-main-color-2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.user-css.page,
+.user-css-extended .page,
+.user-css-presentation .tooltipster-content {
+  background: var(--fotr-main-color-1);
+  border: 2px solid var(--fotr-tertiary-color-5);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: none;
+  max-width: 1380px;
+}
+
+/*--------------------------*/
+/* ---- Text   ---- */
+/* -------------------------*/
+.user-css,
+.user-css p,
+.user-css-extended,
+.user-css-extended p,
+.user-css blockquote,
+.user-css-extended blockquote,
+.user-css .thales-cell,
+.user-css-map-sidebar p,
+.user-css-map-sidebar .world-vignette,
+.user-css .calendar-presentation sup,
+.user-css .timeline li .timeline-panel p,
+.user-css .timeline li .milestone-panel p,
+.user-css-extended .timeline li .timeline-panel p,
+.user-css-extended .timeline li .milestone-panel p,
+.user-css-extended dl,
+.user-css-presentation .tooltipster-content,
+.user-css-extended .article-extended-tabs,
+.user-css-extended .metadata-label,
+.user-css-extended .metadata-value {
+  font-size: 17px;
+  font-family: var(--fotr-font-body);
+  color: var(--fotr-body-text-color);
+}
+
+/*--------------------------*/
+/* ---- Headers   ---- */
+/* -------------------------*/
+.user-css h1,
+.user-css-map-sidebar h1,
+.user-css-presentation .tooltipster-content h1,
+.user-css .statblock h1,
+.user-css-extended .orphan-era h1 {
+  color: var(--fotr-tertiary-color-1);
+  font-family: var(--fotr-font-main);
+  font-size: 5em;
+  text-align: center;
+  padding-top: 17px;
+  animation: 1s 0.5s fade backwards ease-in;
+}
+
+.user-css h2,
+.user-css-extended .page h2,
+.user-css-map-sidebar h2,
+.user-css-presentation .tooltipster-content h2 {
+  font-family: var(--fotr-font-main);
+  color: var(--fotr-tertiary-color-2);
+  padding-top: 15px;
+  border-bottom: 2px solid var(--fotr-tertiary-color-2);
+  font-size: 2.5em;
+  margin-bottom: 8px;
+}
+
+.user-css h3,
+.user-css-extended .page h3,
+.user-css-map-sidebar h3,
+.user-css-presentation .tooltipster-content h3 {
+  font-family: var(--fotr-font-main);
+  color: var(--fotr-tertiary-color-2);
+  padding-top: 15px;
+  font-size: 2em;
+}
+
+.user-css h4,
+.user-css-extended .page h4,
+.user-css-map-sidebar h4,
+.user-css .timeline li .timeline-panel h4,
+.user-css .timeline li .milestone-panel h4,
+.user-css-extended .timeline li .timeline-panel h4,
+.user-css-extended .timeline li .milestone-panel h4,
+.user-css-presentation .tooltipster-content h4 {
+  font-family: var(--fotr-font-main);
+  color: var(--fotr-tertiary-color-1);
+  padding-top: 15px;
+  font-size: 2em;
+}
+
+.user-css h5,
+.user-css-extended .page h5,
+.user-css-map-sidebar h5,
+.user-css .timeline li .timeline-panel h5,
+.user-css .timeline li .milestone-panel h5,
+.user-css-extended .timeline li .timeline-panel h5,
+.user-css-extended .timeline li .milestone-panel h5,
+.user-css-presentation .tooltipster-content h5,
+.user-css-presentation #world-navigation-sidebar .world-menu h5 {
+  color: var(--fotr-tertiary-color-2);
+  font-family: var(--fotr-font-main);
+  font-size: 1.3em;
+  padding-top: 10px;
+  margin-top: 0px;
+}
+
+.user-css h6 {
+  font-family: var(--fotr-font-main);
+  padding-top: 15px;
+}
+
+.user-css h1::first-letter,
+.user-css h2::first-letter,
+.user-css h3::first-letter,
+.user-css h4::first-letter,
+.user-css h5::first-letter,
+.user-css h6::first-letter {
+  color: var(--fotr-tertiary-color-6);
+}
+
+/*--------------------------*/
+/* ---- Links   ---- */
+/* -------------------------*/
+.user-css a,
+.user-css a:focus,
+.user-css-extended .page a,
+.user-css .artist-credits a,
+.user-css .timeline li .timeline-panel a,
+.user-css .timeline li .milestone-panel a,
+.user-css-extended .timeline li .timeline-panel a,
+.user-css-extended .timeline li .milestone-panel a,
+.user-css-presentation .tooltipster-content a,
+.user-css .usercard a {
+  color: var(--fotr-tertiary-color-2);
+  transition: all 0.3s;
+  text-shadow: none;
+}
+
+.user-css a:hover,
+.user-css-extended a:hover,
+.user-css-presentation .tooltipster-content a:hover,
+.user-css .usercard a:hover {
+  color: var(--fotr-tertiary-color-1);
+  text-shadow: none;
+  font-style: italic;
+}
+
+/*--------------------------*/
+/* ---- Tooltips   ---- */
+/* -------------------------*/
+.user-css .text-abbreviation {
+  cursor: default !important;
+  border-bottom: 1px dotted var(--fotr-body-text-color);
+}
+
+.user-css .tooltip .tooltip-inner,
+.user-css-presentation .tooltip .tooltip-inner,
+.user-css-extended .tooltip .tooltip-inner,
+.user-css-worldmenu .tooltip .tooltip-inner,
+.user-css-presentation .tooltipster-borderless .tooltipster-content {
+  color: var(--fotr-body-text-color);
+  font-family: var(--fotr-font-main);
+  font-size: 1.4em;
+  background: var(--fotr-tertiary-color-4);
+  border: 2px solid var(--fotr-tertiary-color-5);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.user-css-presentation .tooltip-arrow::before,
+.user-css-presentation .tooltipster-arrow-border,
+.user-css .tooltip.top .tooltip-arrow,
+.user-css-extended .tooltip.top .tooltip-arrow,
+.user-css-worldmenu .tooltip.top .tooltip-arrow {
+  border-top-color: var(--fotr-tertiary-color-4) !important;
+}
+
+.user-css-presentation .tooltipster-borderless .tooltipster-box {
+  background: none;
+}
+
+/*--------------------------*/
+/* ---- Article Excepts   ---- */
+/* -------------------------*/
+.user-css-presentation .tooltip {
+  opacity: 1;
+}
+
+.user-css-presentation .tooltip-arrow::before {
+  border-top-color: var(--fotr-tertiary-color-4);
+}
+
+.user-css-presentation .tooltip .tooltip-inner {
+  max-width: 300px;
+  background: var(--fotr-main-color-1);
+}
+
+/*--------------------------*/
+/* ---- Misc   ---- */
+/* -------------------------*/
+.user-css .article-subheading,
+.user-css .article-title-author {
+  text-align: center;
+  font-style: italic;
+  padding-left: 0px;
+}
+
+.user-css .text-muted,
+.user-css-extended .text-muted {
+  color: var(--fotr-muted-color) !important;
+}
+
+.user-css .text-danger,
+.user-css-extended .text-danger {
+  color: var(--fotr-tertiary-color-2) !important;
+}
+
+.user-css .dropcap {
+  font-family: var(--fotr-font-body);
+}
+
+/*--------------------------*/
+/* ---- Buttons   ---- */
+/* -------------------------*/
+.user-css .btn,
+.user-css-extended .btn,
+.user-css .label-roller,
+.user-css .rhea-ft-zoom-controls button,
+.user-css-presentation .tooltipster-content .btn,
+.user-css .discussion-board-section [class*=rep] .btn {
+  font-family: var(--fotr-font-body);
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--fotr-secondary-color-1) !important;
+  background: var(--fotr-tertiary-color-2);
+  border: 2px solid var(--fotr-tertiary-color-3);
+  border-radius: 8px;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.user-css .btn:hover,
+.user-css-extended .btn:hover,
+.user-css .label-roller:hover,
+.user-css .rhea-ft-zoom-controls button:hover,
+.user-css-presentation .tooltipster-content .btn:hover,
+.user-css .discussion-board-section [class*=rep] .btn:hover {
+  text-shadow: none;
+  text-decoration: none;
+  font-style: normal;
+  padding-left: 15px;
+  background: var(--fotr-tertiary-color-1);
+}
+
+.user-css .btn:focus,
+.user-css-extended .btn:focus,
+.map-context-user-css .btn:focus,
+.tooltipster-content .btn:focus {
+  box-shadow: none;
+}
+
+.user-css .btn-success,
+.user-css-extended .btn .btn-success {
+  background: var(--fotr-tertiary-color-1) !important;
+  border: none !important;
+  border: 2px solid var(--fotr-tertiary-color-4) !important;
+}
+
+.user-css .btn-success:hover,
+.user-css-extended .btn .btn-success:hover {
+  background: var(--fotr-tertiary-color-2) !important;
+  border: 2px solid var(--fotr-tertiary-color-4) !important;
+}
+
+.user-css .visibility-toggler-trigger .fas,
+.user-css-extended .visibility-toggler-trigger .fas {
+  padding: 5px;
+}
+
+.user-css.page-world-homepage .panel .btn {
+  background: #ffffff80;
+  color: #ffffff !important;
+  border: 2px solid #00000087;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  font-family: var(--fotr-font-main);
+  font-size: 1.2em;
+}
+
+/*--------------------------*/
+/* ---- Quotes   ---- */
+/* -------------------------*/
+.user-css blockquote,
+.user-css-extended blockquote,
+.user-css-presentation .tooltipster-content blockquote {
+  background: var(--fotr-secondary-color-2);
+  border: 2px solid var(--fotr-tertiary-color-3);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.user-css blockquote .author,
+.user-css-extended blockquote .author,
+.user-css-presentation .tooltipster-content blockquote .author {
+  color: var(--fotr-muted-color);
+  font-family: var(--fotr-font-main);
+  font-size: 1em;
+}
+
+/*--------------------------*/
+/* ---- Sidebar Panel   ---- */
+/* -------------------------*/
+.user-css .panel,
+.user-css-extended .panel {
+  background: var(--fotr-secondary-color-1);
+  border: 2px solid var(--fotr-tertiary-color-5);
+  border-radius: 8px;
+}
+
+.user-css.page-world-homepage .panel {
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.user-css.fotr-sidebar .panel {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+/*--------------------------*/
+/* ---- Profilebox   ---- */
+/* -------------------------*/
+.user-css .profilebox {
+  background: var(--fotr-secondary-color-1);
+  color: var(--fotr-muted-color);
+  border: 2px solid var(--fotr-tertiary-color-2);
+  padding: 0;
+  border-radius: 8px;
+  margin-bottom: 1em;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.user-css .profilebox-header {
+  background: var(--fotr-main-color-2);
+  color: var(--fotr-body-text-color);
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: var(--fotr-font-main);
+  border-bottom: 2px solid var(--fotr-tertiary-color-2);
+}
+
+.user-css .profilebox-image img {
+  display: block;
+  border-radius: 8px;
+  border: 3px solid var(--fotr-tertiary-color-2);
+  width: 100%;
+  max-width: 76%;
+  margin: 0 auto;
+}
+
+.user-css .profilebox-nickname {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  line-height: 140%;
+  font-style: italic;
+}
+
+.user-css .profilebox-entry {
+  color: var(--fotr-body-text-color);
+  padding: 0.2em 0.5em;
+  font-family: var(--fotr-font-main);
+  margin: 0.2em 0;
+}
+
+.user-css .profilebox-subheader {
+  background: var(--fotr-main-color-2);
+  color: var(--fotr-body-text-color);
+  padding: 0.5em;
+  font-weight: bold;
+  text-align: center;
+  font-family: var(--fotr-font-main);
+  border-top: 2px solid var(--fotr-tertiary-color-1);
+  border-bottom: 2px solid var(--fotr-tertiary-color-1);
+}
+
+.user-css .profilebox-content {
+  padding: 0.5em;
+  background: var(--fotr-secondary-color-1);
+  color: var(--fotr-body-text-color);
+  border-bottom: 1px solid var(--fotr-tertiary-color-3);
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.user-css .profilebox-content b {
+  color: var(--fotr-muted-color);
+  font-family: var(--fotr-tertiary-color-1);
+  font-size: 0.9em;
+}
+
+.user-css .profilebox-content:last-of-type {
+  border-bottom: none;
+}
+
+/*--------------------------*/
+/* ---- HR   ---- */
+/* -------------------------*/
+.user-css hr,
+.user-css-extended hr,
+.user-css-map-sidebar hr,
+.user-css .tooltipster-content hr {
+  border-top: 2px solid var(--fotr-tertiary-color-2);
+  opacity: 1;
+}
+
+/*--------------------------*/
+/* ---- Images   ---- */
+/* -------------------------*/
+.user-css .artist-credits {
+  background: var(--fotr-secondary-color-1);
+  color: var(--fotr-tertiary-color-1);
+}
+
+/*--------------------------*/
+/* ---- Imageblocks   ---- */
+/* -------------------------*/
+.user-css .image-panel {
+  background: var(--fotr-secondary-color-2);
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-radius: 0px;
+  box-shadow: none;
+  text-align: center;
+  padding: 15px;
+}
+
+.user-css .image-panel .cover,
+.user-css .image-panel .user-css-image-thumbnail {
+  margin-top: 0px;
+}
+
+.user-css .image-panel img {
+  margin: auto;
+}
+
+.user-css .image-panel h5 {
+  font-size: 2em;
+}
+
+.user-css .image-panel .artist-credits {
+  font-size: 1em;
+}
+
+/*--------------------------*/
+/* ---- Spoilers   ---- */
+/* -------------------------*/
+.user-css .spoiler-button,
+.user-css-extended .spoiler-button {
+  border: 5px solid var(--fotr-tertiary-color-3);
+}
+
+.user-css .spoiler-button:hover,
+.user-css .spoiler-button[aria-expanded=true],
+.user-css-extended .spoiler-button:hover,
+.user-css-extended .spoiler-button[aria-expanded=true] {
+  padding-left: 0.5rem;
+  padding-top: 10px;
+}
+
+.user-css .spoiler-content,
+.user-css-extended .spoiler-content {
+  border-top: 5px solid var(--fotr-tertiary-color-3);
+  color: var(--fotr-body-text-color);
+  background: var(--fotr-secondary-color-2);
+  border-radius: 0px;
+}
+
+.user-css .spoiler-card,
+.user-css-extended .spoiler-card {
+  background: none;
+  border: none;
+  padding: 0px !important;
+}
+
+/*--------------------------*/
+/* ---- Aloud Boxes   ---- */
+/* -------------------------*/
+.user-css .aloud,
+.user-css-presentation .tooltipster-content .aloud {
+  background: var(--fotr-secondary-color-1);
+  color: var(--fotr-tertiary-color-1);
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-radius: 0px;
+}
+
+/*--------------------------*/
+/* ---- Article Blocks   ---- */
+/* -------------------------*/
+.user-css .article-panel,
+.user-css-extended .article-panel,
+.user-css .map-box {
+  background: var(--fotr-secondary-color-1);
+  border: 2px solid var(--fotr-tertiary-color-2);
+  border-radius: 0px;
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.user-css .article-panel:hover,
+.user-css-extended .article-panel:hover,
+.user-css .map-box:hover {
+  border-color: var(--fotr-tertiary-color-4);
+}
+
+.user-css .article-panel .article-link:hover {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.user-css .article-panel .heading {
+  color: var(--fotr-tertiary-color-1);
+  font-size: 1.3em;
+}
+
+.user-css .article-panel .subheading,
+.user-css .article-panel .date {
+  color: var(--fotr-muted-color);
+}
+
+/*--------------------------*/
+/* ---- Homepage   ---- */
+/* -------------------------*/
+.user-css .world-author {
+  font-family: var(--fotr-font-body);
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.user-css.page-world-homepage .subheading {
+  font-size: 19px;
+}
+
+/*--------------------------*/
+/* ---- Bookcovers   ---- */
+/* -------------------------*/
+.user-css .bookcover {
+  border: 2px solid var(--fotr-tertiary-color-4);
+  background: var(--fotr-secondary-color-2);
+  border-radius: 0px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.user-css .bookcover:hover {
+  background: var(--fotr-secondary-color-1);
+  border: 2px solid var(--fotr-tertiary-color-2);
+}
+
+.user-css .bookcover a:hover .excerpt {
+  color: var(--fotr-body-text-color);
+  transition: all 0.3s;
+}
+
+.user-css .bookcover a img {
+  width: 100%;
+  max-width: 300px;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.user-css .bookcover a:hover img {
+  opacity: 0.3;
+}
+
+.user-css .world-bookcase .booktitle,
+.user-css .booktitle {
+  position: absolute;
+  max-width: 100%;
+  top: unset;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--fotr-secondary-color-1);
+  border-top: 2px solid var(--fotr-tertiary-color-4);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.user-css .world-bookcase .bookcover a:hover .booktitle,
+.user-css .bookcover a:hover .booktitle {
+  color: var(--fotr-secondary-color-1);
+  background: var(--fotr-tertiary-color-2);
+  border-top: 2px solid var(--fotr-tertiary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Table of Contents   ---- */
+/* -------------------------*/
+.user-css .toc-article-link {
+  color: var(--fotr-tertiary-color-2);
+}
+
+.user-css .article-title-icon {
+  color: var(--fotr-tertiary-color-1);
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+
+.user-css .world-category-link {
+  color: var(--fotr-tertiary-color-1);
+}
+
+.user-css .category-title-icon {
+  color: var(--fotr-tertiary-color-2);
+  margin-right: 5px;
+}
+
+.user-css .fa-external-link {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- Map blocks   ---- */
+/* -------------------------*/
+.user-css .map-box .img-responsive {
+  padding: 0px;
+}
+
+.user-css .map-box h5 {
+  font-size: 1.3em;
+}
+
+.user-css .map-box .p-20 {
+  padding-top: 0px !important;
+}
+
+.user-css .map-box small {
+  font-family: var(--fotr-font-body);
+  font-size: 1em;
+}
+
+/*--------------------------*/
+/* ---- Followers page   ---- */
+/* -------------------------*/
+.user-css.page-followers .subheading {
+  font-size: 1em;
+  font-family: var(--fotr-font-body);
+}
+
+.user-css .follower-box {
+  background: var(--fotr-secondary-color-2);
+  border-radius: 0px;
+}
+
+.user-css .follower-box img {
+  border: 2px solid var(--fotr-tertiary-color-4);
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.user-css .follower-box small {
+  color: var(--fotr-tertiary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Top   ---- */
+/* -------------------------*/
+.user-css .backtoworld a,
+.user-css .nav-strip a {
+  display: none;
+}
+
+.user-css div .backtoworld a:hover,
+.user-css .nav-strip a:hover {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- Timeline Top   ---- */
+/* -------------------------*/
+.user-css .nav-strip {
+  display: none;
+}
+
+.user-css .nav-strip a {
+  display: none;
+}
+
+.user-css .nav-strip .fas {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- Back to Top  ---- */
+/* -------------------------*/
+.user-css-presentation #backtotop {
+  bottom: 20%;
+}
+
+.user-css-presentation .backtotop-button {
+  background-image: url(https://www.worldanvil.com/uploads/images/da67aca92979c6859683c5b2143c0c5e.png);
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  padding: 10px;
+  border-radius: 0px;
+  transition: all 0.3s;
+  margin: 13px;
+  width: 50px;
+  height: 50px;
+  color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-css-presentation .backtotop-button:hover {
+  background-image: url(https://www.worldanvil.com/uploads/images/de167d579aff0fe624a75ff30bc016de.png);
+}
+
+/*--------------------------*/
+/* ---- Search Form   ---- */
+/* -------------------------*/
+.user-css .search-form {
+  position: fixed;
+  z-index: 3010;
+  top: 7px;
+  left: 0%;
+}
+
+.user-css .search-form .typeahead-input,
+.user-css .form-control,
+.user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
+.map-context-user-css .search-form .typeahead-input {
+  color: var(--fotr-body-text-color) !important;
+  background: var(--fotr-secondary-color-2);
+  border: 2px solid var(--fotr-tertiary-color-5);
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: none;
+  padding: 13px 10px 12px 10px;
+}
+
+.user-css .search-form .typeahead-input:hover,
+.user-css .form-control:hover,
+.user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap:hover,
+.map-context-user-css .search-form .typeahead-input:hover {
+  filter: drop-shadow(0px 0px 10px var(--fotr-tertiary-color-1));
+}
+
+.user-css .search-form .typeahead-input::placeholder,
+.user-css .form-control::placeholder,
+.user-css .rhea-family-tree input::placeholder,
+.map-context-user-css .search-form .typeahead-input::placeholder {
+  color: var(--fotr-muted-color);
+  filter: drop-shadow(0px 0px 10px var(--fotr-tertiary-color-1));
+}
+
+.user-css .typeahead.dropdown-menu,
+.map-context-user-css .typeahead.dropdown-menu {
+  background: var(--fotr-secondary-color-1);
+}
+
+.user-css .form-group .dropdown-menu,
+.map-context-user-css .form-group .dropdown-menu {
+  border: none;
+  border: 2px solid var(--fotr-tertiary-color-3);
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.user-css .typeahead.dropdown-menu li,
+.map-context-user-css .typeahead.dropdown-menu li {
+  padding: 0;
+  background: var(--fotr-secondary-color-1);
+}
+
+.user-css .typeahead.dropdown-menu li.active .dropdown-item,
+.map-context-user-css .typeahead.dropdown-menu li.active .dropdown-item {
+  background: var(--fotr-main-color-1);
+  font-weight: normal;
+}
+
+.user-css .typeahead.dropdown-menu li a,
+.map-context-user-css .typeahead.dropdown-menu li a {
+  color: var(--fotr-tertiary-color-1);
+}
+
+.user-css.page-world-homepage .search-form .typeahead-input {
+  border-bottom-left-radius: 35px;
+  text-align: center;
+  border-bottom-right-radius: 35px;
+}
+
+/*--------------------------*/
+/* ---- Breadcrumbs   ---- */
+/* -------------------------*/
+.user-css .breadcrumb,
+.user-css-extended .breadcrumb {
+  font-family: var(--fotr-font-main);
+  font-size: 1.1em;
+  font-style: normal;
+}
+
+.user-css .breadcrumb .fas,
+.user-css-extended .breadcrumb .fas {
+  color: var(--fotr-tertiary-color-2);
+}
+
+.user-css .breadcrumb-contents-loader .breadcrumb-card {
+  background: var(--fotr-secondary-color-1);
+  border: 2px solid var(--fotr-tertiary-color-5);
+  border-radius: 8px;
+  margin: 10px;
+}
+.user-css .breadcrumb-contents-loader .world-menu-subcategory {
+  font-size: 1em;
+}
+.user-css .breadcrumb-contents-loader .world-menu-subcategory h5 {
+  font-size: 1em;
+  padding: 0;
+}
+.user-css .breadcrumb-contents-loader .toc-article-item,
+.user-css .breadcrumb-contents-loader .toc-article-item a {
+  font-weight: 400;
+}
+
+.user-css .breadcrumb .breadcrumb-article-wrapper {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- Bottom   ---- */
+/* -------------------------*/
+.user-css .copyright-attribution {
+  background: var(--fotr-secondary-color-1);
+  border: 2px solid var(--fotr-tertiary-color-4);
+  padding: 10px;
+  margin-bottom: -17px;
+  color: var(--fotr-tertiary-color-7);
+  border-bottom-left-radius: 35px;
+  font-family: var(--fotr-font-main);
+  border-bottom-right-radius: 35px;
+  font-size: 20px;
+  animation: 1s 0.5s fade backwards ease-in;
+}
+
+.user-css .copyright-big {
+  font-size: 24px;
+  border-bottom: 2px solid var(--fotr-tertiary-color-2);
+}
+
+.user-css .copyright-red {
+  color: var(--fotr-tertiary-color-6);
+}
+/*--------------------------*/
+/* ---- Nav tabs   ---- */
+/* -------------------------*/
+.user-css-extended .extended-tabs {
+  position: initial;
+  margin: 0 -10px;
+}
+
+.user-css-extended .nav-tabs {
+  background: var(--fotr-secondary-color-2);
+  margin-right: -25px;
+  margin-left: -25px;
+  left: 0;
+  top: 0;
+}
+
+.user-css-extended .nav-tabs li {
+  padding: 0;
+}
+
+.user-css-extended .nav-tabs li.nav-item a.nav-link {
+  font-family: var(--fotr-body-text-color);
+  color: var(--fotr-secondary-color-1);
+  background: var(--fotr-tertiary-color-2);
+  border-right: none;
+  margin-bottom: 0px;
+  padding: 0px 15px;
+  transition: all 0.3s;
+}
+
+.user-css-extended .nav-tabs .active,
+.user-css-extended .nav-tabs .active:hover,
+.user-css-extended .nav-tabs li a:hover {
+  background: var(--fotr-tertiary-color-1) !important;
+  font-style: normal;
+}
+
+.user-css-extended .dl-horizontal {
+  padding-bottom: 15px;
+}
+
+/*--------------------------*/
+/* ---- Secrets and notes   ---- */
+/* -------------------------*/
+.user-css-extended .panel-default {
+  font-family: var(--fotr-font-body);
+}
+
+.user-css-extended .panel-default .panel-heading {
+  background: none;
+  border: none;
+  padding: 15px;
+}
+
+.user-css-extended .panel-default .panel-heading h3 {
+  padding-top: 0px;
+}
+
+/*--------------------------*/
+/* ---- Tags   ---- */
+/* -------------------------*/
+.user-css .label-default,
+.user-css-extended .label-default,
+.user-css .timeline li .label-default {
+  color: var(--fotr-secondary-color-1) !important;
+  font-weight: bold;
+  background: var(--fotr-tertiary-color-1);
+  border: none;
+  border-radius: 0px;
+  transition: all 0.3s;
+  box-shadow: none;
+}
+
+.user-css .label-default:hover,
+.user-css-extended .label-default:hover,
+.user-css .timeline li .label-default:hover {
+  background: var(--fotr-tertiary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Comments Form   ---- */
+/* -------------------------*/
+.user-css-extended .comment-form textarea {
+  color: var(--fotr-body-text-color);
+  font-family: var(--fotr-font-body);
+  font-size: 1em;
+  background: var(--fotr-secondary-color-2);
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-radius: 0px;
+  transition: all 0.3s;
+}
+
+.user-css-extended .form-control:focus {
+  border: 2px solid var(--fotr-tertiary-color-2);
+  box-shadow: none;
+}
+
+.user-css-extended .comment-form .btn:hover {
+  border: 2px solid var(--fotr-tertiary-color-3);
+}
+
+.user-css-extended .comment-form .pull-right {
+  font-family: var(--fotr-font-body);
+}
+
+/*--------------------------*/
+/* ---- Comments Box   ---- */
+/* -------------------------*/
+.user-css-extended .comment-box {
+  background: var(--fotr-secondary-color-1);
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-radius: 0px;
+}
+
+.user-css-extended .comment-box-content p {
+  font-size: 1em;
+}
+
+.user-css-extended .comment-box .comment-box-reply {
+  border-top: 2px solid var(--fotr-tertiary-color-4);
+}
+
+/*--------------------------*/
+/* ---- Comments Author   ---- */
+/* -------------------------*/
+.user-css-extended .comment-box-author {
+  font-family: var(--fotr-font-main);
+  letter-spacing: 0.05em;
+  font-size: 1.2em;
+  padding-top: 0px;
+}
+
+.user-css-extended .comment-box-author small {
+  opacity: 1;
+  color: var(--fotr-muted-color);
+}
+
+.user-css-extended .text-gold {
+  color: var(--fotr-tertiary-color-1) !important;
+  font-size: 0.85em;
+}
+
+.user-css-extended .comment-box-avatar .img-avatar {
+  border: 2px solid var(--fotr-tertiary-color-4);
+  max-width: 60px;
+  max-height: 60px;
+  box-shadow: none;
+}
+
+.user-css-extended .comment-box-date {
+  font-family: var(--fotr-font-body);
+  color: var(--fotr-muted-color);
+  font-size: 1em;
+  opacity: 1;
+}
+
+.user-css-extended .comment-box-signature {
+  border-top: 2px solid var(--fotr-tertiary-color-2);
+}
+
+.user-css-extended .comment-box-date,
+.user-css-extended [class*=comment-foo] {
+  border: none;
+}
+
+/*--------------------------*/
+/* ---- Maps Fullscreen ---- */
+/* -------------------------*/
+.map-context-user-css {
+  background: var(--fotr-secondary-color-1);
+}
+
+.user-css-map-sidebar {
+  background: var(--fotr-main-color-1);
+  border-right: 5px solid var(--fotr-tertiary-color-4);
+}
+
+.user-css-map-sidebar #sidebar-extras .card {
+  font-family: var(--fotr-font-body);
+  background: none;
+  border: none;
+}
+
+.map-context-user-css #sidebarCollapse {
+  color: var(--fotr-secondary-color-2);
+  background: var(--fotr-tertiary-color-2);
+  border-right: 5px solid var(--fotr-tertiary-color-3);
+  border-radius: 0px;
+  border-left-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.map-context-user-css #sidebarCollapse:hover {
+  padding-left: 20px;
+}
+
+.map-context-user-css .nav-strip {
+  color: var(--fotr-body-text-color);
+  background: var(--fotr-tertiary-color-2);
+  border: none;
+  border-radius: 0px;
+  font-family: var(--fotr-font-main);
+  box-shadow: none;
+  transition: all 0.3s;
+}
+
+.map-context-user-css .nav-strip:hover {
+  color: var(--fotr-body-text-color);
+  background: var(--fotr-tertiary-color-1);
+}
+
+.map-context-user-css .nav-strip .text-white {
+  color: var(--fotr-body-text-color) !important;
+}
+
+.map-context-user-css .nav-strip:hover .text-white {
+  color: var(--fotr-body-text-color) !important;
+}
+
+/*--------------------------*/
+/* ---- Maps Logo/sage nav ---- */
+/* -------------------------*/
+.presentation-interface-map #logo {
+  color: var(--fotr-font-body);
+  font-family: var(--fotr-font-main);
+  font-size: 1.2em;
+}
+
+.presentation-interface-map #logo:before {
+  background: var(--fotr-tertiary-color-1);
+  border: none;
+  border-bottom: 5px solid var(--fotr-tertiary-color-3);
+  box-shadow: none;
+  -webkit-transform: none;
+  transform: none;
+}
+
+/*--------------------------*/
+/* ---- Maps Zoom buttons ---- */
+/* -------------------------*/
+.leaflet-touch .leaflet-bar {
+  border: none;
+  border-radius: 0px;
+}
+
+.user-css .leaflet-control-layers,
+.user-css .leaflet-control-layers-base span,
+.map-context-user-css .leaflet-control-layers,
+.map-context-user-css .leaflet-control-layers-base span {
+  border-color: var(--fotr-tertiary-color-2);
+}
+
+.map-context-user-css .leaflet-control-zoom-in,
+.map-context-user-css .leaflet-control-zoom-out,
+.user-css .leaflet-control-zoom-in,
+.user-css .leaflet-control-zoom-out {
+  border: none;
+  text-shadow: none;
+}
+
+.user-css .leaflet-bar a:first-child,
+.map-context-user-css .leaflet-bar a:first-child {
+  color: var(--fotr-secondary-color-1);
+  background: var(--fotr-tertiary-color-1);
+  border-radius: 0px;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  transition: all 0.3s;
+}
+
+.user-css .leaflet-bar a:last-child,
+.map-context-user-css .leaflet-bar a:last-child {
+  color: var(--fotr-secondary-color-1);
+  background: var(--fotr-tertiary-color-2);
+  border-radius: 0px;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  transition: all 0.3s;
+}
+
+.map-context-user-css .leaflet-bar a:hover,
+.user-css .leaflet-bar a:hover {
+  background: var(--fotr-secondary-color-1);
+  border: none;
+}
+
+.map-context-user-css .leaflet-bar a.leaflet-disabled,
+.user-css .leaflet-bar a.leaflet-disabled {
+  border: none;
+  color: transparent;
+}
+
+/*--------------------------*/
+/* ---- Maps Layers ---- */
+/* -------------------------*/
+.user-css .leaflet-control-layers,
+.map-context-user-css .leaflet-control-layers {
+  background: var(--fotr-tertiary-color-2);
+  border: none;
+  border-right: 5px solid var(--fotr-tertiary-color-3);
+  border-radius: 0px;
+}
+
+.user-css .leaflet-control-layers-expanded,
+.map-context-user-css .leaflet-control-layers-expanded {
+  background: var(--fotr-tertiary-color-2);
+  font-family: var(--fotr-font-body);
+}
+
+.map-context-user-css .leaflet-control-layers-base span {
+  font-size: 1.5em;
+  color: var(--fotr-secondary-color-1);
+}
+
+/*--------------------------*/
+/* ---- Maps Legend ---- */
+/* -------------------------*/
+.user-css .legend,
+.map-context-user-css .legend {
+  font-family: var(--fotr-font-body);
+  color: var(--fotr-body-text-color);
+  background: var(--fotr-secondary-color-2);
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.user-css .legend {
+  padding: 10px;
+}
+
+.map-context-user-css .legend {
+  font-size: 1.5em;
+}
+
+.user-css .legend ul,
+.map-context-user-css .legend ul {
+  padding-left: 20px;
+  margin: 0px;
+}
+
+/*--------------------------*/
+/* ---- Maps Popups ---- */
+/* -------------------------*/
+.user-css .leaflet-popup-content-wrapper,
+.user-css .leaflet-popup-tip,
+.map-context-user-css .leaflet-popup-content-wrapper,
+.map-context-user-css .leaflet-popup-tip {
+  color: var(--fotr-body-text-color);
+  font-family: var(--fotr-font-body);
+  background: var(--fotr-secondary-color-1);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.map-context-user-css .leaflet-popup-content-wrapper,
+.map-context-user-css .leaflet-popup-tip {
+  font-size: 1.3em;
+}
+
+.user-css .leaflet-popup-content .header-title,
+.map-context-user-css .leaflet-popup-content-wrapper h5 {
+  font-family: var(--fotr-font-main);
+  color: var(--fotr-tertiary-color-1);
+  font-size: 1.5em;
+}
+
+.user-css .leaflet-popup-close-button,
+.map-context-user-css .leaflet-popup-close-button {
+  color: var(--fotr-tertiary-color-1) !important;
+  margin: 5px;
+  font-size: 1.2em;
+}
+
+/*--------------------------*/
+/* ---- Inline Maps ---- */
+/* -------------------------*/
+.user-css-presentation .leaflet-grab {
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-radius: 0px;
+  background: var(--fotr-secondary-color-2);
+  box-shadow: none;
+}
+
+/*--------------------------*/
+/* ---- Maps Navigation ---- */
+/* -------------------------*/
+.user-css .map-included-navigation {
+  background: var(--fotr-secondary-color-1);
+  border: 2px solid var(--fotr-tertiary-color-4);
+  padding: 5px 5px 10px 5px;
+  border-top-width: 0px;
+}
+
+.user-css .map-included-navigation-information {
+  margin-top: 0px !important;
+}
+
+.user-css .map-included-navigation-title {
+  font-family: var(--fotr-font-main);
+  color: var(--fotr-tertiary-color-2);
+  font-size: 1.3em;
+  padding-top: 5px;
+  margin-right: 10px;
+}
+
+.user-css .map-included-navigation-information .fa-info-circle {
+  color: var(--fotr-tertiary-color-1);
+}
+
+/*--------------------------*/
+/* ---- Timelines ---- */
+/* -------------------------*/
+.user-css.page-timeline .subheading {
+  font-family: var(--fotr-font-body);
+  font-size: 1em;
+}
+
+.user-css-extended .timeline li .timeline-panel,
+.user-css .timeline li .timeline-panel {
+  background: var(--fotr-secondary-color-1);
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.user-css-extended .timeline-panel .fa,
+.user-css .timeline-panel .fa {
+  margin-top: -25px;
+  font-size: 20px;
+}
+
+.user-css-extended .timeline:before,
+.user-css .timeline:before {
+  background-color: var(--fotr-tertiary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Text ---- */
+/* -------------------------*/
+.user-css .tl-heading-date,
+.user-css-extended .tl-heading-date {
+  color: var(--fotr-body-text-color);
+}
+
+.user-css .timeline li .timeline-panel small,
+.user-css .timeline li .milestone-panel small,
+.user-css-extended .timeline li .timeline-panel small,
+.user-css-extended .timeline li .milestone-panel small {
+  color: var(--fotr-body-text-color);
+}
+
+.user-css .timeline li .timeline-panel h5,
+.user-css .timeline .history-title {
+  font-size: 1.5em;
+}
+
+.user-css .tl-heading-date .fa-chevron-right,
+.user-css-extended .tl-heading-date .fa-chevron-right {
+  font-size: 1.3em;
+  padding-top: 5px;
+}
+
+.user-css .timeline .history-category-name {
+  color: var(--fotr-muted-color);
+}
+
+/*--------------------------*/
+/* ---- Timelines Pointers ---- */
+/* -------------------------*/
+.timeline li .timeline-panel:before {
+  position: absolute;
+  top: 32px;
+  right: -17px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid;
+  border-right: 0 solid;
+  border-bottom: 15px solid transparent;
+  border-right-color: inherit;
+  border-left-color: inherit;
+}
+
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 32px;
+  right: -17px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid;
+  border-right: 0 solid;
+  border-right-color: inherit;
+  border-left-color: inherit;
+}
+
+.user-css .timeline li.timeline-entry-inverted .timeline-panel:before {
+  left: -17px;
+}
+
+.user-css .timeline li.timeline-entry-inverted .timeline-panel:after {
+  left: -17px;
+}
+
+/*--------------------------*/
+/* ---- Timelines Shield icons ---- */
+/* -------------------------*/
+.user-css-extended .timeline li .tl-circ,
+.user-css .timeline li .tl-circ {
+  background: var(--fotr-main-color-1);
+  border-color: var(--fotr-tertiary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Icon Panels ---- */
+/* -------------------------*/
+.user-css .timeline .date-divider,
+.user-css-extended .timeline .date-divider {
+  margin: 2px 0;
+}
+
+/*--------------------------*/
+/* ---- Timelines Icon Fix ---- */
+/* -------------------------*/
+.user-css-extended .timeline .header-icon,
+.user-css .timeline .header-icon {
+  padding: 14px;
+  font-size: 15.5px;
+}
+
+/*--------------------------*/
+/* ---- Timelines Milestones ---- */
+/* -------------------------*/
+.user-css-extended .timeline .milestone,
+.user-css .timeline .milestone {
+  background: var(--fotr-secondary-color-2);
+  border: 2px solid var(--fotr-tertiary-color-2);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.user-css-extended .timeline .timeline-entry-milestone .header-icon,
+.user-css .timeline .timeline-entry-milestone .header-icon {
+  border: 2px solid var(--fotr-tertiary-color-2);
+  background: var(--fotr-secondary-color-2);
+  color: var(--fotr-tertiary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Major ---- */
+/* -------------------------*/
+.user-css-extended .timeline .major .header-icon,
+.user-css .timeline .major .header-icon {
+  border: 2px solid var(--fotr-tertiary-color-2);
+  border-color: var(--fotr-tertiary-color-1);
+  background: var(--fotr-secondary-color-2);
+  color: var(--fotr-tertiary-color-1);
+}
+
+.user-css-extended .timeline .major .timeline-panel,
+.user-css .timeline .major .timeline-panel {
+  border: 2px solid var(--fotr-tertiary-color-2);
+  border-color: var(--fotr-tertiary-color-1);
+}
+
+/*--------------------------*/
+/* ---- Timelines Importnat ---- */
+/* -------------------------*/
+.user-css-extended .timeline .important .header-icon,
+.user-css .timeline .important .header-icon {
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-color: var(--fotr-tertiary-color-2);
+  background: var(--fotr-secondary-color-2);
+  color: var(--fotr-tertiary-color-2);
+}
+
+.user-css-extended .timeline .important .timeline-panel,
+.user-css .timeline .important .timeline-panel {
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-color: var(--fotr-tertiary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Minor ---- */
+/* -------------------------*/
+.user-css-extended .timeline .minor .header-icon,
+.user-css .timeline .minor .header-icon {
+  border: 2px solid var(--fotr-tertiary-color-4);
+  background: var(--fotr-secondary-color-2);
+  color: var(--fotr-tertiary-color-1);
+}
+
+.user-css-extended .timeline .minor .timeline-panel,
+.user-css .timeline .minor .timeline-panel {
+  background: var(--fotr-secondary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Trival ---- */
+/* -------------------------*/
+.user-css-extended .timeline .trivial .header-icon,
+.user-css .timeline .trivial .header-icon {
+  border: 2px solid var(--fotr-tertiary-color-4);
+  background: var(--fotr-secondary-color-2);
+  color: var(--fotr-body-text-color);
+}
+
+.user-css-extended .timeline .trivial .timeline-panel,
+.user-css .timeline .trivial .timeline-panel {
+  background: var(--fotr-secondary-color-2);
+  border-color: var(--fotr-secondary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines No Importance ---- */
+/* -------------------------*/
+.user-css-extended .timeline .no-importance .header-icon,
+.user-css .timeline .no-importance .header-icon {
+  border: 2px solid var(--fotr-tertiary-color-4);
+  background: var(--fotr-secondary-color-2);
+  color: var(--fotr-tertiary-color-4);
+}
+
+.user-css-extended .timeline .no-importance .timeline-panel,
+.user-css .timeline .no-importance .timeline-panel {
+  background: var(--fotr-secondary-color-2);
+  border-color: var(--fotr-secondary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Orphans ---- */
+/* -------------------------*/
+.user-css .orphan-era .alert,
+.user-css-extended .orphan-era .alert {
+  background: var(--fotr-secondary-color-2);
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+/*--------------------------*/
+/* ---- Diplomacy Webs ---- */
+/* -------------------------*/
+.user-css .clotho-box {
+  background: var(--fotr-secondary-color-2);
+  border: 2px solid var(--fotr-tertiary-color-2);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.user-css .clotho-box .clotho-node {
+  border: 2px solid var(--fotr-tertiary-color-2);
+  box-shadow: none;
+}
+
+.user-css .clotho-box .clotho-node .clotho-portrait-frame {
+  height: 100%;
+  max-height: 140px;
+}
+
+.user-css .clotho-box .clotho-node .clotho-text-frame {
+  background: var(--fotr-secondary-color-1);
+}
+
+.user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label {
+  border: none;
+  margin-left: -2px;
+}
+
+.user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label a {
+  font-size: 1em;
+  font-family: var(--fotr-font-body);
+  color: var(--fotr-body-text-color);
+}
+
+/*--------------------------*/
+/* ---- Diplomacy Webs Hover ---- */
+/* -------------------------*/
+.user-css [class*=clotho-title-] {
+  background: var(--fotr-secondary-color-2);
+  box-shadow: none;
+  border-top: 2px solid var(--fotr-tertiary-color-4);
+}
+
+.user-css .clotho-title-arrows,
+.user-css .clotho-box div:nth-of-type(2) .clotho-title-item img,
+.user-css [class*=clotho-title-item] {
+  border-top: none;
+}
+
+.user-css [class*=clotho-title-item] {
+  border: 2px solid var(--fotr-tertiary-color-2);
+  padding: 0px !important;
+}
+
+.user-css .clotho-box div:nth-of-type(2) .clotho-title-arrows .clotho-rel-text {
+  color: var(--fotr-tertiary-color-2);
+  top: -120px;
+}
+
+.user-css [class*=show] {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+/*--------------------------*/
+/* ---- Org Relaitonships ---- */
+/* -------------------------*/
+.user-css .relation .relationScore {
+  background: var(--fotr-secondary-color-2);
+  border: 5px solid var(--fotr-tertiary-color-3);
+  border-width: 2px;
+  border-radius: 0px;
+}
+
+/*--------------------------*/
+/* ---- Org  Tree ---- */
+/* -------------------------*/
+.user-css-extended .orgtree li a,
+.user-css-extended .orgtree li a:hover + ul li a {
+  font-family: var(--fotr-font-body);
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--fotr-main-color-1);
+  background: var(--fotr-tertiary-color-1);
+  border: none;
+  border-radius: 0px;
+  transition: all 0.3s;
+}
+
+.user-css-extended .orgtree li a:hover {
+  background: var(--fotr-tertiary-color-2);
+  transform: scale(1.05);
+}
+
+.user-css-extended .orgtree li a:hover + ul li a {
+  background: var(--fotr-main-color-1);
+  color: var(--fotr-tertiary-color-1);
+  outline: 5px solid var(--fotr-tertiary-color-3);
+  outline-width: 2px;
+  outline-offset: -2px;
+}
+
+/*--------------------------*/
+/* ---- Org Tree Lines ---- */
+/* -------------------------*/
+.user-css-extended .orgtree ul ul::before {
+  border-left: 2px solid var(--fotr-tertiary-color-2);
+}
+
+.user-css-extended .orgtree li::before {
+  border-top: 2px solid var(--fotr-tertiary-color-2);
+}
+
+.user-css-extended .orgtree li::after {
+  border-top: 2px solid var(--fotr-tertiary-color-2);
+  border-left: 2px solid var(--fotr-tertiary-color-2);
+}
+
+.user-css-extended .orgtree li:last-child::before {
+  border-right: 2px solid var(--fotr-tertiary-color-2);
+}
+
+.user-css-extended .orgtree li:first-child::after {
+  border-left: 2px solid var(--fotr-tertiary-color-2);
+}
+
+.user-css-extended .orgtree li:first-child::before,
+.user-css-extended .orgtree li:last-child::after {
+  border: transparent;
+}
+
+.user-css-extended .orgtree li a:hover + ul::before,
+.user-css-extended .orgtree li a:hover + ul li::before,
+.user-css-extended .orgtree li a:hover + ul li::after {
+  border-color: var(--fotr-tertiary-color-2);
+}
+
+/*--------------------------*/
+/* ---- Family Trees ---- */
+/* -------------------------*/
+.user-css .rhea-family-tree {
+  background: var(--fotr-secondary-color-2);
+  border: 5px solid var(--fotr-tertiary-color-3);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.user-css .rhea-family-tree .loader {
+  background-color: var(--fotr-tertiary-color-1);
+  border: none;
+}
+
+.user-css .rhea-loader-text {
+  font-family: var(--fotr-font-main);
+  color: var(--fotr-main-color-1);
+  text-shadow: none;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait:after {
+  background: none;
+  border: none;
+}
+
+.user-css .rhea-family-tree .main-character .character-portrait:after {
+  background: none;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait-wrapper {
+  border: 5px solid var(--fotr-tertiary-color-3);
+  border-width: 2px;
+  border-radius: 0px;
+}
+
+.user-css .rhea-family-tree .main-character .character-portrait-wrapper {
+  border-color: var(--fotr-tertiary-color-2);
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-label {
+  margin-top: -2px;
+  font-family: var(--fotr-font-body);
+  background: var(--fotr-tertiary-color-1);
+  border: none;
+  border-radius: 0px;
+  width: 100px;
+}
+
+.user-css
+  .rhea-family-tree
+  .rhea-character-node
+  .character-data
+  .character-name {
+  font-family: var(--fotr-font-body);
+  color: var(--fotr-main-color-1);
+  font-weight: bold;
+}
+
+.user-css
+  .rhea-family-tree
+  .rhea-character-node
+  .character-label
+  .character-life {
+  color: var(--fotr-main-color-1);
+  margin-top: 5px;
+}
+
+.user-css .rhea-family-tree .rhea-character-node:hover .character-label {
+  background: var(--fotr-tertiary-color-2);
+}
+
+.user-css .rhea-family-tree .character-relationship {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.user-css .rhea-family-tree .rhea-character-node:hover .character-relationship {
+  color: var(--fotr-main-color-1);
+  background: var(--fotr-tertiary-color-1);
+  top: -1px;
+  opacity: 1;
+}
+
+.user-css .rhea-family-tree svg path {
+  stroke: var(--fotr-tertiary-color-2);
+}
+
+.user-css .rhea-family-tree .rhea-character-node .character-portrait img {
+  border: none;
+}
+
+/*--------------------------*/
+/* ---- Family Tree Search ---- */
+/* -------------------------*/
+.user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap {
+  border: 5px solid var(--fotr-tertiary-color-3);
+  border-width: 2px;
+  padding: 5px 15px;
+}
+
+.user-css .rhea-family-tree input::placeholder {
+  color: var(--fotr-muted-color);
+}
+
+.user-css .rhea-search-clear .fal {
+  color: var(--fotr-muted-color);
+}
+
+.user-css .rhea-ft-zoom-controls {
+  border: none;
+}
+
+/*--------------------------*/
+/* ---- Prose ---- */
+/* -------------------------*/
+.user-css-presentation .page-article.template-prose .article-content {
+  font-size: 1em;
+}
+
+.user-css-presentation
+  .page-article.template-prose
+  .cover
+  div
+  .w-o-b.btn.btn-xs {
+  background: var(--fotr-main-color-1) !important;
+  color: var(--fotr-body-text-color) !important;
+}
+
+.user-css.bow {
+  background: var(--fotr-main-color-1) !important;
+}
+
+.user-css.bow p,
+.user-css.bow .article-content,
+.user-css.bow .article-content h2,
+.user-css.bow .article-content h3,
+.user-css.bow .article-content h4 {
+  color: var(--fotr-body-text-color) !important;
+}
+
+.user-css.bow .article-content h1 {
+  color: var(--fotr-tertiary-color-1) !important;
+}
+
+.user-css-presentation
+  .page-article.template-prose
+  .cover
+  div
+  .b-o-w.btn.btn-xs {
+  background: var(--fotr-body-text-color) !important;
+  color: var(--fotr-main-color-1) !important;
+}
+
+.user-css.wob {
+  background: var(--fotr-body-text-color) !important;
+}
+
+.user-css.wob p,
+.user-css.wob .article-content,
+.user-css.wob .article-content h2,
+.user-css.wob .article-content h3,
+.user-css.wob .article-content h4 {
+  color: var(--fotr-main-color-1) !important;
+}
+
+.user-css.wob .article-content h1 {
+  color: var(--fotr-main-color-1) !important;
+}
+
+/*--------------------------*/
+/* ---- Navbar ---- */
+/* -------------------------*/
+.user-css.page-world-homepage,
+.user-css.page-article-main,
+.user-css.page-category {
+  margin-top: 80px !important;
+}
+
+.user-css .rotg-navbar {
+  background: var(--fotr-main-color-2);
+  color: var(--fotr-body-text-color);
+  border-bottom: 2px solid var(--fotr-tertiary-color-1);
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 4;
+  text-align: center;
+  line-height: 0;
+  padding: 19px;
+}
+
+.user-css-presentation .navlogo .img-responsive {
+  height: 26px;
+  margin-top: 5px;
+  animation: 1s 0.5s fade backwards ease-in;
+}
+
+.user-css-presentation .navlogo .img-responsive:hover {
+  filter: drop-shadow(0px 0px 10px var(--fotr-tertiary-color-1));
+  transition: all 0.5s;
+}
+
+.user-css-presentation .navlogo {
+  width: 20%;
+  margin: 0 auto;
+  margin-top: -20px;
+  height: 50px;
+}
+
+/*--------------------------*/
+/* ---- Scrollbar ---- */
+/* -------------------------*/
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: var(--fotr-secondary-color-2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fotr-tertiary-color-2);
+  width: 9px;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fotr-tertiary-color-1);
+}
+
+/*--------------------------*/
+/* ---- White Label ---- */
+/* -------------------------*/
+.user-css-whitelabel {
+  left: -160px;
+  background: var(--fotr-secondary-color-1);
+  border: 2px solid var(--fotr-tertiary-color-3);
+  color: var(--fotr-body-text-color) !important;
+  padding: 10px 30px 10px 10px;
+  border-radius: 0px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- Screen Scaling ---- */
+/* -------------------------*/
+@media only screen and (max-width: 1199px) {
+  .user-css-presentation #world-navigation-sidebar {
+    width: 30%;
+  }
+
+  .user-css-presentation .navlogo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .user-css.page,
+  .user-css-extended .page {
+    overflow: hidden;
+  }
+
+  .user-css-presentation #world-navigation-sidebar {
+    top: 26%;
+    min-height: 60% !important;
+    width: 100%;
+    left: 25px;
+  }
+
+  .user-css-presentation .navlogo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .user-css.page,
+  .user-css-extended .page {
+    overflow: hidden;
+  }
+
+  .user-css .search-form {
+    top: 0px;
+    left: 0px;
+  }
+
+  .user-css-presentation .navlogo {
+    display: none;
+  }
+}
+
+/*--------------------------*/
+/* ---- Editor Bar ---- */
+/* -------------------------*/
+#world-editor-bar {
+  width: 120px;
+  top: auto;
+  bottom: 200px;
+  left: -100px;
+  background: var(--[--fotr-main-color-1]);
+  border-radius: 0px;
+  border: 2px solid var(--fotr-tertiary-color-4);
+  box-shadow: none;
+  opacity: 0.6;
+  padding: 15px 15px 0px 15px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  transition: all 0.3s;
+}
+
+#world-editor-bar:hover {
+  left: 0px;
+}
+
+#world-editor-bar .fa {
+  font-size: 2em;
+}
+
+#world-editor-bar .btn {
+  width: 85px !important;
+  margin-bottom: 10px;
+}
+
+#world-editor-bar .world-edit-toggle .fa {
+  color: white !important;
+}
+
+#world-editor-bar .world-edit-toggle .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 36px;
+}
+
+#world-editor-bar .pull-right {
+  float: none !important;
+}
+
+#world-editor-bar [class*=cont] {
+  width: 100px !important;
+}
+
+#world-editor-bar .label,
+#world-editor-bar .btn-success:nth-child(1) {
+  display: none;
+}
+
+#world-editor-bar .btn {
+  background: var(--fotr-tertiary-color-1);
+  border-radius: 0px;
+  border: 2px solid var(--fotr-tertiary-color-4);
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  overflow: hidden;
+}
+
+#world-editor-bar .btn .hidden-xs {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- World Navigation & Meta ---- */
+/* -------------------------*/
+.user-css-presentation .world-navigation-palette-trigger,
+.user-css .world-meta-categories-link,
+.user-css .discussion-boards-world-link,
+.user-css .world-authors,
+.user-css .article-competition-entries {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- World Content ---- */
+/* -------------------------*/
+.user-css #world-category-content,
+.user-css .world-content .world-maps,
+.user-css .world-content .world-menu,
+.user-css .world-content .world-timelines,
+.user-css .world-content .world-maps,
+.user-css .world-content .widget-community,
+.user-css .world-content .followers-counter {
+  display: none;
+}
