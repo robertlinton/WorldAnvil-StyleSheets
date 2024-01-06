@@ -1,0 +1,34 @@
+/*--------------------------*/
+/* ---- Variables   ---- */
+/* -------------------------*/
+.user-css,
+.user-css-extended,
+.user-css-presentation,
+.user-css-map,
+.user-css-map-sidebar,
+.presentation-interface-map,
+.map-context-user-css,
+.tooltipster-content {
+
+  /* Colors */
+  --ColorPrime: #eff0f4;
+  --DarkColorPrime: #474343;
+}
+
+/*--------------------------*/
+/* ---- Background   ---- */
+/* -------------------------*/
+.user-css-presentation {
+    background: var(--DarkColorPrime);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.user-css.page,
+.user-css-extended .page,
+.user-css-presentation .tooltipster-content {
+  background: var(--ColorPrime);
+  box-shadow: none;
+  max-width: 85%;
+}
