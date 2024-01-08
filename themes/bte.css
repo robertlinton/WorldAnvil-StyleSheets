@@ -9,26 +9,42 @@
 .presentation-interface-map,
 .map-context-user-css,
 .tooltipster-content {
+  /* Fonts */
+  --hollow-font-main: Barlow Condensed;
+  --hollow-font-body: Merriweather;
 
   /* Colors */
-  --ColorPrime: #eff0f4;
-  --DarkColorPrime: #474343;
+  --hollow-main-color-1: #f0e7d6;
+  --hollow-main-color-2: #c7ac95;
+  --hollow-main-color-3: #ffffff;
+  --hollow-tertiary-color-1: #d75a46;
+  --hollow-tertiary-color-2: #c96a5b;
+  --hollow-tertiary-color-5: #1e1e1d;
+  --hollow-body-text-color: #383838;
 }
 
 /*--------------------------*/
 /* ---- Background   ---- */
 /* -------------------------*/
 .user-css-presentation {
-    background: var(--DarkColorPrime);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+  background: var(--hollow-main-color-2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .user-css.page,
 .user-css-extended .page,
 .user-css-presentation .tooltipster-content {
-  background: var(--ColorPrime);
+  background: var(--hollow-main-color-1);
+  border: 5px solid var(--hollow-tertiary-color-5);
+  border-radius: 8px;
+  overflow: hidden;
   box-shadow: none;
-  max-width: 85%;
+}
+
+.user-css.page,
+.user-css-extended .page {
+  max-width: 1500px;
+  margin-left: 10%;
 }

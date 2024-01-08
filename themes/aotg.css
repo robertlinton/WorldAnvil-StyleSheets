@@ -15,8 +15,6 @@ https://www.worldanvil.com/author/Timepool */
 .tooltipster-content {
   /* Fonts */
   --aotg-font-main: Pirata One;
-  --aotg-font-secondary: Cloister Black;
-  --aotg-font-tertiary: Prince Valiant;
   --aotg-font-body: Cormorant;
 
   /* Colors */
@@ -254,27 +252,6 @@ https://www.worldanvil.com/author/Timepool */
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@font-face {
-  font-family: Cloister Black;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/3a9fc121fc423a12261b658070359c30b2233864/fonts/CloisterBlack.ttf);
-}
-
-@font-face {
-  font-family: Prince Valiant;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/77b3c9e88b632a498213b574a2c01fd079f347cf/fonts/PrinceValiant.ttf);
-}
-
-@font-face {
-  font-family: Astaroth;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/9dfd1891a780e94d6346270e76fe31fed1d6c756/fonts/Ashes%20of%20the%20Gods/Astaroth.otf);
-}
-
 /*--------------------------*/
 /* ---- Text   ---- */
 /* -------------------------*/
@@ -308,7 +285,7 @@ https://www.worldanvil.com/author/Timepool */
 
 .user-css .highlight {
   color: #ffeac6;
-  font-family: var(--aotg-font-secondary);
+  font-family: var(--aotg-font-main);
 }
 
 /*--------------------------*/
@@ -841,6 +818,13 @@ https://www.worldanvil.com/author/Timepool */
   padding: 19px;
 }
 
+.user-css .JOY-title {
+  text-align: center;
+  padding-top: 3px;
+  font-size: 1.16rem;
+  font-family: var(--f4);
+}
+
 .user-css .aotg-navbar-logo {
   width: 20%;
   margin: 0 auto;
@@ -853,31 +837,57 @@ https://www.worldanvil.com/author/Timepool */
 }
 
 /*--------------------------*/
+/* ---- Navbar Scaling ---- */
+/* -------------------------*/
+@media all and (max-width: 600px) {
+  .user-css-presentation .aotg-navbar-logo {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .user-css-presentation .aotg-navbar-logo {
+    display: none;
+  }
+
+  .user-css .search-form {
+    display: none;
+  }
+}
+
+/*--------------------------*/
 /* ---- Bookcovers   ---- */
 /* -------------------------*/
 .user-css .bookcover {
-  border: 2px solid var(--aotg-tertiary-color-2);
-  background: var(--aotg-secondary-color-2);
-  border-radius: 25px;
+  border: 3px solid var(--aotg-tertiary-color-1);
+  background: var(--aotg-secondary-color-4);
+  border-radius: 10px;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .user-css .bookcover:hover {
-  background: var(--aotg-secondary-color-1);
-  border: 2px solid var(--aotg-tertiary-color-2);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: var(--aotg-secondary-color-4);
+  border: 2px solid var(--aotg-tertiary-color-1);
 }
 
 .user-css .bookcover a:hover .excerpt {
-  color: var(--aotg-body-text-color);
-  transition: all 0.3s;
+  display: none;
 }
 
 .user-css .bookcover a img {
-  width: 100%;
+  width: 77%;
+  height: auto;
   max-width: 300px;
   opacity: 1;
-  transition: all 0.3s;
+  margin-top: 70px;
+}
+
+.user-css .bookcover a {
+  font-style: normal;
 }
 
 .user-css .bookcover a:hover img {
@@ -888,21 +898,152 @@ https://www.worldanvil.com/author/Timepool */
 .user-css .booktitle {
   position: absolute;
   max-width: 100%;
-  top: unset;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background: var(--aotg-secondary-color-1);
-  border-top: 2px solid var(--aotg-tertiary-color-4);
+  bottom: unset;
+  background: var(--aotg-secondary-color-6);
+  color: var(--aotg-tertiary-color-1);
+  border-bottom: 2px solid var(--aotg-tertiary-color-1);
   text-align: center;
-  transition: all 0.3s;
 }
 
 .user-css .world-bookcase .bookcover a:hover .booktitle,
 .user-css .bookcover a:hover .booktitle {
-  color: var(--aotg-secondary-color-1);
-  background: var(--aotg-tertiary-color-2);
-  border-top: 2px solid var(--aotg-tertiary-color-2);
+  background: var(--aotg-secondary-color-6);
+  color: var(--aotg-tertiary-color-1);
+  border: 2px solid var(--aotg-tertiary-color-1);
+}
+
+/*--------------------------*/
+/* ---- Core Bookcovers ---- */
+/* -------------------------*/
+.user-css .bookcover a[href*=nature-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/87790569a04d7108f60766f74017045b.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=factions-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/a618e4a842d5d971c9c314a6a1e24e7f.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=locations-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/749794a53e23b67278123034a90d3bf8.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=peoples-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/d81ec0bd5b9bc4c423f52fe46a0671b9.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=items-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/e41c7d916fc395d8dc0623d2eb8b0330.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=lore-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/9e6c7c8c3deb183af9af0090f7f24352.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=miscellaneous-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/6c62e281d7b46cc75a78a97171cefcff.svg);
+  margin-top: 33%;
+  margin-left: 10px;
+}
+
+/*--------------------------*/
+/* ---- Nature Bookcovers ---- */
+/* -------------------------*/
+.user-css .bookcover a[href*=fauna-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/42b35fdb9a831c493faed16632ba8c4a.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=flora-26-fungi-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/db9f9f233b92ad56d47f2852c9c351f6.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=conditions-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/dacd53d6ad69b4fbf445845da7fc14af.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=metaphysical-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/c16338b45e33a57b30ec22f443759ed3.svg);
+  margin-top: 33%;
+}
+
+/*--------------------------*/
+/* ---- Peoples Bookcovers ---- */
+/* -------------------------*/
+.user-css .bookcover a[href*=races-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/5bd3aa0b292a6969f1298ff017fcc818.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=characters-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/c7ff9aece8a80606e9149dfef1d32e6b.svg);
+  margin-top: 33%;
+}
+
+/*--------------------------*/
+/* ---- Items Bookcovers ---- */
+/* -------------------------*/
+.user-css .bookcover a[href*=weapons-26-armor-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/df1eb2dd3630ded6eeb771b5f06adc62.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=common-items-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/8e47fae98cc540e35427ef336b6fdf0e.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=materials-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/9fe0d9266ac10ce1a2b03293600d6fc1.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=technologies-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/4f42e49d615525476af64644d222f961.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=artifacts-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/0e425bdad3d8839c571a68e2103b5c0b.svg);
+  margin-top: 33%;
+}
+
+/*--------------------------*/
+/* ---- Lore Bookcovers ---- */
+/* -------------------------*/
+.user-css .bookcover a[href*=notable-events-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/9ad52a01f2b5ec7b0a1fb07e75d1510b.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=war-26-conflicts-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/7f6bdb59bdce86be7d3ad9c143c93eb5.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=myths-26-theories-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/cac260fa81644933695a290312502836.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=law-26-politics-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/f53b1f9a20c0e037b9ac78ccf2e03612.svg);
+  margin-top: 33%;
+}
+
+.user-css .bookcover a[href*=documents-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/94ca8e632cc8c7ce04b10b0490a6e8f3.svg);
+  margin-top: 33%;
 }
 
 /*--------------------------*/
@@ -1062,9 +1203,9 @@ https://www.worldanvil.com/author/Timepool */
 /* ---- Search Form   ---- */
 /* -------------------------*/
 .user-css .search-form {
-  left: 2px;
+  left: 8px;
   position: fixed;
-  top: 2px;
+  top: 6px;
   z-index: 7001;
 }
 
@@ -2194,22 +2335,6 @@ https://www.worldanvil.com/author/Timepool */
 }
 
 /*--------------------------*/
-/* ---- Navbar Scaling ---- */
-/* -------------------------*/
-@media all and (max-width: 600px) {
-  .user-css-presentation .aotg-navbar-logo {
-    width: 100%;
-    text-align: right;
-  }
-}
-
-@media all and (max-width: 350px) {
-  .user-css-presentation .aotg-navbar-logo {
-    display: none;
-  }
-}
-
-/*--------------------------*/
 /* ---- Editor Bar ---- */
 /* -------------------------*/
 #world-editor-bar {
@@ -2555,7 +2680,7 @@ https://www.worldanvil.com/author/Timepool */
 }
 
 .user-css .white-claw-box {
-  background: #1c1c19;
+  background: var(--aotg-secondary-color-4);
   border: 3px solid var(--aotg-tertiary-color-1);
   padding: 20px;
   border-radius: 10px;
@@ -2605,7 +2730,7 @@ https://www.worldanvil.com/author/Timepool */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1c1c19;
+  background-color: var(--aotg-secondary-color-4);
   padding: 20px;
   border-radius: 10px;
   margin: 20px auto;
@@ -2637,36 +2762,47 @@ https://www.worldanvil.com/author/Timepool */
 .user-css .white-claw-rule:nth-of-type(1) {
   border-color: #ff6347;
 }
+
 .user-css .white-claw-rule:nth-of-type(2) {
   border-color: #ffd700;
 }
+
 .user-css .white-claw-rule:nth-of-type(3) {
   border-color: #adff2f;
 }
+
 .user-css .white-claw-rule:nth-of-type(4) {
   border-color: #40e0d0;
 }
+
 .user-css .white-claw-rule:nth-of-type(5) {
   border-color: #1e90ff;
 }
+
 .user-css .white-claw-rule:nth-of-type(6) {
   border-color: #c71585;
 }
+
 .user-css .white-claw-rule:nth-of-type(7) {
   border-color: #ff69b4;
 }
+
 .user-css .white-claw-rule:nth-of-type(8) {
   border-color: #8a2be2;
 }
+
 .user-css .white-claw-rule:nth-of-type(9) {
   border-color: #00ff7f;
 }
+
 .user-css .white-claw-rule:nth-of-type(10) {
   border-color: #d2691e;
 }
+
 .user-css .white-claw-rule:nth-of-type(11) {
   border-color: #6495ed;
 }
+
 .user-css .white-claw-rule:nth-of-type(12) {
   border-color: #ff4500;
 }
@@ -2694,7 +2830,7 @@ https://www.worldanvil.com/author/Timepool */
 /* ---- White Claw Image    ---- */
 /* -------------------------*/
 .user-css .wc-hierarchy-box {
-  background: #1c1c19;
+  background: var(--aotg-secondary-color-4);
   border: 3px solid var(--aotg-tertiary-color-1);
   padding: 20px;
   border-radius: 10px;
@@ -2774,41 +2910,107 @@ https://www.worldanvil.com/author/Timepool */
 /*--------------------------*/
 /* ---- Categories    ---- */
 /* -------------------------*/
-.user-css .category-contents .category-header b,
-.user-css .category-contents .category-header strong {
+.user-css.core-category .category-contents .category-header b,
+.user-css.core-category .category-contents .category-header strong {
   display: none;
 }
 
+.user-css.sub-category .category-contents .category-header,
+.user-css.sub-category .copyright-attribution,
+.user-css.sub-category #cover {
+  display: none;
+}
 
 /*--------------------------*/
-/* ---- Arc    ---- */
+/* ---- Locations Portals ---- */
 /* -------------------------*/
-.user-css .arc-header {
-  background: var(--aotg-prime-color);
-  padding: 10px;
-  border-bottom: 2px solid var(--aotg-tertiary-color-1);
-  font-size: 1.5em;
+.user-css .select-world-header {
+  font-size: 2.5em;
+  color: var(--aotg-tertiary-color-2);
+  margin: 15px auto;
   text-align: center;
-  font-weight: bold;
-  color: var(--aotg-secondary-color-3);
+  padding: 35px;
+  font-family: var(--aotg-font-main);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: pop-in 0.5s ease-out forwards;
 }
 
-.user-css .arc-box {
-  background: #1c1c19;
-  border: 3px solid var(--aotg-tertiary-color-1);
-  padding: 20px;
-  border-radius: 10px;
+.user-css .portal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   margin-bottom: 20px;
-  color: var(--aotg-body-text-color);
+  text-align: center;
+  margin-top: -28px;
 }
 
+.user-css .portal-box {
+  background: var(--aotg-secondary-color-4);
+  border: 3px solid var(--aotg-tertiary-color-1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-.user-css .arc-1-image {
-  display: block;
-  max-width: 100%;
+.user-css .portal-box:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+
+  to {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.user-css .portal-title {
+  background-color: var(--aotg-secondary-color-6);
+  color: var(--aotg-body-text-color);
+  padding: 10px;
+  font-size: 1.2em;
+  border-bottom: 2px solid var(--aotg-tertiary-color-1);
+}
+
+.user-css .portal-image img {
+  width: 150px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid var(--aotg-tertiary-color-1);
-  border-radius: 11px;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease-out;
+  animation: pop-in 0.5s ease-out forwards;
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*--------------------------*/
+/* ---- Locations Scaling ---- */
+/* -------------------------*/
+@media (max-width: 1000px) {
+  .user-css .portal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 412px) {
+  .user-css .portal-grid {
+    grid-template-columns: 1fr;
+  }
 }
