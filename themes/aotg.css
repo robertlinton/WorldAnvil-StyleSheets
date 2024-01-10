@@ -812,48 +812,32 @@ https://www.worldanvil.com/author/Timepool */
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 7000;
   text-align: center;
   line-height: 0;
   padding: 19px;
 }
 
-.user-css .JOY-title {
+.user-css .aotg-navbar-title {
   text-align: center;
-  padding-top: 3px;
-  font-size: 1.16rem;
-  font-family: var(--f4);
+  padding-top: 6px;
+  font-size: 1.4em;
+  font-family: var(--aotg-font-main);
 }
 
-.user-css .aotg-navbar-logo {
-  width: 20%;
-  margin: 0 auto;
-  margin-top: -20px;
-  height: 50px;
+.user-css .aotg-navbar-title a {
+  color: var(--aotg-muted-color);
+  text-decoration: none;
 }
 
-.user-css .aotg-navbar-logo img {
-  height: 35px;
+.user-css .aotg-navbar-title a:hover {
+  font-style: normal;
+  color: var(--aotg-tertiary-color-1);
+  border-bottom: 3px solid var(--aotg-tertiary-color-1);
 }
 
-/*--------------------------*/
-/* ---- Navbar Scaling ---- */
-/* -------------------------*/
-@media all and (max-width: 600px) {
-  .user-css-presentation .aotg-navbar-logo {
-    width: 100%;
-    text-align: right;
-  }
-}
-
-@media all and (max-width: 350px) {
-  .user-css-presentation .aotg-navbar-logo {
-    display: none;
-  }
-
-  .user-css .search-form {
-    display: none;
-  }
+.user-css .aotg-navbar-title .text-abbreviation {
+  border-bottom: none;
 }
 
 /*--------------------------*/
@@ -2291,6 +2275,12 @@ https://www.worldanvil.com/author/Timepool */
 /*--------------------------*/
 /* ---- Screen Scaling ---- */
 /* -------------------------*/
+@media only screen and (max-width: 1440px) {
+  .user-css .search-form {
+    left: 2%;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   .user-css-presentation #world-navigation-sidebar {
     width: 30%;
@@ -2309,16 +2299,11 @@ https://www.worldanvil.com/author/Timepool */
     width: 100%;
     left: 25px;
   }
-
-  .user-css .search-form {
-    left: 2%;
-  }
 }
 
 @media only screen and (max-width: 768px) {
   .user-css .search-form {
-    right: 2%;
-    left: auto;
+    left: 20%;
   }
 }
 
@@ -2328,9 +2313,11 @@ https://www.worldanvil.com/author/Timepool */
     overflow: hidden;
   }
 
-  .user-css .search-form {
-    top: 0px;
-    left: 0px;
+  .user-css .search-form .typeahead-input,
+  .user-css .form-control,
+  .user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
+  .map-context-user-css .search-form .typeahead-input {
+    width: 200px;
   }
 }
 
@@ -2916,9 +2903,47 @@ https://www.worldanvil.com/author/Timepool */
 }
 
 .user-css.sub-category .category-contents .category-header,
+.user-css.sub-category .category-articles h2,
 .user-css.sub-category .copyright-attribution,
 .user-css.sub-category #cover {
   display: none;
+}
+
+/*--------------------------*/
+/* ---- Category Article Panel    ---- */
+/* -------------------------*/
+.user-css .category-block {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 30px);
+  text-align: center;
+  padding: 0 15px;
+}
+
+.user-css.sub-category .article-panel {
+  background: var(--aotg-secondary-color-6);
+  border: 2px solid var(--aotg-tertiary-color-1);
+  border-radius: 8px;
+}
+
+.user-css.sub-category .article-panel .heading {
+  color: var(--aotg-tertiary-color-5);
+}
+
+.user-css.sub-category .article-panel .details p {
+  display: none;
+}
+
+.user-css.sub-category .article-panel .cover {
+  border-bottom: 2px solid var(--aotg-tertiary-color-1);
+}
+
+.user-css.sub-category .portal-grid {
+  margin-top: -55px;
 }
 
 /*--------------------------*/
@@ -3012,5 +3037,50 @@ https://www.worldanvil.com/author/Timepool */
 @media (max-width: 412px) {
   .user-css .portal-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/*--------------------------*/
+/* ---- Aeon   ---- */
+/* -------------------------*/
+.user-css .aeon-header {
+  background: var(--aotg-prime-color);
+  padding: 10px;
+  border-bottom: 2px solid var(--aotg-tertiary-color-1);
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  color: var(--aotg-secondary-color-3);
+}
+
+.user-css .aeon-box {
+  background: var(--aotg-secondary-color-4);
+  border: 3px solid var(--aotg-tertiary-color-1);
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.user-css .aeon-ship-image {
+  display: block;
+  max-width: 75%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------*/
+/* ---- Aeon Scaling   ---- */
+/* -------------------------*/
+@media (max-width: 412px) {
+  .user-css .aeon-ship-image {
+    max-width: 40%;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .user-css .aeon-ship-image {
+    max-width: 40%;
+    margin-top: 20px;
   }
 }

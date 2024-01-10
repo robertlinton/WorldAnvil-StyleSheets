@@ -1,0 +1,1259 @@
+** Desgined by
+** Timepool (Garrett Lewis)
+https://www.worldanvil.com/author/Timepool */
+
+/* Variables */
+* {
+    /* Fonts */
+    --HeaderFont: SvevaVersal;
+    --HeaderFont-2: ;
+    --BodyFont: Goudos;
+
+    /* Colors */
+    --ColorPrime: #E3DEC8 /* Background */;
+    --DarkColorPrime: /* Example, can be used for any others. */;
+    --LightColorPrime: ;
+    --ColorSec-1: #F7F6EF /* Quotes, other s */;
+    --ColorSec-2: #F7F6EF/* Sidebar, panels, other s */;
+    --ColorTert-1: #834368; /* H1s, links */
+    --ColorTert-2: #8E7D64 /* Other headers and backgrounds, optional, change all to Tert 1 if not used */;
+    --BodyColor: #231E20;
+    --MuteColor: #8E7D64;
+    --Shadow: rgba(0, 0, 0, 0.6);
+        --SoftShadow: rgba(0, 0, 0, 0.2);
+
+    /* Misc */
+    --Border-N: none;
+    --Border-1: 3px solid var(--ColorTert-2) /* Primary border */;
+        --Border-1-W: 3px 2px 3px 2px;
+    --Border-2: /* Secondary border, blockquotes */;
+    --Border-3: 3px solid var(--ColorTert-1) /* Interactives like buttons and such */;
+    --Border-4: /* For header underlines, and HR */;
+    --BorderRad: 0px;
+    --BoxShad-1: 0px 0px 5px 0px var(--SoftShadow);
+    --Transit: all .3s; 
+    overflow-wrap: break-word;
+}
+
+/* __BACKGROUNDS__ */
+.user-css-presentation {
+    background: url(https://www.worldanvil.com/uploads/images/8fdd989b9f5e1684a9a577279e3335eb.webp);
+    background-repeat: repeat;
+    background-size: 50%;
+}
+.user-css.page {
+    margin-top: 100px!important;
+}
+.user-css.page,
+.user-css-extended .page,
+.user-css-presentation .tooltipster-content,
+.user-css-map-sidebar {
+    background: url(https://www.worldanvil.com/uploads/images/04d9d8801fd1487d0c4bc25aceeaa85c.jpg);
+    background-size: contain;
+    box-shadow: 0px 0px 15px 1px rgba(43,32,28,0.6);
+}
+
+/* __TEXT__ */
+@font-face {
+    font-family: SvevaVersal;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://rawcdn.githack.com/Timespool/Fonts/39ec531d9969e5965c0e6ad857ce9259a5760fbb/astype-SvevaVersal.woff2);
+}
+@font-face {
+    font-family: Goudos;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://rawcdn.githack.com/Timespool/Fonts/39ec531d9969e5965c0e6ad857ce9259a5760fbb/GOUDOS.woff2);
+}
+
+.user-css,
+.user-css p,
+.user-css-extended,
+.user-css-extended p, 
+.user-css .article-content,
+.user-css blockquote,
+.user-css-extended blockquote,
+.user-css .thales-cell,
+.user-css-map-sidebar p,
+.user-css-map-sidebar .world-vignette,
+.user-css .calendar-presentation sup,
+.user-css .timeline li .timeline-panel p,
+.user-css .timeline li .milestone-panel p,
+.user-css-extended .timeline li .timeline-panel p,
+.user-css-extended .timeline li .milestone-panel p,
+.user-css-extended dl,
+.user-css-presentation .tooltipster-content,
+.user-css.page-world-homepage .subheading,
+.user-css-extended .metadata-label,
+.user-css-extended .metadata-value {
+    font-size: 20px;
+    font-family: var(--BodyFont);
+    color: var(--BodyColor);
+}
+/* Headers */
+.user-css h1,
+.user-css-map-sidebar h1,
+.user-css-presentation .tooltipster-content h1,
+.user-css .statblock h1,
+.user-css-extended .orphan-era h1 {
+    color: var(--ColorTert-1);
+    font-family: var(--HeaderFont);
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+.user-css h2,
+.user-css-extended .page h2,
+.user-css-map-sidebar h2,
+.user-css-presentation .tooltipster-content h2 {
+    font-family: var(--HeaderFont);
+    color: var(--ColorTert-1);
+    padding-top: 15px;
+    border-bottom: var(--Border-4);
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+.user-css h3,
+.user-css-extended .page h3,
+.user-css-map-sidebar h3,
+.user-css-presentation .tooltipster-content h3 {
+    font-family: var(--HeaderFont);
+    color: var(--ColorTert-2);
+    padding-top: 15px;
+    letter-spacing: 2px;
+}
+.user-css h4,
+.user-css-extended .page h4,
+.user-css-map-sidebar h4,
+.user-css .timeline li .timeline-panel h4,
+.user-css .timeline li .milestone-panel h4,
+.user-css-extended .timeline li .timeline-panel h4,
+.user-css-extended .timeline li .milestone-panel h4,
+.user-css-presentation .tooltipster-content h4 {
+    font-family: var(--HeaderFont);
+    color: var(--ColorTert-1);
+    padding-top: 15px;
+    letter-spacing: 1px;
+}
+.user-css h5,
+.user-css-extended .page h5,
+.user-css-map-sidebar h5,
+.user-css .timeline li .timeline-panel h5,
+.user-css .timeline li .milestone-panel h5,
+.user-css-extended .timeline li .timeline-panel h5,
+.user-css-extended .timeline li .milestone-panel h5,
+.user-css-presentation .tooltipster-content h5,
+.user-css-presentation #world-navigation-sidebar .world-menu h5 {
+    color: var(--ColorTert-2);
+    font-family: var(--HeaderFont);
+    padding-top: 10px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+}
+.user-css h6 {
+    font-family: var(--HeaderFont);
+    padding-top: 15px;
+}
+/* Links */
+.user-css a,
+.user-css a:focus,
+.user-css-extended .page a,
+.user-css .artist-credits a,
+.user-css .timeline li .timeline-panel a,
+.user-css .timeline li .milestone-panel a,
+.user-css-extended .timeline li .timeline-panel a,
+.user-css-extended .timeline li .milestone-panel a,
+.user-css-presentation .tooltipster-content a,
+.user-css .usercard a {
+    color: var(--ColorTert-1);
+    transition: var(--Transit);
+}
+.user-css a:hover,
+.user-css-extended a:hover,
+.user-css-presentation .tooltipster-content a:hover,
+.user-css .usercard a:hover {
+    color: var(--ColorTert-1);
+    text-decoration: none;
+    text-shadow: 1px 0px 0px var(--Shadow);
+}
+/* Tooltips */
+.user-css .text-abbreviation {
+    cursor: default!important;
+    border-bottom: 1px dotted var(--BodyColor);
+}
+.user-css .tooltip .tooltip-inner,
+.user-css-presentation .tooltip .tooltip-inner,
+.user-css-extended .tooltip .tooltip-inner,
+.user-css-worldmenu .tooltip .tooltip-inner,
+.user-css-presentation .tooltipster-borderless .tooltipster-content {
+    color: var(--BodyColor);
+    font-family: var(--BodyFont);
+    font-size: 1.4em;
+    background: var(--ColorPrime);
+    border: var(--Border-1);
+    border-width: var(--Border-1-W);
+    border-radius: var(--BorderRad);
+    box-shadow: var(--BoxShad-1);
+}
+.user-css-presentation .tooltip-arrow::before,
+.user-css-presentation .tooltipster-arrow-border,
+.user-css .tooltip.top .tooltip-arrow,
+.user-css-extended .tooltip.top .tooltip-arrow,
+.user-css-worldmenu .tooltip.top .tooltip-arrow {
+    border-top-color: var(--ColorTert-2)!important;
+}
+.user-css-presentation .tooltipster-borderless .tooltipster-box {
+    background: none;
+}
+
+/* __BUTTONS__ */
+.user-css .btn,
+.user-css-extended .btn,
+.user-css .label-roller,
+.user-css .rhea-ft-zoom-controls button,
+.user-css-presentation .tooltipster-content .btn,
+.user-css .discussion-board-section [class*=rep] .btn,
+.user-css-extended .spoiler-button[aria-expanded=true]
+.user-css .spoiler-button[aria-expanded=true] {
+    font-family: var(--BodyFont);
+    font-size: .9em;
+    color: var(--ColorSec-1)!important;
+    background: var(--ColorTert-1);
+    border: none;
+    border-radius: var(--BorderRad);
+    outline: 3px solid var(--ColorTert-1);
+    outline-offset: 2px;
+    padding: 5px 7px;
+    margin: 5px;
+    transition: var(--Transit);
+}
+.user-css .btn:hover,
+.user-css-extended .btn:hover,
+.user-css .label-roller:hover,
+.user-css .rhea-ft-zoom-controls button:hover,
+.user-css-presentation .tooltipster-content .btn:hover,
+.user-css .discussion-board-section [class*=rep] .btn:hover {
+    text-shadow: none;
+    text-decoration: none;
+    border: none;
+    outline: 3px solid var(--ColorTert-1);
+    outline-offset: -6px;
+    background: var(--ColorTert-1);
+    transition: var(--Transit);
+}
+.user-css .btn:focus,
+.user-css-extended .btn:focus,
+.map-context-user-css .btn:focus,
+.tooltipster-content .btn:focus {
+    box-shadow: none;
+}
+.user-css .btn-success,
+.user-css-extended .btn .btn-success {
+    background: var(--ColorTert-1)!important;
+    border: none!important;
+}
+.user-css .btn-success:hover,
+.user-css-extended .btn .btn-success:hover {
+    background: var(--ColorTert-1)!important;
+    border: none!important;
+}
+/* Visibility toggler */
+.user-css .visibility-toggler-trigger .fas,
+.user-css-extended .visibility-toggler-trigger .fas {
+    padding: 5px;
+}
+
+/* __QUOTES__ */
+.user-css blockquote,
+.user-css-extended blockquote,
+.user-css-presentation .tooltipster-content blockquote {
+    background: var(--ColorSec-2);
+    border: none;
+    border-radius: var(--BorderRad);
+    box-shadow: none;
+    margin: 40px 0px;
+    position: relative;
+}
+.user-css blockquote .author,
+.user-css-extended blockquote .author,
+.user-css-presentation .tooltipster-content blockquote .author {
+    color: var(--MuteColor);
+    font-family: var(--HeaderFont);
+    font-size: 1em;
+}
+/* Border */
+.user-css blockquote::before,
+.user-css-extended blockquote::before,
+.user-css-presentation .tooltipster-content blockquote::before {
+    content: url(https://www.worldanvil.com/uploads/images/990f99b350a476231a0f12fb1753fa13.svg);
+    top: -30px;
+    left: calc(50% - 250px);
+    height: 30px;
+    width: 500px;
+    position: absolute;
+    pointer-events: none;
+}
+.user-css blockquote::after,
+.user-css-extended blockquote::after,
+.user-css-presentation .tooltipster-content blockquote::after {
+    content: url(https://www.worldanvil.com/uploads/images/aca36c7a7836f7bd1689f3868ad5e965.svg);
+    top: calc(100% - 5px);
+    left: calc(50% - 250px);
+    height: 30px;
+    width: 500px;
+    position: absolute;
+    pointer-events: none;
+}
+/* Sidebar border */
+.user-css .panel blockquote::before {
+    top: -16px;
+    left: calc(50% - 150px);
+    width: 300px;
+}
+.user-css .panel blockquote::after {
+    top: calc(100% - 5px);
+    left: calc(50% - 150px);
+    width: 300px;
+}
+/* .user-css blockquote,
+.user-css-extended blockquote,
+.user-css-presentation .tooltipster-content blockquote {
+    border: solid;
+    border-image-slice: 85 40;
+    border-image-width: 60px 40px;
+    border-image-outset: 32px 10px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url(https://cdn.discordapp.com/attachments/806091110278627349/956676472683253790/Thra_Quote_Frame_smol.svg);
+} */
+
+/* __SIDEBAR PANEL__ */
+.user-css .panel,
+.user-css-extended .panel {
+    background: var(--ColorSec-1);
+    border: var(--Border-1);
+    border-width: var(--Border-1-W);
+    border-radius: var(--BorderRad);
+    box-shadow: none;
+}
+.user-css .panel blockquote,
+.user-css-extended .panel blockquote {
+    background: var(--ColorPrime);
+}
+
+/* __HR__ */
+.user-css hr,
+.user-css-extended hr,
+.user-css-map-sidebar hr,
+.user-css .tooltipster-content hr {
+    opacity: 1;
+    background: url(https://www.worldanvil.com/uploads/images/d2ea95ce654fda83e4e0b6056a8a8a43.svg) round;
+    border: 0;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center;
+    height: 25px;
+}
+
+/* __SPOILERS__ */
+.user-css .spoiler-button:hover,
+.user-css .spoiler-button[aria-expanded=true],
+.user-css-extended .spoiler-button:hover,
+.user-css-extended .spoiler-button[aria-expanded=true]{
+    outline-offset: -6px;
+}
+.user-css .spoiler-content,
+.user-css-extended .spoiler-content {
+    color: var(--BodyColor);
+    background: var(--ColorSec-2);
+    border: var(--Border-3);
+    border-radius: var(--BorderRad);
+    padding: 25px;
+}
+.user-css .spoiler-content:first-child,
+.user-css-extended .spoiler-content:first-child {
+    padding-top: 0px;
+    /* Removes padding on top of any headers, *if* they are the first thing used in the box. */
+}
+.user-css .spoiler-card,
+.user-css-extended .spoiler-card {
+    background: none;
+    border: none;
+    padding: 0px!important;
+    /* This is just to remove the background-background, don&#039;t style this! */
+}
+
+/* __ARTICLE BLOCKS__ */
+.user-css .article-panel,
+.user-css-extended .article-panel,
+.user-css .map-box {
+    background: var(--ColorSec-1);
+    border: 3px solid var(--ColorTert-1);
+    border-radius: var(--BorderRad);
+    outline: 3px solid var(--ColorTert-1);
+    outline-offset: 2px;
+    transition: var(--Transit);
+    margin: 15px 6px;
+}
+.user-css .article-panel:hover,
+.user-css-extended .article-panel:hover,
+.user-css .map-box:hover {
+    outline: 3px solid var(--ColorTert-1);
+    outline-offset: -3px;
+}
+.user-css .article-panel .article-link:hover {
+    text-decoration: none;
+    text-shadow: none;
+}
+.user-css .article-panel .heading {
+    color: var(--ColorTert-1);
+}
+.user-css .article-panel .subheading,
+.user-css .article-panel .date  {
+    color: var(--MuteColor);
+}
+
+/* __HOMEPAGE__ */
+.user-css.page-world-homepage .world-title,
+.user-css .world-authors {
+    display: none;
+}
+.user-css.page-world-homepage #cover img {
+    transform: scale(.8);
+    /* padding: 50px; */
+}
+.user-css.page-world-homepage .user-custom-content {
+    margin-bottom: 0px!important;
+}
+.user-css.page-world-homepage .user-custom-content hr {
+    margin-top: -20px;
+    margin-bottom: 45px;
+}
+.user-css.user-css.page-world-homepage .world-content .col-md-8 {
+    display: none;
+}
+.user-css.user-css.page-world-homepage .world-content .col-md-4 {
+    padding: 31px;
+    width: 100%;
+}
+/* Introbox */
+.introbox {
+    width: 82%;
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+    background-color: var(--ColorSec-1);
+    border: var(--Border-1);
+    border-width: var(--Border-1-W);
+}
+.introbox .row {
+    text-align: left;
+    margin: 25px 0px 15px 0px;
+}
+.introbox h4 {
+    font-size: 1.4em;
+    padding: 0px;
+}
+/* Map header */
+.mapthra h2 {
+    text-align: center;
+}
+.mapthra {
+    margin-bottom: 25px;
+}
+.deepdivethra h4 {
+    font-size: 1.4em;
+}
+/* Table of Contents */
+.user-css .toc-article-link {
+    color: var(--ColorTert-1);
+    text-decoration: none;
+}
+.user-css .article-title-icon {
+    color: var(--ColorTert-1);
+    margin-right: 5px;
+    font-size: .8em;
+}
+.user-css .world-category-link {
+    color: var(--ColorTert-1);
+    text-decoration: none;
+}
+.user-css .category-title-icon {
+    color: var(--ColorTert-2);
+    margin-right: 5px;
+}
+.user-css .fa-external-link {
+    display: none;
+}
+/* Map blocks */
+.user-css .map-box .img-responsive {
+    padding: 0px;
+}
+.user-css .map-box h5 {
+    font-size: 1.3em;
+    color: var(--ColorTert-1);
+}
+.user-css .map-box .p-20 {
+    padding-top: 0px!important;
+}
+.map-box small {
+    font-family: var(--BodyFont);
+    font-size: 1em;
+}
+/* Followers panel */
+/* All optional except DL */
+.user-css .followers-counter h4 {
+    padding-top: 0px;
+}
+.user-css .followers-counter .panel {
+    border-color: var(--ColorTert-1);
+}
+.user-css .followers-counter dl {
+    margin-bottom: 0;
+}
+/* Maps list */
+.user-css.page-world-homepage #world-maps {
+    background: var(--ColorSec-1);
+    padding: 20px;
+    padding-top: 0px;
+    border: var(--Border-1);
+    border-width: var(--Border-1-W);
+    margin-bottom: 20px;
+}
+.user-css.page-world-homepage .maps-list-header {
+    padding: 0px;
+}
+.user-css.page-world-homepage #world-maps ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+}
+.user-css.page-world-homepage .map-box .img-responsive {
+    max-height: 180px;
+    object-fit: contain;
+    background: none;
+}
+.user-css.page-world-homepage .map-thumbnail a {
+    background: none;
+}
+
+/* __TOP__ */
+.user-css .backtoworld a,
+.user-css .nav-strip a {
+    left: -13px;
+    top: -37px;
+    color: var(--ColorSec-1);
+    text-decoration: none;
+    background: var(--ColorTert-1);
+    border: var(--Border-3);
+    border-radius: var(--BorderRad);
+    font-family: var(--HeaderFont);
+    box-shadow: none;
+    padding-left: 15px;
+    transition: var(--Transit);
+}
+.user-css div .backtoworld a:hover,
+.user-css .nav-strip a:hover {
+    color: var(--ColorSec-1);
+    background: var(--ColorTert-1);
+    padding-left: 45px;
+    padding-right: 20px;
+}
+/* Not in categories, but on timelines....*/
+.user-css .nav-strip {
+    background: none;
+    box-shadow: none;
+    margin-top: -37px;
+}
+.user-css .nav-strip a {
+    padding: 7px;
+    padding-left: 15px;
+    margin-left: -10px;
+    font-size: 1em;
+    font-weight: normal;
+}
+.user-css .nav-strip .fas {
+    display: none;
+}
+/* Backtotop */
+.user-css-presentation #backtotop {
+    bottom: 20%;
+}
+.user-css-presentation .backtotop-button {
+    top: 10px;
+    color: var(--ColorSec-1);
+    background: var(--ColorTert-1);
+    border: var(--Border-2);
+    padding: 10px 15px;
+    transition: var(--Transit);
+}
+.user-css-presentation .backtotop-button:hover {
+    padding-right: 45px;
+}
+/* Search Form */
+.user-css .search-form {
+    position: fixed;
+    top: 17px;
+    left: 115px;
+    z-index: 1002;
+    /* Position can go here if needed, otherwise ignore. */
+}
+.user-css .search-form .typeahead-input,
+.user-css .form-control,
+.user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
+.map-context-user-css .search-form .typeahead-input {
+    color: var(--BodyColor)!important;
+    background: var(--ColorPrime);
+    border: var(--Border-3);
+    border-radius: var(--BorderRad);
+    color: var(--ColorPrime);
+    width: 200px;
+    box-shadow: none;
+    padding: 13.5px 10px 12px 10px;
+}
+.user-css .search-form .typeahead-input::placeholder,
+.user-css .form-control::placeholder,
+.user-css .rhea-family-tree input::placeholder,
+.map-context-user-css .search-form .typeahead-input::placeholder {
+    color: var(--ColorTert-1);
+    font-weight: bold;
+}
+.user-css .typeahead.dropdown-menu,
+.map-context-user-css .typeahead.dropdown-menu {
+    background: var(--ColorSec-1);
+}
+.user-css .form-group .dropdown-menu,
+.map-context-user-css .form-group .dropdown-menu {
+    border: var(--Border-3);
+    border-radius: 0px;
+    /* No other styling here. Just removing the default border. */
+}
+.user-css .typeahead.dropdown-menu li,
+.map-context-user-css .typeahead.dropdown-menu li {
+    padding: 0;
+}
+.user-css .typeahead.dropdown-menu li.active .dropdown-item,
+.map-context-user-css  .typeahead.dropdown-menu li.active .dropdown-item {
+    /* Active selection */
+    background: var(--ColorPrime);
+    font-weight: normal;
+}
+.user-css .typeahead.dropdown-menu li a,
+.map-context-user-css .typeahead.dropdown-menu li a {
+    color: var(--ColorTert-1);
+}
+.user-css .typeahead.dropdown-menu .text-muted,
+.map-context-user-css .typeahead.dropdown-menu li.active .dropdown-item .text-muted {
+    color: var(--MuteColor)!important;
+    /* Only if initual mute color doesn&#039;t work */
+}
+
+/* __BOTTOM__ */
+.user-css .copyright-attribution {
+    background: var(--ColorPrime);
+    border: var(--Border-1);
+    border-width: var(--Border-1-W);
+    padding: 5px;
+}
+/* Nav tabs */
+.user-css-extended .extended-tabs {
+    position: initial;
+    margin: 0 -10px;
+    /* No other styling here. */
+}
+.user-css-extended .nav-tabs {
+    background: var(--ColorSec-2);
+    margin-right: -10px;
+    margin-left: -10px;
+    left: 0;
+    top: 0;
+}
+.user-css-extended .nav-tabs li {
+    padding: 0;
+    /* No other styling here. */
+}
+.user-css-extended .nav-tabs li.nav-item a.nav-link {
+    font-family: var(--HeaderFont);
+    font-weight: normal;
+    color: var(--ColorSec-1);
+    background: var(--ColorTert-1);
+    border-right: var(--ColorSec-1) 2px solid;
+    margin-bottom: 0px;
+    transition: var(--Transit);
+}
+.user-css-extended .nav-tabs .active,
+.user-css-extended .nav-tabs .active:hover,
+.user-css-extended .nav-tabs li a:hover {
+    color: var(--ColorTert-1)!important;
+    background: var(--ColorSec-1)!important;
+}
+.user-css-extended .dl-horizontal {
+    padding-bottom: 15px;
+}
+/* Tags */
+.user-css .label-default,
+.user-css-extended .label-default,
+.user-css .timeline li .label-default {
+    color: var(--ColorSec-2)!important;
+    background: var(--ColorTert-1);
+    border: none;
+    border-radius: var(--BorderRad);
+    outline: 3px solid var(--ColorTert-1);
+    outline-offset: 2px;
+    transition: var(--Transit);
+}
+.user-css .label-default:hover,
+.user-css-extended .label-default:hover,
+.user-css .timeline li .label-default:hover {
+    outline: 3px solid var(--ColorTert-1);
+    outline-offset: -6px;
+}
+
+/* __MAPS__*/
+/* Fullscreen */
+.map-context-user-css {
+    background: url(https://www.worldanvil.com/uploads/images/8fdd989b9f5e1684a9a577279e3335eb.webp);
+    background-repeat: repeat;
+    background-size: 50%;
+    /* Nothing else here. */
+}
+.user-css-map-sidebar {
+    background: url(https://www.worldanvil.com/uploads/images/04d9d8801fd1487d0c4bc25aceeaa85c.jpg);
+    background-size: contain;
+    border-right: var(--Border-1);
+}
+.user-css-map-sidebar #sidebar-extras .card {
+    font-family: var(--BodyFont);
+    background: none;
+    border: none;
+}
+.map-context-user-css #sidebarCollapse {
+    color: var(--ColorSec-1);
+    background: var(--ColorTert-1);
+    border: none;
+    border-radius: var(--BorderRad);
+    border-left-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font-size: 1.2em;
+    padding: 15px 20px 10px 20px;
+    transition: var(--Transit);
+}
+.map-context-user-css #sidebarCollapse:hover {
+    padding-left: 40px;
+}
+/* Logo/sage nav */
+.presentation-interface-map #logo {
+    color: var(--ColorSec-1);
+    font-family: var(--HeaderFont);
+    text-decoration: none;
+}
+.presentation-interface-map #logo:before {
+    background: var(--ColorTert-1);
+    border: none;
+    outline: 3px solid var(--ColorTert-1);
+    outline-offset: 2px;
+    box-shadow: none;
+    -webkit-transform: none;
+    transform: none;
+}
+/* Zoom buttons */
+.leaflet-touch .leaflet-bar {
+    border: none;
+    border-radius: var(--BorderRad);
+}
+.user-css .leaflet-control-layers,
+.user-css .leaflet-control-layers-base span,
+.map-context-user-css .leaflet-control-layers,
+.map-context-user-css .leaflet-control-layers-base span {
+    border-color: var(--ColorTert-1);
+}
+.map-context-user-css .leaflet-control-zoom-in,
+.map-context-user-css .leaflet-control-zoom-out,
+.user-css .leaflet-control-zoom-in,
+.user-css .leaflet-control-zoom-out {
+    border: none;
+}
+.user-css .leaflet-bar a:first-child,
+.map-context-user-css .leaflet-bar a:first-child {
+    color: var(--ColorSec-1);
+    background: var(--ColorTert-1);
+    border-radius: var(--BorderRad);
+    border-bottom-left-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+    transition: var(--Transit);
+}
+.user-css .leaflet-bar a:last-child,
+.map-context-user-css .leaflet-bar a:last-child {
+    color: var(--ColorSec-1);
+    background: var(--ColorTert-1);
+    border-radius: var(--BorderRad);
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+    transition: var(--Transit);
+}
+.map-context-user-css .leaflet-bar a:hover,
+.user-css .leaflet-bar a:hover {
+    color: var(--ColorTert-1);
+    background: var(--ColorSec-1);
+    border: none;
+}
+.map-context-user-css .leaflet-bar a.leaflet-disabled,
+.user-css .leaflet-bar a.leaflet-disabled {
+    border: none;
+    color: transparent;
+}
+/* Leaflet popups */
+.user-css .leaflet-popup-content-wrapper {
+    background: var(--ColorSec-1);
+    border: var(--Border-3);
+    border-radius: var(--BorderRad);
+    box-shadow: var(--BoxShad-1);
+    padding: 5px 10px;
+}
+.user-css .leaflet-popup-content {
+    margin: 0px;
+}
+.user-css .leaflet-popup-tip {
+    background: var(--ColorTert-1);
+    box-shadow: var(--BoxShad-1);
+}
+.user-css .leaflet- a.leaflet-popup-close-button {
+    color: var(--ColorTert-1);
+    font-size: 1.2em;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+/*Layers*/
+.user-css .leaflet-control-layers,
+.map-context-user-css .leaflet-control-layers {
+    background: var(--ColorSec-1);
+    border: var(--Border-3);
+    border-radius: var(--BorderRad);
+}
+.user-css .leaflet-control-layers-expanded,
+.map-context-user-css .leaflet-control-layers-expanded  {
+    background: var(--ColorSec-1);
+    font-family: var(--BodyFont);
+}
+.map-context-user-css .leaflet-control-layers-base span {
+    font-size: 1.5em;
+    color: var(--BodyColor);
+}
+.map-context-user-css .legend {
+    font-family: var(--BodyFont);
+    font-size: 1.5em;
+    color: var(--BodyColor);
+    background: var(--ColorSec-2);
+    border: var(--Border-2);
+    box-shadow: var(--BoxShad-1);
+}
+.map-context-user-css .legend ul {
+    padding-left: 20px;
+    margin: 0px;
+}
+/* Popups */
+.map-context-user-css .leaflet-popup-content-wrapper,
+.map-context-user-css .leaflet-popup-tip {
+    font-family: var(--BodyFont);
+    background: var(--ColorSec-1);
+    border: var(--Border-1);
+    border-width: var(--Border-1-W);
+    border-radius: var(--BorderRad);
+}
+.map-context-user-css .leaflet-popup-content-wrapper h5 {
+    font-family: var(--HeaderFont);
+    font-size: 1.5em;
+}
+.map-context-user-css .leaflet-popup-close-button {
+    color: var(--ColorTert-1)!important;
+    margin: 5px;
+    font-size: 1.2em;
+}
+/* Legend */
+.map-context-user-css .legend {
+    box-shadow: var(--BoxShad-1);
+    background: var(--ColorPrime);
+    border: var(--Border-3);
+}
+.map-context-user-css .legend ul {
+    padding-left: 20px;
+    margin: 0px;
+}
+/* ---Inline Maps--- */
+.user-css-presentation .leaflet-grab {
+    border: var(--Border-3);
+    border-radius: var(--BorderRad);
+    background: var(--ColorSec-2);
+    box-shadow: none;
+}
+.user-css-presentation .leaflet-touch .leaflet-bar {
+    border: none;
+    /* Add border if there&#039;s one earlier. */
+}
+/* Navigation */
+.user-css .map-included-navigation {
+    background: var(--ColorSec-1);
+    border: var(--Border-3);
+    padding: 5px 5px 10px 5px;
+    border-top-width: 0px;
+}
+.user-css .map-included-navigation-information {
+    margin-top: 0px!important;
+}
+.user-css .map-included-navigation-title {
+    font-family: var(--HeaderFont);
+    font-size: 1.3em;
+    padding-top: 8px;
+    margin-right: 10px;
+}
+.user-css .map-included-navigation-information .fa-info-circle {
+    color: var(--BodyColor);
+    font-size: .8em;
+}
+
+/* __CALENDARS &amp; TABLES__ */
+.user-css .table,
+.user-css .thales-table,
+.user-css .thales-table th,
+.user-css .thales-wrapper .thales-row .thales-cell,
+.user-css .thales-wrapper .thales-row {
+    border: none;
+    /* Nothing else here, just removing the border. */
+}
+.user-css .thales-table,
+.user-css .table {
+    font-family: var(--BodyFont);
+    border: var(--Border-3);
+    background-color: transparent;
+}
+.user-css .table-striped th,
+.user-css-calendar .table thead tr th,
+.user-css .thales-table th {
+    font-family: var(--BodyFont);
+    background: var(--ColorTert-1);
+    color: var(--ColorPrime);
+    text-align: left;
+}
+.user-css .table td,
+.user-css .thales-wrapper .thales-row .thales-cell {
+    background: none;
+    border: none;
+    /* Only change if you want ALL cells to share a trait, like borders. */
+}
+.user-css .thales-wrapper .thales-row:last-of-type .thales-cell {
+    border-bottom: none;
+    /* Nothing else here, just removing the border. */
+}
+.user-css .table-striped tr:nth-child(odd),
+.user-css .calendar-presentation tr:nth-child(odd),
+.user-css tr.thales-row:nth-child(odd) {
+    background: var(--ColorSec-1);
+}
+.user-css .table-striped tr:nth-child(even),
+.user-css .calendar-presentation tr:nth-child(even),
+.user-css tr.thales-row:nth-child(even) {
+    background: var(--ColorSec-2);
+}
+
+/* __STAT BLOCKS__ */
+.user-css .statblock {
+    background: var(--ColorSec-2);
+    border: var(--Border-1);
+    border-radius: var(--BorderRad);
+    box-shadow: none;
+}
+.user-css .statblock strong {
+    color: var(--BodyColor);
+    text-shadow: none;
+}
+.user-css .statblock p,
+.user-css .statblock span,
+.user-css .statblock .subheading,
+.user-css .statblock .statblock-attribute {
+    color: var(--BodyColor);
+}
+
+/* __NAVIGATION SIDEBAR__ */
+.user-css-presentation #world-navigation-sidebar,
+.user-css-presentation .world-navigation-palette-trigger {
+    display: none!important;
+}
+
+/* __SCROLLBAR__ */
+::-webkit-scrollbar {
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    border-radius: var(--BorderRad);
+    /* Probably no radius. */
+    background: var(--ColorSec-2);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--ColorTert-1);
+    width: 9px;
+    border-radius: var(--BorderRad);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--ColorTert-1);
+}
+
+/* __WHITE LABEL__ */
+.user-css-whitelabel {
+    display: none;   
+}
+
+/* __NAVBAR__ */
+[id*=visual-conta] {
+    margin-top: 0px!important;
+}
+.world-global-header.user-css .thranav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+    color: var(--ColorPrime);
+    background: var(--ColorTert-1);
+    display: flex!important;
+    align-items: center;
+    justify-content: left;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+.searchgoeshere {
+    display: block;
+    width: 200px;
+}
+.world-global-header.user-css h2 {
+    color: var(--ColorSec-2);
+    padding: 0px;
+    justify-self: left;
+    margin-top: 0px;
+}
+.world-global-header.user-css a {
+    text-decoration: none;
+}
+.world-global-header.user-css a h2 {
+    font-size: 1em;
+    font-family: var(--BodyFont);
+    color: var(--ColorPrime);
+    padding-top: 0px;
+    transition: var(--Transit);
+}
+.world-global-header.user-css a h2:hover {
+    text-shadow: none;
+    color: var(--ColorSec-1);
+}
+.world-global-header.user-css .thranav a h2:first-of-type {
+    margin-left: 30px;
+}
+.poweredbywa {
+    color: var(--ColorSec-1);
+    margin-left: auto;
+    display: flex!important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* Mobile */
+.world-global-header.user-css .thranav-mobile {
+    display: none!important;
+}
+@media only screen and (max-width: 1248px) {
+    .world-global-header.user-css .thranav {
+        display: none!important;
+    }
+    .world-global-header.user-css .thranav-mobile {
+        display: block!important;
+    }
+    .user-css .search-form {
+        top: 5px!important;
+        left: 5px!important;
+    }
+    .world-global-header.user-css {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+        background: var(--ColorTert-1);
+        z-index: 1000;
+    }
+}
+@media only screen and (max-width: 424px) {
+    .user-css .search-form {
+        top: 5px;
+        left: 5px;
+    }
+}
+.thranav-mobile .spoiler-button {
+    position: fixed;
+    outline: none;
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2em;
+    padding: 0px;
+}
+.thranav-mobile .spoiler-card {
+    top: 50px;
+}
+.thranav-mobile .spoiler-content {
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--ColorTert-1);
+    padding-bottom: 0px;
+}
+.visibility-toggler-trigger {
+    display: none!important;
+}
+.thranav-mobile img {
+    max-width: 150px;
+}
+.thranav-mobile .poweredbywa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+
+/* __TEMPLATES__ */
+/* Locations */
+.thraloc {
+    text-align: center;
+}
+.thraloc ul {
+    padding: 0px;
+    list-style: none;
+    background: var(--ColorSec-1);
+    border: var(--Border-1);
+    border-width: var(--Border-1-W);
+    margin: 10px 50px;
+}
+/* Generic */
+.thrabox {
+    background: var(--ColorSec-1);
+    border: var(--Border-3);
+    margin: 10px;
+    padding: 10px;
+}
+.thrabox h4 {
+    padding: 0px;
+}
+
+/* __SCREEN SCALING__ */
+@media only screen and (max-width: 1199px) {
+    .user-css-presentation #world-navigation-sidebar {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .user-css.page,
+    .user-css-extended .page  {
+        overflow: hidden;
+    }
+    .user-css-presentation #world-navigation-sidebar {
+        top: 26%;
+        min-height: 60% !important;
+        width: 100%;
+        left: 25px;
+    }
+    .user-css blockquote::before,
+    .user-css-extended blockquote::before,
+    .user-css-presentation .tooltipster-content blockquote::before {
+        top: -17px;
+        left: calc(50% - 150px);
+        height: 30px;
+        width: 300px;
+    }
+    .user-css blockquote::after,
+    .user-css-extended blockquote::after,
+    .user-css-presentation .tooltipster-content blockquote::after {
+        left: calc(50% - 150px);
+        height: 30px;
+        width: 300px;
+    }
+    .introbox .row {
+        text-align: center;
+    }
+    .thraloc ul {
+        margin: 10px 20px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .user-css.page,
+    .user-css-extended .page  {
+        overflow: hidden;
+    }
+    .user-css .search-form {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+
+/* Editor bar */
+#world-editor-bar {
+    background: ;
+    width: 120px;
+    top: auto;
+    bottom: 200px;
+    left: -100px;
+    border-bottom: none;
+    border-right: ;
+    box-shadow: none;
+    opacity: 0.6;
+    padding: 15px 15px 0px 15px;
+    transition: all 0.3s;
+}
+#world-editor-bar:hover {
+    left: 0px;
+}
+#world-editor-bar .fa {
+    font-size: 2em;
+    color: ;
+}
+#world-editor-bar .btn {
+    width: 85px!important;
+    margin-bottom: 10px;
+}
+#world-editor-bar .world-edit-toggle .fa {
+    color: white!important;
+}
+#world-editor-bar .world-edit-toggle .fa {
+    width: 100%;
+    height: 100%;
+    line-height: 36px;
+}
+#world-editor-bar .pull-right {
+    float: none!important;
+}
+#world-editor-bar [class*=cont] {
+    width: 100px!important;
+}
+#world-editor-bar .label,
+#world-editor-bar .btn-success:nth-child(1) {
+    display: none;
+}
+#world-editor-bar .btn {
+    background: var(--ColorTert-1);
+    border: var(--Border-3);
+    overflow: hidden;
+}
+#world-editor-bar .btn .hidden-xs {
+    display: none;
+}
+.:first-child {
+    margin-top: 0px!important;
+}
+.navbar . {
+    margin-top: 0px!important;
+}
