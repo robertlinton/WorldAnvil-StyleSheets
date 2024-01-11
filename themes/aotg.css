@@ -3084,3 +3084,178 @@ https://www.worldanvil.com/author/Timepool */
     margin-top: 20px;
   }
 }
+
+/*--------------------------*/
+/* ---- Char Cards ---- */
+/*--------------------------*/
+.user-css .charcard {
+  background: transparent;
+  width: 300px;
+  height: 477px;
+  perspective: 1000px;
+  margin: auto;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.user-css .charcard-front,
+.user-css .charcard-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-css .charcard-front {
+  background: var(--aotg-prime-color);
+  color: var(--aotg-muted-color);
+  border: 6px double var(--aotg-tertiary-color-2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.user-css .charcard-front .charcard-header {
+  background: var(--aotg-secondary-color-2);
+  color: var(--aotg-tertiary-color-1);
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: var(--aotg-font-body, sans-serif);
+  border-bottom: 2px solid var(--aotg-tertiary-color-2);
+}
+
+.user-css .charcard-front .charcard-image img {
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.user-css .charcard-back {
+  background: black;
+  color: var(--aotg-muted-color);
+  border: 6px double var(--aotg-tertiary-color-2);
+  border-radius: 8px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 81%;
+}
+
+.user-css .charcard-back .charcard-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.user-css .charcard:hover .charcard-front {
+  transform: rotateY(-180deg);
+}
+
+.user-css .charcard:hover .charcard-back {
+  transform: rotateY(0deg);
+}
+
+.user-css .charcard:hover .charcard-front .charcard-image img {
+  opacity: 1;
+}
+
+/*-------------------------*/
+/* ---- Main Profilebox ---- */
+/* -------------------------*/
+.user-css .profilebox {
+  background: var(--aotg-prime-color);
+  color: var(--aotg-muted-color);
+  border: 2px solid var(--aotg-tertiary-color-2);
+  padding: 0;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.user-css .profilebox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.user-css .profilebox-header {
+  background: var(--aotg-tertiary-color-1);
+  color: #fff1bd;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: var(--aotg-font-body);
+  border-bottom: 2px solid var(--aotg-tertiary-color-2);
+}
+
+.user-css .profilebox-content b {
+  color: var(--aotg-muted-color);
+  font-family: var(--aotg-font-tertiary);
+  font-size: 0.9em;
+}
+
+.user-css .profilebox-entry {
+  color: var(--aotg-muted-color);
+  padding: 0.2em 0.5em;
+  font-family: var(--aotg-font-body);
+  margin: 0.2em 0;
+}
+
+.user-css .profilebox-image {
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.user-css .profilebox-image:hover img {
+  opacity: 1;
+}
+
+.user-css .profilebox-subheader {
+  background: var(--aotg-tertiary-color-1);
+  color: #fff1bd;
+  padding: 0.3em;
+  font-weight: bold;
+  text-align: center;
+  font-family: var(--aotg-font-body);
+  border-bottom: 1px solid var(--aotg-secondary-color-1);
+  letter-spacing: 1px;
+}
+
+.user-css .profilebox-nickname {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  line-height: 140%;
+  font-style: italic;
+}
+
+.user-css .profilebox-content-entrybefore {
+  color: var(--aotg-muted-color);
+  font-family: var(--aotg-font-body);
+}
+
+.user-css .profilebox-content {
+  padding: 0.5em;
+  background: var(--aotg-secondary-color-1);
+  color: var(--aotg-muted-color);
+  border-bottom: 1px solid var(--aotg-tertiary-color-3);
+}
+
+.user-css .profilebox-content:last-of-type {
+  border-bottom: none;
+}
+
+.user-css .profilebox-image img {
+  height: auto;
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+}
