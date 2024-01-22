@@ -777,6 +777,19 @@ https://www.worldanvil.com/author/Timepool */
   background-color: var(--aotg-secondary-color-4);
   border: 3px solid var(--aotg-tertiary-color-1);
   max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.user-css .homepage-intro:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.user-css .homepage-intro:hover::before {
+  transform: scale(1);
 }
 
 /*--------------------------*/
@@ -2499,7 +2512,8 @@ https://www.worldanvil.com/author/Timepool */
 /* -------------------------*/
 @media screen and (max-width: 1000px) {
   .user-css .article-grid,
-  .user-css .article-grid-secondary {
+  .user-css .article-grid-secondary,
+  .user-css .article-grid-currency {
     grid-template-columns: 1fr;
   }
 }
@@ -2515,6 +2529,25 @@ https://www.worldanvil.com/author/Timepool */
   text-align: center;
   margin-top: -28px;
 }
+
+.user-css .portal-grid-secondary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: -28px;
+}
+
+.user-css .portal-grid-race {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.user-css .portal-grid-secondary .portal-section:last-child:nth-child(3n + 1) {
+  grid-column-start: 2;
+}
+
 
 .user-css .portal-header {
   font-size: 2.5em;
@@ -2587,7 +2620,8 @@ https://www.worldanvil.com/author/Timepool */
 /* ---- Portal Categorty Scaling    ---- */
 /* -------------------------*/
 @media screen and (max-width: 1000px) {
-  .user-css .portal-grid {
+  .user-css .portal-grid,
+  .user-css .portal-grid-secondary {
     grid-template-columns: 1fr;
   }
 }
@@ -2624,7 +2658,7 @@ https://www.worldanvil.com/author/Timepool */
 }
 
 /*--------------------------*/
-/* ---- Categorty Scaling    ---- */
+/* ---- Article Scaling    ---- */
 /* -------------------------*/
 @media screen and (max-width: 1000px) {
   .col-md-6 {
@@ -2756,21 +2790,17 @@ https://www.worldanvil.com/author/Timepool */
   padding: 0px;
 }
 
-
 /*--------------------------*/
 /* ---- Profile Cards ---- */
 /*--------------------------*/
 .user-css .profile-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); 
-  grid-gap: 20px; 
-  padding: 20px; 
-  justify-content: center; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .user-css .profile-card {
-  background: var(--aotg-secondary-color-4); 
-  width: 350px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%); 
   height: auto; 
   margin: auto;
   position: relative;
@@ -2780,8 +2810,6 @@ https://www.worldanvil.com/author/Timepool */
   color: var(--aotg-body-text-color); 
   border: 3px solid var(--aotg-tertiary-color-1); 
   overflow: hidden;
-  overflow-y: auto; 
-  max-height: 540px; 
 
 }
 
@@ -2806,14 +2834,12 @@ https://www.worldanvil.com/author/Timepool */
 
 .user-css .profile-card-content {
   padding: 20px;
-  background: var(--aotg-secondary-color-5);
   overflow-y: auto;
   font-size: 1em;
   line-height: 1.6; 
   color: var(--aotg-body-text-color); 
   border-top: 2px solid var(--aotg-tertiary-color-1); 
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%); 
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1)
 }
 
 .user-css .profile-card:hover .profile-card-image img {
@@ -2832,4 +2858,19 @@ https://www.worldanvil.com/author/Timepool */
   background-color: var(--aotg-tertiary-color-1); 
   border-radius: 5px;
   border: 3px solid var(--aotg-secondary-color-4);
+}
+
+.user-css.kane .profile-card {
+  height: 100%; 
+  overflow: hidden; 
+}
+
+
+/*--------------------------*/
+/* ---- Profile Card Scaling    ---- */
+/* -------------------------*/
+@media screen and (max-width: 1000px) {
+  .user-css .profile-card-grid {
+    grid-template-columns: 1fr;
+  }
 }
