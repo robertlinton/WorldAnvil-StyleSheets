@@ -1,3 +1,7 @@
+/** Originally Mortal Coil Theme Designed By
+** Timepool (Garrett Lewis)
+https://www.worldanvil.com/author/Timepool */
+
 /*--------------------------*/
 /* ---- Variables   ---- */
 /* -------------------------*/
@@ -10,86 +14,72 @@
 .map-context-user-css,
 .tooltipster-content {
   /* Fonts */
-  --chi-font-title: Takoyaki;
-  --chi-font-main: Ghozda;
-  --chi-font-secondary: Miwaku;
-  --chi-font-body: IM Fell Double Pica;
+  --HeaderFont: Iceland;
+  --HeaderFont-2: Aldrich;
+  --BodyFont: Electrolize;
 
   /* Colors */
-  --chi-prime-color: #d3d7ea;
-  --chi-secondary-color-1: #f0e8ec;
-  --chi-secondary-color-2: #edefff;
-  --chi-secondary-color-3: #0f2b39;
-  --chi-secondary-color-4: #f5cad4;
-  --chi-tertiary-color-1: #456a97;
-  --chi-tertiary-color-2: #6683b4;
-  --chi-tertiary-color-3: #92acc8;
-  --chi-tertiary-color-4: #608aad;
-  --chi-tertiary-color-5: #597d93;
-  --chi-tertiary-color-6: #e8e9f0cf;
-  --chi-tertiary-color-7: #974545;
-  --chi-tertiary-color-8: #7d1919;
-  --chi-body-text-color: #232125;
-  --chi-muted-color: #565b6a;
+  --ColorPrime: #1d2230;
+  --ColorSec-1: #1a2c4b;
+  --ColorSec-2: #1e3a60;
+  --ColorTert-1: #4b7bdc;
+  --ColorTert-2: #3272c9;
+  --ColorTert-3: #2d5475;
+  --ColorTert-4: #396087;
+  --ColorTert-5: #507cb3;
+  --BodyColor: #d6e2f0;
+  --MuteColor: #b0c4de;
 }
+
+
 
 /*--------------------------*/
 /* ---- Fonts   ---- */
 /* -------------------------*/
 @font-face {
-  font-family: Ghozda;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/1a315c6006c919d67179d97851cd80fcc9e3634a/fonts/Ghozda.otf);
-}
-
-@font-face {
-  font-family: Takoyaki;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/753ab64c841ddd92e2080884948439035ec2ab5e/fonts/Takoyaki.ttf);
-}
-
-@font-face {
-  font-family: Genjiro;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/d6bc001d78c9b26f2fe177a928e53f45bcb7bfcb/fonts/Genjiro.ttf);
-}
-
-@font-face {
-  font-family: Miwaku;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/c69f98edf610e94e3a5ae220f9647e584bfd2823/fonts/Enchant.ttf);
-}
-
-@font-face {
-  font-family: IM Fell Double Pica;
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/imfelldoublepica/v14/3XF0EqMq_94s9PeKF7Fg4gOKINyMtZ8rf0aPU5ZE.woff2);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: IM Fell Double Pica;
+  font-family: Iceland;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/imfelldoublepica/v14/3XF2EqMq_94s9PeKF7Fg4gOKINyMtZ8rf0O_UQ.woff2);
+  src: url(https://fonts.gstatic.com/s/iceland/v8/rax9HiuFsdMNOnWPaKtMAQ.woff2);
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Aldrich;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/aldrich/v10/MCoTzAn-1s3IGyJMVacY3w.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: Electrolize;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/electrolize/v8/cIf5Ma1dtE0zSiGSiED7AXEBuI8.woff2);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 /*--------------------------*/
 /* ---- Backgrounds   ---- */
 /* -------------------------*/
 .user-css-presentation {
-  background: url(https://www.worldanvil.com/uploads/images/4c17444e15422d536be6f5e67d0e9ac0.jpg);
+  background: linear-gradient(
+    0deg,
+    #3a7ca5 15%,
+    #4b8e8d 35%,
+    #5d89a6 65%,
+    #97c8eb 100%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -98,26 +88,15 @@
 .user-css.page,
 .user-css-extended .page,
 .user-css-presentation .tooltipster-content {
-  background: var(--chi-prime-color);
+  background: var(--ColorPrime);
+  border: 8px double var(--ColorTert-5);
+  border-radius: 20px;
   overflow: hidden;
-  border-radius: 0px;
   box-shadow: none;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
 }
 
 .user-css #cover img {
-  margin-top: 15px;
-  clip-path: polygon(
-    10% 0,
-    90% 0,
-    100% 10%,
-    100% 90%,
-    90% 100%,
-    10% 100%,
-    0% 90%,
-    0% 10%
-  );
+  border-bottom: 5px solid var(--ColorTert-5);
 }
 
 /*--------------------------*/
@@ -142,66 +121,49 @@
 .user-css-extended .article-extended-tabs,
 .user-css-extended .metadata-label,
 .user-css-extended .metadata-value {
-  font-size: 18px;
-  font-family: var(--chi-font-body);
-  color: var(--chi-body-text-color);
-}
-
-.user-css-vignette {
-  font-size: 18.5px;
-}
-
-.user-css .highlight {
-  color: #812019;
-  text-decoration: underline;
+  font-size: 17px;
+  font-family: var(--BodyFont);
+  color: var(--BodyColor);
 }
 
 /*--------------------------*/
 /* ---- Headers   ---- */
 /* -------------------------*/
-.user-css .world-title {
-  font-family: var(--chi-font-title);
-}
-
-.user-css .article-title h1 {
-  font-size: 2.3em;
-  text-decoration: underline;
-}
-
 .user-css h1,
 .user-css-map-sidebar h1,
 .user-css-presentation .tooltipster-content h1,
 .user-css .statblock h1,
 .user-css-extended .orphan-era h1 {
-  color: var(--chi-tertiary-color-1);
-  font-family: var(--chi-font-main);
-  font-size: 3em;
+  color: var(--ColorTert-1);
+  font-family: var(--HeaderFont);
+  font-size: 4em;
   text-align: center;
-  padding-top: 17px;
+  padding-top: 15px;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .user-css h2,
 .user-css-extended .page h2,
 .user-css-map-sidebar h2,
 .user-css-presentation .tooltipster-content h2 {
-  font-family: var(--chi-font-secondary);
-  color: var(--chi-tertiary-color-2);
+  font-family: var(--HeaderFont);
+  color: var(--ColorTert-2);
   padding-top: 15px;
-  padding-bottom: 0px;
-  border-bottom: 2px solid var(--chi-tertiary-color-3);
-  font-size: 2.2em;
-  margin-top: 0px;
-  line-height: 1em;
+  border-bottom: none;
+  font-size: 3.1em;
+  margin-bottom: 0px;
 }
 
 .user-css h3,
 .user-css-extended .page h3,
 .user-css-map-sidebar h3,
 .user-css-presentation .tooltipster-content h3 {
-  font-family: var(--chi-font-secondary);
-  color: var(--chi-tertiary-color-2);
-  padding-top: 15px;
-  font-size: 2em;
+  font-family: var(--HeaderFont);
+  color: var(--ColorTert-1);
+  font-size: 2.5em;
+  padding-top: 20px;
+  line-height: 1;
 }
 
 .user-css h4,
@@ -212,10 +174,11 @@
 .user-css-extended .timeline li .timeline-panel h4,
 .user-css-extended .timeline li .milestone-panel h4,
 .user-css-presentation .tooltipster-content h4 {
-  font-family: var(--chi-font-secondary);
-  color: var(--chi-tertiary-color-1);
-  padding-top: 15px;
-  font-size: 2em;
+  font-family: var(--HeaderFont);
+  color: var(--ColorTert-2);
+  font-size: 2.1em;
+  padding-top: 20px;
+  line-height: 1;
 }
 
 .user-css h5,
@@ -227,16 +190,18 @@
 .user-css-extended .timeline li .milestone-panel h5,
 .user-css-presentation .tooltipster-content h5,
 .user-css-presentation #world-navigation-sidebar .world-menu h5 {
-  color: var(--chi-tertiary-color-2);
-  font-family: var(--chi-font-secondary);
+  color: var(--ColorTert-2);
+  font-family: var(--HeaderFont-2);
   padding-top: 10px;
-  font-size: 1.3em;
+  font-family: 32px;
   margin-top: 0px;
+  line-height: 1;
 }
 
 .user-css h6 {
-  font-family: var(--chi-font-secondary);
+  font-family: var(--HeaderFont);
   padding-top: 15px;
+  line-height: 1;
 }
 
 /*--------------------------*/
@@ -252,7 +217,7 @@
 .user-css-extended .timeline li .milestone-panel a,
 .user-css-presentation .tooltipster-content a,
 .user-css .usercard a {
-  color: var(--chi-tertiary-color-2);
+  color: var(--ColorTert-2);
   transition: all 0.3s;
   text-shadow: none;
 }
@@ -261,7 +226,7 @@
 .user-css-extended a:hover,
 .user-css-presentation .tooltipster-content a:hover,
 .user-css .usercard a:hover {
-  color: var(--chi-tertiary-color-1);
+  color: var(--ColorTert-1);
   text-shadow: none;
   font-style: italic;
 }
@@ -271,7 +236,7 @@
 /* -------------------------*/
 .user-css .text-abbreviation {
   cursor: default !important;
-  border-bottom: 1px dotted var(--chi-body-text-color);
+  border-bottom: 1px dotted var(--BodyColor);
 }
 
 .user-css .tooltip .tooltip-inner,
@@ -279,11 +244,11 @@
 .user-css-extended .tooltip .tooltip-inner,
 .user-css-worldmenu .tooltip .tooltip-inner,
 .user-css-presentation .tooltipster-borderless .tooltipster-content {
-  color: var(--chi-body-text-color);
-  font-family: var(--chi-font-body);
+  color: var(--BodyColor);
+  font-family: var(--BodyFont);
   font-size: 1.4em;
-  background: var(--chi-secondary-color-2);
-  border: 2px solid var(--chi-tertiary-color-1);
+  background: var(--ColorTert-4);
+  border: none;
   border-radius: 0px;
   box-shadow: none;
 }
@@ -293,7 +258,7 @@
 .user-css .tooltip.top .tooltip-arrow,
 .user-css-extended .tooltip.top .tooltip-arrow,
 .user-css-worldmenu .tooltip.top .tooltip-arrow {
-  border-top-color: var(--chi-tertiary-color-4) !important;
+  border-top-color: var(--ColorTert-4) !important;
 }
 
 .user-css-presentation .tooltipster-borderless .tooltipster-box {
@@ -308,12 +273,12 @@
 }
 
 .user-css-presentation .tooltip-arrow::before {
-  border-top-color: var(--chi-tertiary-color-4);
+  border-top-color: var(--ColorTert-4);
 }
 
 .user-css-presentation .tooltip .tooltip-inner {
   max-width: 300px;
-  background: var(--chi-prime-color);
+  background: var(--ColorPrime);
 }
 
 /*--------------------------*/
@@ -328,16 +293,16 @@
 
 .user-css .text-muted,
 .user-css-extended .text-muted {
-  color: var(--chi-muted-color) !important;
+  color: var(--MuteColor) !important;
 }
 
 .user-css .text-danger,
 .user-css-extended .text-danger {
-  color: var(--chi-tertiary-color-2) !important;
+  color: var(--ColorTert-2) !important;
 }
 
 .user-css .dropcap {
-  font-family: var(--chi-font-body);
+  font-family: var(--BodyFont);
 }
 
 /*--------------------------*/
@@ -349,13 +314,16 @@
 .user-css .rhea-ft-zoom-controls button,
 .user-css-presentation .tooltipster-content .btn,
 .user-css .discussion-board-section [class*=rep] .btn {
-  font-family: var(--chi-font-body);
+  font-family: var(--BodyFont);
   font-size: 1em;
-  border: 2px solid var(--chi-prime-color);
-  border-radius: 15px;
-  background: var(--chi-secondary-color-3);
+  font-weight: bold;
+  color: var(--ColorSec-1) !important;
+  background: var(--ColorTert-2);
+  border: none;
+  border-left: 5px solid var(--ColorTert-3);
+  border-radius: 0px;
+  box-shadow: none;
   transition: all 0.3s;
-  padding: 5px 5px 4px 12px;
 }
 
 .user-css .btn:hover,
@@ -368,7 +336,7 @@
   text-decoration: none;
   font-style: normal;
   padding-left: 15px;
-  background: var(--chi-tertiary-color-1);
+  background: var(--ColorTert-1);
 }
 
 .user-css .btn:focus,
@@ -380,21 +348,21 @@
 
 .user-css .btn-success,
 .user-css-extended .btn .btn-success {
-  background: var(--chi-tertiary-color-1) !important;
+  background: var(--ColorTert-1) !important;
   border: none !important;
-  border-left: 2px solid var(--chi-tertiary-color-4) !important;
+  border-left: 5px solid var(--ColorTert-4) !important;
 }
 
 .user-css .btn-success:hover,
 .user-css-extended .btn .btn-success:hover {
-  background: var(--chi-tertiary-color-2) !important;
+  background: var(--ColorTert-2) !important;
   border: none !important;
-  border-left: 2px solid var(--chi-tertiary-color-4) !important;
+  border-left: 5px solid var(--ColorTert-4) !important;
 }
 
 .user-css .visibility-toggler-trigger .fas,
 .user-css-extended .visibility-toggler-trigger .fas {
-  padding: 2px;
+  padding: 5px;
 }
 
 /*--------------------------*/
@@ -403,17 +371,17 @@
 .user-css blockquote,
 .user-css-extended blockquote,
 .user-css-presentation .tooltipster-content blockquote {
-  background: var(--chi-secondary-color-2);
-  border: 2px solid var(--chi-tertiary-color-3);
-  border-radius: 20px;
+  background: var(--ColorSec-2);
+  border-left: 5px solid var(--ColorTert-3);
+  border-radius: 0px;
   box-shadow: none;
 }
 
 .user-css blockquote .author,
 .user-css-extended blockquote .author,
 .user-css-presentation .tooltipster-content blockquote .author {
-  color: var(--chi-muted-color);
-  font-family: var(--chi-font-main);
+  color: var(--MuteColor);
+  font-family: var(--HeaderFont);
   font-size: 1em;
 }
 
@@ -422,21 +390,10 @@
 /* -------------------------*/
 .user-css .panel,
 .user-css-extended .panel {
-  background: var(--chi-secondary-color-1);
-  border: 2px solid var(--chi-tertiary-color-4);
-  border-radius: 20px;
-}
-
-.user-css .organization-lifespan-dates {
-  font-size: 0.7em;
-  margin-bottom: 8px;
-  background: var(--chi-secondary-color-4);
-  border: 3px solid var(--chi-tertiary-color-7);
-  border-radius: 8px;
-}
-
-.user-css .organization-lifespan-dates h4 {
-  color: var(--chi-tertiary-color-8);
+  background: none;
+  border-left: none;
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /*--------------------------*/
@@ -446,7 +403,7 @@
 .user-css-extended hr,
 .user-css-map-sidebar hr,
 .user-css .tooltipster-content hr {
-  border-top: 2px solid var(--chi-tertiary-color-2);
+  border-top: 3px solid var(--ColorTert-2);
   opacity: 1;
 }
 
@@ -454,16 +411,16 @@
 /* ---- Images   ---- */
 /* -------------------------*/
 .user-css .artist-credits {
-  background: var(--chi-secondary-color-1);
-  color: var(--chi-tertiary-color-1);
+  background: var(--ColorSec-1);
+  color: var(--ColorTert-1);
 }
 
 /*--------------------------*/
 /* ---- Imageblocks   ---- */
 /* -------------------------*/
 .user-css .image-panel {
-  background: var(--chi-secondary-color-2);
-  border: 2px solid var(--chi-tertiary-color-4);
+  background: var(--ColorSec-2);
+  border: 3px solid var(--ColorTert-4);
   border-radius: 0px;
   box-shadow: none;
   text-align: center;
@@ -505,12 +462,12 @@
 }
 
 .user-css .carousel-caption h3 {
-  background: var(--chi-prime-color);
+  background: var(--ColorPrime);
   padding: 0px;
 }
 
 .user-css .carousel-indicators li {
-  background-color: var(--chi-tertiary-color-1);
+  background-color: var(--ColorTert-1);
 }
 
 .user-css .carousel-control {
@@ -520,13 +477,13 @@
 
 .user-css .carousel-control-next-icon {
   background-image: none;
-  background: var(--chi-tertiary-color-1);
+  background: var(--ColorTert-1);
   clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
 }
 
 .user-css .carousel-control-prev-icon {
   background-image: none;
-  background: var(--chi-tertiary-color-1);
+  background: var(--ColorTert-1);
   clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
 }
 
@@ -535,7 +492,7 @@
 /* -------------------------*/
 .user-css .spoiler-button,
 .user-css-extended .spoiler-button {
-  border-top: 2px solid var(--chi-tertiary-color-3);
+  border-top: 5px solid var(--ColorTert-3);
   border-left: none;
 }
 
@@ -549,9 +506,9 @@
 
 .user-css .spoiler-content,
 .user-css-extended .spoiler-content {
-  border-top: 2px solid var(--chi-tertiary-color-3);
-  color: var(--chi-body-text-color);
-  background: var(--chi-secondary-color-2);
+  border-top: 5px solid var(--ColorTert-3);
+  color: var(--BodyColor);
+  background: var(--ColorSec-2);
   border-radius: 0px;
 }
 
@@ -567,9 +524,9 @@
 /* -------------------------*/
 .user-css .aloud,
 .user-css-presentation .tooltipster-content .aloud {
-  background: var(--chi-secondary-color-1);
-  color: var(--chi-tertiary-color-1);
-  border: 2px solid var(--chi-tertiary-color-4);
+  background: var(--ColorSec-1);
+  color: var(--ColorTert-1);
+  border: 3px solid var(--ColorTert-4);
   border-radius: 0px;
 }
 
@@ -579,8 +536,8 @@
 .user-css .article-panel,
 .user-css-extended .article-panel,
 .user-css .map-box {
-  background: var(--chi-secondary-color-1);
-  border: 2px solid var(--chi-tertiary-color-2);
+  background: var(--ColorSec-1);
+  border: 3px solid var(--ColorTert-2);
   border-radius: 0px;
   box-shadow: none;
   transition: all 0.3s;
@@ -589,7 +546,7 @@
 .user-css .article-panel:hover,
 .user-css-extended .article-panel:hover,
 .user-css .map-box:hover {
-  border-color: var(--chi-tertiary-color-4);
+  border-color: var(--ColorTert-4);
 }
 
 .user-css .article-panel .article-link:hover {
@@ -598,80 +555,42 @@
 }
 
 .user-css .article-panel .heading {
-  color: var(--chi-tertiary-color-1);
+  color: var(--ColorTert-1);
   font-size: 1.3em;
 }
 
 .user-css .article-panel .subheading,
 .user-css .article-panel .date {
-  color: var(--chi-muted-color);
+  color: var(--MuteColor);
 }
 
 /*--------------------------*/
 /* ---- Homepage   ---- */
 /* -------------------------*/
 .user-css .world-author {
-  font-family: var(--chi-font-body);
+  font-family: var(--BodyFont);
   font-size: 1em;
   margin-bottom: 10px;
-}
-
-.user-css .world-share-rss-feed-link {
-  display: none;
-  visibility: hidden;
-}
-
-.user-css .world-subtitle {
-  font-family: var(--chi-font-main);
-  color: var(--chi-tertiary-color-4);
-  margin: 15px;
-}
-
-.user-css .homepage-card {
-  background-color: var(--chi-secondary-color-1);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 700px;
-  margin: auto;
-}
-
-.user-css .homepage-header {
-  background-color: var(--chi-secondary-color-3);
-  color: var(--chi-prime-color);
-  padding: 10px 20px;
-  font-family: var(--chi-font-main);
-  font-size: 1.5em;
-  text-align: center;
-  font-weight: bold;
-}
-
-.user-css .homepage-section {
-  padding: 25px;
-  background-color: var(--chi-secondary-color-1);
-  color: var(--chi-body-text-color);
-  font-size: 19px;
-  line-height: 1.8;
 }
 
 /*--------------------------*/
 /* ---- Bookcovers   ---- */
 /* -------------------------*/
 .user-css .bookcover {
-  border: 2px solid var(--chi-tertiary-color-4);
-  background: var(--chi-secondary-color-2);
-  border-radius: 20px;
+  border: 3px solid var(--ColorTert-4);
+  background: var(--ColorSec-2);
+  border-radius: 0px;
   overflow: hidden;
   transition: all 0.3s;
 }
 
 .user-css .bookcover:hover {
-  background: var(--chi-secondary-color-1);
-  border: 2px solid var(--chi-tertiary-color-2);
+  background: var(--ColorSec-1);
+  border: 3px solid var(--ColorTert-2);
 }
 
 .user-css .bookcover a:hover .excerpt {
-  color: var(--chi-body-text-color);
+  color: var(--BodyColor);
   transition: all 0.3s;
 }
 
@@ -694,39 +613,39 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--chi-secondary-color-3);
-  border-top: 2px solid var(--chi-tertiary-color-4);
+  background: var(--ColorSec-1);
+  border-top: 3px solid var(--ColorTert-4);
   text-align: center;
   transition: all 0.3s;
 }
 
 .user-css .world-bookcase .bookcover a:hover .booktitle,
 .user-css .bookcover a:hover .booktitle {
-  color: var(--chi-secondary-color-3);
-  background: var(--chi-tertiary-color-2);
-  border-top: 2px solid var(--chi-tertiary-color-2);
+  color: var(--ColorSec-1);
+  background: var(--ColorTert-2);
+  border-top: 3px solid var(--ColorTert-2);
 }
 
 /*--------------------------*/
 /* ---- Table of Contents   ---- */
 /* -------------------------*/
 .user-css .toc-article-link {
-  color: var(--chi-tertiary-color-2);
+  color: var(--ColorTert-2);
 }
 
 .user-css .article-title-icon {
-  color: var(--chi-tertiary-color-1);
-  margin-right: 2px;
+  color: var(--ColorTert-1);
+  margin-right: 5px;
   font-size: 0.8em;
 }
 
 .user-css .world-category-link {
-  color: var(--chi-tertiary-color-1);
+  color: var(--ColorTert-1);
 }
 
 .user-css .category-title-icon {
-  color: var(--chi-tertiary-color-2);
-  margin-right: 2px;
+  color: var(--ColorTert-2);
+  margin-right: 5px;
 }
 
 .user-css .fa-external-link {
@@ -749,7 +668,7 @@
 }
 
 .user-css .map-box small {
-  font-family: var(--chi-font-body);
+  font-family: var(--BodyFont);
   font-size: 1em;
 }
 
@@ -758,30 +677,70 @@
 /* -------------------------*/
 .user-css.page-followers .subheading {
   font-size: 1em;
-  font-family: var(--chi-font-body);
+  font-family: var(--BodyFont);
 }
 
 .user-css .follower-box {
-  background: var(--chi-secondary-color-2);
+  background: var(--ColorSec-2);
   border-radius: 0px;
 }
 
 .user-css .follower-box img {
-  border: 2px solid var(--chi-tertiary-color-4);
+  border: 3px solid var(--ColorTert-4);
   max-height: 50px;
   max-width: 50px;
 }
 
 .user-css .follower-box small {
-  color: var(--chi-tertiary-color-2);
+  color: var(--ColorTert-2);
 }
 
 /*--------------------------*/
 /* ---- Top   ---- */
 /* -------------------------*/
 .user-css .backtoworld a,
-.user-css .nav-strip a,
+.user-css .nav-strip a {
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  left: -13px;
+  top: -39px;
+  color: var(--ColorSec-1);
+  background: var(--ColorTert-2);
+  border: none;
+  border-radius: 0px;
+  font-family: var(--HeaderFont);
+  box-shadow: none;
+  transition: all 0.3s;
+  padding-top: 9px;
+}
+
+.user-css div .backtoworld a:hover,
+.user-css .nav-strip a:hover {
+  font-style: normal;
+  color: var(--ColorSec-1);
+  background: var(--ColorTert-1);
+  padding-left: 25px;
+}
+
+/*--------------------------*/
+/* ---- Timeline Top   ---- */
+/* -------------------------*/
 .user-css .nav-strip {
+  background: none;
+  box-shadow: none;
+  margin-top: -43px;
+}
+
+.user-css .nav-strip a {
+  margin-left: -10px;
+  font-size: 1.2em;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+.user-css .nav-strip .fas {
   display: none;
 }
 
@@ -790,44 +749,36 @@
 /* -------------------------*/
 .user-css-presentation #backtotop {
   bottom: 20%;
-  width: 50px;
-  height: 50px;
 }
 
 .user-css-presentation .backtotop-button {
-  width: 100%;
-  height: 100%;
-  background: url(https://www.worldanvil.com/uploads/images/e9a966d74890adc11ba820185f709860.svg)
-    no-repeat center center;
-  background-size: cover;
-  border: none;
+  top: 10px;
+  color: var(--ColorSec-1);
+  background: var(--ColorTert-2);
+  border: 3px solid var(--ColorTert-4);
+  border-right: 0px;
+  padding: 10px 15px;
   transition: all 0.3s;
-  color: transparent;
 }
 
 .user-css-presentation .backtotop-button:hover {
+  color: var(--ColorSec-1);
+  background: var(--ColorTert-1);
   padding-right: 25px;
 }
 
 /*--------------------------*/
 /* ---- Search Form   ---- */
 /* -------------------------*/
-.user-css .search-form {
-  left: 8px;
-  position: fixed;
-  top: 6px;
-  z-index: 2;
-}
-
 .user-css .search-form .typeahead-input,
 .user-css .form-control,
 .user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap,
 .map-context-user-css .search-form .typeahead-input {
-  color: var(--chi-body-text-color) !important;
-  background: var(--chi-secondary-color-2);
-  border: 2px solid var(--chi-tertiary-color-4);
-  border-radius: 8px;
-  color: var(--chi-secondary-color-1);
+  color: var(--BodyColor) !important;
+  background: var(--ColorSec-2);
+  border: 3px solid var(--ColorTert-4);
+  border-radius: 0px;
+  color: var(--ColorSec-1);
   width: 200px;
   box-shadow: none;
   padding: 13px 10px 12px 10px;
@@ -837,19 +788,19 @@
 .user-css .form-control::placeholder,
 .user-css .rhea-family-tree input::placeholder,
 .map-context-user-css .search-form .typeahead-input::placeholder {
-  color: var(--chi-muted-color);
+  color: var(--MuteColor);
 }
 
 .user-css .typeahead.dropdown-menu,
 .map-context-user-css .typeahead.dropdown-menu {
-  background: var(--chi-secondary-color-1);
+  background: var(--ColorSec-1);
 }
 
 .user-css .form-group .dropdown-menu,
 .map-context-user-css .form-group .dropdown-menu {
   border: none;
-  border-left: 2px solid var(--chi-tertiary-color-3);
-  border-right: 2px solid var(--chi-tertiary-color-3);
+  border-left: 3px solid var(--ColorTert-3);
+  border-right: 3px solid var(--ColorTert-3);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -857,18 +808,18 @@
 .user-css .typeahead.dropdown-menu li,
 .map-context-user-css .typeahead.dropdown-menu li {
   padding: 0;
-  background: var(--chi-secondary-color-1);
+  background: var(--ColorSec-1);
 }
 
 .user-css .typeahead.dropdown-menu li.active .dropdown-item,
 .map-context-user-css .typeahead.dropdown-menu li.active .dropdown-item {
-  background: var(--chi-prime-color);
+  background: var(--ColorPrime);
   font-weight: normal;
 }
 
 .user-css .typeahead.dropdown-menu li a,
 .map-context-user-css .typeahead.dropdown-menu li a {
-  color: var(--chi-tertiary-color-1);
+  color: var(--ColorTert-1);
 }
 
 /*--------------------------*/
@@ -876,30 +827,34 @@
 /* -------------------------*/
 .user-css .breadcrumb,
 .user-css-extended .breadcrumb {
-  font-family: var(--chi-font-body);
+  font-family: var(--BodyFont);
   font-size: 1.1em;
   font-style: normal;
 }
 
 .user-css .breadcrumb .fas,
 .user-css-extended .breadcrumb .fas {
-  color: var(--chi-tertiary-color-2);
+  color: var(--ColorTert-2);
 }
 
 /*--------------------------*/
 /* ---- Bottom   ---- */
 /* -------------------------*/
 .user-css .copyright-attribution {
-  background: var(--chi-secondary-color-3);
-  color: var(--chi-prime-color);
-  border: 3px solid var(--chi-tertiary-color-1);
-  border-radius: 8px;
+  background: var(--ColorSec-1);
+  border: 3px solid var(--ColorTert-4);
   padding: 10px;
   margin-bottom: -17px;
 }
+.user-css .cp.btn-primary {
+  padding-top: 7px;
+}
 
-.user-css .article-horizontal-navigation {
-  font-family: var(--chi-font-secondary);
+.user-css .article- .btn {
+  color: var(--ColorPrime) !important;
+}
+.user-css .article- .btn:hover {
+  color: var(--ColorTert-1) !important;
 }
 
 /*--------------------------*/
@@ -911,7 +866,7 @@
 }
 
 .user-css-extended .nav-tabs {
-  background: var(--chi-secondary-color-3);
+  background: var(--ColorSec-2);
   margin-right: -25px;
   margin-left: -25px;
   left: 0;
@@ -923,9 +878,9 @@
 }
 
 .user-css-extended .nav-tabs li.nav-item a.nav-link {
-  font-family: var(--chi-font-title);
-  color: var(--chi-secondary-color-1);
-  background: var(--chi-tertiary-color-2);
+  font-family: var(--BodyColor);
+  color: var(--ColorSec-1);
+  background: var(--ColorTert-2);
   border-right: none;
   margin-bottom: 0px;
   padding: 0px 15px;
@@ -935,7 +890,7 @@
 .user-css-extended .nav-tabs .active,
 .user-css-extended .nav-tabs .active:hover,
 .user-css-extended .nav-tabs li a:hover {
-  background: var(--chi-tertiary-color-1) !important;
+  background: var(--ColorTert-1) !important;
   font-style: normal;
 }
 
@@ -943,20 +898,11 @@
   padding-bottom: 15px;
 }
 
-.user-css-extended .article-extended-tabs {
-  border: 3px solid var(--chi-tertiary-color-2);
-  border-radius: 15px;
-}
-
-.user-css-extended .metadata-label {
-  font-family: var(--chi-font-secondary);
-}
-
 /*--------------------------*/
 /* ---- Secrets and notes   ---- */
 /* -------------------------*/
 .user-css-extended .panel-default {
-  font-family: var(--chi-font-body);
+  font-family: var(--BodyFont);
 }
 
 .user-css-extended .panel-default .panel-heading {
@@ -975,9 +921,9 @@
 .user-css .label-default,
 .user-css-extended .label-default,
 .user-css .timeline li .label-default {
-  color: var(--chi-secondary-color-1) !important;
+  color: var(--ColorSec-1) !important;
   font-weight: bold;
-  background: var(--chi-tertiary-color-1);
+  background: var(--ColorTert-1);
   border: none;
   border-radius: 0px;
   transition: all 0.3s;
@@ -987,41 +933,42 @@
 .user-css .label-default:hover,
 .user-css-extended .label-default:hover,
 .user-css .timeline li .label-default:hover {
-  background: var(--chi-tertiary-color-2);
+  background: var(--ColorTert-2);
 }
 
 /*--------------------------*/
 /* ---- Comments Form   ---- */
 /* -------------------------*/
 .user-css-extended .comment-form textarea {
-  color: var(--chi-body-text-color);
-  font-family: var(--chi-font-body);
+  color: var(--BodyColor);
+  font-family: var(--BodyFont);
   font-size: 1em;
-  background: var(--chi-secondary-color-2);
-  border: none;
-  border-radius: 20px;
+  background: var(--ColorSec-2);
+  border: 3px solid var(--ColorTert-4);
+  border-radius: 0px;
   transition: all 0.3s;
 }
 
 .user-css-extended .form-control:focus {
-  border: 2px solid var(--chi-tertiary-color-2);
+  border: 3px solid var(--ColorTert-2);
   box-shadow: none;
 }
 
 .user-css-extended .comment-form .btn:hover {
-  border-left: 2px solid var(--chi-tertiary-color-3);
+  border-left: 5px solid var(--ColorTert-3);
 }
 
 .user-css-extended .comment-form .pull-right {
-  font-family: var(--chi-font-body);
+  font-family: var(--BodyFont);
 }
 
 /*--------------------------*/
 /* ---- Comments Box   ---- */
 /* -------------------------*/
 .user-css-extended .comment-box {
-  background: var(--chi-secondary-color-1);
-  border-radius: 20px;
+  background: var(--ColorSec-1);
+  border: 3px solid var(--ColorTert-4);
+  border-radius: 0px;
 }
 
 .user-css-extended .comment-box-content p {
@@ -1029,25 +976,14 @@
 }
 
 .user-css-extended .comment-box .comment-box-reply {
-  border-top: 2px solid var(--chi-tertiary-color-4);
-}
-
-.user-css-extended #comments h2,
-.user-css-extended #comments h4 {
-  border-bottom: none;
-}
-
-.user-css-extended .img-circle {
-  width: 3rem;
-  height: 3rem;
+  border-top: 3px solid var(--ColorTert-4);
 }
 
 /*--------------------------*/
 /* ---- Comments Author   ---- */
 /* -------------------------*/
-
 .user-css-extended .comment-box-author {
-  font-family: var(--chi-font-main);
+  font-family: var(--HeaderFont);
   letter-spacing: 0.05em;
   font-size: 1.2em;
   padding-top: 0px;
@@ -1055,30 +991,30 @@
 
 .user-css-extended .comment-box-author small {
   opacity: 1;
-  color: var(--chi-muted-color);
+  color: var(--MuteColor);
 }
 
 .user-css-extended .text-gold {
-  color: var(--chi-tertiary-color-1) !important;
+  color: var(--ColorTert-1) !important;
   font-size: 0.85em;
 }
 
 .user-css-extended .comment-box-avatar .img-avatar {
-  border: 2px solid var(--chi-tertiary-color-4);
+  border: 3px solid var(--ColorTert-4);
   max-width: 60px;
   max-height: 60px;
   box-shadow: none;
 }
 
 .user-css-extended .comment-box-date {
-  font-family: var(--chi-font-body);
-  color: var(--chi-muted-color);
+  font-family: var(--BodyFont);
+  color: var(--MuteColor);
   font-size: 1em;
   opacity: 1;
 }
 
 .user-css-extended .comment-box-signature {
-  border-top: 2px solid var(--chi-tertiary-color-2);
+  border-top: 3px solid var(--ColorTert-2);
 }
 
 .user-css-extended .comment-box-date,
@@ -1090,24 +1026,24 @@
 /* ---- Maps Fullscreen ---- */
 /* -------------------------*/
 .map-context-user-css {
-  background: var(--chi-secondary-color-1);
+  background: var(--ColorSec-1);
 }
 
 .user-css-map-sidebar {
-  background: var(--chi-prime-color);
-  border-right: 2px solid var(--chi-tertiary-color-4);
+  background: var(--ColorPrime);
+  border-right: 5px solid var(--ColorTert-4);
 }
 
 .user-css-map-sidebar #sidebar-extras .card {
-  font-family: var(--chi-font-body);
+  font-family: var(--BodyFont);
   background: none;
   border: none;
 }
 
 .map-context-user-css #sidebarCollapse {
-  color: var(--chi-secondary-color-2);
-  background: var(--chi-tertiary-color-2);
-  border-right: 2px solid var(--chi-tertiary-color-3);
+  color: var(--ColorSec-2);
+  background: var(--ColorTert-2);
+  border-right: 5px solid var(--ColorTert-3);
   border-radius: 0px;
   border-left-width: 0px;
   border-top-left-radius: 0px;
@@ -1121,41 +1057,41 @@
 }
 
 .map-context-user-css .nav-strip {
-  color: var(--chi-body-text-color);
-  background: var(--chi-tertiary-color-2);
+  color: var(--BodyColor);
+  background: var(--ColorTert-2);
   border: none;
   border-radius: 0px;
-  font-family: var(--chi-font-main);
+  font-family: var(--HeaderFont);
   box-shadow: none;
   transition: all 0.3s;
 }
 
 .map-context-user-css .nav-strip:hover {
-  color: var(--chi-body-text-color);
-  background: var(--chi-tertiary-color-1);
+  color: var(--BodyColor);
+  background: var(--ColorTert-1);
 }
 
 .map-context-user-css .nav-strip .text-white {
-  color: var(--chi-body-text-color) !important;
+  color: var(--BodyColor) !important;
 }
 
 .map-context-user-css .nav-strip:hover .text-white {
-  color: var(--chi-body-text-color) !important;
+  color: var(--BodyColor) !important;
 }
 
 /*--------------------------*/
 /* ---- Maps Logo/sage nav ---- */
 /* -------------------------*/
 .presentation-interface-map #logo {
-  color: var(--chi-font-body);
-  font-family: var(--chi-font-main);
+  color: var(--BodyFont);
+  font-family: var(--HeaderFont);
   font-size: 1.2em;
 }
 
 .presentation-interface-map #logo:before {
-  background: var(--chi-tertiary-color-1);
+  background: var(--ColorTert-1);
   border: none;
-  border-bottom: 2px solid var(--chi-tertiary-color-3);
+  border-bottom: 5px solid var(--ColorTert-3);
   box-shadow: none;
   -webkit-transform: none;
   transform: none;
@@ -1173,7 +1109,7 @@
 .user-css .leaflet-control-layers-base span,
 .map-context-user-css .leaflet-control-layers,
 .map-context-user-css .leaflet-control-layers-base span {
-  border-color: var(--chi-tertiary-color-2);
+  border-color: var(--ColorTert-2);
 }
 
 .map-context-user-css .leaflet-control-zoom-in,
@@ -1186,8 +1122,8 @@
 
 .user-css .leaflet-bar a:first-child,
 .map-context-user-css .leaflet-bar a:first-child {
-  color: var(--chi-secondary-color-1);
-  background: var(--chi-tertiary-color-1);
+  color: var(--ColorSec-1);
+  background: var(--ColorTert-1);
   border-radius: 0px;
   border-bottom-left-radius: 0px !important;
   border-bottom-right-radius: 0px !important;
@@ -1196,8 +1132,8 @@
 
 .user-css .leaflet-bar a:last-child,
 .map-context-user-css .leaflet-bar a:last-child {
-  color: var(--chi-secondary-color-1);
-  background: var(--chi-tertiary-color-2);
+  color: var(--ColorSec-1);
+  background: var(--ColorTert-2);
   border-radius: 0px;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
@@ -1206,7 +1142,7 @@
 
 .map-context-user-css .leaflet-bar a:hover,
 .user-css .leaflet-bar a:hover {
-  background: var(--chi-secondary-color-1);
+  background: var(--ColorSec-1);
   border: none;
 }
 
@@ -1221,21 +1157,21 @@
 /* -------------------------*/
 .user-css .leaflet-control-layers,
 .map-context-user-css .leaflet-control-layers {
-  background: var(--chi-tertiary-color-2);
+  background: var(--ColorTert-2);
   border: none;
-  border-right: 2px solid var(--chi-tertiary-color-3);
+  border-right: 5px solid var(--ColorTert-3);
   border-radius: 0px;
 }
 
 .user-css .leaflet-control-layers-expanded,
 .map-context-user-css .leaflet-control-layers-expanded {
-  background: var(--chi-tertiary-color-2);
-  font-family: var(--chi-font-body);
+  background: var(--ColorTert-2);
+  font-family: var(--BodyFont);
 }
 
 .map-context-user-css .leaflet-control-layers-base span {
   font-size: 1.5em;
-  color: var(--chi-secondary-color-1);
+  color: var(--ColorSec-1);
 }
 
 /*--------------------------*/
@@ -1243,10 +1179,10 @@
 /* -------------------------*/
 .user-css .legend,
 .map-context-user-css .legend {
-  font-family: var(--chi-font-body);
-  color: var(--chi-body-text-color);
-  background: var(--chi-secondary-color-2);
-  border: 2px solid var(--chi-tertiary-color-4);
+  font-family: var(--BodyFont);
+  color: var(--BodyColor);
+  background: var(--ColorSec-2);
+  border: 3px solid var(--ColorTert-4);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1272,9 +1208,9 @@
 .user-css .leaflet-popup-tip,
 .map-context-user-css .leaflet-popup-content-wrapper,
 .map-context-user-css .leaflet-popup-tip {
-  color: var(--chi-body-text-color);
-  font-family: var(--chi-font-body);
-  background: var(--chi-secondary-color-1);
+  color: var(--BodyColor);
+  font-family: var(--BodyFont);
+  background: var(--ColorSec-1);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1286,15 +1222,15 @@
 
 .user-css .leaflet-popup-content .header-title,
 .map-context-user-css .leaflet-popup-content-wrapper h5 {
-  font-family: var(--chi-font-main);
-  color: var(--chi-tertiary-color-1);
+  font-family: var(--HeaderFont);
+  color: var(--ColorTert-1);
   font-size: 1.5em;
 }
 
 .user-css .leaflet-popup-close-button,
 .map-context-user-css .leaflet-popup-close-button {
-  color: var(--chi-tertiary-color-1) !important;
-  margin: 2px;
+  color: var(--ColorTert-1) !important;
+  margin: 5px;
   font-size: 1.2em;
 }
 
@@ -1302,9 +1238,9 @@
 /* ---- Inline Maps ---- */
 /* -------------------------*/
 .user-css-presentation .leaflet-grab {
-  border: 2px solid var(--chi-tertiary-color-4);
+  border: 3px solid var(--ColorTert-4);
   border-radius: 0px;
-  background: var(--chi-secondary-color-2);
+  background: var(--ColorSec-2);
   box-shadow: none;
 }
 
@@ -1312,9 +1248,9 @@
 /* ---- Maps Navigation ---- */
 /* -------------------------*/
 .user-css .map-included-navigation {
-  background: var(--chi-secondary-color-1);
-  border: 2px solid var(--chi-tertiary-color-4);
-  padding: 2px 2px 10px 2px;
+  background: var(--ColorSec-1);
+  border: 3px solid var(--ColorTert-4);
+  padding: 5px 5px 10px 5px;
   border-top-width: 0px;
 }
 
@@ -1323,29 +1259,257 @@
 }
 
 .user-css .map-included-navigation-title {
-  font-family: var(--chi-font-main);
-  color: var(--chi-tertiary-color-2);
+  font-family: var(--HeaderFont);
+  color: var(--ColorTert-2);
   font-size: 1.3em;
-  padding-top: 2px;
+  padding-top: 5px;
   margin-right: 10px;
 }
 
 .user-css .map-included-navigation-information .fa-info-circle {
-  color: var(--chi-tertiary-color-1);
+  color: var(--ColorTert-1);
+}
+
+/*--------------------------*/
+/* ---- Timelines ---- */
+/* -------------------------*/
+.user-css.page-timeline .subheading {
+  font-family: var(--BodyFont);
+  font-size: 1em;
+}
+
+.user-css-extended .timeline li .timeline-panel,
+.user-css .timeline li .timeline-panel {
+  background: var(--ColorSec-1);
+  border: 3px solid var(--ColorTert-4);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.user-css-extended .timeline-panel .fa,
+.user-css .timeline-panel .fa {
+  margin-top: -25px;
+  font-size: 20px;
+}
+
+.user-css-extended .timeline:before,
+.user-css .timeline:before {
+  background-color: var(--ColorTert-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Text ---- */
+/* -------------------------*/
+.user-css .tl-heading-date,
+.user-css-extended .tl-heading-date {
+  color: var(--BodyColor);
+}
+
+.user-css .timeline li .timeline-panel small,
+.user-css .timeline li .milestone-panel small,
+.user-css-extended .timeline li .timeline-panel small,
+.user-css-extended .timeline li .milestone-panel small {
+  color: var(--BodyColor);
+}
+
+.user-css .timeline li .timeline-panel h5,
+.user-css .timeline .history-title {
+  font-size: 1.5em;
+}
+
+.user-css .tl-heading-date .fa-chevron-right,
+.user-css-extended .tl-heading-date .fa-chevron-right {
+  font-size: 1.3em;
+  padding-top: 5px;
+}
+
+.user-css .timeline .history-category-name {
+  color: var(--MuteColor);
+}
+
+/*--------------------------*/
+/* ---- Timelines Pointers ---- */
+/* -------------------------*/
+.timeline li .timeline-panel:before {
+  position: absolute;
+  top: 32px;
+  right: -17px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid;
+  border-right: 0 solid;
+  border-bottom: 15px solid transparent;
+  border-right-color: inherit;
+  border-left-color: inherit;
+}
+
+.timeline li .timeline-panel:after {
+  position: absolute;
+  top: 32px;
+  right: -17px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid;
+  border-right: 0 solid;
+  border-right-color: inherit;
+  border-left-color: inherit;
+}
+
+.user-css .timeline li.timeline-entry-inverted .timeline-panel:before {
+  left: -17px;
+}
+
+.user-css .timeline li.timeline-entry-inverted .timeline-panel:after {
+  left: -17px;
+}
+
+/*--------------------------*/
+/* ---- Timelines Shield icons ---- */
+/* -------------------------*/
+.user-css-extended .timeline li .tl-circ,
+.user-css .timeline li .tl-circ {
+  background: var(--ColorPrime);
+  border-color: var(--ColorTert-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Icon Panels ---- */
+/* -------------------------*/
+.user-css .timeline .date-divider,
+.user-css-extended .timeline .date-divider {
+  margin: 2px 0;
+}
+/*--------------------------*/
+/* ---- Timelines Icon Fix ---- */
+/* -------------------------*/
+.user-css-extended .timeline .header-icon,
+.user-css .timeline .header-icon {
+  padding: 14px;
+  font-size: 15.5px;
+}
+
+/*--------------------------*/
+/* ---- Timelines Milestones ---- */
+/* -------------------------*/
+.user-css-extended .timeline .milestone,
+.user-css .timeline .milestone {
+  background: var(--ColorSec-2);
+  border: 3px solid var(--ColorTert-2);
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.user-css-extended .timeline .timeline-entry-milestone .header-icon,
+.user-css .timeline .timeline-entry-milestone .header-icon {
+  border: 3px solid var(--ColorTert-2);
+  background: var(--ColorSec-2);
+  color: var(--ColorTert-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Major ---- */
+/* -------------------------*/
+.user-css-extended .timeline .major .header-icon,
+.user-css .timeline .major .header-icon {
+  border: 3px solid var(--ColorTert-2);
+  border-color: var(--ColorTert-1);
+  background: var(--ColorSec-2);
+  color: var(--ColorTert-1);
+}
+
+.user-css-extended .timeline .major .timeline-panel,
+.user-css .timeline .major .timeline-panel {
+  border: 3px solid var(--ColorTert-2);
+  border-color: var(--ColorTert-1);
+}
+
+/*--------------------------*/
+/* ---- Timelines Importnat ---- */
+/* -------------------------*/
+.user-css-extended .timeline .important .header-icon,
+.user-css .timeline .important .header-icon {
+  border: 3px solid var(--ColorTert-4);
+  border-color: var(--ColorTert-2);
+  background: var(--ColorSec-2);
+  color: var(--ColorTert-2);
+}
+
+.user-css-extended .timeline .important .timeline-panel,
+.user-css .timeline .important .timeline-panel {
+  border: 3px solid var(--ColorTert-4);
+  border-color: var(--ColorTert-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Minor ---- */
+/* -------------------------*/
+.user-css-extended .timeline .minor .header-icon,
+.user-css .timeline .minor .header-icon {
+  border: 3px solid var(--ColorTert-4);
+  background: var(--ColorSec-2);
+  color: var(--ColorTert-1);
+}
+
+.user-css-extended .timeline .minor .timeline-panel,
+.user-css .timeline .minor .timeline-panel {
+  background: var(--ColorSec-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Trival ---- */
+/* -------------------------*/
+.user-css-extended .timeline .trivial .header-icon,
+.user-css .timeline .trivial .header-icon {
+  border: 3px solid var(--ColorTert-4);
+  background: var(--ColorSec-2);
+  color: var(--BodyColor);
+}
+
+.user-css-extended .timeline .trivial .timeline-panel,
+.user-css .timeline .trivial .timeline-panel {
+  background: var(--ColorSec-2);
+  border-color: var(--ColorSec-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines No Importance ---- */
+/* -------------------------*/
+.user-css-extended .timeline .no-importance .header-icon,
+.user-css .timeline .no-importance .header-icon {
+  border: 3px solid var(--ColorTert-4);
+  background: var(--ColorSec-2);
+  color: var(--ColorTert-4);
+}
+
+.user-css-extended .timeline .no-importance .timeline-panel,
+.user-css .timeline .no-importance .timeline-panel {
+  background: var(--ColorSec-2);
+  border-color: var(--ColorSec-2);
+}
+
+/*--------------------------*/
+/* ---- Timelines Orphans ---- */
+/* -------------------------*/
+.user-css .orphan-era .alert,
+.user-css-extended .orphan-era .alert {
+  background: var(--ColorSec-2);
+  border: 3px solid var(--ColorTert-4);
+  border-radius: 0px;
+  box-shadow: none;
 }
 
 /*--------------------------*/
 /* ---- Diplomacy Webs ---- */
 /* -------------------------*/
 .user-css .clotho-box {
-  background: var(--chi-secondary-color-2);
-  border: 2px solid var(--chi-tertiary-color-2);
+  background: var(--ColorSec-2);
+  border: 3px solid var(--ColorTert-2);
   border-radius: 0px;
   box-shadow: none;
 }
 
 .user-css .clotho-box .clotho-node {
-  border: 2px solid var(--chi-tertiary-color-2);
+  border: 3px solid var(--ColorTert-2);
   box-shadow: none;
 }
 
@@ -1355,27 +1519,27 @@
 }
 
 .user-css .clotho-box .clotho-node .clotho-text-frame {
-  background: var(--chi-secondary-color-1);
+  background: var(--ColorSec-1);
 }
 
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label {
   border: none;
-  margin-left: -2px;
+  margin-left: -3px;
 }
 
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label a {
   font-size: 1em;
-  font-family: var(--chi-font-body);
-  color: var(--chi-body-text-color);
+  font-family: var(--BodyFont);
+  color: var(--BodyColor);
 }
 
 /*--------------------------*/
 /* ---- Diplomacy Webs Hover ---- */
 /* -------------------------*/
 .user-css [class*=clotho-title-] {
-  background: var(--chi-secondary-color-2);
+  background: var(--ColorSec-2);
   box-shadow: none;
-  border-top: 2px solid var(--chi-tertiary-color-4);
+  border-top: 3px solid var(--ColorTert-4);
 }
 
 .user-css .clotho-title-arrows,
@@ -1385,12 +1549,12 @@
 }
 
 .user-css [class*=clotho-title-item] {
-  border: 2px solid var(--chi-tertiary-color-2);
+  border: 3px solid var(--ColorTert-2);
   padding: 0px !important;
 }
 
 .user-css .clotho-box div:nth-of-type(2) .clotho-title-arrows .clotho-rel-text {
-  color: var(--chi-tertiary-color-2);
+  color: var(--ColorTert-2);
   top: -120px;
 }
 
@@ -1403,9 +1567,9 @@
 /* ---- Org Relaitonships ---- */
 /* -------------------------*/
 .user-css .relation .relationScore {
-  background: var(--chi-secondary-color-2);
-  border: 2px solid var(--chi-tertiary-color-3);
-  border-width: 2px;
+  background: var(--ColorSec-2);
+  border: 5px solid var(--ColorTert-3);
+  border-width: 3px;
   border-radius: 0px;
 }
 
@@ -1414,51 +1578,51 @@
 /* -------------------------*/
 .user-css-extended .orgtree li a,
 .user-css-extended .orgtree li a:hover + ul li a {
-  font-family: var(--chi-font-body);
+  font-family: var(--BodyFont);
   font-weight: bold;
   font-size: 1em;
-  color: var(--chi-prime-color);
-  background: var(--chi-tertiary-color-1);
+  color: var(--ColorPrime);
+  background: var(--ColorTert-1);
   border: none;
   border-radius: 0px;
   transition: all 0.3s;
 }
 
 .user-css-extended .orgtree li a:hover {
-  background: var(--chi-tertiary-color-2);
+  background: var(--ColorTert-2);
   transform: scale(1.05);
 }
 
 .user-css-extended .orgtree li a:hover + ul li a {
-  background: var(--chi-prime-color);
-  color: var(--chi-tertiary-color-1);
-  outline: 2px solid var(--chi-tertiary-color-3);
-  outline-width: 2px;
-  outline-offset: -2px;
+  background: var(--ColorPrime);
+  color: var(--ColorTert-1);
+  outline: 5px solid var(--ColorTert-3);
+  outline-width: 3px;
+  outline-offset: -3px;
 }
 
 /*--------------------------*/
 /* ---- Org Tree Lines ---- */
 /* -------------------------*/
 .user-css-extended .orgtree ul ul::before {
-  border-left: 2px solid var(--chi-tertiary-color-2);
+  border-left: 3px solid var(--ColorTert-2);
 }
 
 .user-css-extended .orgtree li::before {
-  border-top: 2px solid var(--chi-tertiary-color-2);
+  border-top: 3px solid var(--ColorTert-2);
 }
 
 .user-css-extended .orgtree li::after {
-  border-top: 2px solid var(--chi-tertiary-color-2);
-  border-left: 2px solid var(--chi-tertiary-color-2);
+  border-top: 3px solid var(--ColorTert-2);
+  border-left: 3px solid var(--ColorTert-2);
 }
 
 .user-css-extended .orgtree li:last-child::before {
-  border-right: 2px solid var(--chi-tertiary-color-2);
+  border-right: 3px solid var(--ColorTert-2);
 }
 
 .user-css-extended .orgtree li:first-child::after {
-  border-left: 2px solid var(--chi-tertiary-color-2);
+  border-left: 3px solid var(--ColorTert-2);
 }
 
 .user-css-extended .orgtree li:first-child::before,
@@ -1469,27 +1633,27 @@
 .user-css-extended .orgtree li a:hover + ul::before,
 .user-css-extended .orgtree li a:hover + ul li::before,
 .user-css-extended .orgtree li a:hover + ul li::after {
-  border-color: var(--chi-tertiary-color-2);
+  border-color: var(--ColorTert-2);
 }
 
 /*--------------------------*/
 /* ---- Family Trees ---- */
 /* -------------------------*/
 .user-css .rhea-family-tree {
-  background: var(--chi-secondary-color-2);
-  border: 2px solid var(--chi-tertiary-color-3);
+  background: var(--ColorSec-2);
+  border: 5px solid var(--ColorTert-3);
   border-radius: 0px;
   box-shadow: none;
 }
 
 .user-css .rhea-family-tree .loader {
-  background-color: var(--chi-tertiary-color-1);
+  background-color: var(--ColorTert-1);
   border: none;
 }
 
 .user-css .rhea-loader-text {
-  font-family: var(--chi-font-main);
-  color: var(--chi-prime-color);
+  font-family: var(--HeaderFont);
+  color: var(--ColorPrime);
   text-shadow: none;
 }
 
@@ -1503,13 +1667,13 @@
 }
 
 .user-css .rhea-family-tree .rhea-character-node .character-portrait-wrapper {
-  border: 2px solid var(--chi-tertiary-color-3);
-  border-width: 2px;
+  border: 5px solid var(--ColorTert-3);
+  border-width: 3px;
   border-radius: 0px;
 }
 
 .user-css .rhea-family-tree .main-character .character-portrait-wrapper {
-  border-color: var(--chi-tertiary-color-2);
+  border-color: var(--ColorTert-2);
 }
 
 .user-css .rhea-family-tree .rhea-character-node .character-data {
@@ -1520,8 +1684,8 @@
 
 .user-css .rhea-family-tree .rhea-character-node .character-label {
   margin-top: -2px;
-  font-family: var(--chi-font-body);
-  background: var(--chi-tertiary-color-1);
+  font-family: var(--BodyFont);
+  background: var(--ColorTert-1);
   border: none;
   border-radius: 0px;
   width: 100px;
@@ -1532,8 +1696,8 @@
   .rhea-character-node
   .character-data
   .character-name {
-  font-family: var(--chi-font-body);
-  color: var(--chi-prime-color);
+  font-family: var(--BodyFont);
+  color: var(--ColorPrime);
   font-weight: bold;
 }
 
@@ -1542,12 +1706,12 @@
   .rhea-character-node
   .character-label
   .character-life {
-  color: var(--chi-prime-color);
-  margin-top: 2px;
+  color: var(--ColorPrime);
+  margin-top: 5px;
 }
 
 .user-css .rhea-family-tree .rhea-character-node:hover .character-label {
-  background: var(--chi-tertiary-color-2);
+  background: var(--ColorTert-2);
 }
 
 .user-css .rhea-family-tree .character-relationship {
@@ -1556,14 +1720,14 @@
 }
 
 .user-css .rhea-family-tree .rhea-character-node:hover .character-relationship {
-  color: var(--chi-prime-color);
-  background: var(--chi-tertiary-color-1);
+  color: var(--ColorPrime);
+  background: var(--ColorTert-1);
   top: -1px;
   opacity: 1;
 }
 
 .user-css .rhea-family-tree svg path {
-  stroke: var(--chi-tertiary-color-2);
+  stroke: var(--ColorTert-2);
 }
 .user-css .rhea-family-tree .rhea-character-node .character-portrait img {
   border: none;
@@ -1573,17 +1737,17 @@
 /* ---- Family Tree Search ---- */
 /* -------------------------*/
 .user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap {
-  border: 2px solid var(--chi-tertiary-color-3);
-  border-width: 2px;
-  padding: 2px 15px;
+  border: 5px solid var(--ColorTert-3);
+  border-width: 3px;
+  padding: 5px 15px;
 }
 
 .user-css .rhea-family-tree input::placeholder {
-  color: var(--chi-muted-color);
+  color: var(--MuteColor);
 }
 
 .user-css .rhea-search-clear .fal {
-  color: var(--chi-muted-color);
+  color: var(--MuteColor);
 }
 
 .user-css .rhea-ft-zoom-controls {
@@ -1602,12 +1766,12 @@
   .cover
   div
   .w-o-b.btn.btn-xs {
-  background: var(--chi-prime-color) !important;
-  color: var(--chi-body-text-color) !important;
+  background: var(--ColorPrime) !important;
+  color: var(--BodyColor) !important;
 }
 
 .user-css.bow {
-  background: var(--chi-prime-color) !important;
+  background: var(--ColorPrime) !important;
 }
 
 .user-css.bow p,
@@ -1615,11 +1779,11 @@
 .user-css.bow .article-content h2,
 .user-css.bow .article-content h3,
 .user-css.bow .article-content h4 {
-  color: var(--chi-body-text-color) !important;
+  color: var(--BodyColor) !important;
 }
 
 .user-css.bow .article-content h1 {
-  color: var(--chi-tertiary-color-1) !important;
+  color: var(--ColorTert-1) !important;
 }
 
 .user-css-presentation
@@ -1627,12 +1791,12 @@
   .cover
   div
   .b-o-w.btn.btn-xs {
-  background: var(--chi-body-text-color) !important;
-  color: var(--chi-prime-color) !important;
+  background: var(--BodyColor) !important;
+  color: var(--ColorPrime) !important;
 }
 
 .user-css.wob {
-  background: var(--chi-body-text-color) !important;
+  background: var(--BodyColor) !important;
 }
 
 .user-css.wob p,
@@ -1640,11 +1804,11 @@
 .user-css.wob .article-content h2,
 .user-css.wob .article-content h3,
 .user-css.wob .article-content h4 {
-  color: var(--chi-prime-color) !important;
+  color: var(--ColorPrime) !important;
 }
 
 .user-css.wob .article-content h1 {
-  color: var(--chi-prime-color) !important;
+  color: var(--ColorPrime) !important;
 }
 
 /*--------------------------*/
@@ -1656,33 +1820,26 @@
 
 ::-webkit-scrollbar-track {
   border-radius: 0px;
-  background: var(--chi-secondary-color-2);
+  background: var(--ColorSec-2);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--chi-tertiary-color-2);
+  background: var(--ColorTert-2);
   width: 9px;
   border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--chi-tertiary-color-1);
+  background: var(--ColorTert-1);
 }
 
 /*--------------------------*/
 /* ---- White Label ---- */
 /* -------------------------*/
 .user-css-whitelabel {
-  left: -160px;
-  background: var(--chi-prime-color);
-  border-radius: 0px 50px 50px 0px;
-  color: var(--chi-body-text-color) !important;
-  padding: 10px 30px 10px 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-.user-css-whitelabel:hover {
-  left: 0px;
+  background: var(--ColorPrime);
+  border-right: 5px solid var(--ColorTert-3);
+  color: var(--BodyColor) !important;
 }
 
 /*--------------------------*/
@@ -1724,17 +1881,15 @@
 /* ---- Editor Bar ---- */
 /* -------------------------*/
 #world-editor-bar {
-  background: var(--chi-prime-color);
   width: 120px;
   top: auto;
   bottom: 200px;
-  left: -115px;
+  left: -100px;
   border-bottom: none;
   box-shadow: none;
   opacity: 0.6;
   padding: 15px 15px 0px 15px;
   transition: all 0.3s;
-  border-radius: 8px;
 }
 
 #world-editor-bar:hover {
@@ -1774,8 +1929,8 @@
 }
 
 #world-editor-bar .btn {
-  background: var(--chi-tertiary-color-1);
-  border: 3px solid var(--chi-tertiary-color-5);
+  background: var(--ColorTert-1);
+  border: none;
   overflow: hidden;
 }
 
@@ -1784,442 +1939,124 @@
 }
 
 /*--------------------------*/
-/* ---- Edits ---- */
-/* -------------------------*/
+/* ---- World Navigation ---- */
+/*--------------------------*/
 .user-css-presentation .world-navigation-palette-trigger,
-.user-css #world-category-content,
 .user-css .world-content .world-maps,
-.user-css .world-article-categories-link,
-.user-css .discussion-boards-world-link,
-.user-css .article-competition-entries,
-.user-css.page-world-homepage #world-menu,
-.user-css.page-world-homepage #world-timelines,
-.user-css .world-authors,
-.user-css .world-recent-articles {
+.user-css #world-category-content,
+.user-css .world-content .world-timelines,
+.user-css .world-authors {
   display: none;
 }
 
-.user-css .related-historical-entries,
-.user-css .organization-motto,
-.user-css .organization-flag,
+/*--------------------------*/
+/* ---- Links and Counters ---- */
+/*--------------------------*/
+.user-css .world-meta-categories-link,
+.user-css .discussion-boards-world-link,
+.user-css a.world-share-rss-feed-link,
+.user-css .followers-counter {
+  display: none;
+}
+
+/*--------------------------*/
+/* ---- Character Elements ---- */
+/*--------------------------*/
+.user-css .character-relationship-panel,
+.user-css .character-relationships-header,
+.user-css .character-children,
+.user-css .character-relationships,
 .user-css .character-article-portrait {
   display: none;
 }
 
-.user-css.core-category .category-contents .category-header b,
-.user-css.core-category .category-contents .category-header strong,
-.user-css.core-category .category-title-icon {
-  display: none;
-}
-
-.user-css.sub-category .category-contents .category-header,
-.user-css.sub-category .category-articles h2,
-.user-css.sub-category .copyright-attribution,
-.user-css.sub-category #cover {
-  display: none;
-}
-
-.user-css.article .article-title-icon {
-  display: none;
-}
-
-.user-css.article .panel {
-  background: none;
-  border: none;
-  box-shadow: none;
-}
-
-.user-css .article-introbox.charcard,
-.user-css .introbox-header.charcard {
-  width: 80%;
-}
-
-.user-css .article-introbox.key,
-.user-css .introbox-header.key {
-  width: 45%;
-}
-
-/*--------------------------*/
-/* ---- Navbar ---- */
+/*-------------------------*/
+/* ----Infobox   ---- */
 /* -------------------------*/
-.user-css.page-world-homepage,
-.user-css.page-article-main,
-.user-css.page-category {
-  margin-top: 80px !important;
-}
-
-.user-css .chi-navbar {
-  background: var(--chi-secondary-color-1);
-  color: var(--chi-body-text-color);
-  border-bottom: 2px solid var(--chi-tertiary-color-1);
-  width: 100%;
-  height: 50px;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 1;
-  text-align: center;
-  line-height: 0;
-  padding: 19px;
-}
-
-.user-css .chi-navbar-title {
-  text-align: center;
-  padding-top: 6px;
-  font-size: 1.2em;
-}
-
-.user-css .chi-navbar-title a {
-  color: var(--chi-muted-color);
-  font-family: var(--chi-font-title);
-  text-decoration: none;
-}
-
-.user-css .chi-navbar-title a:hover {
-  font-style: normal;
-  color: var(--chi-tertiary-color-1);
-  border-bottom: 2px solid var(--chi-tertiary-color-1);
-}
-
-.user-css .chi-navbar-title .text-abbreviation {
-  border-bottom: none;
-}
-
-/*--------------------------*/
-/* ---- Category Portals ---- */
-/*--------------------------*/
-.user-css .category-portal-grid,
-.user-css .homepage-portal-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  margin-top: -28px;
-}
-
-.user-css .homepage-portal-grid {
-  margin: 10px auto;
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  grid-gap: 1rem;
-  padding: 10px;
-  padding-bottom: 0px;
-  justify-content: center;
-  margin-top: -20px;
-}
-
-.user-css .category-portal-section,
-.user-css .homepage-portal-section {
-  background: var(--chi-secondary-color-1);
-  border-radius: 0%;
+.aoh-profilebox {
+  background: var(--ColorPrime);
+  color: var(--BodyColor);
+  border: 7px double var(--ColorTert-2);
+  border-radius: 20px;
+  padding: 0;
+  margin-bottom: 1em;
   overflow: hidden;
-  border-radius: 30px;
+  transform: translateZ(0);
 }
 
-.user-css .category-portal-section:hover,
-.user-css .homepage-portal-section:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-}
-
-.user-css .category-portal-title,
-.user-css .homepage-portal-title {
-  background-color: var(--chi-secondary-color-3);
-  color: var(--chi-prime-color);
-  padding: 10px;
-  font-size: 1.2em;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
-.user-css .category-portal-image img,
-.user-css .homepage-portal-image img {
-  width: 150px;
-  height: auto;
-}
-
-.user-css .oni {
-  background-color: #d0021b;
-}
-
-/*--------------------------*/
-/* ---- Category Portals Scaling ---- */
-/*--------------------------*/
-@media screen and (max-width: 1000px) {
-  .user-css .category-portal-grid,
-  .user-css .homepage-portal-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/*--------------------------*/
-/* ---- Articles    ---- */
-/* -------------------------*/
-.user-css .article-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.user-css .article-card {
-  background-color: var(--chi-secondary-color-1);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 90%;
-  margin: auto;
-}
-
-.user-css .article-header {
-  background-color: var(--chi-secondary-color-3);
-  color: var(--chi-prime-color);
-  padding: 10px 20px;
-  font-family: var(--chi-font-main);
-  font-size: 1.5em;
+.aoh-profilebox-header {
+  background: var(--ColorSec-2);
+  color: var(--ColorTert-1);
+  padding: 0.5em;
   text-align: center;
+  font-size: 1.25em;
   font-weight: bold;
+  font-family: var(--BodyFont);
+  border-bottom: 2px solid var(--ColorTert-2);
 }
 
-.user-css .article-section {
-  padding: 25px;
-  background-color: var(--chi-secondary-color-1);
-  color: var(--chi-body-text-color);
-  font-size: 19px;
-  line-height: 1.8;
+.aoh-profilebox-content b {
+  color: var(--BodyColor);
 }
 
-/*--------------------------*/
-/* ---- Articles Scaling    ---- */
-/* -------------------------*/
-@media screen and (max-width: 1000px) {
-  .user-css .article-grid {
-    grid-template-columns: 1fr;
-  }
+.aoh-profilebox-entry {
+  color: var(--BodyColor);
+  padding: 0.2em 0.5em;
+  margin: 0.2em 0;
 }
 
-/*--------------------------*/
-/* ---- Portal Card    ---- */
-/* -------------------------*/
-.user-css .portal-card-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.user-css .portal-card {
-  width: 212px;
-  margin: auto;
-  position: relative;
-  transition: 0.3s;
-  border-radius: 10px;
-  color: var(--chi-body-text-color);
-  overflow: hidden;
-}
-
-.user-css .portal-card-header {
-  background-color: var(--chi-secondary-color-3);
-  color: var(--chi-prime-color);
-  text-align: center;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  font-family: var(--chi-font-secondary);
-}
-
-.user-css .portal-card-image img {
+.aoh-profilebox-image {
   display: block;
   width: 100%;
-  height: auto;
+  opacity: 0.8;
 }
 
-.user-css .portal-card-image .padding-10 {
-  padding: 0px;
-}
-
-/*--------------------------*/
-/* ---- Articles Scaling    ---- */
-/* -------------------------*/
-@media screen and (max-width: 1000px) {
-  .user-css .portal-card-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/*--------------------------*/
-/* ---- Character Keys    ---- */
-/* -------------------------*/
-.user-css .key-card {
-  background-color: var(--chi-secondary-color-1);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 45%;
-  margin: auto;
-}
-
-.user-css .key-card-header {
-  background-color: var(--chi-secondary-color-3);
-  color: var(--chi-prime-color);
-  padding: 10px 20px;
-  font-family: var(--chi-font-main);
-  font-size: 1.2em;
-  text-align: center;
+.aoh-profilebox-subheader {
+  background: var(--ColorTert-1);
+  color: var(--BodyColor);
+  padding: 0.3em;
   font-weight: bold;
-}
-
-.user-css .key-card-section {
-  padding: 25px;
-  background-color: var(--chi-secondary-color-1);
-  color: var(--chi-body-text-color);
-  font-size: 19px;
-  line-height: 1.8;
-}
-
-.user-css .key-grid {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  justify-content: center;
-  gap: 5px;
-}
-
-.user-css .key-color-box {
-  padding: 5px 10px;
-  color: var(--chi-prime-color);
   text-align: center;
-  font-size: 0.9em;
-  font-family: var(--chi-font-secondary);
-  border-radius: 5px;
+  font-family: var(--BodyFont);
+  border-bottom: 1px solid var(--ColorSec-1);
+  letter-spacing: 1px;
 }
 
-/*--------------------------*/
-/* ---- Key/Header Colors    ---- */
-/* -------------------------*/
-.user-css .tobu {
-  background-color: #601a1b;
-}
-
-.user-css .xifang {
-  background-color: #00a86b;
-}
-
-.user-css .omnod {
-  background-color: #c19a6b;
-}
-
-.user-css .bei {
-  background-color: #7d7d7d;
-}
-
-.user-css .the-shogunate {
-  background-color: #272626;
-}
-
-.user-css .yawaran {
-  background-color: #b51919;
-}
-
-.user-css .kibo {
-  background-color: #f7941d;
-}
-
-.user-css .clan-kaneshiro {
-  background-color: #3f64b4;
-}
-
-.user-css .main-character {
-  background-color: #4169e1;
-}
-
-.user-css .side-character {
-  background-color: #98fb98;
-  color: black;
-}
-
-.user-css .antagonist {
-  background-color: #8b0000;
-}
-
-.user-css .tobu-header {
-  background-color: #601a1b;
-}
-
-.user-css .xifang-header {
-  background-color: #00a86b;
-}
-
-.user-css .omnod-header {
-  background-color: #c19a6b;
-  color: black;
-}
-
-.user-css .bei-header {
-  background-color: #7d7d7d;
-}
-
-.user-css .the-shogunate-header {
-  background-color: #272626;
-}
-
-.user-css .yawaran-header {
-  background-color: #b51919;
-}
-
-.user-css .kibo-header {
-  background-color: #f7941d;
-}
-
-.user-css .clan-kaneshiro-header {
-  background-color: #3f64b4;
-}
-
-/*--------------------------*/
-/* ---- Key Scaling    ---- */
-/* -------------------------*/
-@media screen and (max-width: 1000px) {
-  .user-css .key-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/*--------------------------*/
-/* ---- Quote Fmame    ---- */
-/* -------------------------*/
-.user-css .quote-frame {
-  position: relative;
-  padding-left: 120px;
-  margin-bottom: 20px;
-  background: var(--chi-secondary-color-2);
-  border: 2px solid var(--chi-tertiary-color-3);
-  border-radius: 20px;
-  box-shadow: none;
-}
-
-.user-css .headshot-frame {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100px;
-  height: 100px;
-}
-
-.user-css .headshot-frame img {
-  border-radius: 50%;
-  object-fit: cover;
-  top: 4px;
-  position: absolute;
-}
-
-.user-css .author-title {
-  margin-bottom: 10px;
-  font-size: 1.25em;
-  margin-top: 10px;
+.aoh-profilebox-nickname {
+  display: block;
+  color: var(--ColorTert-1);
+  font-family: var(--BodyFont);
   text-align: center;
+  font-size: 1em;
+  margin-top: 0.8em;
+  margin-bottom: 14px;
 }
 
-.user-css .quote-text {
-  font-style: italic;
-  line-height: 1.6;
-  padding-right: 20px;
-  margin-bottom: 15px;
+.aoh-profilebox-content {
+  padding: 0.5em;
+  background: var(--ColorSec-1);
+  color: var(--BodyColor);
+  border-bottom: 1px solid var(--ColorTert-3);
+}
+
+.aoh-profilebox-content:last-of-type {
+  border-bottom: none;
+  border-radius: 0px;
+}
+
+.aoh-character-image img {
+  height: auto;
+  overflow: hidden;
+  max-width: 90%;
+}
+
+/*--------------------------*/
+/* ---- Bullets  ---- */
+/* -------------------------*/
+.normal-bullet {
+  list-style-type: none;
+  padding-left: 32px;
+  background: url(https://www.worldanvil.com/uploads/images/8aeb7f8502df02070d8fba94f515f9f4.png)
+    no-repeat left center;
+  background-size: 15px 15px;
 }

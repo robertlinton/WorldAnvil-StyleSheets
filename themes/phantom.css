@@ -210,9 +210,9 @@
   font-family: var(--pc-font-main);
   color: var(--pc-tertiary-color-2);
   padding-top: 15px;
-  border-bottom: none;
+  border-bottom: 3px solid var(--pc-tertiary-color-1);
   font-size: 2.2rem;
-  margin-bottom: 0px;
+  margin-bottom: 7px;
 }
 
 .user-css h3,
@@ -374,9 +374,8 @@
   font-weight: bold;
   color: var(--pc-secondary-color-1) !important;
   background: var(--pc-tertiary-color-2);
-  border: none;
-  border-left: 5px solid var(--pc-tertiary-color-3);
-  border-radius: 0px;
+  border: 2px solid var(--pc-tertiary-color-3);
+  border-radius: 10px;
   box-shadow: none;
   transition: all 0.3s;
 }
@@ -446,8 +445,9 @@
 .user-css .panel,
 .user-css-extended .panel {
   background: var(--pc-secondary-color-1);
-  border-left: 5px solid var(--pc-tertiary-color-4);
-  border-radius: 0px;
+  border: 5px double var(--pc-tertiary-color-1);
+  border-radius: 20px;
+  animation: glow 2s infinite ease-in-out;
 }
 
 /*--------------------------*/
@@ -591,16 +591,19 @@
 .user-css-extended .article-panel,
 .user-css .map-box {
   background: var(--pc-secondary-color-1);
-  border: 3px solid var(--pc-tertiary-color-2);
-  border-radius: 0px;
+  border: 5px double var(--pc-tertiary-color-2);
+  border-radius: 10px; 
   box-shadow: none;
   transition: all 0.3s;
+  overflow: hidden;
+
 }
 
 .user-css .article-panel:hover,
 .user-css-extended .article-panel:hover,
 .user-css .map-box:hover {
   border-color: var(--pc-tertiary-color-4);
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5); 
 }
 
 .user-css .article-panel .article-link:hover {
@@ -654,7 +657,7 @@
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: pulseGlow 2s infinite ease-in-out;
+  animation: glow 2s infinite ease-in-out;
 }
 
 .user-css .bookcover:hover {
@@ -696,7 +699,7 @@
   color: var(--pc-tertiary-color-1);
   border-bottom: 2px solid var(--pc-tertiary-color-1);
   text-align: center;
-  animation: pulseGlow 2s infinite ease-in-out;
+  animation: glow 2s infinite ease-in-out;
 }
 
 .user-css .world-bookcase .bookcover a:hover .booktitle,
@@ -704,6 +707,58 @@
   background: var(--pc-secondary-color-1);
   color: var(--pc-tertiary-color-1);
   border: 2px solid var(--pc-tertiary-color-1);
+}
+
+/*--------------------------*/
+/* ---- Core Bookcovers ---- */
+/* -------------------------*/
+
+.user-css .bookcover a[href*=characters-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/3c6c5141a806cc3c50f824138d176783.svg);
+  margin-top: 33%;
+  transform: scale(1.2);
+}
+
+.user-css .bookcover a[href*=races-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/3bcef276c802d433029b2fdecc0c04fb.svg);
+  margin-top: 33%;
+  transform: scale(1.2);
+}
+
+.user-css .bookcover a[href*=factions-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/fd571002fa6bec1e972295fee1e4f696.svg);
+  margin-top: 33%;
+  transform: scale(1.2);
+}
+
+.user-css .bookcover a[href*=items-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/9e574c70cce0bc5d5030dc5b2ad2c81a.svg);
+  margin-top: 33%;
+  transform: scale(1.2);
+}
+
+.user-css .bookcover a[href*=locations-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/c7249893f592fe4f1eb62f7866170b82.svg);
+  margin-top: 33%;
+  transform: scale(1.2);
+}
+
+.user-css .bookcover a[href*=events-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/f30a8ba6db05affd729a167ddd41bacc.svg);
+  margin-top: 33%;
+  transform: scale(1.2);
+}
+
+.user-css .bookcover a[href*=metaphysical-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/14131f67814309870b0fbb85437172ad.svg);
+  margin-top: 33%;
+  transform: scale(1.2);
+}
+
+.user-css .bookcover a[href*=miscellaneous-category] img {
+  content: url(https://www.worldanvil.com/uploads/images/2c1a437a4ffd8f9f743969c67a6e2b06.svg);
+  margin-top: 33%;
+  transform: scale(1.2);
 }
 
 /*--------------------------*/
@@ -930,7 +985,7 @@
   border-radius: 25px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  animation: pulseGlow 5s infinite ease-in-out;
+  animation: glow 5s infinite ease-in-out;
   font-size: 17px;
 }
 
@@ -1808,7 +1863,7 @@
   border-radius: 20px;
   box-shadow: none;
   transition: all 0.3s;
-  animation: pulseGlow 5s infinite ease-in-out;
+  animation: glow 5s infinite ease-in-out;
 }
 
 .user-css-presentation #world-navigation-sidebar[style^=display] {
@@ -1874,7 +1929,7 @@
 /*--------------------------*/
 /* ---- Animations   ---- */
 /* -------------------------*/
-@keyframes pulseGlow {
+@keyframes glow {
   0% {
     box-shadow: 0 0 5px var(--pc-tertiary-color-1),
       inset 0 0 5px var(--pc-tertiary-color-2);
