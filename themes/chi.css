@@ -2183,7 +2183,7 @@
 }
 
 /*--------------------------*/
-/* ---- Quote Fmame    ---- */
+/* ---- Quote Frame    ---- */
 /* -------------------------*/
 .user-css .quote-frame {
   position: relative;
@@ -2222,4 +2222,64 @@
   line-height: 1.6;
   padding-right: 20px;
   margin-bottom: 15px;
+}
+
+/*--------------------------*/
+/* ---- Magick    ---- */
+/* -------------------------*/
+.user-css .magick-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+  ;
+}
+
+.user-css .magick-card-header {
+  background-color: var(--chi-tertiary-color-8);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 20px; 
+  counter-reset: magick-counter
+}
+
+.user-css .magick-card-header::before {
+  counter-increment: magick-counter; 
+  content: counter(magick-counter); 
+  background-color: var(--chi-secondary-color-3); 
+  color: white; 
+  border-radius: 50%;
+  padding: 0.5em; 
+  margin-right: 0.5em; 
+  font-weight: bold; 
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em; 
+  display: inline-block; 
+  line-height: 0.5em; 
+}
+
+.user-css .magick-card-icon {
+  display: block;
+  text-align: center;
+  background: white;
+}
+
+.user-css .magick-card-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+.user-css .magick-card-content {
+  background-color: white;
+  padding: 20px;
+  color: #333;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.user-css .magick-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }

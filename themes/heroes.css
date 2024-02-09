@@ -559,18 +559,14 @@
   display: none;
 }
 
+
+
 /*--------------------------*/
 /* ---- Homepage   ---- */
 /* -------------------------*/
 .user-css.page-world-homepage #cover img {
   transform: scale(0.8);
   margin-top: 40px;
-}
-
-.user-css .world-author {
-  font-family: var(--hero-font-body);
-  font-size: 1em;
-  margin-bottom: 10px;
 }
 
 .user-css .world-author {
@@ -2060,16 +2056,67 @@
 
 .user-css .category-note {
   background-color: var(
-    --hero-secondary-color-2
-  ); /* A secondary color for the background */
-  color: var(--hero-font-color); /* Text color */
-  border-bottom: 2px solid var(--hero-tertiary-color-1); /* A tertiary color for the border */
-  padding: 1em; /* Padding around the text */
-  margin: 1em 0; /* Margin above and below the note */
-  font-family: var(--hero-font-body); /* Font family from your variables */
-  border-radius: 0 8px 8px 0; /* Rounded corners on the right side */
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* A subtle shadow for depth */
+    --hero-secondary-color-2); 
+  color: var(--hero-font-color);
+  border-bottom: 2px solid var(--hero-tertiary-color-1); 
+  padding: 1em; 
+  margin: 1em 0; 
+  font-family: var(--hero-font-body); 
+  border-radius: 0 8px 8px 0;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); 
 }
+
+
+.user-css .article-paragraph-section {
+  background: var(--hero-secondary-color-1);
+  border: 2px solid var(--hero-tertiary-color-4);
+  border-radius: 20px;
+  box-shadow: none;
+  padding: 10px;
+}
+
+.user-css .article-paragraph-section h3 {
+  font-size: 2.2em;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  margin-bottom: 20px; 
+}
+
+.user-css .article-header {
+  background-color: var(--hero-secondary-color-2);
+  color: var(--hero-tertiary-color-2);
+  padding: 10px 20px;
+  font-family: var(--hero-font-main);
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid #4f8bc7;
+  border-radius: 10px 10px 0 0;
+}
+
+.user-css .category-section {
+  background: var(--hero-secondary-color-1);
+    border: 2px solid var(--hero-tertiary-color-4);
+    border-radius: 0 0 10px 10px;
+    border: 2px solid #4f8bc7;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.user-css .category-section {
+  background: var(--hero-secondary-color-1);
+    border: 2px solid var(--hero-tertiary-color-4);
+    border-radius: 0 0 10px 10px;
+    border: 2px solid #4f8bc7;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.user-css .category-usa img {
+  max-width: 30%;
+}
+
 
 /*--------------------------*/
 /* ---- Navbar ---- */
@@ -2116,6 +2163,7 @@
 .user-css .hero-navbar-title .text-abbreviation {
   border-bottom: none;
 }
+
 /*--------------------------*/
 /* ---- Site Portal  ---- */
 /* -------------------------*/
@@ -2199,25 +2247,9 @@
 /* -------------------------*/
 @media screen and (max-width: 1000px) {
   .user-css .grid-box,
-  .user-css .grid-box-timeline,
+  .user-css .grid-box-timeline, 
+  .user-css .articleblock-grid,
   .user-css .grid-box-secondary {
     grid-template-columns: 1fr;
   }
-}
-
-
-.user-css .article-paragraph-section {
-  background: var(--hero-secondary-color-1);
-  border: 2px solid var(--hero-tertiary-color-4);
-  border-radius: 20px;
-  box-shadow: none;
-  padding: 10px;
-}
-
-.user-css .article-paragraph-section h3 {
-  font-size: 2.2em;
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  margin-bottom: 20px; 
 }
