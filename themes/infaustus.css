@@ -11,30 +11,32 @@
 .tooltipster-content {
   /* Fonts */
   --eden-font-title: Unifraktur Maguntia;
-  --eden-font-main: IM Fell English;
-  --eden-font-body: IM Fell English;
+  --eden-font-main: Devinne Swash;
+  --BodyFont: IM Fell English;
 
   /* Colors */
   --eden-prime-color: #180909;
   --eden-bg-color: #000000;
   --eden-secondary-color-1: #121214;
   --eden-secondary-color-2: #270808;
-  --eden-secondary-color-3: #310c0c;
-  --eden-tertiary-color-1: #c76363;
-  --eden-tertiary-color-2: #c55e5a;
-  --eden-tertiary-color-3: #6c3535;
-  --eden-tertiary-color-4: #6b3639;
-  --eden-tertiary-color-5: #7c3d3d;
-  --eden-tertiary-color-6: #eeecec;
-  --eden-body-text-color: #ffdddd;
-  --eden-muted-color: #ffdddd;
+  --eden-tertiary-color-1: #792323;
+  --eden-tertiary-color-2: #932929;
+  --eden-tertiary-color-3: #9f3030;
+  --eden-tertiary-color-4: #8f302b;
+  --eden-tertiary-color-5: #803d3d;
+  --eden-body-text-color: #ffffff;
+  --eden-muted-color: #9b4e4e;
 }
 
 /*--------------------------*/
 /* ---- Backgrounds   ---- */
 /* -------------------------*/
 .user-css-presentation {
-  background: var(--eden-bg-color);
+  background: linear-gradient(
+    0deg,
+    var(--eden-bg-color) 15%,
+    var(--eden-secondary-color-2) 100%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -46,11 +48,12 @@
   background: var(--eden-prime-color);
   border: 3px solid var(--eden-tertiary-color-5);
   border-radius: 25px;
-  box-shadow: none;
   overflow: hidden;
+  box-shadow: none;
 }
 
-.user-css #cover img {
+.user-css #cover img,
+.user-css.page-search .cover {
   clip-path: polygon(
     0% 100%,
     10% 90%,
@@ -103,6 +106,13 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@font-face {
+  font-family: Devinne Swash;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://rawcdn.githack.com/robertlinton/WorldAnvil-StyleSheets/7a091f56afc55d768b3100173fbb451399337fa1/fonts/Devinne%20Swash.ttf);
+}
+
 /*--------------------------*/
 /* ---- Text   ---- */
 /* -------------------------*/
@@ -126,13 +136,28 @@
 .user-css-extended .metadata-label,
 .user-css-extended .metadata-value {
   font-size: 17px;
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   color: var(--eden-body-text-color);
 }
 
 .user-css-vignette {
   font-size: 0.9em;
-  color: var(--eden-tertiary-color-6);
+}
+
+.user-css .highlight-cream {
+  color: #fff2cc;
+}
+
+.user-css .highlight-crimson {
+  color: #980000;
+}
+
+.user-css .highlight-red {
+  color: #dc3700;
+}
+
+.user-css .highlight-green {
+  color: #00a329;
 }
 
 /*--------------------------*/
@@ -156,8 +181,8 @@
 .user-css-presentation .tooltipster-content h2 {
   font-family: var(--eden-font-main);
   color: var(--eden-tertiary-color-2);
-  padding-top: 12px;
-  border-bottom: none;
+  padding-top: 15px;
+  border-bottom: 2px solid var(--eden-tertiary-color-2);
   font-size: 2.5em;
   margin-bottom: 0px;
 }
@@ -168,7 +193,7 @@
 .user-css-presentation .tooltipster-content h3 {
   font-family: var(--eden-font-main);
   color: var(--eden-tertiary-color-2);
-  padding-top: 12px;
+  padding-top: 15px;
   font-size: 2em;
 }
 
@@ -182,7 +207,7 @@
 .user-css-presentation .tooltipster-content h4 {
   font-family: var(--eden-font-main);
   color: var(--eden-tertiary-color-1);
-  padding-top: 12px;
+  padding-top: 15px;
   font-size: 2em;
 }
 
@@ -203,56 +228,52 @@
 
 .user-css h6 {
   font-family: var(--eden-font-main);
-  padding-top: 12px;
+  padding-top: 15px;
 }
 
-/*--------------------------*/
-/* ---- Article Headers ---- */
-/* -------------------------*/
+.user-css.page-article h2 {
+  margin-bottom: 10px;
+}
+
 .user-css .article-title h1 {
-  font-family: var(--eden-font-title);
-  background: -webkit-linear-gradient(#f78b52, #872929);
+  background: linear-gradient(#f78b52, #872929);
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
 .user-css.page-article h2 {
-  background: -webkit-linear-gradient(#851e1e, #291616);
+  font-size: 1.8em;
+  background: linear-gradient(#79341b, #540d1e);
   -webkit-background-clip: text;
   background-clip: text;
-  border-bottom: 2px solid var(--eden-tertiary-color-5);
-  font-size: 1.8em;
-  margin-bottom: 10px;
+  color: transparent;
   -webkit-text-fill-color: transparent;
-  font-family: var(--eden-font-main);
 }
 
 .user-css.page-article h3 {
-  background: -webkit-linear-gradient(#fd1313, #8d4d4d);
+  background: linear-gradient(#79341b, #540d1e);
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 1.6em;
+  color: transparent;
   -webkit-text-fill-color: transparent;
-  font-family: var(--eden-font-main);
 }
 
 .user-css.page-article h4 {
-  background: -webkit-linear-gradient(#fd1313, #8d4d4d);
+  background: linear-gradient(#79341b, #540d1e);
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 1.5em;
+  color: transparent;
   -webkit-text-fill-color: transparent;
-  font-family: var(--eden-font-main);
 }
 
 .user-css.page-article h5 {
-  background: -webkit-linear-gradient(#fd1313, #8d4d4d);
+  background: linear-gradient(#79341b, #540d1e);
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: 1.2em;
+  color: transparent;
   -webkit-text-fill-color: transparent;
-  font-family: var(--eden-font-main);
 }
 
 /*--------------------------*/
@@ -268,9 +289,8 @@
 .user-css-extended .timeline li .milestone-panel a,
 .user-css-presentation .tooltipster-content a,
 .user-css .usercard a {
-  color: var(--eden-tertiary-color-2);
+  color: var(--eden-tertiary-color-1);
   transition: all 0.3s;
-  text-shadow: none;
 }
 
 .user-css a:hover,
@@ -278,8 +298,8 @@
 .user-css-presentation .tooltipster-content a:hover,
 .user-css .usercard a:hover {
   color: var(--eden-tertiary-color-1);
-  text-shadow: none;
-  font-style: italic;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.6);
 }
 
 /*--------------------------*/
@@ -296,10 +316,10 @@
 .user-css-worldmenu .tooltip .tooltip-inner,
 .user-css-presentation .tooltipster-borderless .tooltipster-content {
   color: var(--eden-body-text-color);
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   font-size: 1.4em;
-  background: var(--eden-secondary-color-3);
-  border: 2px solid var(--eden-tertiary-color-1);
+  background: var(--eden-secondary-color-2);
+  border: 3px solid var(--eden-tertiary-color-1);
   border-radius: 25px;
   box-shadow: none;
 }
@@ -353,7 +373,7 @@
 }
 
 .user-css .dropcap {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
 }
 
 /*--------------------------*/
@@ -365,11 +385,11 @@
 .user-css .rhea-ft-zoom-controls button,
 .user-css-presentation .tooltipster-content .btn,
 .user-css .discussion-board-section [class*=rep] .btn {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   font-size: 0.9em;
-  color: var(--eden-secondary-color-1) !important;
-  background: var(--eden-tertiary-color-2);
-  border: 2px solid var(--eden-tertiary-color-3);
+  color: var(--eden-tertiary-color-3) !important;
+  background-color: var(--eden-secondary-color-1);
+  border: 2px solid var(--eden-tertiary-color-1);
   border-radius: 25px;
   box-shadow: none;
   transition: all 0.3s;
@@ -384,8 +404,8 @@
   text-shadow: none;
   text-decoration: none;
   font-style: normal;
-  padding-left: 12px;
-  background: var(--eden-tertiary-color-1);
+  padding-left: 15px;
+  background-color: var(--eden-secondary-color-1);
 }
 
 .user-css .btn:focus,
@@ -398,18 +418,18 @@
 .user-css .btn-success,
 .user-css-extended .btn .btn-success {
   background: var(--eden-tertiary-color-1) !important;
-  border: 2px solid var(--eden-tertiary-color-4) !important;
+  border: none !important;
 }
 
 .user-css .btn-success:hover,
 .user-css-extended .btn .btn-success:hover {
   background: var(--eden-tertiary-color-2) !important;
-  border: 2px solid var(--eden-tertiary-color-4) !important;
+  border: none !important;
 }
 
 .user-css .visibility-toggler-trigger .fas,
 .user-css-extended .visibility-toggler-trigger .fas {
-  padding: 2px;
+  padding: 5px;
 }
 
 /*--------------------------*/
@@ -418,8 +438,8 @@
 .user-css blockquote,
 .user-css-extended blockquote,
 .user-css-presentation .tooltipster-content blockquote {
-  background: var(--eden-secondary-color-2);
-  border: 2px solid var(--eden-tertiary-color-3);
+  background: var(--eden-secondary-color-1);
+  border: 2px solid var(--eden-tertiary-color-2);
   border-radius: 25px;
   box-shadow: none;
 }
@@ -437,29 +457,20 @@
 /* -------------------------*/
 .user-css .panel,
 .user-css-extended .panel {
-  background: var(--eden-secondary-color-3);
+  background: var(--eden-secondary-color-1);
   border: 3px solid var(--eden-tertiary-color-4);
   border-radius: 25px;
-  font-size: 0.9em;
 }
 
 /*--------------------------*/
 /* ---- HR   ---- */
 /* -------------------------*/
-.user-css .tab-content hr {
-  display: block;
-  border: none;
-  margin: 0;
-  height: 30px;
-  background: url(https://www.worldanvil.com/uploads/images/3a68d2fdb5b23e96728a3d574444c8aa.png)
-    center repeat-x;
-  background-size: contain;
-  filter: brightness(5.5);
-}
-
-.user-css .article-horizontal-navigation hr,
-.user-css hr {
-  display: none;
+.user-css hr,
+.user-css-extended hr,
+.user-css-map-sidebar hr,
+.user-css .tooltipster-content hr {
+  border-top: 3px solid var(--eden-tertiary-color-2);
+  opacity: 1;
 }
 
 /*--------------------------*/
@@ -475,11 +486,11 @@
 /* -------------------------*/
 .user-css .image-panel {
   background: var(--eden-secondary-color-2);
-  border: 2px solid var(--eden-tertiary-color-4);
+  border: 3px solid var(--eden-tertiary-color-4);
   border-radius: 0px;
   box-shadow: none;
   text-align: center;
-  padding: 12px;
+  padding: 15px;
 }
 
 .user-css .image-panel .cover,
@@ -500,11 +511,54 @@
 }
 
 /*--------------------------*/
+/* ---- Carousels   ---- */
+/* -------------------------*/
+.user-css .carousel {
+  height: 500px;
+}
+
+.user-css .carousel-inner img {
+  height: 500px;
+  object-fit: contain;
+}
+
+.user-css .carousel-item.active {
+  display: flex;
+  justify-content: center;
+}
+
+.user-css .carousel-caption h3 {
+  background: var(--eden-prime-color);
+  padding: 0px;
+}
+
+.user-css .carousel-indicators li {
+  background-color: var(--eden-tertiary-color-1);
+}
+
+.user-css .carousel-control {
+  opacity: 1;
+  background: none;
+}
+
+.user-css .carousel-control-next-icon {
+  background-image: none;
+  background: var(--eden-tertiary-color-1);
+  clip-path: polygon(100% 50%, 0% 100%, 0% 0%);
+}
+
+.user-css .carousel-control-prev-icon {
+  background-image: none;
+  background: var(--eden-tertiary-color-1);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 50%);
+}
+
+/*--------------------------*/
 /* ---- Spoilers   ---- */
 /* -------------------------*/
 .user-css .spoiler-button,
 .user-css-extended .spoiler-button {
-  border: 2px solid var(--eden-tertiary-color-3);
+  border: none;
 }
 
 .user-css .spoiler-button:hover,
@@ -517,10 +571,10 @@
 
 .user-css .spoiler-content,
 .user-css-extended .spoiler-content {
-  border-top: 2px solid var(--eden-tertiary-color-3);
   color: var(--eden-body-text-color);
+  border: none;
   background: var(--eden-secondary-color-2);
-  border-radius: 25px;
+  border-radius: 0px;
 }
 
 .user-css .spoiler-card,
@@ -537,7 +591,7 @@
 .user-css-presentation .tooltipster-content .aloud {
   background: var(--eden-secondary-color-1);
   color: var(--eden-tertiary-color-1);
-  border: 2px solid var(--eden-tertiary-color-4);
+  border: 3px solid var(--eden-tertiary-color-4);
   border-radius: 0px;
 }
 
@@ -552,6 +606,7 @@
   border-radius: 25px;
   box-shadow: none;
   transition: all 0.3s;
+  overflow: hidden;
 }
 
 .user-css .article-panel:hover,
@@ -567,28 +622,47 @@
 
 .user-css .article-panel .heading {
   color: var(--eden-tertiary-color-1);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  margin-bottom: 10px;
   font-size: 1.3em;
 }
 
 .user-css .article-panel .subheading,
 .user-css .article-panel .date {
-  color: var(--eden-muted-color);
+  display: none;
 }
 
-/*--------------------------*/
-/* ---- Homepage  ---- */
-/* -------------------------*/
-.user-css .world-title {
-  font-family: var(--eden-font-title);
-  font-size: 4.4em;
+.user-css .article-panel .cover {
+  border-bottom: 3px solid var(--eden-tertiary-color-2);
+}
+
+.user-css .article-panel .details p {
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 10px;
   background: -webkit-linear-gradient(#f78b52, #872929);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/*--------------------------*/
+/* ---- Homepage   ---- */
+/* -------------------------*/
+.user-css .world-title {
+  font-family: var(--eden-font-title);
+  font-size: calc(2vw + 1.7em);
+  background: linear-gradient(#f78b52, #872929);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .user-css .world-author {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   font-size: 1em;
   margin-bottom: 10px;
 }
@@ -618,73 +692,66 @@
 /* ---- Bookcovers   ---- */
 /* -------------------------*/
 .user-css .bookcover {
-    border: 3px double var(--eden-tertiary-color-1);
-    background: #000000;
-    border-radius: 25px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .user-css .bookcover:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-    background: #000000;
-    border: 2px solid var(--eden-tertiary-color-1);
-  }
-  
-  .user-css .bookcover a:hover .excerpt {
-    display: none;
-  }
-  
-  .user-css .bookcover a img {
-    width: 77%;
-    height: auto;
-    max-width: 300px;
-    opacity: 1;
-    margin-top: 70px;
-  }
-  
-  .user-css .bookcover a {
-    font-style: normal;
-  }
-  
-  .user-css .bookcover a:hover img {
-    opacity: 0.3;
-  }
-  
-  .user-css .world-bookcase .booktitle,
-  .user-css .booktitle {
-    position: absolute;
-    max-width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    font-family: var(--eden-font-main);
-    bottom: unset;
-    background: var(--eden-secondary-color-3);
-    color: var(--eden-tertiary-color-1);
-    border-bottom: 2px solid var(--eden-tertiary-color-1);
-    text-align: center;
-  }
-  
-  .user-css .world-bookcase .bookcover a:hover .booktitle,
-  .user-css .bookcover a:hover .booktitle {
-    background: var(--eden-secondary-color-3);
-    color: var(--eden-tertiary-color-1);
-    border-bottom: 2px solid var(--eden-tertiary-color-1);
-    text-align: center;
-  }
+  border: 3px solid var(--eden-tertiary-color-4);
+  background: var(--eden-secondary-color-2);
+  border-radius: 0px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.user-css .bookcover:hover {
+  background: var(--eden-secondary-color-1);
+  border: 3px solid var(--eden-tertiary-color-2);
+}
+
+.user-css .bookcover a:hover .excerpt {
+  color: var(--eden-body-text-color);
+  transition: all 0.3s;
+}
+
+.user-css .bookcover a img {
+  width: 100%;
+  max-width: 300px;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.user-css .bookcover a:hover img {
+  opacity: 0.3;
+}
+
+.user-css .world-bookcase .booktitle,
+.user-css .booktitle {
+  position: absolute;
+  max-width: 100%;
+  top: unset;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--eden-secondary-color-1);
+  border-top: 3px solid var(--eden-tertiary-color-4);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.user-css .world-bookcase .bookcover a:hover .booktitle,
+.user-css .bookcover a:hover .booktitle {
+  color: var(--eden-secondary-color-1);
+  background: var(--eden-tertiary-color-2);
+  border-top: 3px solid var(--eden-tertiary-color-2);
+}
 
 /*--------------------------*/
 /* ---- Table of Contents   ---- */
 /* -------------------------*/
 .user-css .world-toc-header,
-.user-css .timelines-list-header {
+.user-css .timelines-list-header,
+.user-css .world-recent-articles h2 {
   background: -webkit-linear-gradient(#851e1e, #291616);
   -webkit-background-clip: text;
   background-clip: text;
   border-bottom: 2px solid var(--eden-tertiary-color-5);
-  font-size: 2.2em;
+  font-size: 1.9em;
   margin-bottom: 10px;
   text-align: center;
   -webkit-text-fill-color: transparent;
@@ -701,11 +768,11 @@
   font-size: 0.8em;
 }
 
-.user-css .world-category-link,
-.user-css .world-timelines .category-list h5 {
+.user-css .world-category-link {
   background: -webkit-linear-gradient(#f78b52, #872929);
   -webkit-background-clip: text;
   background-clip: text;
+  font-family: var(--eden-font-secondary);
   -webkit-text-fill-color: transparent;
 }
 
@@ -766,7 +833,7 @@
 }
 
 .user-css .map-box small {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   font-size: 1em;
 }
 
@@ -775,7 +842,7 @@
 /* -------------------------*/
 .user-css.page-followers .subheading {
   font-size: 1em;
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
 }
 
 .user-css .follower-box {
@@ -784,41 +851,13 @@
 }
 
 .user-css .follower-box img {
-  border: 2px solid var(--eden-tertiary-color-4);
+  border: 3px solid var(--eden-tertiary-color-4);
   max-height: 50px;
   max-width: 50px;
 }
 
 .user-css .follower-box small {
   color: var(--eden-tertiary-color-2);
-}
-
-/*--------------------------*/
-/* ---- Top   ---- */
-/* -------------------------*/
-.user-css .backtoworld a,
-.user-css .nav-strip a {
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  text-decoration: none;
-  left: -12px;
-  top: -39px;
-  color: var(--eden-secondary-color-1);
-  background: var(--eden-tertiary-color-2);
-  border: none;
-  border-radius: 0px;
-  font-family: var(--eden-font-title);
-  box-shadow: none;
-  transition: all 0.3s;
-  padding-top: 9px;
-}
-
-.user-css div .backtoworld a:hover,
-.user-css .nav-strip a:hover {
-  font-style: normal;
-  color: var(--eden-secondary-color-1);
-  background: var(--eden-tertiary-color-1);
-  padding-left: 22px;
 }
 
 /*--------------------------*/
@@ -868,14 +907,14 @@
   color: var(--eden-secondary-color-1);
   width: 200px;
   box-shadow: none;
-  padding: 12px 10px 12px 10px;
+  padding: 13px 10px 12px 10px;
 }
 
 .user-css .search-form .typeahead-input::placeholder,
 .user-css .form-control::placeholder,
 .user-css .rhea-family-tree input::placeholder,
 .map-context-user-css .search-form .typeahead-input::placeholder {
-  color: var(--eden-tertiary-color-1);
+  color: var(--eden-muted-color);
 }
 
 .user-css .typeahead.dropdown-menu,
@@ -886,8 +925,8 @@
 .user-css .form-group .dropdown-menu,
 .map-context-user-css .form-group .dropdown-menu {
   border: none;
-  border-left: 2px solid var(--eden-tertiary-color-3);
-  border-right: 2px solid var(--eden-tertiary-color-3);
+  border-left: 3px solid var(--eden-tertiary-color-3);
+  border-right: 3px solid var(--eden-tertiary-color-3);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -950,7 +989,7 @@
 /* -------------------------*/
 .user-css .breadcrumb,
 .user-css-extended .breadcrumb {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   font-size: 1.1em;
   font-style: normal;
 }
@@ -963,9 +1002,9 @@
 /*--------------------------*/
 /* ---- Bottom   ---- */
 /* -------------------------*/
-.user-css .copyright-attribution {
+.user-css .copyright-attribution-section {
   background: var(--eden-secondary-color-1);
-  border: 2px solid var(--eden-tertiary-color-4);
+  border: 3px double var(--eden-tertiary-color-4);
   padding: 10px;
   border-radius: 25px;
   margin-bottom: -17px;
@@ -978,6 +1017,28 @@
   -webkit-text-fill-color: transparent;
 }
 
+.user-css .link-button {
+  display: inline-block;
+  background-color: var(--eden-secondary-color-1);
+  color: var(--eden-body-text-color);
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid var(--eden-tertiary-color-1);
+  margin: 10px 0;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.user-css .link-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.user-css .link-button:hover {
+  background-color: var(--eden-secondary-color-1);
+}
+
 /*--------------------------*/
 /* ---- Nav tabs   ---- */
 /* -------------------------*/
@@ -988,8 +1049,8 @@
 
 .user-css-extended .nav-tabs {
   background: var(--eden-secondary-color-2);
-  margin-right: -22px;
-  margin-left: -22px;
+  margin-right: -25px;
+  margin-left: -25px;
   left: 0;
   top: 0;
 }
@@ -1004,7 +1065,7 @@
   background: var(--eden-tertiary-color-2);
   border-right: none;
   margin-bottom: 0px;
-  padding: 0px 12px;
+  padding: 0px 15px;
   transition: all 0.3s;
 }
 
@@ -1016,20 +1077,28 @@
 }
 
 .user-css-extended .dl-horizontal {
-  padding-bottom: 12px;
+  padding-bottom: 15px;
+}
+
+.user-css-extended .metadata-label {
+  color: var(--eden-tertiary-color-1);
+}
+
+.user-css-extended .metadata-value {
+  color: var(--eden-tertiary-color-3);
 }
 
 /*--------------------------*/
 /* ---- Secrets and notes   ---- */
 /* -------------------------*/
 .user-css-extended .panel-default {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
 }
 
 .user-css-extended .panel-default .panel-heading {
   background: none;
   border: none;
-  padding: 12px;
+  padding: 15px;
 }
 
 .user-css-extended .panel-default .panel-heading h3 {
@@ -1045,8 +1114,8 @@
   color: var(--eden-secondary-color-1) !important;
   font-weight: bold;
   background: var(--eden-tertiary-color-1);
-  border: none;
-  border-radius: 0px;
+  border: 2px solid var(--eden-tertiary-color-4);
+  border-radius: 25px;
   transition: all 0.3s;
   box-shadow: none;
 }
@@ -1062,12 +1131,13 @@
 /* -------------------------*/
 .user-css-extended .comment-form textarea {
   color: var(--eden-body-text-color);
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   font-size: 1em;
   background: var(--eden-secondary-color-2);
-  border: 2px solid var(--eden-tertiary-color-4);
-  border-radius: 0px;
+  border: 2px double var(--eden-tertiary-color-4);
+  border-radius: 25px;
   transition: all 0.3s;
+  margin-top: 10px;
 }
 
 .user-css-extended .form-control:focus {
@@ -1080,7 +1150,15 @@
 }
 
 .user-css-extended .comment-form .pull-right {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
+}
+
+.user-css-extended .comment-post--handler {
+  margin-top: 15px;
+}
+
+.user-css-extended .page h2 {
+  border-bottom: none;
 }
 
 /*--------------------------*/
@@ -1088,8 +1166,8 @@
 /* -------------------------*/
 .user-css-extended .comment-box {
   background: var(--eden-secondary-color-1);
-  border: 2px solid var(--eden-tertiary-color-4);
-  border-radius: 0px;
+  border: 2px double var(--eden-tertiary-color-4);
+  border-radius: 25px;
 }
 
 .user-css-extended .comment-box-content p {
@@ -1121,21 +1199,21 @@
 }
 
 .user-css-extended .comment-box-avatar .img-avatar {
-  border: 2px solid var(--eden-tertiary-color-4);
+  border: 3px solid var(--eden-tertiary-color-4);
   max-width: 60px;
   max-height: 60px;
   box-shadow: none;
 }
 
 .user-css-extended .comment-box-date {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   color: var(--eden-muted-color);
   font-size: 1em;
   opacity: 1;
 }
 
 .user-css-extended .comment-box-signature {
-  border-top: 2px solid var(--eden-tertiary-color-2);
+  border-top: 3px solid var(--eden-tertiary-color-2);
 }
 
 .user-css-extended .comment-box-date,
@@ -1152,11 +1230,11 @@
 
 .user-css-map-sidebar {
   background: var(--eden-prime-color);
-  border-right: 2px solid var(--eden-tertiary-color-4);
+  border-right: 3px solid var(--eden-tertiary-color-4);
 }
 
 .user-css-map-sidebar #sidebar-extras .card {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   background: none;
   border: none;
 }
@@ -1164,7 +1242,7 @@
 .map-context-user-css #sidebarCollapse {
   color: var(--eden-secondary-color-2);
   background: var(--eden-tertiary-color-2);
-  border-right: 2px solid var(--eden-tertiary-color-3);
+  border-right: 3px solid var(--eden-tertiary-color-3);
   border-radius: 0px;
   border-left-width: 0px;
   border-top-left-radius: 0px;
@@ -1204,7 +1282,7 @@
 /* ---- Maps Logo/sage nav ---- */
 /* -------------------------*/
 .presentation-interface-map #logo {
-  color: var(--eden-font-body);
+  color: var(--BodyFont);
   font-family: var(--eden-font-title);
   font-size: 1.2em;
 }
@@ -1212,7 +1290,7 @@
 .presentation-interface-map #logo:before {
   background: var(--eden-tertiary-color-1);
   border: none;
-  border-bottom: 2px solid var(--eden-tertiary-color-3);
+  border-bottom: 3px solid var(--eden-tertiary-color-3);
   box-shadow: none;
   -webkit-transform: none;
   transform: none;
@@ -1241,8 +1319,8 @@
   text-shadow: none;
 }
 
-.user-css .leaflet-bar a:first-edenld,
-.map-context-user-css .leaflet-bar a:first-edenld {
+.user-css .leaflet-bar a:first-child,
+.map-context-user-css .leaflet-bar a:first-child {
   color: var(--eden-secondary-color-1);
   background: var(--eden-tertiary-color-1);
   border-radius: 0px;
@@ -1251,8 +1329,8 @@
   transition: all 0.3s;
 }
 
-.user-css .leaflet-bar a:last-edenld,
-.map-context-user-css .leaflet-bar a:last-edenld {
+.user-css .leaflet-bar a:last-child,
+.map-context-user-css .leaflet-bar a:last-child {
   color: var(--eden-secondary-color-1);
   background: var(--eden-tertiary-color-2);
   border-radius: 0px;
@@ -1280,14 +1358,14 @@
 .map-context-user-css .leaflet-control-layers {
   background: var(--eden-tertiary-color-2);
   border: none;
-  border-right: 2px solid var(--eden-tertiary-color-3);
+  border-right: 3px solid var(--eden-tertiary-color-3);
   border-radius: 0px;
 }
 
 .user-css .leaflet-control-layers-expanded,
 .map-context-user-css .leaflet-control-layers-expanded {
   background: var(--eden-tertiary-color-2);
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
 }
 
 .map-context-user-css .leaflet-control-layers-base span {
@@ -1300,10 +1378,10 @@
 /* -------------------------*/
 .user-css .legend,
 .map-context-user-css .legend {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   color: var(--eden-body-text-color);
   background: var(--eden-secondary-color-2);
-  border: 2px solid var(--eden-tertiary-color-4);
+  border: 3px solid var(--eden-tertiary-color-4);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1330,7 +1408,7 @@
 .map-context-user-css .leaflet-popup-content-wrapper,
 .map-context-user-css .leaflet-popup-tip {
   color: var(--eden-body-text-color);
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   background: var(--eden-secondary-color-1);
   border-radius: 0px;
   box-shadow: none;
@@ -1351,7 +1429,7 @@
 .user-css .leaflet-popup-close-button,
 .map-context-user-css .leaflet-popup-close-button {
   color: var(--eden-tertiary-color-1) !important;
-  margin: 2px;
+  margin: 5px;
   font-size: 1.2em;
 }
 
@@ -1359,7 +1437,7 @@
 /* ---- Inline Maps ---- */
 /* -------------------------*/
 .user-css-presentation .leaflet-grab {
-  border: 2px solid var(--eden-tertiary-color-4);
+  border: 3px solid var(--eden-tertiary-color-4);
   border-radius: 0px;
   background: var(--eden-secondary-color-2);
   box-shadow: none;
@@ -1370,8 +1448,8 @@
 /* -------------------------*/
 .user-css .map-included-navigation {
   background: var(--eden-secondary-color-1);
-  border: 2px solid var(--eden-tertiary-color-4);
-  padding: 2px 2px 10px 2px;
+  border: 3px solid var(--eden-tertiary-color-4);
+  padding: 5px 5px 10px 5px;
   border-top-width: 0px;
 }
 
@@ -1383,7 +1461,7 @@
   font-family: var(--eden-font-title);
   color: var(--eden-tertiary-color-2);
   font-size: 1.3em;
-  padding-top: 2px;
+  padding-top: 5px;
   margin-right: 10px;
 }
 
@@ -1396,13 +1474,13 @@
 /* -------------------------*/
 .user-css .clotho-box {
   background: var(--eden-secondary-color-2);
-  border: 2px solid var(--eden-tertiary-color-2);
+  border: 3px solid var(--eden-tertiary-color-2);
   border-radius: 0px;
   box-shadow: none;
 }
 
 .user-css .clotho-box .clotho-node {
-  border: 2px solid var(--eden-tertiary-color-2);
+  border: 3px solid var(--eden-tertiary-color-2);
   box-shadow: none;
 }
 
@@ -1417,12 +1495,12 @@
 
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label {
   border: none;
-  margin-left: -2px;
+  margin-left: -3px;
 }
 
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label a {
   font-size: 1em;
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   color: var(--eden-body-text-color);
 }
 
@@ -1432,7 +1510,7 @@
 .user-css [class*=clotho-title-] {
   background: var(--eden-secondary-color-2);
   box-shadow: none;
-  border-top: 2px solid var(--eden-tertiary-color-4);
+  border-top: 3px solid var(--eden-tertiary-color-4);
 }
 
 .user-css .clotho-title-arrows,
@@ -1442,7 +1520,7 @@
 }
 
 .user-css [class*=clotho-title-item] {
-  border: 2px solid var(--eden-tertiary-color-2);
+  border: 3px solid var(--eden-tertiary-color-2);
   padding: 0px !important;
 }
 
@@ -1452,8 +1530,8 @@
 }
 
 .user-css [class*=show] {
-  padding-top: 22px;
-  padding-bottom: 32px;
+  padding-top: 25px;
+  padding-bottom: 35px;
 }
 
 /*--------------------------*/
@@ -1461,8 +1539,8 @@
 /* -------------------------*/
 .user-css .relation .relationScore {
   background: var(--eden-secondary-color-2);
-  border: 2px solid var(--eden-tertiary-color-3);
-  border-width: 2px;
+  border: 3px solid var(--eden-tertiary-color-3);
+  border-width: 3px;
   border-radius: 0px;
 }
 
@@ -1471,7 +1549,7 @@
 /* -------------------------*/
 .user-css-extended .orgtree li a,
 .user-css-extended .orgtree li a:hover + ul li a {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   font-weight: bold;
   font-size: 1em;
   color: var(--eden-prime-color);
@@ -1489,37 +1567,37 @@
 .user-css-extended .orgtree li a:hover + ul li a {
   background: var(--eden-prime-color);
   color: var(--eden-tertiary-color-1);
-  outline: 2px solid var(--eden-tertiary-color-3);
-  outline-width: 2px;
-  outline-offset: -2px;
+  outline: 3px solid var(--eden-tertiary-color-3);
+  outline-width: 3px;
+  outline-offset: -3px;
 }
 
 /*--------------------------*/
 /* ---- Org Tree Lines ---- */
 /* -------------------------*/
 .user-css-extended .orgtree ul ul::before {
-  border-left: 2px solid var(--eden-tertiary-color-2);
+  border-left: 3px solid var(--eden-tertiary-color-2);
 }
 
 .user-css-extended .orgtree li::before {
-  border-top: 2px solid var(--eden-tertiary-color-2);
+  border-top: 3px solid var(--eden-tertiary-color-2);
 }
 
 .user-css-extended .orgtree li::after {
-  border-top: 2px solid var(--eden-tertiary-color-2);
-  border-left: 2px solid var(--eden-tertiary-color-2);
+  border-top: 3px solid var(--eden-tertiary-color-2);
+  border-left: 3px solid var(--eden-tertiary-color-2);
 }
 
-.user-css-extended .orgtree li:last-edenld::before {
-  border-right: 2px solid var(--eden-tertiary-color-2);
+.user-css-extended .orgtree li:last-child::before {
+  border-right: 3px solid var(--eden-tertiary-color-2);
 }
 
-.user-css-extended .orgtree li:first-edenld::after {
-  border-left: 2px solid var(--eden-tertiary-color-2);
+.user-css-extended .orgtree li:first-child::after {
+  border-left: 3px solid var(--eden-tertiary-color-2);
 }
 
-.user-css-extended .orgtree li:first-edenld::before,
-.user-css-extended .orgtree li:last-edenld::after {
+.user-css-extended .orgtree li:first-child::before,
+.user-css-extended .orgtree li:last-child::after {
   border: transparent;
 }
 
@@ -1534,7 +1612,7 @@
 /* -------------------------*/
 .user-css .rhea-family-tree {
   background: var(--eden-secondary-color-2);
-  border: 2px solid var(--eden-tertiary-color-3);
+  border: 3px solid var(--eden-tertiary-color-3);
   border-radius: 0px;
   box-shadow: none;
 }
@@ -1560,8 +1638,8 @@
 }
 
 .user-css .rhea-family-tree .rhea-character-node .character-portrait-wrapper {
-  border: 2px solid var(--eden-tertiary-color-3);
-  border-width: 2px;
+  border: 3px solid var(--eden-tertiary-color-3);
+  border-width: 3px;
   border-radius: 0px;
 }
 
@@ -1577,7 +1655,7 @@
 
 .user-css .rhea-family-tree .rhea-character-node .character-label {
   margin-top: -2px;
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   background: var(--eden-tertiary-color-1);
   border: none;
   border-radius: 0px;
@@ -1589,7 +1667,7 @@
   .rhea-character-node
   .character-data
   .character-name {
-  font-family: var(--eden-font-body);
+  font-family: var(--BodyFont);
   color: var(--eden-prime-color);
   font-weight: bold;
 }
@@ -1600,7 +1678,7 @@
   .character-label
   .character-life {
   color: var(--eden-prime-color);
-  margin-top: 2px;
+  margin-top: 5px;
 }
 
 .user-css .rhea-family-tree .rhea-character-node:hover .character-label {
@@ -1631,9 +1709,9 @@
 /* ---- Family Tree Search ---- */
 /* -------------------------*/
 .user-css .rhea-family-tree .rhea-ft-search .rhea-search-input-wrap {
-  border: 2px solid var(--eden-tertiary-color-3);
-  border-width: 2px;
-  padding: 2px 12px;
+  border: 3px solid var(--eden-tertiary-color-3);
+  border-width: 3px;
+  padding: 5px 15px;
 }
 
 .user-css .rhea-family-tree input::placeholder {
@@ -1732,8 +1810,9 @@
 /* -------------------------*/
 .user-css-whitelabel {
   left: -160px;
-  background: var(--eden-prime-color);
+  background: var(--eden-secondary-color-1);
   border-radius: 0px 50px 50px 0px;
+  border: 2px solid var(--eden-tertiary-color-1);
   color: var(--eden-body-text-color) !important;
   padding: 10px 30px 10px 10px;
   transition: all 0.3s ease-in-out;
@@ -1762,11 +1841,11 @@
     top: 26%;
     min-height: 60% !important;
     width: 100%;
-    left: 22px;
+    left: 25px;
   }
 }
 
-@media only screen and (max-width: 422px) {
+@media only screen and (max-width: 425px) {
   .user-css.page,
   .user-css-extended .page {
     overflow: hidden;
@@ -1789,7 +1868,7 @@
   border-bottom: none;
   box-shadow: none;
   opacity: 0.6;
-  padding: 12px 12px 0px 12px;
+  padding: 15px 15px 0px 15px;
   transition: all 0.3s;
 }
 
@@ -1802,7 +1881,7 @@
 }
 
 #world-editor-bar .btn {
-  width: 82px !important;
+  width: 85px !important;
   margin-bottom: 10px;
 }
 
@@ -1825,7 +1904,7 @@
 }
 
 #world-editor-bar .label,
-#world-editor-bar .btn-success:nth-edenld(1) {
+#world-editor-bar .btn-success:nth-child(1) {
   display: none;
 }
 
@@ -1850,6 +1929,31 @@
 .user-css .world-authors,
 .user-css .world-title {
   display: none;
+}
+
+.user-css.core-category .category-contents .category-header b,
+.user-css.core-category .category-contents .category-header strong,
+.user-css.core-category .category-title-icon {
+  display: none;
+}
+
+.user-css.sub-category .category-contents .category-header,
+.user-css.sub-category .category-articles h2 {
+  display: none;
+}
+
+.user-css .article-category-header h2 {
+  font-size: 2.2em;
+  background: linear-gradient(#f78b52, #872929);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin: 15px auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: none;
 }
 
 /*--------------------------*/
@@ -1878,7 +1982,7 @@
   align-items: center;
   font-size: 1.8rem;
   font-family: var(--eden-font-title);
-  background: -webkit-linear-gradient(#f78b52, #872929);
+  background: linear-gradient(#f78b52, #872929);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1911,47 +2015,165 @@
 }
 
 /*--------------------------*/
-/* ---- Category Portals ---- */
+/* ---- Common Article ---- */
+/* -------------------------*/
+.user-css .article-section {
+  background-color: #250b0a;
+  border: 2px solid var(--eden-tertiary-color-5);
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 1em;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
 /*--------------------------*/
-.user-css .page-card-grid {
+/* ---- Race Article ---- */
+/* -------------------------*/
+.user-css .race-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-  margin-top: -28px;
 }
 
-.user-css .page-card-section {
-  background: var(--eden-secondary-color-1);
-  border: 2px solid var(--eden-tertiary-color-4);
+.user-css .race-card {
+  background: var(--eden-secondary-color-2);
+  border: 2px solid var(--eden-tertiary-color-1);
+  border-radius: 10px;
   overflow: hidden;
-  border-radius: 30px;
+  height: 99%;
 }
 
-.user-css .page-card-section:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
+.user-css .race-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.user-css .page-card-header {
-  background-color: var(--eden-secondary-color-3);
+.user-css .race-card-header {
+  background: var(--eden-tertiary-color-4);
+  text-align: center;
   padding: 10px;
-  border-top-left-radius: 30px;
-  border-bottom: 2px solid var(--eden-tertiary-color-4);
-  border-top-right-radius: 30px;
+  font-size: 1.5em;
+  border-bottom: 2px solid var(--eden-tertiary-color-1);
 }
 
-.user-css .page-card-title {
-  font-family: var(--eden-font-title);
-  background: -webkit-linear-gradient(#f78b52, #872929);
+.user-css .race-card-subheader {
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.user-css .subrace-header {
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: var(--eden-tertiary-color-1);
+  color: var(--eden-body-text-color);
+  padding: 10px 20px;
+  font-family: var(--eden-font-secondary);
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.user-css .race-title {
+  background: -webkit-linear-gradient(#851e1e, #291616);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.5em;
+  font-family: var(--eden-font-main);
 }
 
-.user-css .page-card-image img {
-  width: 205px;
+.user-css .race-card-image img {
+  display: block;
+  width: 100%;
   height: auto;
+}
+
+.user-css .race-card-content {
+  padding: 15px;
+  font-size: 0.9em;
+  color: var(--eden-body-text-color);
+}
+
+/*--------------------------*/
+/* ---- Race Card Scaling    ---- */
+/* -------------------------*/
+@media screen and (max-width: 1000px) {
+  .user-css .race-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/*--------------------------*/
+/* ---- Subrace Article    ---- */
+/* -------------------------*/
+.user-css .subrace-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.user-css .subrace-header {
+  background-color: var(--eden-tertiary-color-4);
+  color: var(--eden-body-text-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px outset #ffa4a4;
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-css .subrace-card {
+  display: block;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 5px;
+  border: 2px outset #ffa4a4;
+  position: relative;
+  background: #511818;
+  height: 95%;
+}
+
+.user-css .subrace-card-image img {
+  width: 50%;
+  height: auto;
+}
+
+.user-css .subrace-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-css .race-card-content a {
+  color: goldenrod;
+}
+
+.user-css .subrace-grid .subrace-card:last-child {
+  grid-column: 2 / span 1; /* This will place it in the middle column */
+}
+
+/*--------------------------*/
+/* ---- Subrace Card Scaling    ---- */
+/* -------------------------*/
+@media screen and (max-width: 1000px) {
+  .user-css .subrace-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.user-css.page-world-homepage .article-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em;
+}
+
+.user-css.page-world-homepage li:nth-child(3n + 1),
+.user-css.page-world-homepage li:nth-child(3n + 2) {
+  grid-column: auto;
+}
+
+.user-css.page-world-homepage li:nth-child(3n) {
+  grid-column: 1 / span 2;
 }
