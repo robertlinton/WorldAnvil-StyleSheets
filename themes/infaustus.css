@@ -12,7 +12,7 @@
   /* Fonts */
   --eden-font-title: Unifraktur Maguntia;
   --eden-font-main: Devinne Swash;
-  --BodyFont: IM Fell English;
+  --eden-font-body: IM Fell English;
 
   /* Colors */
   --eden-prime-color: #180909;
@@ -35,8 +35,7 @@
   background: linear-gradient(
     0deg,
     var(--eden-bg-color) 15%,
-    /* Starts with the base background color */ var(--eden-secondary-color-2)
-      100% /* Transitions to a secondary color */
+    var(--eden-secondary-color-2) 100%
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,14 +136,13 @@
 .user-css-extended .metadata-label,
 .user-css-extended .metadata-value {
   font-size: 17px;
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   color: var(--eden-body-text-color);
 }
 
 .user-css-vignette {
   font-size: 0.9em;
 }
-
 .user-css .highlight-cream {
   color: #fff2cc;
 }
@@ -317,7 +315,7 @@
 .user-css-worldmenu .tooltip .tooltip-inner,
 .user-css-presentation .tooltipster-borderless .tooltipster-content {
   color: var(--eden-body-text-color);
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   font-size: 1.4em;
   background: var(--eden-secondary-color-2);
   border: 3px solid var(--eden-tertiary-color-1);
@@ -374,7 +372,7 @@
 }
 
 .user-css .dropcap {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
 }
 
 /*--------------------------*/
@@ -385,8 +383,8 @@
 .user-css .label-roller,
 .user-css .rhea-ft-zoom-controls button,
 .user-css-presentation .tooltipster-content .btn,
-.user-css .discussion-board-section [class*="rep"] .btn {
-  font-family: var(--BodyFont);
+.user-css .discussion-board-section [class*=rep] .btn {
+  font-family: var(--eden-font-body);
   font-size: 0.9em;
   color: var(--eden-tertiary-color-3) !important;
   background-color: var(--eden-secondary-color-1);
@@ -401,7 +399,7 @@
 .user-css .label-roller:hover,
 .user-css .rhea-ft-zoom-controls button:hover,
 .user-css-presentation .tooltipster-content .btn:hover,
-.user-css .discussion-board-section [class*="rep"] .btn:hover {
+.user-css .discussion-board-section [class*=rep] .btn:hover {
   text-shadow: none;
   text-decoration: none;
   font-style: normal;
@@ -453,18 +451,40 @@
   font-size: 1em;
 }
 
+.user-css .quote-image {
+  float: left;
+  margin-right: 20px;
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
 /*--------------------------*/
 /* ---- Sidebar Panel   ---- */
 /* -------------------------*/
 .user-css .panel,
-.user-css-extended .panel {
+.user-css-extended .panel,
+.user-css .custom-panel {
   background: var(--eden-secondary-color-1);
   border: 3px solid var(--eden-tertiary-color-4);
   border-radius: 25px;
 }
 
-.user-css .card-complation-date {
-  margin-bottom: 15px;
+.user-css .panel-subheader {
+  background-color: var(--eden-tertiary-color-1);
+  color: var(--eden-body-text-color);
+  padding: 8px 16px;
+  margin: -3px -3px 10px -3px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom: 2px solid var(--eden-tertiary-color-4);
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.user-css.special .panel {
+  display: none;
 }
 
 /*--------------------------*/
@@ -567,9 +587,9 @@
 }
 
 .user-css .spoiler-button:hover,
-.user-css .spoiler-button[aria-expanded="true"],
+.user-css .spoiler-button[aria-expanded=true],
 .user-css-extended .spoiler-button:hover,
-.user-css-extended .spoiler-button[aria-expanded="true"] {
+.user-css-extended .spoiler-button[aria-expanded=true] {
   padding-left: 0.5rem;
   padding-top: 10px;
 }
@@ -682,7 +702,7 @@
 }
 
 .user-css .world-author {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   font-size: 1em;
   margin-bottom: 10px;
 }
@@ -853,7 +873,7 @@
 }
 
 .user-css .map-box small {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   font-size: 1em;
 }
 
@@ -862,7 +882,7 @@
 /* -------------------------*/
 .user-css.page-followers .subheading {
   font-size: 1em;
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
 }
 
 .user-css .follower-box {
@@ -1016,7 +1036,7 @@
 /* -------------------------*/
 .user-css .breadcrumb,
 .user-css-extended .breadcrumb {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   font-size: 1.1em;
   font-style: normal;
 }
@@ -1119,7 +1139,7 @@
 /* ---- Secrets and notes   ---- */
 /* -------------------------*/
 .user-css-extended .panel-default {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
 }
 
 .user-css-extended .panel-default .panel-heading {
@@ -1158,7 +1178,7 @@
 /* -------------------------*/
 .user-css-extended .comment-form textarea {
   color: var(--eden-body-text-color);
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   font-size: 1em;
   background: var(--eden-secondary-color-2);
   border: 2px double var(--eden-tertiary-color-4);
@@ -1177,7 +1197,7 @@
 }
 
 .user-css-extended .comment-form .pull-right {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
 }
 
 .user-css-extended .comment-post--handler {
@@ -1233,7 +1253,7 @@
 }
 
 .user-css-extended .comment-box-date {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   color: var(--eden-muted-color);
   font-size: 1em;
   opacity: 1;
@@ -1244,7 +1264,7 @@
 }
 
 .user-css-extended .comment-box-date,
-.user-css-extended [class*="comment-foo"] {
+.user-css-extended [class*=comment-foo] {
   border: none;
 }
 
@@ -1261,7 +1281,7 @@
 }
 
 .user-css-map-sidebar #sidebar-extras .card {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   background: none;
   border: none;
 }
@@ -1309,7 +1329,7 @@
 /* ---- Maps Logo/sage nav ---- */
 /* -------------------------*/
 .presentation-interface-map #logo {
-  color: var(--BodyFont);
+  color: var(--eden-font-body);
   font-family: var(--eden-font-title);
   font-size: 1.2em;
 }
@@ -1392,7 +1412,7 @@
 .user-css .leaflet-control-layers-expanded,
 .map-context-user-css .leaflet-control-layers-expanded {
   background: var(--eden-tertiary-color-2);
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
 }
 
 .map-context-user-css .leaflet-control-layers-base span {
@@ -1405,7 +1425,7 @@
 /* -------------------------*/
 .user-css .legend,
 .map-context-user-css .legend {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   color: var(--eden-body-text-color);
   background: var(--eden-secondary-color-2);
   border: 3px solid var(--eden-tertiary-color-4);
@@ -1435,7 +1455,7 @@
 .map-context-user-css .leaflet-popup-content-wrapper,
 .map-context-user-css .leaflet-popup-tip {
   color: var(--eden-body-text-color);
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   background: var(--eden-secondary-color-1);
   border-radius: 0px;
   box-shadow: none;
@@ -1527,14 +1547,14 @@
 
 .user-css .clotho-box .clotho-node .clotho-text-frame .clotho-label a {
   font-size: 1em;
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   color: var(--eden-body-text-color);
 }
 
 /*--------------------------*/
 /* ---- Diplomacy Webs Hover ---- */
 /* -------------------------*/
-.user-css [class*="clotho-title"] {
+.user-css [class*=clotho-title] {
   background: var(--eden-secondary-color-2);
   box-shadow: none;
   border-top: 3px solid var(--eden-tertiary-color-4);
@@ -1542,11 +1562,11 @@
 
 .user-css .clotho-title-arrows,
 .user-css .clotho-box div:nth-of-type(2) .clotho-title-item img,
-.user-css [class*="clotho-title-item"] {
+.user-css [class*=clotho-title-item] {
   border-top: none;
 }
 
-.user-css [class*="clotho-title-item"] {
+.user-css [class*=clotho-title-item] {
   border: 3px solid var(--eden-tertiary-color-2);
   padding: 0px !important;
 }
@@ -1556,7 +1576,7 @@
   top: -120px;
 }
 
-.user-css [class*="show"] {
+.user-css [class*=show] {
   padding-top: 25px;
   padding-bottom: 35px;
 }
@@ -1576,7 +1596,7 @@
 /* -------------------------*/
 .user-css-extended .orgtree li a,
 .user-css-extended .orgtree li a:hover + ul li a {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   font-weight: bold;
   font-size: 1em;
   color: var(--eden-prime-color);
@@ -1682,7 +1702,7 @@
 
 .user-css .rhea-family-tree .rhea-character-node .character-label {
   margin-top: -2px;
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   background: var(--eden-tertiary-color-1);
   border: none;
   border-radius: 0px;
@@ -1694,7 +1714,7 @@
   .rhea-character-node
   .character-data
   .character-name {
-  font-family: var(--BodyFont);
+  font-family: var(--eden-font-body);
   color: var(--eden-prime-color);
   font-weight: bold;
 }
@@ -1926,7 +1946,7 @@
   float: none !important;
 }
 
-#world-editor-bar [class*="cont"] {
+#world-editor-bar [class*=cont] {
   width: 100px !important;
 }
 
@@ -2415,4 +2435,57 @@
   .user-css .portal-card-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/*--------------------------*/
+/* ---- Under Construction ---- */
+/*--------------------------*/
+.user-css .under-construction {
+  background-color: var(--eden-secondary-color-1);
+  color: var(--eden-body-text-color);
+  border: 2px dashed var(--eden-tertiary-color-2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 70px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-css .under-construction h3 {
+  margin: 10px 0;
+  color: var(--eden-tertiary-color-3);
+}
+
+.user-css .under-construction p {
+  margin: 10px 0;
+}
+
+/*--------------------------*/
+/* ---- Backtolink ---- */
+/*--------------------------*/
+.user-css .go-back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: var(--eden-secondary-color-2);
+  color: var(--eden-body-text-color);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: 2px solid var(--eden-tertiary-color-1);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.user-css .go-back-button:hover {
+  border-radius: 50%;
+  padding: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: var(--eden-tertiary-color-4);
+}
+
+.user-css .go-back-button:hover::before {
+  opacity: 1;
 }
