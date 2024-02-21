@@ -40,7 +40,7 @@ https://www.worldanvil.com/author/Timepool */
 /* ---- Backgrounds   ---- */
 /* -------------------------*/
 .user-css-presentation {
-  background: url(https://www.worldanvil.com/uploads/images/294bdde77d28d13b9637992109dade82.jpg);
+  background: url(https://cdnb.artstation.com/p/assets/images/images/072/812/267/large/pooja-balamurali-v03.jpg?1708273061);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1089,23 +1089,11 @@ https://www.worldanvil.com/author/Timepool */
 }
 
 /*--------------------------*/
-/* ---- Timeline Top   ---- */
+/* ---- Top   ---- */
 /* -------------------------*/
+.user-css .backtoworld a,
+.user-css .nav-strip a,
 .user-css .nav-strip {
-  background: none;
-  box-shadow: none;
-  margin-top: -43px;
-}
-
-.user-css .nav-strip a {
-  margin-left: -10px;
-  font-size: 1.2em;
-  padding-right: 15px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-}
-
-.user-css .nav-strip .fas {
   display: none;
 }
 
@@ -1114,26 +1102,25 @@ https://www.worldanvil.com/author/Timepool */
 /* -------------------------*/
 .user-css-presentation #backtotop {
   bottom: 20%;
+  width: 50px;
+  height: 50px;
 }
 
 .user-css-presentation .backtotop-button {
-  color: var(--aotg-secondary-color-1);
-  background: var(--aotg-tertiary-color-2);
-  border: 2px solid var(--aotg-tertiary-color-1);
-  padding: 10px 15px;
-  border-radius: 10px;
-  top: 104px !important;
-  right: 10px !important;
-  position: fixed !important;
+  width: 100%;
+  height: 100%;
+  background: url(https://www.worldanvil.com/uploads/images/e9a966d74890adc11ba820185f709860.svg)
+    no-repeat center center;
+  background-size: cover;
+  border: none;
   transition: all 0.3s;
-  margin: 1px;
+  color: transparent;
 }
 
 .user-css-presentation .backtotop-button:hover {
-  color: var(--aotg-secondary-color-1);
-  background: var(--aotg-tertiary-color-1);
   padding-right: 25px;
 }
+
 
 /*--------------------------*/
 /* ---- Search Form   ---- */
@@ -2356,7 +2343,8 @@ https://www.worldanvil.com/author/Timepool */
 .user-css .discussion-boards-world-link,
 .user-css .article-competition-entries,
 .user-css .world-authors,
-.user-css .world-title {
+.user-css .world-title,
+.user-css .world-timelines {
   display: none;
 }
 
@@ -2864,7 +2852,6 @@ https://www.worldanvil.com/author/Timepool */
   height: 100%; 
   overflow: hidden; 
 }
-
 
 /*--------------------------*/
 /* ---- Profile Card Scaling    ---- */

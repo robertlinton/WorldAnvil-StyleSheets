@@ -673,21 +673,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-.user-css.page-world-homepage .article-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5em;
-}
-
-.user-css.page-world-homepage li:nth-child(3n + 1),
-.user-css.page-world-homepage li:nth-child(3n + 2) {
-  grid-column: auto;
-}
-
-.user-css.page-world-homepage li:nth-child(3n) {
-  grid-column: 1 / span 2;
-}
-
 /*--------------------------*/
 /* ---- Homepage   ---- */
 /* -------------------------*/
@@ -2050,6 +2035,14 @@
   display: none;
 }
 
+.user-css .deceased img {
+  filter: grayscale(1);
+}
+
+.user-css .flag img {
+  width: 50%;
+}
+
 /*--------------------------*/
 /* ---- Category Edits ---- */
 /* -------------------------*/
@@ -2422,9 +2415,9 @@
 }
 
 .user-css .portal-card-img img {
-  max-width: calc(100% - 20px);
+  max-width: 100%;
   height: auto;
-  transition: transform 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .user-css .portal-card-img img:hover {
@@ -2488,4 +2481,29 @@
 
 .user-css .go-back-button:hover::before {
   opacity: 1;
+}
+
+/*--------------------------*/
+/* ---- Plot ---- */
+/*--------------------------*/
+.user-css .completion-date-box {
+  background: var(--eden-secondary-color-1);
+  border: 3px solid var(--eden-tertiary-color-4);
+  border-radius: 25px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.user-css .completion-date-box .title {
+  color: var(--eden-tertiary-color-2);
+  font-size: 20px;
+  margin-bottom: 5px; 
+}
+
+.user-css .completion-date-box .content {
+  font-size: 1em;
 }
